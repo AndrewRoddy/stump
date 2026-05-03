@@ -27,7 +27,6 @@ export default function DeckSelect({ decks, onSelect }: Props) {
   return (
     <div className="deck-screen">
       <header className="deck-header">
-        <p className="app-eyebrow">Flashcard Quiz</p>
         <h1 className="app-title">Stump</h1>
         <p className="app-subtitle">Choose a deck to study</p>
       </header>
