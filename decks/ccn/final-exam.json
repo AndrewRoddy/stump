@@ -1,0 +1,906 @@
+{
+  "name": "Computer Networks - Final Exam",
+  "description": "Comprehensive study deck covering CCN01-CCN07: network models, protocols, performance, physical layer, data link, IP networking, routing, and TCP",
+  "questions": [
+    {
+      "question": "A company connects employee PCs to a central database server so multiple departments can access shared records. Which network use case best matches this?",
+      "options": ["Home entertainment application", "Business application: resource sharing / client-server access", "Mobile user roaming scenario", "Social networking application"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A household uses the Internet primarily for video streaming and online gaming. In the book's framing, this is best classified as:",
+      "options": ["Business application", "Mobile user application", "Home application", "Social application"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A smartwatch synchronizes with a phone over a few meters using very low power. This best fits which network type?",
+      "options": ["LAN", "WAN", "MAN", "PAN"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "An 'internetwork' is best described as:",
+      "options": ["A single large LAN spanning multiple buildings", "A wireless network using 802.11 standards", "A collection of interconnected networks that appear as one network to hosts", "The Internet backbone operated by ISPs"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In networking terminology, a service defines what a layer offers to the layer above, while a protocol defines:",
+      "options": ["The physical medium used for transmission", "How peer entities implement that service", "The number of bits in each frame", "The addressing scheme used across networks"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which challenge is most characteristic of 'mobile users' compared with fixed home/business users?",
+      "options": ["Higher bandwidth requirements", "Need for server-side redundancy", "Maintaining connectivity while changing point of attachment", "Susceptibility to broadcast storms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which description best matches a typical LAN?",
+      "options": ["A metropolitan network connecting cities over fiber rings", "A satellite-based network with global coverage", "A building/campus network with high speed and low delay", "A wide-area network operated by a telecommunications carrier"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which pairing correctly matches the Internet standards body with its typical output?",
+      "options": ["ISO → RFCs", "IEEE → Internet drafts", "IETF → RFCs", "ANSI → IEEE 802 standards"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which statement best distinguishes a connection-oriented service from a connectionless service?",
+      "options": ["Connection-oriented services use UDP; connectionless use TCP", "Connection-oriented services have no setup phase; connectionless do", "Connection-oriented services involve setup/state to support orderly delivery; connectionless sends independent messages without prior setup", "Connection-oriented services are always faster due to pre-negotiated paths"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In the OSI reference model, how many layers are there?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the primary purpose of a protocol hierarchy (layered architecture)?",
+      "options": ["To increase the number of headers added to packets", "To reduce complexity by dividing networking functions into well-defined layers", "To ensure all vendors use identical hardware", "To eliminate the need for error correction"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which organization is most directly associated with Internet standards such as RFCs?",
+      "options": ["ISO", "IEEE", "ITU", "IETF"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "In the TCP/IP reference model, which layer is responsible for moving packets across multiple networks (routing) as a best-effort service?",
+      "options": ["Transport layer", "Application layer", "Internet layer", "Link layer"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which network type is standardized under the IEEE 802.11 family?",
+      "options": ["Ethernet LANs", "Wireless LANs (WLANs)", "Metropolitan area networks", "Cellular mobile networks"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In a layered network architecture, which statement best captures the role of a protocol?",
+      "options": ["It defines the physical medium connecting two nodes", "It lists the services a layer offers upward", "It specifies rules for communication between peer entities at the same layer", "It maps domain names to IP addresses"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What was the primary motivation behind the OSI reference model?",
+      "options": ["To replace TCP/IP with a more efficient architecture", "Enable vendor-independent standardization so diverse systems could interoperate", "To reduce the number of protocol layers needed", "To create a routing protocol for the Internet"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which criticism applies specifically to the TCP/IP reference model?",
+      "options": ["It has too many layers for practical implementation", "It was designed before any protocols existed", "Poor distinction between services, interfaces, and protocols", "It does not support connection-oriented services"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which difference most strongly contributed to TCP/IP's success over OSI?",
+      "options": ["Superior theoretical design", "Greater number of layers", "Availability of working implementations", "Backing by ISO and ITU standards bodies"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which feature most clearly distinguishes a connection-oriented service from a connectionless one?",
+      "options": ["Higher bandwidth allocation", "Use of encryption", "Explicit setup and teardown phases", "Reliance on broadcast addressing"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "According to Tanenbaum, which issue appears across multiple layers of the protocol stack?",
+      "options": ["Routing", "Multiplexing", "Encapsulation", "Error control"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Why does the TCP/IP model have fewer layers than the OSI model?",
+      "options": ["TCP/IP was designed for low-bandwidth links only", "OSI includes separate session and presentation layers that TCP/IP omits", "It combines functions based on practical deployment needs", "Both B and C are correct"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "A household runs 3 simultaneous streams, each needing 8 Mbps. Adding 25% extra headroom for overhead and bursts, what minimum Internet rate should you target?",
+      "options": ["24 Mbps", "27 Mbps", "30 Mbps", "36 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A lab has 92 wired PCs. You use 24-port switches, but must reserve 2 ports per switch for uplinks/expansion. How many switches are required?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link rate is 80 Mbps. Ignoring overhead, approximately how many megabytes per second (MB/s) is this?",
+      "options": ["8 MB/s", "10 MB/s", "80 MB/s", "64 MB/s"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A protocol stack has 5 layers. Processing at each layer adds 0.6 ms per packet in one direction. Ignoring transmission time, what is the one-way processing delay per packet?",
+      "options": ["0.6 ms", "1.2 ms", "2.4 ms", "3.0 ms"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "A sales team has 80 employees. Each downloads 30 records/day and each record is 5 KB. How much data is downloaded per day (ignore protocol overhead)?",
+      "options": ["6 MB", "10 MB", "12 MB", "15 MB"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A Wi-Fi LAN has a raw rate of 54 Mbps. One-third of capacity is lost to overhead/contention, and the remaining capacity is shared equally by 9 active users. About how much throughput does each user get?",
+      "options": ["2 Mbps", "4 Mbps", "6 Mbps", "9 Mbps"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "An application sends 1000 bytes of data. Encapsulation adds 20 bytes (transport) + 20 bytes (network) + 18 bytes (link). What is the total size on the wire?",
+      "options": ["1038 bytes", "1048 bytes", "1058 bytes", "1068 bytes"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In SI units, what does the prefix 'k' (kilo) represent?",
+      "options": ["10^2", "10^3", "10^6", "10^9"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which mechanism improves scalability and resilience by routing traffic to the nearest service instance?",
+      "options": ["Multicast", "Broadcast", "Anycast", "Unicast"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which messaging protocol was designed for IoT environments with constrained devices and unreliable links?",
+      "options": ["HTTP", "WebSocket", "SMTP", "MQTT"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol allows persistent, full-duplex communication inside web applications without repeated HTTP requests?",
+      "options": ["HTTP/2", "WebSocket", "QUIC", "SIP"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol attempts to make remote execution appear local, often hiding latency and failure?",
+      "options": ["SNMP", "NFS", "RPC", "LDAP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol bridges the gap between logical IP addresses and physical MAC addresses?",
+      "options": ["DNS", "DHCP", "ICMP", "ARP"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol enables remote file access with local-like semantics, exposing consistency challenges?",
+      "options": ["FTP", "SCP", "NFS", "SFTP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol exists primarily to provide visibility and operational control over network devices?",
+      "options": ["LDAP", "SNMP", "ICMP", "BGP"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol exists primarily to translate human-readable names into routable network identifiers?",
+      "options": ["ARP", "DHCP", "DNS", "NTP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol exposes the clearest example of early Internet trust assumptions by transmitting credentials in plaintext?",
+      "options": ["SSH", "HTTPS", "TELNET", "SFTP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol is best suited for synchronizing email across multiple devices while keeping messages on the server?",
+      "options": ["POP3", "SMTP", "IMAP", "FTP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol is most responsible for enabling centralized identity and authorization management in enterprises?",
+      "options": ["RADIUS", "LDAP", "Kerberos", "SNMP"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol provides security based on physical laws, not computational hardness?",
+      "options": ["TLS", "IPsec", "QKD", "AES"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol separates call/session control from media transport, commonly used in Internet telephony?",
+      "options": ["RTP", "H.323", "SIP", "WebRTC"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol was explicitly designed to support stateless communication at Internet scale, shifting session responsibility to higher layers?",
+      "options": ["FTP", "SMTP", "TELNET", "HTTP"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol's main contribution is preventing congestion collapse on the Internet?",
+      "options": ["UDP", "IP", "TCP", "BGP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol's store-and-forward design allows messages to survive temporary network outages?",
+      "options": ["HTTP", "SMTP", "FTP", "IMAP"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which routing protocol enables the Internet to function without central control, using policy rather than shortest paths?",
+      "options": ["OSPF", "RIP", "IS-IS", "BGP"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which technology deliberately breaks strict OSI layering to enable fast, predictable forwarding in ISP backbones?",
+      "options": ["VLAN", "NAT", "MPLS", "SDN"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which transport protocol prioritizes timeliness over reliability, making it suitable for live media?",
+      "options": ["TCP", "SCTP", "QUIC", "UDP"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which transport protocol reduces head-of-line blocking and supports connection migration for mobile users?",
+      "options": ["TCP", "UDP", "QUIC", "SCTP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A link has a bandwidth of 80 Mbps and is utilized at 75% during a transfer. What is the achieved throughput?",
+      "options": ["40 Mbps", "56 Mbps", "60 Mbps", "75 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A network service has 99.99% availability. Approximately how much downtime does this allow per year?",
+      "options": ["~8.7 hours", "~53 minutes", "~5.3 minutes", "~30 seconds"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A packet experiences: Processing 3 ms, Queuing 7 ms, Transmission 4 ms, Propagation 16 ms. What is the total end-to-end delay?",
+      "options": ["23 ms", "26 ms", "30 ms", "34 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router can process 2,000 packets/s. Traffic arrives at 1,600 packets/s. What is the utilization (rho)?",
+      "options": ["0.6", "0.7", "0.8", "0.9"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A signal travels 3,000 km over optical fiber where propagation speed is 2 x 10^8 m/s. What is the propagation delay?",
+      "options": ["5 ms", "10 ms", "15 ms", "30 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Four packets experience one-way delays of 30 ms, 35 ms, 50 ms, and 45 ms. What is the maximum jitter (max minus min delay)?",
+      "options": ["5 ms", "10 ms", "15 ms", "20 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How long does it take to transmit a 12 MB file over a 24 Mbps link, ignoring propagation and queuing delays?",
+      "options": ["0.5 s", "2 s", "4 s", "8 s"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which utilization level is most likely to cause exploding queuing delay?",
+      "options": ["50%", "75%", "90%", "98%"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What does jitter refer to in the context of network performance?",
+      "options": ["Total end-to-end delay", "Packet loss rate", "Variation in packet delay", "Bandwidth fluctuation"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the most common cause of jitter in packet networks?",
+      "options": ["Transmission delay", "Variable queuing delay", "Propagation delay", "Processing delay"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which type of application is most sensitive to jitter?",
+      "options": ["Email", "File transfer", "Web browsing", "Real-time voice/video"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which technique is commonly used to reduce the effect of jitter at the receiver?",
+      "options": ["Increasing link bandwidth", "Forward error correction", "Playback buffer", "Packet interleaving"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "When a link operates near capacity, which component of delay grows fastest?",
+      "options": ["Propagation delay", "Transmission delay", "Processing delay", "Queuing delay"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "A 1,200-byte packet is sent over a 16 Mbps link. Ignoring all other delays, what is the transmission delay?",
+      "options": ["0.3 ms", "0.6 ms", "1.2 ms", "2.4 ms"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A 50 Mbps link carries 20 Mbps of traffic. What is the link utilization?",
+      "options": ["20%", "30%", "40%", "50%"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A 100 Mbps link with 20% protocol overhead. What is the effective net throughput?",
+      "options": ["70 Mbps", "75 Mbps", "80 Mbps", "85 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "3 routers each add 0.9 ms of processing delay. 4 links each add 0.6 ms of transmission delay. What is the total delay?",
+      "options": ["4.2 ms", "5.1 ms", "6.0 ms", "6.9 ms"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A 40 Mbps Ethernet link is productive 60% of the time. What is the effective throughput?",
+      "options": ["16 Mbps", "20 Mbps", "24 Mbps", "32 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A signal travels 400 km over fiber at 2 x 10^8 m/s. What is the propagation delay?",
+      "options": ["1.0 ms", "1.5 ms", "2.0 ms", "4.0 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A 50 Mbps link consumes 100 W. What is the energy per bit transmitted?",
+      "options": ["1 nJ/bit", "2 nJ/bit", "5 nJ/bit", "10 nJ/bit"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A buffer holds 10 packets; 15 packets arrive simultaneously. How many packets are dropped?",
+      "options": ["0", "3", "5", "10"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A cable modem primarily allows:",
+      "options": ["Analog telephone calls over coaxial cable", "Packet-switched data over cable TV networks", "Fiber-optic data transmission to the home", "Wireless connectivity via cable infrastructure"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A geostationary satellite appears stationary relative to Earth because it:",
+      "options": ["Is very far away and moves very slowly", "Uses active propulsion to stay fixed", "Has the same rotational period as Earth", "Orbits at an altitude where gravity is negligible"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A key idea in cellular wireless systems is:",
+      "options": ["Using a single large antenna to cover all users", "Dividing coverage into cells, each served by a base station", "Assigning all users the same frequency simultaneously", "Relying exclusively on satellite backhaul"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A modem is used in the PSTN primarily to:",
+      "options": ["Amplify digital signals on copper wire", "Route packets between different networks", "Convert digital data to analog signals for transmission on voice-grade lines", "Encrypt data for secure transmission"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "ADSL technology allows:",
+      "options": ["Symmetric upload and download speeds", "Higher upstream than downstream bandwidth", "Higher downstream than upstream bandwidth", "Full-duplex voice and data simultaneously on separate frequencies"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Baseband transmission means that:",
+      "options": ["The signal is modulated to a carrier frequency", "Multiple signals share the bandwidth using different frequencies", "The entire channel bandwidth is used by one signal", "Transmission only occurs in one direction"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Compared to geostationary satellites, low-earth-orbit (LEO) satellites have:",
+      "options": ["Higher propagation delay", "Larger coverage area per satellite", "Lower latency", "Simpler ground station requirements"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "First-generation (1G) mobile systems were primarily:",
+      "options": ["Digital voice systems", "Analog voice systems", "Packet data systems", "Combined voice and data systems"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Fourier analysis shows that any periodic signal can be represented as:",
+      "options": ["A single sine wave at the fundamental frequency", "A sum of sine and cosine waves at harmonically related frequencies", "A series of square waves", "A random combination of frequencies"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Frequency Division Multiplexing (FDM) works by:",
+      "options": ["Compressing multiple signals into one", "Taking turns in fixed time slots", "Assigning different frequencies to different signals", "Encoding signals using spread-spectrum techniques"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Infrared communication is best suited for:",
+      "options": ["Long-distance outdoor links", "Satellite communication", "Short-range indoor links", "Underwater communication"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Shannon's theorem relates channel capacity to:",
+      "options": ["Packet size and routing distance", "Bandwidth and signal-to-noise ratio", "Transmission power and antenna height", "Modulation scheme and coding rate"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "The bandwidth of a signal is defined as:",
+      "options": ["The maximum amplitude of the signal", "The peak transmission power", "The number of symbols per second", "The difference between the highest and lowest frequencies in the signal"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "The local loop refers to the connection between:",
+      "options": ["Two ISPs at a peering point", "A router and its nearest switch", "A subscriber and the telephone exchange", "Two cellular towers"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Time Division Multiplexing (TDM) allows multiple users to share a channel by:",
+      "options": ["Assigning each user a different frequency band", "Compressing user data before transmission", "Taking turns in time slots", "Using spread-spectrum encoding"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Twisted-pair cables reduce electromagnetic interference primarily by:",
+      "options": ["Using a metallic shield around the pairs", "Increasing the wire gauge", "Twisting the wires together so interference cancels", "Coating the wires with ferrite material"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which guided medium is most commonly used for long-distance, high-bandwidth communication?",
+      "options": ["Coaxial cable", "Twisted-pair copper", "Optical fiber", "Power-line cable"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which guided medium offers the highest resistance to electromagnetic interference?",
+      "options": ["Coaxial cable", "Shielded twisted pair", "Unshielded twisted pair", "Optical fiber"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "One disadvantage of geostationary satellite communication is:",
+      "options": ["Narrow coverage area", "High propagation delay (~270 ms one-way)", "Inability to serve mobile users", "Limited available frequencies"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A code has Hamming distance d = 3. How many bit errors can it detect?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A code has Hamming distance d = 5. How many bit errors can it correct?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A CRC generator polynomial has degree 7. How many redundancy bits are appended to the message?",
+      "options": ["4", "6", "7", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A frame has 1,200 bytes of data and 48 bytes of header. What is the overhead percentage?",
+      "options": ["2%", "4%", "6%", "8%"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link transmits at 20 Mbps and framing overhead is 10%. What is the effective payload rate?",
+      "options": ["16 Mbps", "17 Mbps", "18 Mbps", "19 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A simplex protocol assumes:",
+      "options": ["Full-duplex communication with error recovery", "Half-duplex communication with arbitration", "One-way data flow only", "Bidirectional flow with acknowledgments"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Frame size = 1,000 bytes, link rate = 2 Mbps. What is the transmission time per frame?",
+      "options": ["2 ms", "4 ms", "8 ms", "16 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How many frames can be outstanding at any time in the stop-and-wait protocol?",
+      "options": ["1", "2", "Depends on window size", "Unlimited"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "If a frame error probability is p = 0.2, what is the expected number of transmissions per frame (assuming ACKs are never lost)?",
+      "options": ["1.0", "1.25", "1.5", "2.0"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "If a receiver can process 600 frames/s and the sender can transmit 900 frames/s, how many frames/s must be throttled by flow control?",
+      "options": ["150", "200", "300", "600"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In stop-and-wait, if RTT is 40 ms and transmission time is 5 ms, what fraction of time is the sender actively transmitting?",
+      "options": ["1/9", "5/40", "5/45", "1/8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Increasing window size in a sliding window protocol primarily improves:",
+      "options": ["Error detection capability", "Throughput on high-delay links", "Processing delay at routers", "Security of the connection"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Link rate = 1 Mbps, RTT = 100 ms, frame size = 1,000 bytes. Approximately what window size is needed for full link utilization?",
+      "options": ["6", "8", "12", "16"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Using 3-bit sequence numbers, what is the maximum window size for Go-Back-N?",
+      "options": ["4", "6", "7", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Using 3-bit sequence numbers, what is the maximum window size for Selective Repeat?",
+      "options": ["2", "3", "4", "7"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which data link layer function ensures a fast sender does not overwhelm a slow receiver?",
+      "options": ["Error correction", "Framing", "Flow control", "Addressing"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which sliding-window protocol retransmits only the lost or corrupted frames?",
+      "options": ["Stop-and-Wait", "Go-Back-N", "Selective Repeat", "HDLC"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why are CRCs particularly good at detecting burst errors?",
+      "options": ["They add extra parity bits for each byte", "They use polynomial division which captures multi-bit patterns", "They compare the entire frame to a checksum table", "They retransmit any frame with a detected error"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is stop-and-wait inefficient on long-delay links?",
+      "options": ["It cannot detect errors on noisy channels", "The sender wastes time idle during propagation waiting for ACK", "It requires more sequence numbers than available", "ACKs take up too much bandwidth"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Given IP 192.168.10.130/26, what is the network address?",
+      "options": ["192.168.10.0", "192.168.10.64", "192.168.10.128", "192.168.10.192"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How many usable host addresses are available in a /27 subnet?",
+      "options": ["14", "16", "30", "62"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which of the following IP ranges is a private address range?",
+      "options": ["10.0.0.0 to 10.255.255.255 only", "192.168.0.0 to 192.168.255.255 only", "172.16.0.0 to 172.31.255.255", "All of the above"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the broadcast address of the subnet 192.168.1.64/27?",
+      "options": ["192.168.1.79", "192.168.1.91", "192.168.1.95", "192.168.1.127"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which statement about ARP cache entries is TRUE?",
+      "options": ["They are statically configured and never expire", "They are dynamically learned and timed out after a period", "They are broadcast to all hosts on the network periodically", "They are stored on the DNS server"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "When a host sends an ARP request, which devices process it?",
+      "options": ["Only the router on the subnet", "Only the destination host", "All devices on the local broadcast domain", "Only devices matching the target IP"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the subnet mask for a /22 network?",
+      "options": ["255.255.248.0", "255.255.252.0", "255.255.254.0", "255.255.255.0"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A host wants to reach 8.8.8.8, which is outside its subnet. Which MAC address will ARP resolve?",
+      "options": ["The MAC of 8.8.8.8 directly", "The MAC of the DNS server", "The MAC of the default gateway", "ARP is not used for off-subnet destinations"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IP fragmentation, which statement is TRUE about the More Fragments (MF) flag?",
+      "options": ["MF = 1 for the last fragment only", "MF = 1 for all fragments including the last", "MF = 1 for all fragments except the last", "MF = 0 for all fragments"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "If MTU = 1,000 bytes and IP header = 20 bytes, what is the maximum data payload per fragment (except the last)?",
+      "options": ["960 bytes", "972 bytes", "976 bytes", "980 bytes"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which IP packet field is used to correctly reassemble fragmented IP packets at the destination?",
+      "options": ["TTL field", "Protocol field", "Identification field", "Flags field"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which situation will NOT generate an ICMP error message?",
+      "options": ["TTL reaches 0 at a router", "Packet exceeds MTU with DF bit set", "Packet sent to a broadcast or multicast address", "Destination port unreachable"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives a packet larger than the MTU with the DF (Don't Fragment) bit set to 1. What happens?",
+      "options": ["The router fragments the packet normally", "The router drops the packet silently", "The router drops the packet and sends an ICMP Type 3 Code 4 message to the source", "The router sends the packet on a higher-MTU alternative path"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "An ICMP error message includes which of the following?",
+      "options": ["The complete original packet", "Only the original IP header", "The original IP header plus the first 8 bytes of the original payload", "Only the destination IP address of the failed packet"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "When TTL becomes 0 at a router, what occurs?",
+      "options": ["The packet is forwarded with TTL reset to 64", "The router requests a retransmission from the source", "The packet is dropped and an ICMP Time Exceeded message is sent to the source", "The packet is held until TTL is refreshed"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A DHCP Discover message is sent as:",
+      "options": ["Unicast to the known DHCP server", "Broadcast to all devices on the network", "Multicast to the DHCP group address", "Anycast to the nearest DHCP server"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "DHCP uses which UDP port numbers?",
+      "options": ["Port 53 (client), Port 67 (server)", "Port 67 (client), Port 68 (server)", "Port 68 (client), Port 67 (server)", "Port 80 (client), Port 443 (server)"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What does a DHCP relay agent do?",
+      "options": ["Assigns IP addresses locally without a server", "Caches DHCP responses to speed up future requests", "Forwards client DHCP broadcasts as unicast to a DHCP server on another subnet", "Converts DHCP requests into DNS queries"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Pure ALOHA, what is the maximum channel efficiency?",
+      "options": ["1/e (~36.8%)", "1/(2e) (~18.4%)", "50%", "1/2"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the vulnerable period in Pure ALOHA (i.e., the time window during which another transmission can cause a collision)?",
+      "options": ["T/2", "T", "2T", "4T"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Slotted ALOHA, the maximum efficiency improves to:",
+      "options": ["1/(2e)", "1/e (~36.8%)", "50%", "1/2"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is Slotted ALOHA more efficient than Pure ALOHA?",
+      "options": ["It uses collision detection to abort transmissions early", "It assigns dedicated time slots to each station", "Time is divided into slots, reducing the collision window to T instead of 2T", "It uses carrier sensing before transmitting"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In CSMA/CD, what happens when a collision is detected?",
+      "options": ["The station continues transmitting and marks the frame as corrupted", "All stations stop transmitting for a fixed timeout period", "Transmission is aborted and a jam signal is sent to notify all stations", "The packet is forwarded to an alternate path"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Binary Exponential Backoff in CSMA/CD is used to:",
+      "options": ["Increase transmission power after a collision", "Prioritize traffic based on frame size", "Reduce the probability of repeated collisions by randomizing retry intervals", "Ensure fair access by giving priority to the longest-waiting station"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which MAC protocol is used in traditional Ethernet (IEEE 802.3)?",
+      "options": ["CSMA/CA", "Token Ring", "TDMA", "CSMA/CD"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Why is CSMA/CD not used in wireless LANs (IEEE 802.11)?",
+      "options": ["Wireless LANs use token-based access instead", "Wireless has too much bandwidth for collision detection to matter", "Collision detection is difficult in the wireless medium due to the hidden terminal problem and the inability to simultaneously transmit and listen", "Wireless MAC is standardized by a different committee"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Pure ALOHA, for what value of offered load G is throughput S = G * e^(-2G) maximized?",
+      "options": ["G = 0.25", "G = 0.5", "G = 1.0", "G = 2.0"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A router is computing shortest paths from node D. The current tentative distances are: B = 11, C = 2. Which node will be added next to the confirmed set?",
+      "options": ["B (distance 11)", "C (distance 2)", "Both simultaneously", "Neither until the full graph is known"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In a link-state routing system, a link between two routers fails. What is the correct system behavior?",
+      "options": ["Only the directly connected routers update their tables", "Routing loops form until manual intervention", "A new link-state update is flooded to all routers, which then recompute paths", "BGP sends a withdrawal to all peers"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives a link-state packet from a neighbor. To which neighbors should it forward this packet?",
+      "options": ["To all neighbors including the sender", "To no neighbors; link-state packets are not forwarded", "To all neighbors except the one it came from", "Only to neighbors with lower routing costs"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives two identical link-state packets from the same source with the same sequence number. What should it do?",
+      "options": ["Process both to ensure consistency", "Forward both to all neighbors", "Keep one and discard the duplicate", "Request a newer update from the source"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why do link-state routing protocols avoid long-term routing loops?",
+      "options": ["They use split horizon to prevent loops", "All routers compute consistent shortest-path trees from the same topology database", "They periodically reset all routing tables", "Sequence numbers prevent any packet from being forwarded twice"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why does hierarchical routing reduce routing table size?",
+      "options": ["It uses compression on routing table entries", "It groups destinations into regions, requiring only regional-level entries for remote destinations", "It eliminates the need for default routes", "It replaces dynamic routing with static routes"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A TCP connection has cwnd = 64 KB and RTT = 80 ms. What is the approximate maximum throughput?",
+      "options": ["3.28 Mbps", "5.12 Mbps", "6.55 Mbps", "8.00 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP sender starts with cwnd = 1 MSS and ssthresh = 32 MSS. How many RTTs are required for cwnd to reach ssthresh during slow start?",
+      "options": ["3 RTTs", "4 RTTs", "5 RTTs", "6 RTTs"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP connection has cwnd = 24 MSS. A timeout occurs. What are the new cwnd and ssthresh?",
+      "options": ["cwnd = 12 MSS, ssthresh = 12 MSS", "cwnd = 1 MSS, ssthresh = 24 MSS", "cwnd = 1 MSS, ssthresh = 12 MSS", "cwnd = 6 MSS, ssthresh = 12 MSS"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP connection has cwnd = 30 MSS and a triple duplicate ACK occurs. What are the new cwnd and ssthresh after fast recovery?",
+      "options": ["cwnd = 1 MSS, ssthresh = 15 MSS", "cwnd = 15 MSS, ssthresh = 15 MSS", "cwnd = 15 MSS, ssthresh = 30 MSS", "cwnd = 30 MSS, ssthresh = 15 MSS"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link has bandwidth = 100 Mbps and RTT = 50 ms. What is the bandwidth-delay product (required window size)?",
+      "options": ["500 KB", "610 KB", "625 KB", "1 MB"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In TCP, reliability is achieved using byte numbering through sequence numbers, confirmation using acknowledgments, and recovery using:",
+      "options": ["Checksums", "Retransmissions", "Forward error correction", "ARQ codes"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "During TCP connection setup, the client sends a SYN, the server replies with SYN-ACK, and the client completes the handshake by sending:",
+      "options": ["SYN", "FIN", "ACK", "RST"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In TCP congestion control, the initial exponential growth phase is called:",
+      "options": ["Congestion avoidance", "Fast recovery", "Slow start", "Window scaling"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "During TCP congestion avoidance, cwnd increases:",
+      "options": ["Exponentially each RTT", "Linearly (by 1 MSS per RTT)", "By halving each RTT", "Randomly based on network load"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "When packet loss is detected via triple duplicate ACKs, TCP Reno sets ssthresh to what value?",
+      "options": ["1 MSS", "The current cwnd value", "Half of the current cwnd", "The original starting cwnd"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why is fast recovery preferable to timeout-based recovery in TCP?",
+      "options": ["Fast recovery uses forward error correction to fix errors", "Fast recovery avoids resetting cwnd to 1 MSS, maintaining higher throughput", "Fast recovery eliminates the need for retransmissions", "Fast recovery only applies to UDP flows"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is TCP window scaling necessary in high-speed networks?",
+      "options": ["IPv6 requires a larger window field", "The default 16-bit window size is too small for the bandwidth-delay product of high-speed links", "Window scaling enables TLS encryption of TCP options", "It allows TCP to operate over UDP tunnels"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In CSMA/CD, a station first performs carrier sensing, transmits only if the channel is idle, and detects collisions using:",
+      "options": ["Forward error correction codes", "A separate collision-detection signal from the switch", "Simultaneous listening while transmitting", "CRC mismatch at the receiver"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "After the nth collision in CSMA/CD, Binary Exponential Backoff selects a random integer from which range?",
+      "options": ["0 to n-1", "0 to 2^n", "0 to 2^n - 1", "1 to 2^n"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11 DCF, what is the interframe space used for immediate ACK responses (highest priority)?",
+      "options": ["DIFS", "PIFS", "SIFS", "AIFS"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11 DCF, after the channel remains idle for DIFS, a station performs a random backoff and waits before transmitting. Successful reception is confirmed using:",
+      "options": ["CRC verification only", "A NACK if error is detected", "An ACK from the receiver", "A clear-to-send signal"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Two TCP flows share a link with RTTs of 20 ms and 200 ms. Which flow receives more bandwidth under standard TCP Reno?",
+      "options": ["The flow with RTT = 200 ms", "Both flows receive equal bandwidth", "The flow with RTT = 20 ms", "The flow that started first"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP flow over a 10 Gbps link with RTT = 100 ms achieves only 200 Mbps. What is the primary limitation?",
+      "options": ["Receiver-side buffer overflow", "Insufficient congestion window size", "Physical layer noise", "DNS resolution delays"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "TCP exits slow start when:",
+      "options": ["A triple duplicate ACK is received", "RTT increases by 10%", "cwnd reaches ssthresh", "The receiver window reaches maximum"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A receiver advertises a zero window and later frees buffer space, but the connection remains stalled. What is the most likely cause?",
+      "options": ["The sender's cwnd has been reset to 1 MSS", "The server has closed the connection", "The window update packet was lost and the persist timer failed", "A routing loop has formed"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IP fragmentation, a 4,000-byte IP packet (including 20-byte header) is sent over a link with MTU = 1,020 bytes. How many fragments are created?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "The Hamming distance between two binary strings is defined as:",
+      "options": ["The number of bits in the longer string", "The XOR of the two strings", "The number of bit positions in which the two strings differ", "The total number of 1-bits in both strings combined"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A code with minimum Hamming distance d can correct up to how many errors?",
+      "options": ["d - 1", "d / 2", "floor((d - 1) / 2)", "d + 1"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "To correct single-bit errors, what is the minimum Hamming distance required?",
+      "options": ["1", "2", "3", "4"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11, the interframe space used before contention-based channel access (DIFS) stands for:",
+      "options": ["Data Interframe Space", "Distributed Coordination Function IFS", "Default Idle Frame Spacing", "Distributed IFS"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In Go-Back-N with window size 4, frames 1-4 are sent and frame 2 is lost. Which frames must be retransmitted?",
+      "options": ["Only frame 2", "Frames 2 and 3", "Frames 2, 3, and 4", "Frames 1, 2, 3, and 4"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the primary goal of flow control in a communication protocol?",
+      "options": ["Prevent routing loops in the network", "Ensure packets arrive in order", "Prevent the sender from transmitting faster than the receiver can process", "Reduce the size of each packet to minimize transmission delay"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Selective Repeat, what does the receiver do with frames that arrive out of order after a missing frame?",
+      "options": ["Discards them and sends NAK for each", "Forwards them to the application immediately", "Buffers them until the missing frame arrives and is retransmitted", "Acknowledges them individually but discards after a timeout"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A CSMA/CD network has: bit rate B = 10 Mbps, distance L = 2 km, propagation speed c = 2 x 10^8 m/s, frame size F = 1,000 bits. If propagation delay = 10 us, what is the minimum frame size required to detect a collision?",
+      "options": ["100 bits", "200 bits", "400 bits", "1000 bits"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which of the following most accurately describes the difference between distance vector and link-state routing?",
+      "options": ["Distance vector uses Dijkstra; link-state uses Bellman-Ford", "Distance vector routers know the full topology; link-state routers only know neighbors", "Distance vector can suffer from count-to-infinity; link-state avoids this with complete topology knowledge", "Link-state scales better to small networks; distance vector to large ones"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP sender is in congestion avoidance with cwnd = 20 MSS. After 5 RTTs with no loss, what is cwnd?",
+      "options": ["20 MSS", "23 MSS", "25 MSS", "40 MSS"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which field in an IP packet is decremented by each router and causes the packet to be discarded when it reaches zero?",
+      "options": ["Identification", "Protocol", "TTL (Time to Live)", "Flags"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "During DHCP lease renewal (at the T1 timer), the client sends its renewal request to:",
+      "options": ["The broadcast address", "The original DHCP server via unicast", "All DHCP servers via multicast", "The default gateway"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is subnetting used in IP networking?",
+      "options": ["To increase the total number of available IP addresses", "To enable longer transmission distances", "To organize networks and reduce broadcast domain size", "To eliminate the need for routing between departments"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Traceroute works because:",
+      "options": ["It reads the routing table of each intermediate router", "Routers send ICMP Time Exceeded messages when TTL expires in transit", "It uses a special UDP port that routers intercept", "Each router appends its address to the packet"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A 300 km fiber link at 2 x 10^8 m/s has a propagation delay of:",
+      "options": ["0.75 ms", "1.0 ms", "1.5 ms", "3.0 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A home network supports 3 simultaneous video streams each requiring 10 Mbps. Adding 25% overhead headroom, what minimum Internet speed should be selected?",
+      "options": ["30 Mbps", "35 Mbps", "37.5 Mbps", "40 Mbps"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A packet traverses 4 routers each adding 0.8 ms, and 5 links each adding 0.5 ms transmission delay. Propagation is negligible. What is the total delay?",
+      "options": ["4.7 ms", "5.2 ms", "5.7 ms", "6.5 ms"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Service primitives are important in layered architectures because:",
+      "options": ["They define the physical characteristics of the transmission medium", "They specify how layers interact at boundaries without exposing internal implementation", "They determine the maximum data rate of each layer", "They provide encryption for inter-layer communication"],
+      "correctAnswer": 1
+    }
+  ]
+}
