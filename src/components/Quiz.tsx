@@ -21,13 +21,9 @@ function getOptionClass(i: number, selected: number | null, correct: number): st
 
 export default function Quiz({
   question,
-  questionNumber,
-  totalInBlock,
-  deckName,
   selectedAnswer,
   onAnswer,
 }: Props) {
-  const progressPct = ((questionNumber - 1) / totalInBlock) * 100
 
   const shuffledIndices = useMemo(() => {
     const indices = question.options.map((_, i) => i)
