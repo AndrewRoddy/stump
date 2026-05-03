@@ -1,0 +1,126 @@
+{
+  "name": "Q5 Practice (Nietzsche)",
+  "description": "The same concepts tested on Quiz 5, rephrased with shuffled options so you practice the ideas without memorizing exact wording",
+  "questions": [
+    {
+      "id": "q5p1",
+      "question": "According to Nietzsche, who bears primary responsibility for introducing Slave Morality into Western culture?",
+      "options": ["Aristotle and Plato", "Socrates and Plato", "Jesus and St. Paul", "Descartes and Kant"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p2",
+      "question": "When Nietzsche declared 'God is Dead,' he was primarily claiming that:",
+      "options": ["Advances in science had definitively disproven the existence of God as a being", "The moral certainty and institutional security provided by Christianity had permanently collapsed", "God had withdrawn from human history in response to widespread human sinfulness", "Religious faith was no longer capable of providing meaning for educated modern Europeans"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p3",
+      "question": "Nietzsche believed the correct response to the death of God was to:",
+      "options": ["Construct a new rational moral system to replace the vacuum left by Christian ethics", "Embrace nihilism and honestly accept that life has no inherent meaning or purpose", "Find personal meaning rooted in each individual's unique instincts and passions", "Return to the pre-Christian traditions of ancient Rome and Greece through political action"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p4",
+      "question": "Nietzsche characterized Lambs/Slaves/Christians in all of the following ways EXCEPT:",
+      "options": ["They resent the strong and express that resentment through moral condemnation", "They use guilt as a weapon to control and weaken powerful individuals", "They celebrate instinct and passion as the proper guides for human action", "They invented the concept of Evil to condemn the natural strength of the Lions"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p5",
+      "question": "Even after the death of God, Nietzsche argued we cling to Slave Morality for all of the following reasons EXCEPT:",
+      "options": ["We still want to hold people morally responsible for their actions", "The residual influence of Christianity persists deeply in our culture and language", "We have fully liberated our instincts and no longer need external moral guidelines", "We are conditioned through guilt to feel shame about acting on our natural drives"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p6",
+      "question": "Which Nietzschean concept reflects the idea that each reader's interpretation of his work reveals their own biases more than Nietzsche's actual meaning?",
+      "options": ["Amor Fati", "Mirror Writing", "The Ubermensch", "Revaluation of Values"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p7",
+      "question": "On which philosophical position does Nietzsche actually agree with Descartes?",
+      "options": ["That reason is the foundation of all reliable human knowledge", "That humans possess free will and are fully morally responsible for their actions", "That God's existence can be proven through rational argument and innate ideas", "None; they hold fundamentally opposed positions on every major philosophical question"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "q5p8",
+      "question": "Which of the following does NOT accurately describe Nietzsche as a philosopher or writer?",
+      "options": ["He used aphorisms and metaphors rather than systematic logical proofs", "His writing is deliberately provocative and designed to challenge the reader's assumptions", "He sought to build a rigorous and mathematically grounded foundation for all of philosophy", "His texts often reflect the reader's own values and assumptions back at them"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p9",
+      "question": "Nietzsche's project of 'revaluing all values' aimed at all of the following EXCEPT:",
+      "options": ["Challenging the dominance of Christian and Slave Morality in Western culture", "Recovering the pre-Socratic emphasis on instinct, excellence, and vitality", "Elevating human reason above instinct as the new foundation for ethical life", "Encouraging individuals to develop values rooted in their own type-facts and nature"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p10",
+      "question": "Nietzsche argued that language, concepts, and grammar rules contributed to Slave Morality in all of the following ways EXCEPT:",
+      "options": ["Language embeds Christian moral assumptions that survive even after we stop believing", "The doer-deed structure of grammar makes us believe there is a stable self behind every action", "Abstract concepts like Evil came to seem natural and real because language treated them as fixed things", "The grammatical structure of subject and predicate caused us to believe particulars were more real than universals"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "q5p11",
+      "question": "The story of Goethe and Beethoven illustrates Nietzsche's view that true greatness is:",
+      "options": ["Forged through intense public suffering and the recognition of one's struggle by others", "Effortless, natural, and completely free from bitterness, arrogance, or grievance", "Available only to those born with exceptional instincts and raw physical vitality", "Demonstrated through the willingness to impose one's will on weaker individuals around you"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p12",
+      "question": "Which of the following correctly states Nietzsche's view on Platonic Forms?",
+      "options": ["Forms are essential tools for achieving knowledge and living a truly virtuous life", "Forms are useful fictions that help us communicate but are not metaphysically real", "Forms are the only truly real things and the physical world is merely their imperfect shadow", "Forms are divine ideas placed in our minds by God to guide our reason toward truth"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p13",
+      "question": "Why did Nietzsche describe himself as the 'Anti-Christ'?",
+      "options": ["He wanted to abolish all religion and replace it with a secular humanist framework", "He wanted to de-moralize our concepts by dragging them from the static World of Being back to the dynamic world of Becoming", "He rejected Jesus as a historical figure and considered Christianity a purely political fabrication", "He believed that human instinct was more sacred and divine than any religious doctrine ever written"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p14",
+      "question": "According to Nietzsche, guilt originates when:",
+      "options": ["We act against our rational judgment and succumb to temptation", "An external force such as society demands that we change who we naturally are", "We fail to live up to the standards set by our cultural heroes and role models", "Our conscious desires conflict directly with the instinctual drives stored in the body"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p15",
+      "question": "Why is Nietzsche's association with Nazism considered historically inaccurate?",
+      "options": ["Nietzsche actually supported a peaceful form of German nationalism unrelated to race", "Nietzsche admired Jewish culture and strongly opposed German nationalism; his sister manipulated his unpublished writings after his death", "Nietzsche's concept of the Ubermensch was only meant metaphorically and never applied to real political groups", "The Nazis misunderstood Nietzsche simply because they lacked the philosophical training to read him correctly"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p16",
+      "question": "Which concept does Nietzsche describe as the 'emptiest and thinnest' of all human ideas?",
+      "options": ["Reason", "Form", "God", "The Stable Self"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "q5p17",
+      "question": "Which Latin phrase captures Nietzsche's belief that we must fully embrace our fate, including its pain and struggle?",
+      "options": ["Cogito Ergo Sum", "Amor Fati", "Causa Sui", "In Vino Veritas"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p18",
+      "question": "Which moral concept did Christianity invent, according to Nietzsche, to condemn instinct-driven behavior as sinful and worthy of punishment?",
+      "options": ["Virtue", "Duty", "Justice", "Evil"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "q5p19",
+      "question": "Which figure represents Nietzsche's worst-case scenario for humanity in the aftermath of the collapse of Christian values?",
+      "options": ["The Ubermensch", "The Last Man", "The Lion", "The Fundamentalist"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "q5p20",
+      "question": "Which of the following correctly describes the relationship between Lions and Lambs according to Nietzsche?",
+      "options": ["A Lamb can become a Lion through discipline, effort, and cultivation of instinct over time", "Lions and Lambs are born that way and their nature never fundamentally changes", "A Lion can be pulled down to become a Lamb, but a Lamb cannot elevate itself to become a Lion", "Lions voluntarily choose to become Lambs in order to protect the weaker members of society"],
+      "correctAnswer": 2
+    }
+  ]
+}

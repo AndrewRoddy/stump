@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import type { Question } from '../types'
 
 const LABELS = ['A', 'B', 'C', 'D'] as const
@@ -28,6 +29,18 @@ export default function Quiz({
 }: Props) {
   const progressPct = ((questionNumber - 1) / totalInBlock) * 100
 
+  const shuffledIndices = useMemo(() => {
+    const indices = question.options.map((_, i) => i)
+    for (let i = indices.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[indices[i], indices[j]] = [indices[j], indices[i]]
+    }
+    return indices
+  }, [question])
+
+  const shuffledSelected = selectedAnswer !== null ? shuffledIndices.indexOf(selectedAnswer) : null
+  const shuffledCorrect = shuffledIndices.indexOf(question.correctAnswer)
+
   return (
     <div className="screen">
       <div className="card quiz-card">
@@ -42,15 +55,15 @@ export default function Quiz({
         */}
         <p className="question-text">{question.question}</p>
         <div className="options">
-          {question.options.map((opt, i) => (
+          {shuffledIndices.map((origIdx, i) => (
             <button
               key={i}
-              className={getOptionClass(i, selectedAnswer, question.correctAnswer)}
-              onClick={() => onAnswer(i)}
+              className={getOptionClass(i, shuffledSelected, shuffledCorrect)}
+              onClick={() => onAnswer(origIdx)}
               disabled={selectedAnswer !== null}
             >
               <span className="option-label">{LABELS[i]}</span>
-              <span className="option-text">{opt}</span>
+              <span className="option-text">{question.options[origIdx]}</span>
             </button>
           ))}
         </div>

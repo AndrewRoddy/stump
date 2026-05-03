@@ -1,0 +1,96 @@
+{
+  "name": "General Knowledge",
+  "description": "Mixed trivia to test the app",
+  "questions": [
+    {
+      "id": "gk1",
+      "question": "What is the capital of Japan?",
+      "options": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk2",
+      "question": "Which planet is the largest in our solar system?",
+      "options": ["Saturn", "Jupiter", "Neptune", "Uranus"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "gk3",
+      "question": "How many colors are in a standard rainbow?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk4",
+      "question": "Who painted the Mona Lisa?",
+      "options": ["Michelangelo", "Raphael", "Caravaggio", "Leonardo da Vinci"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "gk5",
+      "question": "What is the chemical symbol for gold?",
+      "options": ["Go", "Gd", "Au", "Ag"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk6",
+      "question": "Which country has the largest land area in the world?",
+      "options": ["Canada", "China", "United States", "Russia"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "gk7",
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["Titanium", "Quartz", "Diamond", "Sapphire"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk8",
+      "question": "How many legs does a spider have?",
+      "options": ["6", "8", "10", "12"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "gk9",
+      "question": "What is the capital of Australia?",
+      "options": ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "gk10",
+      "question": "Which gas do plants absorb during photosynthesis?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk11",
+      "question": "In what year did World War II end?",
+      "options": ["1943", "1944", "1945", "1946"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "gk12",
+      "question": "What is the largest ocean on Earth?",
+      "options": ["Atlantic", "Indian", "Arctic", "Pacific"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "gk13",
+      "question": "Who wrote the play Romeo and Juliet?",
+      "options": ["Charles Dickens", "William Shakespeare", "John Milton", "Christopher Marlowe"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "gk14",
+      "question": "How many sides does a hexagon have?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "gk15",
+      "question": "What is the most widely spoken first language in the world?",
+      "options": ["English", "Spanish", "Hindi", "Mandarin Chinese"],
+      "correctAnswer": 3
+    }
+  ]
+}

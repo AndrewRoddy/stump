@@ -2,19 +2,8 @@
 
 ## Answer Length Randomization
 
-When generating a quiz card, use the following process to determine where the correct answer ranks by character length among the four options:
-
-1. Generate a random integer from 1 to 4 (inclusive).
-2. Rank all four answer options by character length (shortest = rank 1, longest = rank 4).
-3. Make the correct answer the option whose length matches the rolled rank:
-   - **1** → correct answer is the **shortest** of the four options
-   - **2** → correct answer is the **second shortest**
-   - **3** → correct answer is the **third shortest** (second longest)
-   - **4** → correct answer is the **longest** of the four options
-
-The three incorrect options should be plausible distractors whose lengths fill the remaining ranks.
-
-If two or more options happen to be the same length, treat ties as the same rank — adjust wording slightly to break the tie and maintain the target rank.
+When generating a quiz card make sure the other 3 options are a plausible answer that could trick even a knowledgeable person.
+Do not use m dashes in your questions or answers.
 
 ## Output Format
 

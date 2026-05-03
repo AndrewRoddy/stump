@@ -1,0 +1,186 @@
+{
+  "name": "Descartes",
+  "description": "Famous quotes, Scholasticism, 4 stages, Cogito, dualism, Trademark Argument, and Descartes' legacy",
+  "questions": [
+    {
+      "id": "d1",
+      "question": "Who said 'You can never step into the same river twice'?",
+      "options": ["Democritus", "Protagoras", "Heraclitus", "Socrates"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d2",
+      "question": "Who said 'Man is the measure of all things'?",
+      "options": ["Aristotle", "Protagoras", "Socrates", "Plato"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d3",
+      "question": "Who said 'Nothing exists except atoms and the void'?",
+      "options": ["Heraclitus", "Aristotle", "Socrates", "Democritus"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "d4",
+      "question": "Who said 'The unexamined life is not worth living'?",
+      "options": ["Plato", "Socrates", "Aristotle", "Protagoras"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d5",
+      "question": "Who said 'There is nothing in the mind that was not first in the senses'?",
+      "options": ["Plato", "Descartes", "Aristotle", "Heraclitus"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d6",
+      "question": "The Latin phrase 'Cogito ergo sum' translates to which of the following?",
+      "options": ["I exist, therefore I think", "I think, therefore I am", "I doubt, therefore I know", "God exists, therefore I am"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d7",
+      "question": "St. Augustine incorporated which philosopher's ideas into Christianity?",
+      "options": ["Aristotle", "Descartes", "Plato", "Aquinas"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d8",
+      "question": "St. Thomas Aquinas incorporated which philosopher's ideas into Christianity, creating Scholasticism?",
+      "options": ["Plato", "Socrates", "Descartes", "Aristotle"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "d9",
+      "question": "What makes Cartesian Doubt different from ordinary Skepticism?",
+      "options": ["Cartesian Doubt leads to permanent uncertainty about all knowledge", "Cartesian Doubt is used as a method to find an unshakeable foundation for knowledge", "Cartesian Doubt rejects reason as a path to truth", "Cartesian Doubt was borrowed directly from ancient Greek Skeptics"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d10",
+      "question": "In his Meditations, Descartes concluded that all of the following could be doubted EXCEPT:",
+      "options": ["The existence of the physical world", "Mathematical truths like 2 + 2 = 4", "The existence of his own thinking mind", "The reliability of his senses"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d11",
+      "question": "What was Stage 1 of Descartes' philosophical method in the Meditations?",
+      "options": ["Establish the existence of God", "Apply radical doubt to reject anything that can be questioned", "Prove the existence of the external world", "Define the mind as distinct from the body"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d12",
+      "question": "What was Stage 2 of Descartes' philosophical method?",
+      "options": ["Use the senses to confirm physical reality", "Prove God exists through the Trademark Argument", "Establish the Cogito as the one unshakeable foundation of knowledge", "Define Extension as the material world"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d13",
+      "question": "Stage 3 of Descartes' method required him to:",
+      "options": ["Prove the reliability of mathematical reasoning", "Establish that God exists and is good rather than a deceiver", "Return to the senses as a source of knowledge", "Demonstrate that the mind and body are distinct substances"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d14",
+      "question": "What is 'Extension' according to Descartes?",
+      "options": ["The mind's ability to stretch beyond its natural limits", "The immaterial soul that animates the body", "The material, three-dimensional, divisible physical world", "The part of the brain where mind and body interact"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d15",
+      "question": "All of the following are characteristics of the human mind according to Descartes EXCEPT:",
+      "options": ["It is indivisible", "It is immaterial", "It possesses Extension", "It is capable of free will"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d16",
+      "question": "The Wax Argument was used by Descartes to demonstrate which of the following?",
+      "options": ["The senses are the most reliable source of knowledge about the world", "The mind, not the senses, grasps the true nature of physical objects", "Primary and secondary qualities are equally objective properties", "God ensures that our perceptions accurately match reality"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d17",
+      "question": "Which of the following are 'primary qualities' of objects according to Descartes?",
+      "options": ["Color, taste, and temperature", "Sound, smell, and texture", "Size, shape, motion, and number", "Beauty, harmony, and proportion"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d18",
+      "question": "What is the Trademark Argument?",
+      "options": ["Descartes' argument that mathematical truth proves God's existence", "The idea that we could not have conceived of a perfect God unless God had implanted that idea in us", "Descartes' proof that the mind is more real than the body", "The argument that language contains embedded evidence of God's existence"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d19",
+      "question": "The 'Cartesian Circle' refers to which problem in Descartes' philosophy?",
+      "options": ["His endless chain of doubt that circles back to the Cogito", "Circular reasoning: God validates innate ideas, but innate ideas are only trustworthy if God exists", "The problem of explaining how a round pineal gland generates linear thought", "The contradiction between trusting reason while doubting the senses"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d20",
+      "question": "The Problem of Interaction asks which of the following?",
+      "options": ["How can a mechanical body have any conscious experience at all?", "How can an immaterial mind causally interact with a material body?", "Why do humans interact differently with animals than with machines?", "How can science and religious faith be reconciled in the same system?"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d21",
+      "question": "Where did Descartes believe the mind and body interact?",
+      "options": ["The frontal lobe of the brain", "The heart", "The pineal gland", "The nervous system distributed throughout the entire body"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d22",
+      "question": "Descartes' philosophy unintentionally created all of the following movements EXCEPT:",
+      "options": ["Modern Skepticism", "Philosophical Idealism", "Scientific Materialism", "Scholasticism"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "d23",
+      "question": "Knowledge that is 'a priori' is best described as:",
+      "options": ["Knowledge gained through sensory experience and observation", "Knowledge that depends on repeated empirical testing", "Knowledge that exists independent of experience and is known by reason alone", "Knowledge that can only be confirmed by seeing physical evidence"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d24",
+      "question": "Descartes is considered a Rationalist because he believed:",
+      "options": ["Knowledge comes primarily from sensory experience", "Religious faith is the highest form of knowledge", "Reason, not the senses, is the foundation of reliable knowledge", "Scientific experiment is the only true path to knowledge"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d25",
+      "question": "According to Descartes, animals are best described as:",
+      "options": ["Beings with souls but no free will", "Pure machines or automatons with no consciousness", "Creatures guided by both instinct and limited reason", "Lower forms of the same mind-body dualism that applies to humans"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d26",
+      "question": "Descartes was aware that his proof of God and innate ideas committed which logical fallacy?",
+      "options": ["Ad hominem reasoning", "False dilemma", "Circular reasoning, also called Begging the Question", "Straw man fallacy"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d27",
+      "question": "Why was the Catholic Church threatened by Descartes' Cogito?",
+      "options": ["It implied the universe operated without God's direct intervention", "It gave individuals a foundation for their own existence independent of God or the Church", "It was used to argue that animals have souls equal to humans", "It directly contradicted Aquinas' version of Scholasticism"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d28",
+      "question": "Why did Descartes believe his Mind/Body dualism was beneficial for both religion and science?",
+      "options": ["It proved that God created both the mind and the physical universe directly", "It gave the Church authority over the mind and soul while giving scientists authority over the physical world", "It showed that faith and science were both rooted in the same mathematical reasoning", "It eliminated the conflict between the Cogito and the Church's teachings about God"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "d29",
+      "question": "Descartes believed that the human mind was:",
+      "options": ["Subject to the same mechanical laws as all other matter in the universe", "A byproduct of complex processes in the brain", "Free from the laws of mechanics that govern the material world", "An illusion produced by the body's nervous system over time"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "d30",
+      "question": "Descartes believed the soul gave life and animation to the body.",
+      "options": ["True, the soul is what makes the body alive and capable of movement", "False, the body operates as a mechanical machine on its own without the soul animating it", "True, but only in the sense that the soul occupies the pineal gland which controls the body", "False, because Descartes did not believe the soul and body interacted in any way"],
+      "correctAnswer": 1
+    }
+  ]
+}

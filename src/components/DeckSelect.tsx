@@ -33,20 +33,37 @@ export default function DeckSelect({ decks, onSelect }: Props) {
           <p className="empty">No decks found. Add JSON files to src/decks/</p>
         ) : (
           <div className="deck-list">
-            {sortedFolders.map(folder => (
-              <div key={folder || '__root__'}>
-                {folder && <p className="folder-label">{folder}</p>}
-                {grouped[folder].map(({ id, deck }) => (
-                  <button key={id} className="deck-card" onClick={() => onSelect(deck)}>
-                    <span className="deck-name">{deck.name}</span>
-                    <span className="deck-meta">
-                      {deck.questions.length} questions
-                      {deck.description ? ` · ${deck.description}` : ''}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            ))}
+            {sortedFolders.map(folder => {
+              const entries = grouped[folder]
+              const mergedDeck = {
+                name: folder,
+                questions: entries.flatMap(e => e.deck.questions),
+              }
+              return (
+                <div key={folder || '__root__'}>
+                  {folder && (
+                    <button className="folder-label" onClick={() => onSelect(mergedDeck)}>
+                      {folder}
+                      <span className="folder-label-right">
+                        {mergedDeck.questions.length} questions
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                          <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                      </span>
+                    </button>
+                  )}
+                  {entries.map(({ id, deck }) => (
+                    <button key={id} className="deck-card" onClick={() => onSelect(deck)}>
+                      <span className="deck-name">{deck.name}</span>
+                      <span className="deck-meta">
+                        {deck.questions.length} questions
+                        {deck.description ? ` · ${deck.description}` : ''}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              )
+            })}
           </div>
         )}
       </div>

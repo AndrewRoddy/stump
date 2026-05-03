@@ -1,0 +1,156 @@
+{
+  "name": "Buddhism and Medieval Philosophy",
+  "description": "Augustine, Aquinas, Scholasticism, the historical timeline, Siddhartha's biography, 4 Noble Truths, Middle Way, 3 Poisons, Dharma, and Buddhism vs. Hinduism",
+  "questions": [
+    {
+      "id": "ba1",
+      "question": "Who was Siddhartha Gautama?",
+      "options": ["A Hindu god worshipped throughout ancient India", "An enlightened teacher who founded Buddhism and was not a deity", "A king of India who used religion to unite his kingdom", "A Greek philosopher who traveled to India to study Eastern thought"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba2",
+      "question": "Approximately when did Siddhartha Gautama live?",
+      "options": ["~1000-900 BCE", "~563-483 BCE", "~200-100 BCE", "~100-200 CE"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba3",
+      "question": "Siddhartha's father, King Suddhodana, was:",
+      "options": ["A Buddhist monk who founded the first monastery in India", "A merchant trader who raised Siddhartha in modest conditions", "A military leader who was king of one of the 16 kingdoms of India", "A Hindu priest who trained Siddhartha in Vedic rituals from birth"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba4",
+      "question": "What was the First Encounter that began Siddhartha's spiritual journey outside the palace?",
+      "options": ["A sick man", "An ascetic seeker", "An old man", "A corpse"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba5",
+      "question": "What was the Second Encounter on Siddhartha's journey?",
+      "options": ["An old man showing that aging is universal", "A sick man showing that illness affects everyone", "A corpse showing the reality of death", "An ascetic seeker showing a path of renunciation"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba6",
+      "question": "What was the Fourth Encounter, and why was it significant?",
+      "options": ["A corpse, which showed Siddhartha that death was inevitable and beyond escape", "An ascetic seeker, which showed Siddhartha that a life of spiritual discipline was a possible path out of suffering", "A sick man, which showed Siddhartha that illness affects everyone regardless of wealth or status", "A god, who appeared and told Siddhartha he was destined to become enlightened"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba7",
+      "question": "The Middle Way refers to which concept in Buddhism?",
+      "options": ["A compromise between Hinduism and Buddhism that Siddhartha proposed", "A political philosophy about avoiding extremes in governance", "The balanced path between extreme self-denial and extreme pleasure-seeking", "The Buddhist rejection of both atheism and theism regarding God"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba8",
+      "question": "The musical string analogy illustrates the Middle Way by teaching that:",
+      "options": ["The mind must be tuned like an instrument to silence all desire permanently", "A string too tight will break, a string too loose makes no sound, but tuned right it creates harmony", "Suffering is like a broken string that can never fully be repaired", "All beings are interconnected like strings vibrating together in one instrument"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba9",
+      "question": "The First Noble Truth states:",
+      "options": ["The path to enlightenment requires following the Eight Fold Path strictly", "There is suffering (Dukkha) pervading all forms of life due to impermanence", "Suffering can be completely eliminated through meditation practice alone", "All desires are equally harmful and must be fully extinguished to find peace"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba10",
+      "question": "The Second Noble Truth identifies the cause of suffering as:",
+      "options": ["Failure to follow religious rituals and pray to the appropriate gods", "Our constant craving for sensual pleasure, permanence, and escape from pain", "The existence of evil forces in the universe that act against human happiness", "The social inequality created by the caste system in Indian society"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba11",
+      "question": "The Fourth Noble Truth describes:",
+      "options": ["That suffering has a cause that can be clearly identified through introspection", "That Nirvana is the ultimate goal that all Buddhist practice points toward", "The Eight Fold Path as the method for achieving the cessation of suffering", "That impermanence is the fundamental nature of all existence in the universe"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba12",
+      "question": "What is Nirvana?",
+      "options": ["A heavenly paradise where the righteous go after death as a reward", "A state of perfect happiness and permanent sensory pleasure", "The cessation of all suffering through the elimination of ignorance and craving", "The moment of death when individual consciousness is finally extinguished forever"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba13",
+      "question": "What is the Dharma?",
+      "options": ["The Buddhist caste system that replaces the Hindu caste system", "The sacred mountain where the Buddha first achieved enlightenment", "The fundamental teachings of the Buddha on how to live and reach Nirvana", "The monastic community of Buddhist monks and nuns"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba14",
+      "question": "Where did Siddhartha achieve enlightenment and become the Buddha?",
+      "options": ["In a cave in the Himalayan mountains during a 40-day fast", "Under the Bodhi Tree (fig tree) in Bodh Gaya, India", "At the banks of the Ganges River after a ritual cleansing bath", "In the city of Kapilavastu, the place of his birth and childhood"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba15",
+      "question": "Who is Mara in Buddhist tradition, and what does he represent?",
+      "options": ["The god of death who tested the Buddha with unanswerable riddles", "The tempter god who represents our own ego, desires, and fear of change", "The first disciple of the Buddha who spread his teachings across India", "A Hindu deity that Siddhartha had to symbolically defeat to claim enlightenment"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba16",
+      "question": "The Three Poisons that cause suffering according to Buddhism are:",
+      "options": ["Pride, Envy, and Sloth", "Violence, Ignorance, and Power", "Greed, Hatred, and Delusion", "Desire, Pleasure, and Comfort"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba17",
+      "question": "The opposites of the Three Poisons are:",
+      "options": ["Patience, Silence, and Obedience", "Poverty, Peace, and Prayer", "Generosity, Compassion, and Wisdom", "Humility, Forgiveness, and Faith"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba18",
+      "question": "How does Buddhism differ from Hinduism regarding the caste system?",
+      "options": ["Buddhism maintains the caste system but allows individuals to move between castes through good deeds", "Buddhism completely rejects the caste system; anyone can achieve enlightenment regardless of birth or social class", "Buddhism replaced the Hindu caste system with a new hierarchy based on spiritual achievement", "Buddhism and Hinduism share the same view that caste is a natural and necessary social structure"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba19",
+      "question": "How does Buddhism differ from Hinduism regarding priests or spiritual leaders?",
+      "options": ["Buddhism requires certified priests to perform all valid spiritual rituals", "Buddhism has a more complex priestly hierarchy than Hinduism does", "Buddhism has no required priesthood; individuals pursue their own enlightenment directly", "Buddhism replaced Hindu priests with Buddhist monks who perform the same functions"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba20",
+      "question": "St. Augustine (354-430 CE) is significant in the history of Western philosophy because he:",
+      "options": ["Incorporated Aristotle's philosophy into Christianity and created Scholasticism", "Was the first philosopher to argue that God's existence could be proven through pure reason alone", "Merged Plato's philosophy with Catholic dogma, becoming the most influential Church Father", "Translated all of Aristotle's major works from Greek into Latin for Church use"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba21",
+      "question": "What is Scholasticism?",
+      "options": ["The ancient Greek tradition of teaching philosophy through public dialogue and debate", "The Islamic philosophical movement that preserved and translated Greek texts during the Dark Ages", "The fusion of Aristotle's philosophy with Roman Catholic Church dogma, developed by Aquinas", "The Reformation-era movement that challenged Church authority using Aristotelian logic"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ba22",
+      "question": "St. Thomas Aquinas was first excommunicated by the Church, then later canonized as a Saint. What does this suggest?",
+      "options": ["The Church ultimately embraced Aristotelian ideas after an initial period of resistance and suspicion", "The Church was consistently opposed to Aristotelian philosophy throughout the entire medieval period", "Aquinas was punished only for political reasons and not because of his philosophical views", "The Church banned Aristotle permanently but honored Aquinas for distancing himself from it"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "ba23",
+      "question": "Buddha's Last Words were: 'All things change... strive on, untiringly.' This best reflects which core Buddhist teaching?",
+      "options": ["The importance of prayer and communal ritual in achieving genuine enlightenment", "The impermanence of all things and the need for personal effort toward one's own awakening", "The absolute authority of the Buddha as a divine teacher whose words must be followed", "The futility of worldly effort and the necessity of complete withdrawal from active life"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba24",
+      "question": "According to the Buddhist teaching on compassion, it can only truly arise from:",
+      "options": ["Following the Buddha's rules on non-violence with strict discipline", "Understanding your own suffering and recognizing that same suffering in others", "Completely detaching from all personal desires and emotional responses", "Performing acts of charity and dedicated service to the wider community"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ba25",
+      "question": "Which of the following correctly describes how grace works differently in Buddhism vs. Christianity?",
+      "options": ["In both traditions, grace comes from a divine being who supernaturally intervenes in human life", "In Christianity, grace comes from God; in Buddhism, grace can be awakened through an ordinary human encounter", "In Buddhism, grace is earned through ritual performance; in Christianity it is freely given by God", "Grace does not exist in Buddhism at all; enlightenment is achieved purely through individual willpower"],
+      "correctAnswer": 1
+    }
+  ]
+}

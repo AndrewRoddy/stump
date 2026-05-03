@@ -90,6 +90,7 @@ export default function App() {
       return
     }
 
+    newQueue.sort(() => Math.random() - 0.5)
     const block = newQueue.splice(0, 10)
     setSession({
       ...session,

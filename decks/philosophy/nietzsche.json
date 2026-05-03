@@ -1,0 +1,186 @@
+{
+  "name": "Nietzsche",
+  "description": "God is Dead, 4 Pillars, Master/Slave Morality, Theory of Action, Epiphenomenalism, Amor Fati, and the Last Man",
+  "questions": [
+    {
+      "id": "n1",
+      "question": "At which university did Nietzsche study philology?",
+      "options": ["The University of Berlin", "The University of Bonn", "The University of Vienna", "The University of Leipzig"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n2",
+      "question": "Who was primarily responsible for falsely associating Nietzsche's work with Nazism after his death?",
+      "options": ["His publisher at the time of his mental collapse", "The German government under Kaiser Wilhelm II", "His sister Elizabeth Forster-Nietzsche", "His former mentor Richard Wagner"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n3",
+      "question": "Nietzsche's concept of 'Mirror Writing' means:",
+      "options": ["Nietzsche deliberately wrote contradictory statements to confuse readers", "How you interpret Nietzsche reveals more about your own values and biases than about Nietzsche himself", "Nietzsche wrote from the perspective of his philosophical enemies to expose their flaws", "Nietzsche encoded secret meanings that only advanced readers can decode"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n4",
+      "question": "In which book did Nietzsche first write the phrase 'God is Dead'?",
+      "options": ["Thus Spoke Zarathustra", "Beyond Good and Evil", "The Gay Science", "The Birth of Tragedy"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n5",
+      "question": "What did Nietzsche mean when he declared 'God is Dead'?",
+      "options": ["He believed that God had literally ceased to exist as a supernatural being", "The moral certainty and institutional security of the Medieval Christian world had permanently collapsed", "He was predicting the decline of religious attendance across Europe", "Modern science had proven religion to be factually false and therefore obsolete"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n6",
+      "question": "Which of the following was NOT one of the Four Pillars of the Medieval Christian World?",
+      "options": ["Telos", "Divine Origin", "Moral Reasoning", "Christendom"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n7",
+      "question": "Which Pillar of the Christian Medieval World was overturned primarily by Darwin's theory of evolution?",
+      "options": ["Telos", "Christendom", "Good and Evil", "Divine Origin"],
+      "correctAnswer": 3
+    },
+    {
+      "id": "n8",
+      "question": "Nietzsche called the period following the death of God the:",
+      "options": ["Age of Nihilism", "Age of Anxiety", "Age of Reason", "Age of Enlightenment"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n9",
+      "question": "According to Nietzsche, all of the following are bad responses to the Death of God EXCEPT:",
+      "options": ["Nihilism", "Fundamentalism", "Embracing one's instincts and creating new personal values", "Moral Reasoning"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n10",
+      "question": "In Nietzsche's allegory, 'Lions' represent:",
+      "options": ["Christians who follow the moral law without question", "Those who rule through guilt and manufactured resentment", "Strong individuals who live by instinct and create their own values", "Philosophers who use reason to establish objective moral systems"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n11",
+      "question": "Which philosophers does Nietzsche hold most responsible for creating Slave Morality?",
+      "options": ["Aristotle and Plato", "Socrates and Plato", "Descartes and Kant", "Plato and St. Augustine"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n12",
+      "question": "Why does Nietzsche believe Socrates' physical ugliness was philosophically significant?",
+      "options": ["It meant Socrates could not be considered a man of virtue in Greek culture", "His mistreatment due to ugliness motivated him to elevate reason over instinct, planting the seeds of Slave Morality", "It demonstrated that appearance has no bearing on philosophical insight", "Socrates used his ugliness to connect with the common working people of Athens"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n13",
+      "question": "Which moral concept did Nietzsche believe Christianity invented?",
+      "options": ["Virtue", "Duty", "Evil", "Justice"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n14",
+      "question": "According to Nietzsche, Socrates' formula for happiness was:",
+      "options": ["Instinct = Passion = Happiness", "Power = Excellence = Greatness", "Reason = Virtue = Happiness", "Acceptance = Calm = Contentment"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n15",
+      "question": "What are the Three False Doctrines of Christian Morality according to Nietzsche?",
+      "options": ["Telos, Divine Origin, and Good and Evil", "Nihilism, Fundamentalism, and Moral Reasoning", "Free Will, the Stable Self, and the Similarity Doctrine", "The Cogito, Innate Ideas, and the Trademark Argument"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n16",
+      "question": "'Causa Sui' refers to which idea that Nietzsche criticized?",
+      "options": ["The idea that God is the uncaused cause of all existence", "The claim that our actions are self-caused, making us fully morally responsible for them", "The belief that cause and effect is an illusion created by grammar", "The argument that instincts are caused by society rather than biology"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n17",
+      "question": "Nietzsche's Theory of Action describes the correct order of causation as:",
+      "options": ["Conscious thought causes desire, which then causes action", "Action causes desire, which arises from subconscious type-facts", "Type-Facts cause conscious thought and desire, which then produce action", "Society causes type-facts, which cause thought, which causes action"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n18",
+      "question": "Epiphenomenalism, as Nietzsche applied it, argues that:",
+      "options": ["Physical actions are caused by conscious willpower directing the body", "Consciousness is merely a byproduct of unconscious biological processes rather than a cause of action", "Emotions are the true and primary cause of human behavior", "The mind and body are fundamentally the same type of substance"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n19",
+      "question": "The H2O analogy in Nietzsche's argument illustrates which concept?",
+      "options": ["The way language creates false impressions of stable, fixed objects", "How individual type-facts combine to form broader social norms", "How consciousness emerges as a byproduct of biological processes and is not a primary cause", "The relationship between Christian morality and the development of Slave Morality"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n20",
+      "question": "'Primary Forces' in Nietzsche's model of the self refer to:",
+      "options": ["External social norms and moral laws imposed by society", "The innate biological and physiological type-facts we are born with", "Conscious desires and preferences that guide our daily decisions", "Rational principles that override and suppress instinct"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n21",
+      "question": "According to Nietzsche, guilt arises when:",
+      "options": ["We act contrary to reason and violate the moral law", "External societal norms conflict with our internal type-facts and natural instincts", "We fail to follow the moral teachings of Christianity", "Our conscious desires override our unconscious biological drives"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n22",
+      "question": "'Amor Fati' is best described as:",
+      "options": ["The love of knowledge and philosophical inquiry above all else", "The desire to transcend suffering through divine grace", "The embrace of one's fate in all its aspects, including pain and struggle, without wishing it were different", "The Nietzschean ideal of rational self-mastery over one's passions"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n23",
+      "question": "The 'Last Man' represents Nietzsche's greatest fear, which is:",
+      "options": ["A world dominated by violent and uncontrolled instincts", "A society embracing comfort, consumerism, and indifference as a result of the death of God", "The rise of a single authoritarian ruler who eliminates individual freedom", "The complete global triumph of Slave Morality through Christianity"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n24",
+      "question": "In the story of Goethe and Beethoven, which figure does Nietzsche admire and why?",
+      "options": ["Beethoven, because his music demonstrated the triumph of passion over formal structure", "Goethe, because he showed true greatness through naturalness and the complete absence of grievance or arrogance", "Both equally, because each represents a different aspect of the Ubermensch ideal", "Neither, because both ultimately compromised their ideals by seeking social approval"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n25",
+      "question": "Why does Nietzsche describe himself as the 'Anti-Christ'?",
+      "options": ["He wanted to destroy all religious belief and replace it with scientific atheism", "He wanted to strip moralizing language of its power by returning concepts from the fixed World of Being to the fluid world of Becoming", "He rejected Jesus as a historical figure and considered Christianity a purely political invention", "He believed that human instinct was more sacred and divine than any religious teaching"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n26",
+      "question": "Which statement correctly describes the relationship between Lions and Lambs?",
+      "options": ["Lambs can elevate themselves to become Lions through discipline and hard work", "Lions and Lambs are born that way and neither can ever change their nature", "Lions can be reduced to Lambs through external moral pressure, but Lambs cannot elevate themselves to Lions", "Both Lions and Lambs can change their nature depending on their social environment"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n27",
+      "question": "What concept does Nietzsche call the 'emptiest and thinnest' of all human ideas?",
+      "options": ["Reason", "Form", "God", "The Stable Self"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n28",
+      "question": "Nietzsche's goal in 'revaluing all values' was primarily to:",
+      "options": ["Establish a new rational ethics based on universal principles of human dignity", "Restore pre-Socratic values centered on instinct, excellence, and passion as a path toward the Ubermensch", "Create a political system based on the rule of the strongest individuals in society", "Prove that all moral systems are equally valid and equally arbitrary expressions of power"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "n29",
+      "question": "All of the following are true about Nietzsche's writing style EXCEPT:",
+      "options": ["He used aphorisms and metaphors rather than systematic logical arguments", "He employed Mirror Writing that reflects the reader's own values back at them", "He aimed to establish a certain mathematical foundation for all philosophical knowledge", "He wrote in a deliberately provocative style designed to challenge the reader's assumptions"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "n30",
+      "question": "On which specific point did Nietzsche actually agree with Descartes?",
+      "options": ["That reason is the foundation of all reliable knowledge", "That humans possess free will and are morally responsible for their choices", "That animals are automatons lacking genuine consciousness", "That God's existence can be proven through the presence of innate ideas"],
+      "correctAnswer": 2
+    }
+  ]
+}
