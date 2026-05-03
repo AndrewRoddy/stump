@@ -25,10 +25,13 @@ export default function DeckSelect({ decks, onSelect }: Props) {
   })
 
   return (
-    <div className="screen">
-      <div className="card">
-        <h1 className="title">Quiz App</h1>
-        <p className="subtitle">Choose a deck to study</p>
+    <div className="deck-screen">
+      <header className="deck-header">
+        <p className="app-eyebrow">Flashcard Quiz</p>
+        <h1 className="app-title">Stump</h1>
+        <p className="app-subtitle">Choose a deck to study</p>
+      </header>
+      <div className="deck-body">
         {decks.length === 0 ? (
           <p className="empty">No decks found. Add JSON files to src/decks/</p>
         ) : (
@@ -40,7 +43,7 @@ export default function DeckSelect({ decks, onSelect }: Props) {
                 questions: entries.flatMap(e => e.deck.questions),
               }
               return (
-                <div key={folder || '__root__'}>
+                <div key={folder || '__root__'} className="folder-group">
                   {folder && (
                     <button className="folder-label" onClick={() => onSelect(mergedDeck)}>
                       {folder}
