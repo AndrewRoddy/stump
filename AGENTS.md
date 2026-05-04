@@ -3,7 +3,7 @@
 ## Answer Length Randomization
 
 When generating a quiz card make sure the other 3 options are a plausible answer that could trick even a knowledgeable person.
-Do not use m dashes in your questions or answers.
+Do not use em-dashes in your questions or answers.
 
 ## Output Format
 
