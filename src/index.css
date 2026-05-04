@@ -69,6 +69,91 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.auth-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn-patreon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.12s, color 0.12s;
+}
+
+.btn-patreon:hover {
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+
+.patreon-logo {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+}
+
+.user-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.35rem;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.user-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-initials {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #FF424D;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-name {
+  color: var(--text);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-sign-out {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.btn-sign-out:hover {
+  color: var(--text);
+}
+
 .app-eyebrow {
   font-size: 0.7rem;
   font-weight: 700;

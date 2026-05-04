@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { CSSProperties } from 'react'
 import type { Deck } from '../types'
+import type { PatreonUser } from '../App'
 
 interface DeckEntry {
   id: string
@@ -11,6 +12,9 @@ interface DeckEntry {
 interface Props {
   decks: DeckEntry[]
   onSelect: (deck: Deck, id: string) => void
+  patreonUser: PatreonUser | null
+  onSignIn: () => void
+  onSignOut: () => void
 }
 
 interface DeckProgress {
@@ -77,7 +81,7 @@ function clearAllProgress() {
     .forEach(k => localStorage.removeItem(k))
 }
 
-export default function DeckSelect({ decks, onSelect }: Props) {
+export default function DeckSelect({ decks, onSelect, patreonUser, onSignIn, onSignOut }: Props) {
   const [showConfirm, setShowConfirm] = useState(false)
   const [resetCount, setResetCount] = useState(0)
   const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number } | null>(null)
@@ -106,6 +110,25 @@ export default function DeckSelect({ decks, onSelect }: Props) {
         <header className="deck-header">
           <h1 className="app-title">Stump</h1>
           <p className="app-subtitle">Choose a deck to study</p>
+          <div className="auth-row">
+            {patreonUser ? (
+              <div className="user-pill">
+                {patreonUser.avatar
+                  ? <img className="user-avatar" src={patreonUser.avatar} alt="" />
+                  : <span className="user-initials">{patreonUser.name.charAt(0).toUpperCase()}</span>
+                }
+                <span className="user-name">{patreonUser.name}</span>
+                <button className="btn-sign-out" onClick={onSignOut}>Sign out</button>
+              </div>
+            ) : (
+              <button className="btn-patreon" onClick={onSignIn}>
+                <svg className="patreon-logo" viewBox="0 0 512 512" aria-hidden="true">
+                  <path fill="currentColor" d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.2-82.4-184.2-183.8 0-101.7 82.5-184.2 184.2-184.2C429.6 10.6 512 93.1 512 194.8zM0 501.4h90.9V10.6H0V501.4z"/>
+                </svg>
+                Sign in with Patreon
+              </button>
+            )}
+          </div>
         </header>
         <div className="deck-body">
           {decks.length === 0 ? (

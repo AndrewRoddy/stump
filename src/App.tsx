@@ -5,6 +5,28 @@ import Quiz from './components/Quiz'
 import Review from './components/Review'
 import Complete from './components/Complete'
 
+export interface PatreonUser {
+  id: string
+  name: string
+  avatar: string | null
+  email: string | null
+}
+
+function getStoredUser(): PatreonUser | null {
+  try {
+    const raw = localStorage.getItem('stump_patreon_user')
+    return raw ? (JSON.parse(raw) as PatreonUser) : null
+  } catch { return null }
+}
+
+function storeUser(user: PatreonUser) {
+  localStorage.setItem('stump_patreon_user', JSON.stringify(user))
+}
+
+function clearStoredUser() {
+  localStorage.removeItem('stump_patreon_user')
+}
+
 const deckModules = import.meta.glob<Deck>('../decks/**/*.json', { eager: true, import: 'default' })
 
 const allDecks = Object.entries(deckModules).map(([path, deck]) => {
@@ -84,6 +106,29 @@ export default function App() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [awaitingCorrect, setAwaitingCorrect] = useState(false)
   const [pendingRestart, setPendingRestart] = useState<{ deck: Deck; id: string } | null>(null)
+  const [patreonUser, setPatreonUser] = useState<PatreonUser | null>(getStoredUser)
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const encoded = params.get('patreon_user')
+    if (encoded) {
+      try {
+        const user = JSON.parse(atob(decodeURIComponent(encoded))) as PatreonUser
+        setPatreonUser(user)
+        storeUser(user)
+      } catch { /* malformed payload — ignore */ }
+      window.history.replaceState({}, '', window.location.pathname)
+    }
+  }, [])
+
+  function handleSignIn() {
+    window.location.href = '/api/auth/patreon/login'
+  }
+
+  function handleSignOut() {
+    setPatreonUser(null)
+    clearStoredUser()
+  }
 
   useEffect(() => {
     if (!session || (phase !== 'quizzing' && phase !== 'reviewing')) return
@@ -194,7 +239,13 @@ export default function App() {
   if (phase === 'selecting') {
     return (
       <>
-        <DeckSelect decks={allDecks} onSelect={startQuiz} />
+        <DeckSelect
+          decks={allDecks}
+          onSelect={startQuiz}
+          patreonUser={patreonUser}
+          onSignIn={handleSignIn}
+          onSignOut={handleSignOut}
+        />
         {pendingRestart && (() => {
           const count = getBadgeCount(pendingRestart.id)
           const tierLabel = count >= 100 ? 'Diamond' : count >= 10 ? 'Gold' : count >= 2 ? 'Silver' : 'Bronze'
