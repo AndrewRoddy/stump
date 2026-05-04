@@ -1,0 +1,226 @@
+{
+  "name": "Computer Networks - Foundations & Models",
+  "description": "Network types, OSI & TCP/IP models, services, protocols, standards bodies, and use cases (CCN01)",
+  "questions": [
+    {
+      "question": "A company connects employee PCs to a central database server so multiple departments can access shared records. Which network use case best matches this?",
+      "options": [
+        "Home entertainment application",
+        "Business application: resource sharing / client-server access",
+        "Mobile user roaming scenario",
+        "Social networking application"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A household uses the Internet primarily for video streaming and online gaming. In the book's framing, this is best classified as:",
+      "options": [
+        "Business application",
+        "Mobile user application",
+        "Home application",
+        "Social application"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A smartwatch synchronizes with a phone over a few meters using very low power. This best fits which network type?",
+      "options": [
+        "LAN",
+        "WAN",
+        "MAN",
+        "PAN"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "An 'internetwork' is best described as:",
+      "options": [
+        "A single large LAN spanning multiple buildings",
+        "A wireless network using 802.11 standards",
+        "A collection of interconnected networks that appear as one network to hosts",
+        "The Internet backbone operated by ISPs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In networking terminology, a service defines what a layer offers to the layer above, while a protocol defines:",
+      "options": [
+        "The physical medium used for transmission",
+        "How peer entities implement that service",
+        "The number of bits in each frame",
+        "The addressing scheme used across networks"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which challenge is most characteristic of 'mobile users' compared with fixed home/business users?",
+      "options": [
+        "Higher bandwidth requirements",
+        "Need for server-side redundancy",
+        "Maintaining connectivity while changing point of attachment",
+        "Susceptibility to broadcast storms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which description best matches a typical LAN?",
+      "options": [
+        "A metropolitan network connecting cities over fiber rings",
+        "A satellite-based network with global coverage",
+        "A building/campus network with high speed and low delay",
+        "A wide-area network operated by a telecommunications carrier"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which pairing correctly matches the Internet standards body with its typical output?",
+      "options": [
+        "ISO → RFCs",
+        "IEEE → Internet drafts",
+        "IETF → RFCs",
+        "ANSI → IEEE 802 standards"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which statement best distinguishes a connection-oriented service from a connectionless service?",
+      "options": [
+        "Connection-oriented services use UDP; connectionless use TCP",
+        "Connection-oriented services have no setup phase; connectionless do",
+        "Connection-oriented services involve setup/state to support orderly delivery; connectionless sends independent messages without prior setup",
+        "Connection-oriented services are always faster due to pre-negotiated paths"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In the OSI reference model, how many layers are there?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the primary purpose of a protocol hierarchy (layered architecture)?",
+      "options": [
+        "To increase the number of headers added to packets",
+        "To reduce complexity by dividing networking functions into well-defined layers",
+        "To ensure all vendors use identical hardware",
+        "To eliminate the need for error correction"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which organization is most directly associated with Internet standards such as RFCs?",
+      "options": [
+        "ISO",
+        "IEEE",
+        "ITU",
+        "IETF"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "In the TCP/IP reference model, which layer is responsible for moving packets across multiple networks (routing) as a best-effort service?",
+      "options": [
+        "Transport layer",
+        "Application layer",
+        "Internet layer",
+        "Link layer"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which network type is standardized under the IEEE 802.11 family?",
+      "options": [
+        "Ethernet LANs",
+        "Wireless LANs (WLANs)",
+        "Metropolitan area networks",
+        "Cellular mobile networks"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In a layered network architecture, which statement best captures the role of a protocol?",
+      "options": [
+        "It defines the physical medium connecting two nodes",
+        "It lists the services a layer offers upward",
+        "It specifies rules for communication between peer entities at the same layer",
+        "It maps domain names to IP addresses"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What was the primary motivation behind the OSI reference model?",
+      "options": [
+        "To replace TCP/IP with a more efficient architecture",
+        "Enable vendor-independent standardization so diverse systems could interoperate",
+        "To reduce the number of protocol layers needed",
+        "To create a routing protocol for the Internet"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which criticism applies specifically to the TCP/IP reference model?",
+      "options": [
+        "It has too many layers for practical implementation",
+        "It was designed before any protocols existed",
+        "Poor distinction between services, interfaces, and protocols",
+        "It does not support connection-oriented services"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which difference most strongly contributed to TCP/IP's success over OSI?",
+      "options": [
+        "Superior theoretical design",
+        "Greater number of layers",
+        "Availability of working implementations",
+        "Backing by ISO and ITU standards bodies"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which feature most clearly distinguishes a connection-oriented service from a connectionless one?",
+      "options": [
+        "Higher bandwidth allocation",
+        "Use of encryption",
+        "Explicit setup and teardown phases",
+        "Reliance on broadcast addressing"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "According to Tanenbaum, which issue appears across multiple layers of the protocol stack?",
+      "options": [
+        "Routing",
+        "Multiplexing",
+        "Encapsulation",
+        "Error control"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Why does the TCP/IP model have fewer layers than the OSI model?",
+      "options": [
+        "TCP/IP was designed for low-bandwidth links only",
+        "OSI includes separate session and presentation layers that TCP/IP omits",
+        "It combines functions based on practical deployment needs",
+        "Both B and C are correct"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Service primitives are important in layered architectures because:",
+      "options": [
+        "They define the physical characteristics of the transmission medium",
+        "They specify how layers interact at boundaries without exposing internal implementation",
+        "They determine the maximum data rate of each layer",
+        "They provide encryption for inter-layer communication"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

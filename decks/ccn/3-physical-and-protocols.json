@@ -1,0 +1,396 @@
+{
+  "name": "Computer Networks - Physical Layer & Application Protocols",
+  "description": "Physical media (fiber, coax, wireless, satellite), modulation, FDM/TDM, and application-layer protocols (HTTP, SMTP, DNS, MQTT, SIP, QUIC, etc.) (CCN02, CCN07)",
+  "questions": [
+    {
+      "question": "Which mechanism improves scalability and resilience by routing traffic to the nearest service instance?",
+      "options": [
+        "Multicast",
+        "Broadcast",
+        "Anycast",
+        "Unicast"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which messaging protocol was designed for IoT environments with constrained devices and unreliable links?",
+      "options": [
+        "HTTP",
+        "WebSocket",
+        "SMTP",
+        "MQTT"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol allows persistent, full-duplex communication inside web applications without repeated HTTP requests?",
+      "options": [
+        "HTTP/2",
+        "WebSocket",
+        "QUIC",
+        "SIP"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol attempts to make remote execution appear local, often hiding latency and failure?",
+      "options": [
+        "SNMP",
+        "NFS",
+        "RPC",
+        "LDAP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol bridges the gap between logical IP addresses and physical MAC addresses?",
+      "options": [
+        "DNS",
+        "DHCP",
+        "ICMP",
+        "ARP"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol enables remote file access with local-like semantics, exposing consistency challenges?",
+      "options": [
+        "FTP",
+        "SCP",
+        "NFS",
+        "SFTP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol exists primarily to provide visibility and operational control over network devices?",
+      "options": [
+        "LDAP",
+        "SNMP",
+        "ICMP",
+        "BGP"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol exists primarily to translate human-readable names into routable network identifiers?",
+      "options": [
+        "ARP",
+        "DHCP",
+        "DNS",
+        "NTP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol exposes the clearest example of early Internet trust assumptions by transmitting credentials in plaintext?",
+      "options": [
+        "SSH",
+        "HTTPS",
+        "TELNET",
+        "SFTP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol is best suited for synchronizing email across multiple devices while keeping messages on the server?",
+      "options": [
+        "POP3",
+        "SMTP",
+        "IMAP",
+        "FTP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol is most responsible for enabling centralized identity and authorization management in enterprises?",
+      "options": [
+        "RADIUS",
+        "LDAP",
+        "Kerberos",
+        "SNMP"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which protocol provides security based on physical laws, not computational hardness?",
+      "options": [
+        "TLS",
+        "IPsec",
+        "QKD",
+        "AES"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol separates call/session control from media transport, commonly used in Internet telephony?",
+      "options": [
+        "RTP",
+        "H.323",
+        "SIP",
+        "WebRTC"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol was explicitly designed to support stateless communication at Internet scale, shifting session responsibility to higher layers?",
+      "options": [
+        "FTP",
+        "SMTP",
+        "TELNET",
+        "HTTP"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which protocol's main contribution is preventing congestion collapse on the Internet?",
+      "options": [
+        "UDP",
+        "IP",
+        "TCP",
+        "BGP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which protocol's store-and-forward design allows messages to survive temporary network outages?",
+      "options": [
+        "HTTP",
+        "SMTP",
+        "FTP",
+        "IMAP"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which routing protocol enables the Internet to function without central control, using policy rather than shortest paths?",
+      "options": [
+        "OSPF",
+        "RIP",
+        "IS-IS",
+        "BGP"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which technology deliberately breaks strict OSI layering to enable fast, predictable forwarding in ISP backbones?",
+      "options": [
+        "VLAN",
+        "NAT",
+        "MPLS",
+        "SDN"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which transport protocol prioritizes timeliness over reliability, making it suitable for live media?",
+      "options": [
+        "TCP",
+        "SCTP",
+        "QUIC",
+        "UDP"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which transport protocol reduces head-of-line blocking and supports connection migration for mobile users?",
+      "options": [
+        "TCP",
+        "UDP",
+        "QUIC",
+        "SCTP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A cable modem primarily allows:",
+      "options": [
+        "Analog telephone calls over coaxial cable",
+        "Packet-switched data over cable TV networks",
+        "Fiber-optic data transmission to the home",
+        "Wireless connectivity via cable infrastructure"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A geostationary satellite appears stationary relative to Earth because it:",
+      "options": [
+        "Is very far away and moves very slowly",
+        "Uses active propulsion to stay fixed",
+        "Has the same rotational period as Earth",
+        "Orbits at an altitude where gravity is negligible"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A key idea in cellular wireless systems is:",
+      "options": [
+        "Using a single large antenna to cover all users",
+        "Dividing coverage into cells, each served by a base station",
+        "Assigning all users the same frequency simultaneously",
+        "Relying exclusively on satellite backhaul"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A modem is used in the PSTN primarily to:",
+      "options": [
+        "Amplify digital signals on copper wire",
+        "Route packets between different networks",
+        "Convert digital data to analog signals for transmission on voice-grade lines",
+        "Encrypt data for secure transmission"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "ADSL technology allows:",
+      "options": [
+        "Symmetric upload and download speeds",
+        "Higher upstream than downstream bandwidth",
+        "Higher downstream than upstream bandwidth",
+        "Full-duplex voice and data simultaneously on separate frequencies"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Baseband transmission means that:",
+      "options": [
+        "The signal is modulated to a carrier frequency",
+        "Multiple signals share the bandwidth using different frequencies",
+        "The entire channel bandwidth is used by one signal",
+        "Transmission only occurs in one direction"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Compared to geostationary satellites, low-earth-orbit (LEO) satellites have:",
+      "options": [
+        "Higher propagation delay",
+        "Larger coverage area per satellite",
+        "Lower latency",
+        "Simpler ground station requirements"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "First-generation (1G) mobile systems were primarily:",
+      "options": [
+        "Digital voice systems",
+        "Analog voice systems",
+        "Packet data systems",
+        "Combined voice and data systems"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Fourier analysis shows that any periodic signal can be represented as:",
+      "options": [
+        "A single sine wave at the fundamental frequency",
+        "A sum of sine and cosine waves at harmonically related frequencies",
+        "A series of square waves",
+        "A random combination of frequencies"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Frequency Division Multiplexing (FDM) works by:",
+      "options": [
+        "Compressing multiple signals into one",
+        "Taking turns in fixed time slots",
+        "Assigning different frequencies to different signals",
+        "Encoding signals using spread-spectrum techniques"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Infrared communication is best suited for:",
+      "options": [
+        "Long-distance outdoor links",
+        "Satellite communication",
+        "Short-range indoor links",
+        "Underwater communication"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Shannon's theorem relates channel capacity to:",
+      "options": [
+        "Packet size and routing distance",
+        "Bandwidth and signal-to-noise ratio",
+        "Transmission power and antenna height",
+        "Modulation scheme and coding rate"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "The bandwidth of a signal is defined as:",
+      "options": [
+        "The maximum amplitude of the signal",
+        "The peak transmission power",
+        "The number of symbols per second",
+        "The difference between the highest and lowest frequencies in the signal"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "The local loop refers to the connection between:",
+      "options": [
+        "Two ISPs at a peering point",
+        "A router and its nearest switch",
+        "A subscriber and the telephone exchange",
+        "Two cellular towers"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Time Division Multiplexing (TDM) allows multiple users to share a channel by:",
+      "options": [
+        "Assigning each user a different frequency band",
+        "Compressing user data before transmission",
+        "Taking turns in time slots",
+        "Using spread-spectrum encoding"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Twisted-pair cables reduce electromagnetic interference primarily by:",
+      "options": [
+        "Using a metallic shield around the pairs",
+        "Increasing the wire gauge",
+        "Twisting the wires together so interference cancels",
+        "Coating the wires with ferrite material"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which guided medium is most commonly used for long-distance, high-bandwidth communication?",
+      "options": [
+        "Coaxial cable",
+        "Twisted-pair copper",
+        "Optical fiber",
+        "Power-line cable"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which guided medium offers the highest resistance to electromagnetic interference?",
+      "options": [
+        "Coaxial cable",
+        "Shielded twisted pair",
+        "Unshielded twisted pair",
+        "Optical fiber"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "One disadvantage of geostationary satellite communication is:",
+      "options": [
+        "Narrow coverage area",
+        "High propagation delay (~270 ms one-way)",
+        "Inability to serve mobile users",
+        "Limited available frequencies"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

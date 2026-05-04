@@ -1,0 +1,476 @@
+{
+  "name": "Computer Networks - IP Networking, Routing & TCP",
+  "description": "IP addressing, subnetting, ARP, DHCP, fragmentation, ICMP, distance-vector & link-state routing, BGP, and TCP congestion control (CCN05-CCN07)",
+  "questions": [
+    {
+      "question": "Given IP 192.168.10.130/26, what is the network address?",
+      "options": [
+        "192.168.10.0",
+        "192.168.10.64",
+        "192.168.10.128",
+        "192.168.10.192"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How many usable host addresses are available in a /27 subnet?",
+      "options": [
+        "14",
+        "16",
+        "30",
+        "62"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which of the following IP ranges is a private address range?",
+      "options": [
+        "10.0.0.0 to 10.255.255.255 only",
+        "192.168.0.0 to 192.168.255.255 only",
+        "172.16.0.0 to 172.31.255.255",
+        "All of the above"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What is the broadcast address of the subnet 192.168.1.64/27?",
+      "options": [
+        "192.168.1.79",
+        "192.168.1.91",
+        "192.168.1.95",
+        "192.168.1.127"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which statement about ARP cache entries is TRUE?",
+      "options": [
+        "They are statically configured and never expire",
+        "They are dynamically learned and timed out after a period",
+        "They are broadcast to all hosts on the network periodically",
+        "They are stored on the DNS server"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "When a host sends an ARP request, which devices process it?",
+      "options": [
+        "Only the router on the subnet",
+        "Only the destination host",
+        "All devices on the local broadcast domain",
+        "Only devices matching the target IP"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the subnet mask for a /22 network?",
+      "options": [
+        "255.255.248.0",
+        "255.255.252.0",
+        "255.255.254.0",
+        "255.255.255.0"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A host wants to reach 8.8.8.8, which is outside its subnet. Which MAC address will ARP resolve?",
+      "options": [
+        "The MAC of 8.8.8.8 directly",
+        "The MAC of the DNS server",
+        "The MAC of the default gateway",
+        "ARP is not used for off-subnet destinations"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IP fragmentation, which statement is TRUE about the More Fragments (MF) flag?",
+      "options": [
+        "MF = 1 for the last fragment only",
+        "MF = 1 for all fragments including the last",
+        "MF = 1 for all fragments except the last",
+        "MF = 0 for all fragments"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "If MTU = 1,000 bytes and IP header = 20 bytes, what is the maximum data payload per fragment (except the last)?",
+      "options": [
+        "960 bytes",
+        "972 bytes",
+        "976 bytes",
+        "980 bytes"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which IP packet field is used to correctly reassemble fragmented IP packets at the destination?",
+      "options": [
+        "TTL field",
+        "Protocol field",
+        "Identification field",
+        "Flags field"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which situation will NOT generate an ICMP error message?",
+      "options": [
+        "TTL reaches 0 at a router",
+        "Packet exceeds MTU with DF bit set",
+        "Packet sent to a broadcast or multicast address",
+        "Destination port unreachable"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives a packet larger than the MTU with the DF (Don't Fragment) bit set to 1. What happens?",
+      "options": [
+        "The router fragments the packet normally",
+        "The router drops the packet silently",
+        "The router drops the packet and sends an ICMP Type 3 Code 4 message to the source",
+        "The router sends the packet on a higher-MTU alternative path"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "An ICMP error message includes which of the following?",
+      "options": [
+        "The complete original packet",
+        "Only the original IP header",
+        "The original IP header plus the first 8 bytes of the original payload",
+        "Only the destination IP address of the failed packet"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "When TTL becomes 0 at a router, what occurs?",
+      "options": [
+        "The packet is forwarded with TTL reset to 64",
+        "The router requests a retransmission from the source",
+        "The packet is dropped and an ICMP Time Exceeded message is sent to the source",
+        "The packet is held until TTL is refreshed"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A DHCP Discover message is sent as:",
+      "options": [
+        "Unicast to the known DHCP server",
+        "Broadcast to all devices on the network",
+        "Multicast to the DHCP group address",
+        "Anycast to the nearest DHCP server"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "DHCP uses which UDP port numbers?",
+      "options": [
+        "Port 53 (client), Port 67 (server)",
+        "Port 67 (client), Port 68 (server)",
+        "Port 68 (client), Port 67 (server)",
+        "Port 80 (client), Port 443 (server)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What does a DHCP relay agent do?",
+      "options": [
+        "Assigns IP addresses locally without a server",
+        "Caches DHCP responses to speed up future requests",
+        "Forwards client DHCP broadcasts as unicast to a DHCP server on another subnet",
+        "Converts DHCP requests into DNS queries"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router is computing shortest paths from node D. The current tentative distances are: B = 11, C = 2. Which node will be added next to the confirmed set?",
+      "options": [
+        "B (distance 11)",
+        "C (distance 2)",
+        "Both simultaneously",
+        "Neither until the full graph is known"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In a link-state routing system, a link between two routers fails. What is the correct system behavior?",
+      "options": [
+        "Only the directly connected routers update their tables",
+        "Routing loops form until manual intervention",
+        "A new link-state update is flooded to all routers, which then recompute paths",
+        "BGP sends a withdrawal to all peers"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives a link-state packet from a neighbor. To which neighbors should it forward this packet?",
+      "options": [
+        "To all neighbors including the sender",
+        "To no neighbors; link-state packets are not forwarded",
+        "To all neighbors except the one it came from",
+        "Only to neighbors with lower routing costs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router receives two identical link-state packets from the same source with the same sequence number. What should it do?",
+      "options": [
+        "Process both to ensure consistency",
+        "Forward both to all neighbors",
+        "Keep one and discard the duplicate",
+        "Request a newer update from the source"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why do link-state routing protocols avoid long-term routing loops?",
+      "options": [
+        "They use split horizon to prevent loops",
+        "All routers compute consistent shortest-path trees from the same topology database",
+        "They periodically reset all routing tables",
+        "Sequence numbers prevent any packet from being forwarded twice"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why does hierarchical routing reduce routing table size?",
+      "options": [
+        "It uses compression on routing table entries",
+        "It groups destinations into regions, requiring only regional-level entries for remote destinations",
+        "It eliminates the need for default routes",
+        "It replaces dynamic routing with static routes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A TCP connection has cwnd = 64 KB and RTT = 80 ms. What is the approximate maximum throughput?",
+      "options": [
+        "3.28 Mbps",
+        "5.12 Mbps",
+        "6.55 Mbps",
+        "8.00 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP sender starts with cwnd = 1 MSS and ssthresh = 32 MSS. How many RTTs are required for cwnd to reach ssthresh during slow start?",
+      "options": [
+        "3 RTTs",
+        "4 RTTs",
+        "5 RTTs",
+        "6 RTTs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP connection has cwnd = 24 MSS. A timeout occurs. What are the new cwnd and ssthresh?",
+      "options": [
+        "cwnd = 12 MSS, ssthresh = 12 MSS",
+        "cwnd = 1 MSS, ssthresh = 24 MSS",
+        "cwnd = 1 MSS, ssthresh = 12 MSS",
+        "cwnd = 6 MSS, ssthresh = 12 MSS"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP connection has cwnd = 30 MSS and a triple duplicate ACK occurs. What are the new cwnd and ssthresh after fast recovery?",
+      "options": [
+        "cwnd = 1 MSS, ssthresh = 15 MSS",
+        "cwnd = 15 MSS, ssthresh = 15 MSS",
+        "cwnd = 15 MSS, ssthresh = 30 MSS",
+        "cwnd = 30 MSS, ssthresh = 15 MSS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link has bandwidth = 100 Mbps and RTT = 50 ms. What is the bandwidth-delay product (required window size)?",
+      "options": [
+        "500 KB",
+        "610 KB",
+        "625 KB",
+        "1 MB"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In TCP, reliability is achieved using byte numbering through sequence numbers, confirmation using acknowledgments, and recovery using:",
+      "options": [
+        "Checksums",
+        "Retransmissions",
+        "Forward error correction",
+        "ARQ codes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "During TCP connection setup, the client sends a SYN, the server replies with SYN-ACK, and the client completes the handshake by sending:",
+      "options": [
+        "SYN",
+        "FIN",
+        "ACK",
+        "RST"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In TCP congestion control, the initial exponential growth phase is called:",
+      "options": [
+        "Congestion avoidance",
+        "Fast recovery",
+        "Slow start",
+        "Window scaling"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "During TCP congestion avoidance, cwnd increases:",
+      "options": [
+        "Exponentially each RTT",
+        "Linearly (by 1 MSS per RTT)",
+        "By halving each RTT",
+        "Randomly based on network load"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "When packet loss is detected via triple duplicate ACKs, TCP Reno sets ssthresh to what value?",
+      "options": [
+        "1 MSS",
+        "The current cwnd value",
+        "Half of the current cwnd",
+        "The original starting cwnd"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why is fast recovery preferable to timeout-based recovery in TCP?",
+      "options": [
+        "Fast recovery uses forward error correction to fix errors",
+        "Fast recovery avoids resetting cwnd to 1 MSS, maintaining higher throughput",
+        "Fast recovery eliminates the need for retransmissions",
+        "Fast recovery only applies to UDP flows"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is TCP window scaling necessary in high-speed networks?",
+      "options": [
+        "IPv6 requires a larger window field",
+        "The default 16-bit window size is too small for the bandwidth-delay product of high-speed links",
+        "Window scaling enables TLS encryption of TCP options",
+        "It allows TCP to operate over UDP tunnels"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Two TCP flows share a link with RTTs of 20 ms and 200 ms. Which flow receives more bandwidth under standard TCP Reno?",
+      "options": [
+        "The flow with RTT = 200 ms",
+        "Both flows receive equal bandwidth",
+        "The flow with RTT = 20 ms",
+        "The flow that started first"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP flow over a 10 Gbps link with RTT = 100 ms achieves only 200 Mbps. What is the primary limitation?",
+      "options": [
+        "Receiver-side buffer overflow",
+        "Insufficient congestion window size",
+        "Physical layer noise",
+        "DNS resolution delays"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "TCP exits slow start when:",
+      "options": [
+        "A triple duplicate ACK is received",
+        "RTT increases by 10%",
+        "cwnd reaches ssthresh",
+        "The receiver window reaches maximum"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A receiver advertises a zero window and later frees buffer space, but the connection remains stalled. What is the most likely cause?",
+      "options": [
+        "The sender's cwnd has been reset to 1 MSS",
+        "The server has closed the connection",
+        "The window update packet was lost and the persist timer failed",
+        "A routing loop has formed"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IP fragmentation, a 4,000-byte IP packet (including 20-byte header) is sent over a link with MTU = 1,020 bytes. How many fragments are created?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which of the following most accurately describes the difference between distance vector and link-state routing?",
+      "options": [
+        "Distance vector uses Dijkstra; link-state uses Bellman-Ford",
+        "Distance vector routers know the full topology; link-state routers only know neighbors",
+        "Distance vector can suffer from count-to-infinity; link-state avoids this with complete topology knowledge",
+        "Link-state scales better to small networks; distance vector to large ones"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A TCP sender is in congestion avoidance with cwnd = 20 MSS. After 5 RTTs with no loss, what is cwnd?",
+      "options": [
+        "20 MSS",
+        "23 MSS",
+        "25 MSS",
+        "40 MSS"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which field in an IP packet is decremented by each router and causes the packet to be discarded when it reaches zero?",
+      "options": [
+        "Identification",
+        "Protocol",
+        "TTL (Time to Live)",
+        "Flags"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "During DHCP lease renewal (at the T1 timer), the client sends its renewal request to:",
+      "options": [
+        "The broadcast address",
+        "The original DHCP server via unicast",
+        "All DHCP servers via multicast",
+        "The default gateway"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is subnetting used in IP networking?",
+      "options": [
+        "To increase the total number of available IP addresses",
+        "To enable longer transmission distances",
+        "To organize networks and reduce broadcast domain size",
+        "To eliminate the need for routing between departments"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Traceroute works because:",
+      "options": [
+        "It reads the routing table of each intermediate router",
+        "Routers send ICMP Time Exceeded messages when TTL expires in transit",
+        "It uses a special UDP port that routers intercept",
+        "Each router appends its address to the packet"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

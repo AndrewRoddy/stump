@@ -1,0 +1,406 @@
+{
+  "name": "Computer Networks - Data Link Layer & MAC",
+  "description": "Framing, error detection/correction (Hamming, CRC), flow control, sliding window protocols (Go-Back-N, Selective Repeat), ALOHA, CSMA/CD, and IEEE 802.11 (CCN03-CCN04)",
+  "questions": [
+    {
+      "question": "A code has Hamming distance d = 3. How many bit errors can it detect?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A code has Hamming distance d = 5. How many bit errors can it correct?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A CRC generator polynomial has degree 7. How many redundancy bits are appended to the message?",
+      "options": [
+        "4",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A frame has 1,200 bytes of data and 48 bytes of header. What is the overhead percentage?",
+      "options": [
+        "2%",
+        "4%",
+        "6%",
+        "8%"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link transmits at 20 Mbps and framing overhead is 10%. What is the effective payload rate?",
+      "options": [
+        "16 Mbps",
+        "17 Mbps",
+        "18 Mbps",
+        "19 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A simplex protocol assumes:",
+      "options": [
+        "Full-duplex communication with error recovery",
+        "Half-duplex communication with arbitration",
+        "One-way data flow only",
+        "Bidirectional flow with acknowledgments"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Frame size = 1,000 bytes, link rate = 2 Mbps. What is the transmission time per frame?",
+      "options": [
+        "2 ms",
+        "4 ms",
+        "8 ms",
+        "16 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How many frames can be outstanding at any time in the stop-and-wait protocol?",
+      "options": [
+        "1",
+        "2",
+        "Depends on window size",
+        "Unlimited"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "If a frame error probability is p = 0.2, what is the expected number of transmissions per frame (assuming ACKs are never lost)?",
+      "options": [
+        "1.0",
+        "1.25",
+        "1.5",
+        "2.0"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "If a receiver can process 600 frames/s and the sender can transmit 900 frames/s, how many frames/s must be throttled by flow control?",
+      "options": [
+        "150",
+        "200",
+        "300",
+        "600"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In stop-and-wait, if RTT is 40 ms and transmission time is 5 ms, what fraction of time is the sender actively transmitting?",
+      "options": [
+        "1/9",
+        "5/40",
+        "5/45",
+        "1/8"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Increasing window size in a sliding window protocol primarily improves:",
+      "options": [
+        "Error detection capability",
+        "Throughput on high-delay links",
+        "Processing delay at routers",
+        "Security of the connection"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Link rate = 1 Mbps, RTT = 100 ms, frame size = 1,000 bytes. Approximately what window size is needed for full link utilization?",
+      "options": [
+        "6",
+        "8",
+        "12",
+        "16"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Using 3-bit sequence numbers, what is the maximum window size for Go-Back-N?",
+      "options": [
+        "4",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Using 3-bit sequence numbers, what is the maximum window size for Selective Repeat?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "7"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which data link layer function ensures a fast sender does not overwhelm a slow receiver?",
+      "options": [
+        "Error correction",
+        "Framing",
+        "Flow control",
+        "Addressing"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which sliding-window protocol retransmits only the lost or corrupted frames?",
+      "options": [
+        "Stop-and-Wait",
+        "Go-Back-N",
+        "Selective Repeat",
+        "HDLC"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Why are CRCs particularly good at detecting burst errors?",
+      "options": [
+        "They add extra parity bits for each byte",
+        "They use polynomial division which captures multi-bit patterns",
+        "They compare the entire frame to a checksum table",
+        "They retransmit any frame with a detected error"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is stop-and-wait inefficient on long-delay links?",
+      "options": [
+        "It cannot detect errors on noisy channels",
+        "The sender wastes time idle during propagation waiting for ACK",
+        "It requires more sequence numbers than available",
+        "ACKs take up too much bandwidth"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In Pure ALOHA, what is the maximum channel efficiency?",
+      "options": [
+        "1/e (~36.8%)",
+        "1/(2e) (~18.4%)",
+        "50%",
+        "1/2"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the vulnerable period in Pure ALOHA (i.e., the time window during which another transmission can cause a collision)?",
+      "options": [
+        "T/2",
+        "T",
+        "2T",
+        "4T"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Slotted ALOHA, the maximum efficiency improves to:",
+      "options": [
+        "1/(2e)",
+        "1/e (~36.8%)",
+        "50%",
+        "1/2"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Why is Slotted ALOHA more efficient than Pure ALOHA?",
+      "options": [
+        "It uses collision detection to abort transmissions early",
+        "It assigns dedicated time slots to each station",
+        "Time is divided into slots, reducing the collision window to T instead of 2T",
+        "It uses carrier sensing before transmitting"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In CSMA/CD, what happens when a collision is detected?",
+      "options": [
+        "The station continues transmitting and marks the frame as corrupted",
+        "All stations stop transmitting for a fixed timeout period",
+        "Transmission is aborted and a jam signal is sent to notify all stations",
+        "The packet is forwarded to an alternate path"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Binary Exponential Backoff in CSMA/CD is used to:",
+      "options": [
+        "Increase transmission power after a collision",
+        "Prioritize traffic based on frame size",
+        "Reduce the probability of repeated collisions by randomizing retry intervals",
+        "Ensure fair access by giving priority to the longest-waiting station"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which MAC protocol is used in traditional Ethernet (IEEE 802.3)?",
+      "options": [
+        "CSMA/CA",
+        "Token Ring",
+        "TDMA",
+        "CSMA/CD"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Why is CSMA/CD not used in wireless LANs (IEEE 802.11)?",
+      "options": [
+        "Wireless LANs use token-based access instead",
+        "Wireless has too much bandwidth for collision detection to matter",
+        "Collision detection is difficult in the wireless medium due to the hidden terminal problem and the inability to simultaneously transmit and listen",
+        "Wireless MAC is standardized by a different committee"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Pure ALOHA, for what value of offered load G is throughput S = G * e^(-2G) maximized?",
+      "options": [
+        "G = 0.25",
+        "G = 0.5",
+        "G = 1.0",
+        "G = 2.0"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In CSMA/CD, a station first performs carrier sensing, transmits only if the channel is idle, and detects collisions using:",
+      "options": [
+        "Forward error correction codes",
+        "A separate collision-detection signal from the switch",
+        "Simultaneous listening while transmitting",
+        "CRC mismatch at the receiver"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "After the nth collision in CSMA/CD, Binary Exponential Backoff selects a random integer from which range?",
+      "options": [
+        "0 to n-1",
+        "0 to 2^n",
+        "0 to 2^n - 1",
+        "1 to 2^n"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11 DCF, what is the interframe space used for immediate ACK responses (highest priority)?",
+      "options": [
+        "DIFS",
+        "PIFS",
+        "SIFS",
+        "AIFS"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11 DCF, after the channel remains idle for DIFS, a station performs a random backoff and waits before transmitting. Successful reception is confirmed using:",
+      "options": [
+        "CRC verification only",
+        "A NACK if error is detected",
+        "An ACK from the receiver",
+        "A clear-to-send signal"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "The Hamming distance between two binary strings is defined as:",
+      "options": [
+        "The number of bits in the longer string",
+        "The XOR of the two strings",
+        "The number of bit positions in which the two strings differ",
+        "The total number of 1-bits in both strings combined"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A code with minimum Hamming distance d can correct up to how many errors?",
+      "options": [
+        "d - 1",
+        "d / 2",
+        "floor((d - 1) / 2)",
+        "d + 1"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "To correct single-bit errors, what is the minimum Hamming distance required?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In IEEE 802.11, the interframe space used before contention-based channel access (DIFS) stands for:",
+      "options": [
+        "Data Interframe Space",
+        "Distributed Coordination Function IFS",
+        "Default Idle Frame Spacing",
+        "Distributed IFS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "In Go-Back-N with window size 4, frames 1-4 are sent and frame 2 is lost. Which frames must be retransmitted?",
+      "options": [
+        "Only frame 2",
+        "Frames 2 and 3",
+        "Frames 2, 3, and 4",
+        "Frames 1, 2, 3, and 4"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the primary goal of flow control in a communication protocol?",
+      "options": [
+        "Prevent routing loops in the network",
+        "Ensure packets arrive in order",
+        "Prevent the sender from transmitting faster than the receiver can process",
+        "Reduce the size of each packet to minimize transmission delay"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In Selective Repeat, what does the receiver do with frames that arrive out of order after a missing frame?",
+      "options": [
+        "Discards them and sends NAK for each",
+        "Forwards them to the application immediately",
+        "Buffers them until the missing frame arrives and is retransmitted",
+        "Acknowledges them individually but discards after a timeout"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A CSMA/CD network has: bit rate B = 10 Mbps, distance L = 2 km, propagation speed c = 2 x 10^8 m/s, frame size F = 1,000 bits. If propagation delay = 10 us, what is the minimum frame size required to detect a collision?",
+      "options": [
+        "100 bits",
+        "200 bits",
+        "400 bits",
+        "1000 bits"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "name": "Computer Networks - Performance & Metrics",
+  "description": "Bandwidth, throughput, delay components (propagation, transmission, processing, queuing), jitter, utilization, and performance calculations (CCN02)",
+  "questions": [
+    {
+      "question": "A household runs 3 simultaneous streams, each needing 8 Mbps. Adding 25% extra headroom for overhead and bursts, what minimum Internet rate should you target?",
+      "options": [
+        "24 Mbps",
+        "27 Mbps",
+        "30 Mbps",
+        "36 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A lab has 92 wired PCs. You use 24-port switches, but must reserve 2 ports per switch for uplinks/expansion. How many switches are required?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link rate is 80 Mbps. Ignoring overhead, approximately how many megabytes per second (MB/s) is this?",
+      "options": [
+        "8 MB/s",
+        "10 MB/s",
+        "80 MB/s",
+        "64 MB/s"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A protocol stack has 5 layers. Processing at each layer adds 0.6 ms per packet in one direction. Ignoring transmission time, what is the one-way processing delay per packet?",
+      "options": [
+        "0.6 ms",
+        "1.2 ms",
+        "2.4 ms",
+        "3.0 ms"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "A sales team has 80 employees. Each downloads 30 records/day and each record is 5 KB. How much data is downloaded per day (ignore protocol overhead)?",
+      "options": [
+        "6 MB",
+        "10 MB",
+        "12 MB",
+        "15 MB"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A Wi-Fi LAN has a raw rate of 54 Mbps. One-third of capacity is lost to overhead/contention, and the remaining capacity is shared equally by 9 active users. About how much throughput does each user get?",
+      "options": [
+        "2 Mbps",
+        "4 Mbps",
+        "6 Mbps",
+        "9 Mbps"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "An application sends 1000 bytes of data. Encapsulation adds 20 bytes (transport) + 20 bytes (network) + 18 bytes (link). What is the total size on the wire?",
+      "options": [
+        "1038 bytes",
+        "1048 bytes",
+        "1058 bytes",
+        "1068 bytes"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "In SI units, what does the prefix 'k' (kilo) represent?",
+      "options": [
+        "10^2",
+        "10^3",
+        "10^6",
+        "10^9"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A link has a bandwidth of 80 Mbps and is utilized at 75% during a transfer. What is the achieved throughput?",
+      "options": [
+        "40 Mbps",
+        "56 Mbps",
+        "60 Mbps",
+        "75 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A network service has 99.99% availability. Approximately how much downtime does this allow per year?",
+      "options": [
+        "~8.7 hours",
+        "~53 minutes",
+        "~5.3 minutes",
+        "~30 seconds"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A packet experiences: Processing 3 ms, Queuing 7 ms, Transmission 4 ms, Propagation 16 ms. What is the total end-to-end delay?",
+      "options": [
+        "23 ms",
+        "26 ms",
+        "30 ms",
+        "34 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A router can process 2,000 packets/s. Traffic arrives at 1,600 packets/s. What is the utilization (rho)?",
+      "options": [
+        "0.6",
+        "0.7",
+        "0.8",
+        "0.9"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A signal travels 3,000 km over optical fiber where propagation speed is 2 x 10^8 m/s. What is the propagation delay?",
+      "options": [
+        "5 ms",
+        "10 ms",
+        "15 ms",
+        "30 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Four packets experience one-way delays of 30 ms, 35 ms, 50 ms, and 45 ms. What is the maximum jitter (max minus min delay)?",
+      "options": [
+        "5 ms",
+        "10 ms",
+        "15 ms",
+        "20 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "How long does it take to transmit a 12 MB file over a 24 Mbps link, ignoring propagation and queuing delays?",
+      "options": [
+        "0.5 s",
+        "2 s",
+        "4 s",
+        "8 s"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which utilization level is most likely to cause exploding queuing delay?",
+      "options": [
+        "50%",
+        "75%",
+        "90%",
+        "98%"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "What does jitter refer to in the context of network performance?",
+      "options": [
+        "Total end-to-end delay",
+        "Packet loss rate",
+        "Variation in packet delay",
+        "Bandwidth fluctuation"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the most common cause of jitter in packet networks?",
+      "options": [
+        "Transmission delay",
+        "Variable queuing delay",
+        "Propagation delay",
+        "Processing delay"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Which type of application is most sensitive to jitter?",
+      "options": [
+        "Email",
+        "File transfer",
+        "Web browsing",
+        "Real-time voice/video"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Which technique is commonly used to reduce the effect of jitter at the receiver?",
+      "options": [
+        "Increasing link bandwidth",
+        "Forward error correction",
+        "Playback buffer",
+        "Packet interleaving"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "When a link operates near capacity, which component of delay grows fastest?",
+      "options": [
+        "Propagation delay",
+        "Transmission delay",
+        "Processing delay",
+        "Queuing delay"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "A 1,200-byte packet is sent over a 16 Mbps link. Ignoring all other delays, what is the transmission delay?",
+      "options": [
+        "0.3 ms",
+        "0.6 ms",
+        "1.2 ms",
+        "2.4 ms"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A 50 Mbps link carries 20 Mbps of traffic. What is the link utilization?",
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "50%"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A 100 Mbps link with 20% protocol overhead. What is the effective net throughput?",
+      "options": [
+        "70 Mbps",
+        "75 Mbps",
+        "80 Mbps",
+        "85 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "3 routers each add 0.9 ms of processing delay. 4 links each add 0.6 ms of transmission delay. What is the total delay?",
+      "options": [
+        "4.2 ms",
+        "5.1 ms",
+        "6.0 ms",
+        "6.9 ms"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A 40 Mbps Ethernet link is productive 60% of the time. What is the effective throughput?",
+      "options": [
+        "16 Mbps",
+        "20 Mbps",
+        "24 Mbps",
+        "32 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A signal travels 400 km over fiber at 2 x 10^8 m/s. What is the propagation delay?",
+      "options": [
+        "1.0 ms",
+        "1.5 ms",
+        "2.0 ms",
+        "4.0 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A 50 Mbps link consumes 100 W. What is the energy per bit transmitted?",
+      "options": [
+        "1 nJ/bit",
+        "2 nJ/bit",
+        "5 nJ/bit",
+        "10 nJ/bit"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "A buffer holds 10 packets; 15 packets arrive simultaneously. How many packets are dropped?",
+      "options": [
+        "0",
+        "3",
+        "5",
+        "10"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A 300 km fiber link at 2 x 10^8 m/s has a propagation delay of:",
+      "options": [
+        "0.75 ms",
+        "1.0 ms",
+        "1.5 ms",
+        "3.0 ms"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A home network supports 3 simultaneous video streams each requiring 10 Mbps. Adding 25% overhead headroom, what minimum Internet speed should be selected?",
+      "options": [
+        "30 Mbps",
+        "35 Mbps",
+        "37.5 Mbps",
+        "40 Mbps"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "A packet traverses 4 routers each adding 0.8 ms, and 5 links each adding 0.5 ms transmission delay. Propagation is negligible. What is the total delay?",
+      "options": [
+        "4.7 ms",
+        "5.2 ms",
+        "5.7 ms",
+        "6.5 ms"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}
