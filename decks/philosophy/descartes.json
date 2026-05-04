@@ -53,7 +53,7 @@
     {
       "id": "d9",
       "question": "What makes Cartesian Doubt different from ordinary Skepticism?",
-      "options": ["Cartesian Doubt leads to permanent uncertainty about all knowledge", "Cartesian Doubt is used as a method to find an unshakeable foundation for knowledge", "Cartesian Doubt rejects reason as a path to truth", "Cartesian Doubt was borrowed directly from ancient Greek Skeptics"],
+      "options": ["Cartesian Doubt aims to show that permanent uncertainty is the only honest philosophical position", "Cartesian Doubt is used as a method to find an unshakeable foundation for knowledge", "Cartesian Doubt rejects reason as inherently unreliable, preferring faith as its guide to truth", "Cartesian Doubt borrows its method directly from ancient Greek Skeptics like Pyrrho of Elis"],
       "correctAnswer": 1
     },
     {
@@ -65,13 +65,13 @@
     {
       "id": "d11",
       "question": "What was Stage 1 of Descartes' philosophical method in the Meditations?",
-      "options": ["Establish the existence of God", "Apply radical doubt to reject anything that can be questioned", "Prove the existence of the external world", "Define the mind as distinct from the body"],
+      "options": ["Establish God's existence as the necessary starting point for all subsequent philosophical reasoning", "Apply radical doubt to reject anything that can be questioned", "Prove the external world exists by identifying exactly where sensory deception breaks down", "Define the mind as a distinct and separate substance from the body and all matter"],
       "correctAnswer": 1
     },
     {
       "id": "d12",
       "question": "What was Stage 2 of Descartes' philosophical method?",
-      "options": ["Use the senses to confirm physical reality", "Prove God exists through the Trademark Argument", "Establish the Cogito as the one unshakeable foundation of knowledge", "Define Extension as the material world"],
+      "options": ["Use careful sensory observation to establish the existence and reliability of the physical world", "Prove God exists through the Trademark Argument as an anchor for the reliability of reason", "Establish the Cogito as the one unshakeable foundation of knowledge", "Define Extension precisely to distinguish what counts as material versus immaterial substance"],
       "correctAnswer": 2
     },
     {
@@ -83,7 +83,7 @@
     {
       "id": "d14",
       "question": "What is 'Extension' according to Descartes?",
-      "options": ["The mind's ability to stretch beyond its natural limits", "The immaterial soul that animates the body", "The material, three-dimensional, divisible physical world", "The part of the brain where mind and body interact"],
+      "options": ["The mind's capacity to expand its awareness beyond its immediate sensory impressions", "The immaterial soul that animates the body and gives it life and movement", "The material, three-dimensional, divisible physical world", "The region of the brain through which mind and body exchange information and influence each other"],
       "correctAnswer": 2
     },
     {
@@ -95,7 +95,7 @@
     {
       "id": "d16",
       "question": "The Wax Argument was used by Descartes to demonstrate which of the following?",
-      "options": ["The senses are the most reliable source of knowledge about the world", "The mind, not the senses, grasps the true nature of physical objects", "Primary and secondary qualities are equally objective properties", "God ensures that our perceptions accurately match reality"],
+      "options": ["The senses are the most reliable source of knowledge about the world around us", "The intellect, not the senses, grasps the true nature of physical objects", "Primary and secondary qualities are equally real and equally objective properties of objects", "God ensures that our sensory perceptions accurately correspond to the reality they represent"],
       "correctAnswer": 1
     },
     {
@@ -107,13 +107,13 @@
     {
       "id": "d18",
       "question": "What is the Trademark Argument?",
-      "options": ["Descartes' argument that mathematical truth proves God's existence", "The idea that we could not have conceived of a perfect God unless God had implanted that idea in us", "Descartes' proof that the mind is more real than the body", "The argument that language contains embedded evidence of God's existence"],
+      "options": ["The argument that only a perfect rational being could have arranged the precise mathematical order of reality", "The argument that our innate idea of a perfect God must have been implanted in us by God himself", "Descartes' demonstration that the thinking substance is inherently more certain than any extended substance", "The claim that natural human language and grammar bear implicit traces of a divine creator's mind"],
       "correctAnswer": 1
     },
     {
       "id": "d19",
       "question": "The 'Cartesian Circle' refers to which problem in Descartes' philosophy?",
-      "options": ["His endless chain of doubt that circles back to the Cogito", "Circular reasoning: God validates innate ideas, but innate ideas are only trustworthy if God exists", "The problem of explaining how a round pineal gland generates linear thought", "The contradiction between trusting reason while doubting the senses"],
+      "options": ["The observation that Descartes' method of doubt always returns to the Cogito without reaching new ground", "The circular problem that God validates our innate ideas, but we need those same ideas to prove God exists", "The difficulty of proving the external world without already presupposing God's existence and goodness", "The tension of accepting clear and distinct ideas as reliable while still subjecting everything to radical doubt"],
       "correctAnswer": 1
     },
     {
@@ -137,7 +137,7 @@
     {
       "id": "d23",
       "question": "Knowledge that is 'a priori' is best described as:",
-      "options": ["Knowledge gained through sensory experience and observation", "Knowledge that depends on repeated empirical testing", "Knowledge that exists independent of experience and is known by reason alone", "Knowledge that can only be confirmed by seeing physical evidence"],
+      "options": ["Knowledge acquired through careful sensory experience and repeated observation of the world", "Knowledge that must be confirmed through controlled empirical testing before it can be trusted", "Knowledge that is independent of experience and grasped through reason alone", "Knowledge that can only be validated through direct sensory contact with physical evidence"],
       "correctAnswer": 2
     },
     {
@@ -149,7 +149,7 @@
     {
       "id": "d25",
       "question": "According to Descartes, animals are best described as:",
-      "options": ["Beings with souls but no free will", "Pure machines or automatons with no consciousness", "Creatures guided by both instinct and limited reason", "Lower forms of the same mind-body dualism that applies to humans"],
+      "options": ["Beings with souls but no free will, driven entirely by instinct and divine programming", "Pure machines or automatons with no consciousness", "Creatures capable of sophisticated behavior through a combination of instinct and rudimentary reason", "Lower expressions of the same mind-body dualism that applies to human beings"],
       "correctAnswer": 1
     },
     {
@@ -161,25 +161,25 @@
     {
       "id": "d27",
       "question": "Why was the Catholic Church threatened by Descartes' Cogito?",
-      "options": ["It implied the universe operated without God's direct intervention", "It gave individuals a foundation for their own existence independent of God or the Church", "It was used to argue that animals have souls equal to humans", "It directly contradicted Aquinas' version of Scholasticism"],
+      "options": ["It implied the physical universe could operate through natural laws without God's continuous intervention", "It grounded individual existence in personal reason rather than in God or Church authority", "It suggested that human beings could achieve self-knowledge without Scripture or Church guidance", "It provided a rational starting point that could be used to question even Catholic teachings on God"],
       "correctAnswer": 1
     },
     {
       "id": "d28",
       "question": "Why did Descartes believe his Mind/Body dualism was beneficial for both religion and science?",
-      "options": ["It proved that God created both the mind and the physical universe directly", "It gave the Church authority over the mind and soul while giving scientists authority over the physical world", "It showed that faith and science were both rooted in the same mathematical reasoning", "It eliminated the conflict between the Cogito and the Church's teachings about God"],
+      "options": ["It offered a rational demonstration that God is the direct creator of both mental and physical substances", "It kept the mind and soul under Church authority while leaving the physical world open to scientific study", "It showed that religious faith and natural science both ultimately rest on the same rational foundations", "It resolved the tension between Descartes' radical doubt and Catholic teaching about God and the soul"],
       "correctAnswer": 1
     },
     {
       "id": "d29",
       "question": "Descartes believed that the human mind was:",
-      "options": ["Subject to the same mechanical laws as all other matter in the universe", "A byproduct of complex processes in the brain", "Free from the laws of mechanics that govern the material world", "An illusion produced by the body's nervous system over time"],
+      "options": ["Fully subject to the same mechanical laws that govern all other matter in the physical universe", "Ultimately reducible to and explainable by the complex physical processes occurring in the brain", "Free from the laws of mechanics that govern the material world", "A persistent illusion gradually constructed by the ongoing activity of the body's nervous system"],
       "correctAnswer": 2
     },
     {
       "id": "d30",
       "question": "Descartes believed the soul gave life and animation to the body.",
-      "options": ["True, the soul is what makes the body alive and capable of movement", "False, the body operates as a mechanical machine on its own without the soul animating it", "True, but only in the sense that the soul occupies the pineal gland which controls the body", "False, because Descartes did not believe the soul and body interacted in any way"],
+      "options": ["True, the soul is what makes the body alive and capable of deliberate movement and sensation", "False, the body runs as a self-contained mechanical system that needs no soul to animate it", "True, but only in the sense that the soul occupies the pineal gland, which directs and controls the body", "False, but only because the soul is purely passive and plays no active role in initiating physical motion"],
       "correctAnswer": 1
     }
   ]

@@ -11,7 +11,7 @@
     {
       "id": "q4p2",
       "question": "What distinguishes Cartesian Doubt from ordinary Skepticism?",
-      "options": ["Cartesian Doubt leads to permanent uncertainty about the possibility of any knowledge", "Cartesian Doubt is motivated by the desire to find an unshakeable foundation for knowledge", "Cartesian Doubt was borrowed from the ancient Greek Skeptics like Pyrrho", "Cartesian Doubt ultimately concludes that no reliable knowledge is possible"],
+      "options": ["Cartesian Doubt leads to permanent uncertainty about the possibility of any knowledge", "Cartesian Doubt is motivated by the desire to find an unshakeable foundation for knowledge", "Cartesian Doubt was borrowed directly from the ancient Greek Skeptics associated with Pyrrho and Sextus", "Cartesian Doubt is a passive attitude of intellectual humility rather than an active philosophical method"],
       "correctAnswer": 1
     },
     {
@@ -23,7 +23,7 @@
     {
       "id": "q4p4",
       "question": "On which of the following points did Descartes actually agree with Aristotle?",
-      "options": ["That the universe is guided by a final purpose or Telos", "That the soul gives life and animates the body", "That the external physical world is a valid subject of scientific investigation", "That forms are real and exist inside particular physical things"],
+      "options": ["That all things in the universe are oriented toward a final purpose or Telos that explains their nature", "That the soul gives life and animation to the body, making it capable of movement and growth", "That the physical world is a legitimate subject of scientific investigation", "That universal forms are real things that exist immanently within particular physical objects in the world"],
       "correctAnswer": 2
     },
     {
@@ -71,25 +71,25 @@
     {
       "id": "q4p12",
       "question": "Why is Descartes considered the unintentional father of Modern Skepticism?",
-      "options": ["He personally concluded in a later work that knowledge was ultimately impossible", "Later philosophers accepted his method and Cogito but rejected his proofs of God and the external world", "His followers deliberately misread the Meditations to support total philosophical uncertainty", "He published a retraction arguing that the Cogito itself was too weak to resist radical doubt"],
+      "options": ["Descartes himself acknowledged in later writings that certain knowledge might be permanently out of reach", "Later philosophers adopted his doubt method but rejected his proofs of God and the external world", "Descartes' immediate followers intentionally misread the Meditations to support a position of total uncertainty", "Descartes eventually published a retraction conceding that the Cogito could not withstand radical doubt"],
       "correctAnswer": 1
     },
     {
       "id": "q4p13",
       "question": "Which statement best captures Descartes' view on the relationship between the human mind and the laws of mechanics?",
-      "options": ["Both the mind and all matter are equally subject to the laws of mechanics", "The mind is free from mechanical laws, while all matter in the universe obeys them completely", "Mechanical laws govern the mind's connection to the body but not the soul's inner life", "Neither the mind nor the body is truly subject to mechanical laws in Descartes' system"],
+      "options": ["Both the human mind and all physical matter are equally and completely subject to the laws of mechanics", "The mind is exempt from mechanical laws, while all matter in the universe is fully subject to them", "Mechanical laws regulate the interaction between mind and body but do not reach into the soul's inner life", "In Descartes' system, neither mind nor body is fully reducible to the laws of mechanical causation"],
       "correctAnswer": 1
     },
     {
       "id": "q4p14",
       "question": "The 'Cartesian Circle' describes which fatal flaw in Descartes' argument?",
-      "options": ["His proof of the Cogito relies on a circular self-referential claim", "His proof of God depends on trusting innate ideas, but innate ideas are only trustworthy if God exists first", "His argument for the external world loops back and only proves the mind's existence", "His use of Scholastic premises to arrive at anti-Scholastic philosophical conclusions"],
+      "options": ["The Cogito is circular because 'I think, therefore I am' already presupposes a stable existing self", "His proof of God requires trusting innate ideas, but those ideas only become trustworthy if God already exists", "His proof of the external world unknowingly circles back and succeeds only in re-establishing the mind's existence", "He relies on Scholastic categories and assumptions in order to reach conclusions that directly undermine Scholasticism"],
       "correctAnswer": 1
     },
     {
       "id": "q4p15",
       "question": "According to Descartes, what role does the soul play in the body's physical vitality and movement?",
-      "options": ["The soul animates the body like a pilot who steers and directs a ship from inside", "The soul plays no role in animating the body; the body operates as a mechanical machine on its own", "The soul controls the body through the flow of animal spirits in the nervous system and blood", "The soul and body are so unified in humans that they cannot be meaningfully distinguished at all"],
+      "options": ["The soul animates the body like a pilot who steers and directs a ship from inside", "The soul plays no role in animating the body, which functions as a self-operating mechanical machine", "The soul controls the body through the flow of animal spirits in the nervous system and blood", "The soul and body are so unified in humans that they cannot be meaningfully distinguished at all"],
       "correctAnswer": 1
     }
   ]

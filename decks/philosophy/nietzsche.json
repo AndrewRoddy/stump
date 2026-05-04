@@ -17,7 +17,7 @@
     {
       "id": "n3",
       "question": "Nietzsche's concept of 'Mirror Writing' means:",
-      "options": ["Nietzsche deliberately wrote contradictory statements to confuse readers", "How you interpret Nietzsche reveals more about your own values and biases than about Nietzsche himself", "Nietzsche wrote from the perspective of his philosophical enemies to expose their flaws", "Nietzsche encoded secret meanings that only advanced readers can decode"],
+      "options": ["Nietzsche deliberately inserted contradictions throughout his texts to disorient the casual reader", "Your interpretation of Nietzsche reveals more about your own values and biases than about his intent", "Nietzsche adopted the perspective of his opponents to expose their assumptions from within their own framework", "Nietzsche concealed his true arguments behind layers of metaphor accessible only to sympathetic readers"],
       "correctAnswer": 1
     },
     {
@@ -29,7 +29,7 @@
     {
       "id": "n5",
       "question": "What did Nietzsche mean when he declared 'God is Dead'?",
-      "options": ["He believed that God had literally ceased to exist as a supernatural being", "The moral certainty and institutional security of the Medieval Christian world had permanently collapsed", "He was predicting the decline of religious attendance across Europe", "Modern science had proven religion to be factually false and therefore obsolete"],
+      "options": ["He believed that God had literally ceased to exist as a supernatural being", "The moral certainty and cultural authority of the Christian world had permanently collapsed", "He was making a sociological prediction about the steady decline of church attendance across Europe", "Modern science had definitively disproven the core factual claims of religion, rendering it obsolete"],
       "correctAnswer": 1
     },
     {
@@ -53,13 +53,13 @@
     {
       "id": "n9",
       "question": "According to Nietzsche, all of the following are bad responses to the Death of God EXCEPT:",
-      "options": ["Nihilism", "Fundamentalism", "Embracing one's instincts and creating new personal values", "Moral Reasoning"],
+      "options": ["Collapsing into nihilism and accepting that life has no meaning or purpose at all", "Retreating into fundamentalism and clinging to pre-modern certainties as though they were still solid", "Embracing one's instincts and creating new personal values", "Replacing God with secular moral reasoning as a new universal foundation for ethics"],
       "correctAnswer": 2
     },
     {
       "id": "n10",
       "question": "In Nietzsche's allegory, 'Lions' represent:",
-      "options": ["Christians who follow the moral law without question", "Those who rule through guilt and manufactured resentment", "Strong individuals who live by instinct and create their own values", "Philosophers who use reason to establish objective moral systems"],
+      "options": ["Those who follow the moral law unquestioningly because it provides comfort and belonging", "Those who gain social power by weaponizing guilt and manufacturing collective resentment", "Individuals who live by instinct and create their own values", "Philosophers who use rational argument to build objective and universal systems of moral rules"],
       "correctAnswer": 2
     },
     {
@@ -71,7 +71,7 @@
     {
       "id": "n12",
       "question": "Why does Nietzsche believe Socrates' physical ugliness was philosophically significant?",
-      "options": ["It meant Socrates could not be considered a man of virtue in Greek culture", "His mistreatment due to ugliness motivated him to elevate reason over instinct, planting the seeds of Slave Morality", "It demonstrated that appearance has no bearing on philosophical insight", "Socrates used his ugliness to connect with the common working people of Athens"],
+      "options": ["It disqualified him from the Greek aristocratic ideal, which required both physical and moral beauty", "Being mistreated for his ugliness pushed Socrates to elevate reason over instinct, seeding Slave Morality", "For Nietzsche, it proved that true philosophical depth has no necessary connection to physical appearance", "Socrates deliberately used his unconventional appearance to build credibility with ordinary Athenian citizens"],
       "correctAnswer": 1
     },
     {
@@ -101,19 +101,19 @@
     {
       "id": "n17",
       "question": "Nietzsche's Theory of Action describes the correct order of causation as:",
-      "options": ["Conscious thought causes desire, which then causes action", "Action causes desire, which arises from subconscious type-facts", "Type-Facts cause conscious thought and desire, which then produce action", "Society causes type-facts, which cause thought, which causes action"],
+      "options": ["Conscious deliberation produces desire, and that desire then causes the body to act accordingly", "Physical action arises first and spontaneously; desire and thought are rationalizations that follow afterward", "Type-facts generate conscious thought and desire, which then express themselves in action", "Social conditioning shapes our type-facts, which determine our thoughts and ultimately our actions"],
       "correctAnswer": 2
     },
     {
       "id": "n18",
       "question": "Epiphenomenalism, as Nietzsche applied it, argues that:",
-      "options": ["Physical actions are caused by conscious willpower directing the body", "Consciousness is merely a byproduct of unconscious biological processes rather than a cause of action", "Emotions are the true and primary cause of human behavior", "The mind and body are fundamentally the same type of substance"],
+      "options": ["Physical actions are caused by conscious willpower directing the body", "Consciousness is a byproduct of unconscious biological processes and does not cause action", "Emotional states and felt desires are the primary causal drivers of all human behavior and choice", "Mind and body are two aspects of a single substance and cannot be meaningfully distinguished from each other"],
       "correctAnswer": 1
     },
     {
       "id": "n19",
       "question": "The H2O analogy in Nietzsche's argument illustrates which concept?",
-      "options": ["The way language creates false impressions of stable, fixed objects", "How individual type-facts combine to form broader social norms", "How consciousness emerges as a byproduct of biological processes and is not a primary cause", "The relationship between Christian morality and the development of Slave Morality"],
+      "options": ["The way language creates false impressions of stable, fixed objects in the world", "The way individual type-facts combine and interact to produce broader cultural and social norms", "How consciousness emerges from biological processes without being the primary cause of action", "The relationship between Christian morality and the gradual development of Slave Morality"],
       "correctAnswer": 2
     },
     {
@@ -125,31 +125,31 @@
     {
       "id": "n21",
       "question": "According to Nietzsche, guilt arises when:",
-      "options": ["We act contrary to reason and violate the moral law", "External societal norms conflict with our internal type-facts and natural instincts", "We fail to follow the moral teachings of Christianity", "Our conscious desires override our unconscious biological drives"],
+      "options": ["We act against the dictates of reason and thereby violate a moral law that applies to all people", "External norms imposed by society conflict with our internal type-facts and natural instincts", "We fail to act in accordance with the moral teachings instilled in us by our Christian cultural heritage", "Our conscious rational desires successfully suppress and override the unconscious biological drives below them"],
       "correctAnswer": 1
     },
     {
       "id": "n22",
       "question": "'Amor Fati' is best described as:",
-      "options": ["The love of knowledge and philosophical inquiry above all else", "The desire to transcend suffering through divine grace", "The embrace of one's fate in all its aspects, including pain and struggle, without wishing it were different", "The Nietzschean ideal of rational self-mastery over one's passions"],
+      "options": ["The love of wisdom and philosophical self-examination as the highest pursuit available to human beings", "The aspiration to transcend personal suffering by surrendering the will to something greater than oneself", "The wholehearted embrace of one's fate, including its pain and struggle, exactly as it is", "The Nietzschean ideal of using rational discipline to master and redirect one's instinctual passions"],
       "correctAnswer": 2
     },
     {
       "id": "n23",
       "question": "The 'Last Man' represents Nietzsche's greatest fear, which is:",
-      "options": ["A world dominated by violent and uncontrolled instincts", "A society embracing comfort, consumerism, and indifference as a result of the death of God", "The rise of a single authoritarian ruler who eliminates individual freedom", "The complete global triumph of Slave Morality through Christianity"],
+      "options": ["A world in which unrestrained instinct and violence have overwhelmed all civilizing structures", "A comfortable, indifferent society that embraces consumerism in place of meaning or greatness", "The emergence of a single dominant authoritarian figure who uses power to crush all individual difference", "The worldwide triumph of Slave Morality through the complete institutional victory of Christianity"],
       "correctAnswer": 1
     },
     {
       "id": "n24",
       "question": "In the story of Goethe and Beethoven, which figure does Nietzsche admire and why?",
-      "options": ["Beethoven, because his music demonstrated the triumph of passion over formal structure", "Goethe, because he showed true greatness through naturalness and the complete absence of grievance or arrogance", "Both equally, because each represents a different aspect of the Ubermensch ideal", "Neither, because both ultimately compromised their ideals by seeking social approval"],
+      "options": ["Beethoven, whose music represents the raw triumph of creative passion breaking through all formal constraint", "Goethe, who embodied true greatness through naturalness and a total absence of grievance or arrogance", "Both equally, since Goethe represents instinct while Beethoven represents will, together forming the Ubermensch", "Neither, since both ultimately sought public recognition and thereby compromised their authentic greatness"],
       "correctAnswer": 1
     },
     {
       "id": "n25",
       "question": "Why does Nietzsche describe himself as the 'Anti-Christ'?",
-      "options": ["He wanted to destroy all religious belief and replace it with scientific atheism", "He wanted to strip moralizing language of its power by returning concepts from the fixed World of Being to the fluid world of Becoming", "He rejected Jesus as a historical figure and considered Christianity a purely political invention", "He believed that human instinct was more sacred and divine than any religious teaching"],
+      "options": ["He sought to dismantle all religious faith and replace its cultural authority with a rigorous scientific worldview", "He aimed to de-moralize language by returning concepts from the fixed World of Being to the fluid world of Becoming", "He denied the historical existence of Jesus and argued that Christianity was a purely political fabrication", "He held that raw human instinct is more authentically sacred and life-affirming than any religious doctrine"],
       "correctAnswer": 1
     },
     {
@@ -167,7 +167,7 @@
     {
       "id": "n28",
       "question": "Nietzsche's goal in 'revaluing all values' was primarily to:",
-      "options": ["Establish a new rational ethics based on universal principles of human dignity", "Restore pre-Socratic values centered on instinct, excellence, and passion as a path toward the Ubermensch", "Create a political system based on the rule of the strongest individuals in society", "Prove that all moral systems are equally valid and equally arbitrary expressions of power"],
+      "options": ["Develop a new universal ethics grounded in rational principles of human dignity to replace Christian morality", "Recover pre-Socratic values centered on instinct, excellence, and passion as the path to the Ubermensch", "Construct a political order in which the most powerful and capable individuals hold legitimate authority", "Demonstrate that all moral systems are equally groundless and reflect nothing but competing bids for social power"],
       "correctAnswer": 1
     },
     {
@@ -179,7 +179,7 @@
     {
       "id": "n30",
       "question": "On which specific point did Nietzsche actually agree with Descartes?",
-      "options": ["That reason is the foundation of all reliable knowledge", "That humans possess free will and are morally responsible for their choices", "That animals are automatons lacking genuine consciousness", "That God's existence can be proven through the presence of innate ideas"],
+      "options": ["That pure reason, rather than sensory experience, forms the foundation of all reliable knowledge", "That humans possess free will and are morally responsible for their choices", "That animals are automatons lacking genuine consciousness", "That the existence of God can be established by pointing to the innate ideas present in the mind"],
       "correctAnswer": 2
     }
   ]

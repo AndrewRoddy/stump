@@ -35,7 +35,7 @@
     {
       "id": "ba6",
       "question": "What was the Fourth Encounter, and why was it significant?",
-      "options": ["A corpse, which showed Siddhartha that death was inevitable and beyond escape", "An ascetic seeker, which showed Siddhartha that a life of spiritual discipline was a possible path out of suffering", "A sick man, which showed Siddhartha that illness affects everyone regardless of wealth or status", "A god, who appeared and told Siddhartha he was destined to become enlightened"],
+      "options": ["A corpse, which showed Siddhartha that death was inevitable and impossible to escape", "An ascetic seeker, which showed Siddhartha that a life of spiritual discipline offered a possible path out of suffering", "A sick man, which showed Siddhartha that illness affects everyone regardless of wealth or status", "A wandering brahmin priest, who offered Siddhartha ritualistic techniques for transcending physical suffering"],
       "correctAnswer": 1
     },
     {
@@ -53,31 +53,31 @@
     {
       "id": "ba9",
       "question": "The First Noble Truth states:",
-      "options": ["The path to enlightenment requires following the Eight Fold Path strictly", "There is suffering (Dukkha) pervading all forms of life due to impermanence", "Suffering can be completely eliminated through meditation practice alone", "All desires are equally harmful and must be fully extinguished to find peace"],
+      "options": ["The path to liberation requires strict adherence to the Eight Fold Path in all aspects of one's life", "There is suffering (Dukkha) in all existence due to impermanence and unfulfilled craving", "Suffering can be completely eliminated through meditation practice alone without other disciplines", "All desires are equally harmful and must be fully extinguished before any peace is possible"],
       "correctAnswer": 1
     },
     {
       "id": "ba10",
       "question": "The Second Noble Truth identifies the cause of suffering as:",
-      "options": ["Failure to follow religious rituals and pray to the appropriate gods", "Our constant craving for sensual pleasure, permanence, and escape from pain", "The existence of evil forces in the universe that act against human happiness", "The social inequality created by the caste system in Indian society"],
+      "options": ["Our failure to cultivate enough mindfulness and meditative discipline to quiet the wandering mind", "Our constant craving for sensual pleasure, permanence, and escape from pain", "The cycle of rebirth that traps beings in endless repetition of experiences beyond their control", "The social inequality created by the caste system in Indian society"],
       "correctAnswer": 1
     },
     {
       "id": "ba11",
       "question": "The Fourth Noble Truth describes:",
-      "options": ["That suffering has a cause that can be clearly identified through introspection", "That Nirvana is the ultimate goal that all Buddhist practice points toward", "The Eight Fold Path as the method for achieving the cessation of suffering", "That impermanence is the fundamental nature of all existence in the universe"],
+      "options": ["That suffering has a cause that can be clearly identified through introspection", "That Nirvana is the ultimate goal that all Buddhist practice points toward", "The Eight Fold Path as the prescribed method for achieving the cessation of suffering", "That impermanence is the fundamental nature of all existence in the universe"],
       "correctAnswer": 2
     },
     {
       "id": "ba12",
       "question": "What is Nirvana?",
-      "options": ["A heavenly paradise where the righteous go after death as a reward", "A state of perfect happiness and permanent sensory pleasure", "The cessation of all suffering through the elimination of ignorance and craving", "The moment of death when individual consciousness is finally extinguished forever"],
+      "options": ["A blissful heavenly realm where virtuous beings are rewarded after death with eternal peace", "A permanent state of perfect bliss in which all desires are finally and fully satisfied without effort", "The complete cessation of suffering achieved by eliminating ignorance and craving", "The moment of physical death when individual consciousness is dissolved into the cosmic absolute"],
       "correctAnswer": 2
     },
     {
       "id": "ba13",
       "question": "What is the Dharma?",
-      "options": ["The Buddhist caste system that replaces the Hindu caste system", "The sacred mountain where the Buddha first achieved enlightenment", "The fundamental teachings of the Buddha on how to live and reach Nirvana", "The monastic community of Buddhist monks and nuns"],
+      "options": ["The cosmic moral order that governs how beings are reborn across successive lifetimes", "The sacred mountain where the Buddha first achieved enlightenment", "The fundamental teachings of the Buddha on how to live and reach Nirvana", "The monastic community of Buddhist monks and nuns"],
       "correctAnswer": 2
     },
     {
@@ -107,25 +107,25 @@
     {
       "id": "ba18",
       "question": "How does Buddhism differ from Hinduism regarding the caste system?",
-      "options": ["Buddhism maintains the caste system but allows individuals to move between castes through good deeds", "Buddhism completely rejects the caste system; anyone can achieve enlightenment regardless of birth or social class", "Buddhism replaced the Hindu caste system with a new hierarchy based on spiritual achievement", "Buddhism and Hinduism share the same view that caste is a natural and necessary social structure"],
+      "options": ["Buddhism maintains the caste system but allows individuals to move between castes through good deeds", "Buddhism fully rejects the caste system, holding that anyone can achieve enlightenment regardless of birth", "Buddhism replaced the Hindu caste system with a new hierarchy based on level of spiritual achievement", "Buddhism and Hinduism share the same view that caste is a natural and necessary social structure"],
       "correctAnswer": 1
     },
     {
       "id": "ba19",
       "question": "How does Buddhism differ from Hinduism regarding priests or spiritual leaders?",
-      "options": ["Buddhism requires certified priests to perform all valid spiritual rituals", "Buddhism has a more complex priestly hierarchy than Hinduism does", "Buddhism has no required priesthood; individuals pursue their own enlightenment directly", "Buddhism replaced Hindu priests with Buddhist monks who perform the same functions"],
+      "options": ["Buddhism requires certified priests to perform all valid spiritual rituals and ceremonies", "Buddhism has a more elaborate priestly hierarchy than Hinduism, with strict ranks of ordination", "Buddhism requires no priesthood; each individual pursues their own enlightenment directly", "Buddhism replaced Hindu priests with Buddhist monks who perform the same ritual functions"],
       "correctAnswer": 2
     },
     {
       "id": "ba20",
       "question": "St. Augustine (354-430 CE) is significant in the history of Western philosophy because he:",
-      "options": ["Incorporated Aristotle's philosophy into Christianity and created Scholasticism", "Was the first philosopher to argue that God's existence could be proven through pure reason alone", "Merged Plato's philosophy with Catholic dogma, becoming the most influential Church Father", "Translated all of Aristotle's major works from Greek into Latin for Church use"],
+      "options": ["Incorporated Aristotle's logical methods and metaphysics into Christianity, establishing Scholasticism", "Became the first philosopher to argue rigorously that God's existence could be demonstrated through pure reason", "Merged Plato's philosophy with Catholic dogma and became the most influential early Church Father", "Personally translated the entirety of Aristotle's major philosophical works from Greek into Latin"],
       "correctAnswer": 2
     },
     {
       "id": "ba21",
       "question": "What is Scholasticism?",
-      "options": ["The ancient Greek tradition of teaching philosophy through public dialogue and debate", "The Islamic philosophical movement that preserved and translated Greek texts during the Dark Ages", "The fusion of Aristotle's philosophy with Roman Catholic Church dogma, developed by Aquinas", "The Reformation-era movement that challenged Church authority using Aristotelian logic"],
+      "options": ["The ancient Greek educational tradition of teaching philosophy through structured public dialogue and debate", "The medieval Islamic philosophical movement that preserved and retransmitted Greek texts to the West", "The synthesis of Aristotle's philosophy with Roman Catholic doctrine, systematized by Aquinas", "The Reformation-era movement that drew on Aristotelian logic to challenge the doctrinal authority of the Church"],
       "correctAnswer": 2
     },
     {
@@ -137,19 +137,19 @@
     {
       "id": "ba23",
       "question": "Buddha's Last Words were: 'All things change... strive on, untiringly.' This best reflects which core Buddhist teaching?",
-      "options": ["The importance of prayer and communal ritual in achieving genuine enlightenment", "The impermanence of all things and the need for personal effort toward one's own awakening", "The absolute authority of the Buddha as a divine teacher whose words must be followed", "The futility of worldly effort and the necessity of complete withdrawal from active life"],
+      "options": ["The indispensability of communal ritual and worship as the central means of achieving enlightenment", "The impermanence of all things and the need for personal effort toward one's own awakening", "The absolute authority of the Buddha as a divine teacher whose words must be faithfully followed", "The futility of worldly effort and the necessity of complete withdrawal from active life"],
       "correctAnswer": 1
     },
     {
       "id": "ba24",
       "question": "According to the Buddhist teaching on compassion, it can only truly arise from:",
-      "options": ["Following the Buddha's rules on non-violence with strict discipline", "Understanding your own suffering and recognizing that same suffering in others", "Completely detaching from all personal desires and emotional responses", "Performing acts of charity and dedicated service to the wider community"],
+      "options": ["Following the Buddha's teachings on non-violence with strict and consistent discipline", "Understanding your own suffering and recognizing that same suffering in others", "Completely detaching from all personal desires and emotional responses to the world", "Performing acts of charity and dedicated service to the wider community around you"],
       "correctAnswer": 1
     },
     {
       "id": "ba25",
       "question": "Which of the following correctly describes how grace works differently in Buddhism vs. Christianity?",
-      "options": ["In both traditions, grace comes from a divine being who supernaturally intervenes in human life", "In Christianity, grace comes from God; in Buddhism, grace can be awakened through an ordinary human encounter", "In Buddhism, grace is earned through ritual performance; in Christianity it is freely given by God", "Grace does not exist in Buddhism at all; enlightenment is achieved purely through individual willpower"],
+      "options": ["In both Christianity and Buddhism, grace is a supernatural gift bestowed by a divine being on believers", "In Christianity, grace is given by God; in Buddhism, grace can be sparked by an ordinary human encounter", "In Buddhism, grace is earned through ritual performance; in Christianity it is freely given by God alone", "Grace does not exist in Buddhism at all; enlightenment is achieved purely through individual willpower"],
       "correctAnswer": 1
     }
   ]
