@@ -1,0 +1,886 @@
+{
+  "name": "Computer Networks - Final Exam Review",
+  "description": "Calculations and concepts from the final review: 802.11 DCF, subnetting, Dijkstra, ALOHA, TCP, IP fragmentation, and more (CCN Final)",
+  "questions": [
+    {
+      "id": "ccnfr-001",
+      "question": "Under CSMA/CA (802.11 DCF), what is the formula for total wait time before transmission?",
+      "options": [
+        "T_wait = SIFS + (Backoff Slots × Slot Time)",
+        "T_wait = DIFS + (Backoff Slots × Slot Time)",
+        "T_wait = DIFS + SIFS + Slot Time",
+        "T_wait = Backoff Slots × DIFS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-002",
+      "question": "Slot time = 20 μs, DIFS = 50 μs, backoff = 5 slots. When does the node transmit (channel idle at t=0)?",
+      "options": [
+        "100 μs",
+        "50 μs",
+        "150 μs",
+        "200 μs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-003",
+      "question": "What problem does the 802.11 RTS/CTS handshake primarily mitigate?",
+      "options": [
+        "The exposed node problem",
+        "The hidden node problem",
+        "The near/far problem",
+        "IP fragmentation"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-004",
+      "question": "In the 802.11 RTS/CTS sequence, what is the correct frame order?",
+      "options": [
+        "RTS → SIFS → CTS → SIFS → DATA → SIFS → ACK",
+        "CTS → DIFS → RTS → SIFS → DATA → SIFS → ACK",
+        "RTS → DIFS → CTS → SIFS → DATA → ACK",
+        "RTS → CTS → DATA → ACK (no inter-frame spacing)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "ccnfr-005",
+      "question": "RTS=40 μs, CTS=30 μs, DATA=100 μs, ACK=30 μs, SIFS=10 μs. Total transmission time (ignoring DIFS/backoff)?",
+      "options": [
+        "200 μs",
+        "210 μs",
+        "230 μs",
+        "240 μs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-006",
+      "question": "The formula for DATA frame transmission time including PHY overhead is:",
+      "options": [
+        "T_tx = Frame Size / Data Rate",
+        "T_tx = (Frame Size / Data Rate) + T_PHY",
+        "T_tx = Frame Size + T_PHY",
+        "T_tx = (Frame Size × 8) + T_PHY"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-007",
+      "question": "A DATA frame has a 1200-byte payload and 30-byte header at 36 Mbps, plus 24 μs PHY overhead. What is T_tx?",
+      "options": [
+        "273.33 μs",
+        "297.33 μs",
+        "321.33 μs",
+        "249.33 μs"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-008",
+      "question": "For one complete 802.11 DCF exchange, the formula for total exchange time is:",
+      "options": [
+        "T_total = DIFS + T_DATA + SIFS + T_ACK",
+        "T_total = DIFS + Backoff + T_DATA + SIFS + T_ACK",
+        "T_total = Backoff + T_DATA + T_ACK",
+        "T_total = DIFS + Backoff + T_DATA + DIFS + T_ACK"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-009",
+      "question": "Effective throughput (802.11 DCF) is calculated as:",
+      "options": [
+        "Data Rate / T_total",
+        "Payload Bits / T_total",
+        "Frame Bits / T_DATA",
+        "Payload Bytes / T_ACK"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-010",
+      "question": "Protocol efficiency (802.11 DCF) is defined as:",
+      "options": [
+        "T_DATA / T_total",
+        "T_payload_only / T_total",
+        "Payload Bits / Frame Bits",
+        "T_total / T_DATA"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-011",
+      "question": "The block size formula for subnetting is:",
+      "options": [
+        "Block Size = Subnet Mask Octet − 256",
+        "Block Size = 256 − Subnet Mask Octet",
+        "Block Size = 2^(32 − prefix)",
+        "Block Size = Subnet Mask Octet / 2"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-012",
+      "question": "Given IP 192.168.10.130/26, what is the network address?",
+      "options": [
+        "192.168.10.64",
+        "192.168.10.0",
+        "192.168.10.128",
+        "192.168.10.192"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-013",
+      "question": "How many usable host addresses are available in a /27 subnet?",
+      "options": [
+        "32",
+        "30",
+        "28",
+        "62"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-014",
+      "question": "The broadcast address of a subnet is found by:",
+      "options": [
+        "Network Address + Block Size",
+        "Next Subnet Boundary − 1",
+        "Network Address + 255",
+        "Network Address + (2^host_bits)"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-015",
+      "question": "What is the broadcast address of subnet 192.168.1.64/27?",
+      "options": [
+        "192.168.1.96",
+        "192.168.1.127",
+        "192.168.1.95",
+        "192.168.1.255"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-016",
+      "question": "What is the subnet mask for a /22 network?",
+      "options": [
+        "255.255.248.0",
+        "255.255.252.0",
+        "255.255.254.0",
+        "255.255.240.0"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-017",
+      "question": "To divide 128.96.34.0/24 into two equal subnets, what mask is used?",
+      "options": [
+        "255.255.255.192",
+        "255.255.255.0",
+        "255.255.255.128",
+        "255.255.254.0"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-018",
+      "question": "Which subnet does IP 128.96.34.139 belong to (after splitting /24 into two /25s)?",
+      "options": [
+        "128.96.34.0/25",
+        "128.96.34.64/25",
+        "128.96.34.128/25",
+        "128.96.34.192/25"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-019",
+      "question": "How many usable hosts are in each /25 subnet?",
+      "options": [
+        "128",
+        "126",
+        "124",
+        "130"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-020",
+      "question": "In VLSM, the formula for choosing the right prefix is:",
+      "options": [
+        "2^prefix ≥ Hosts + 2",
+        "2^h ≥ Hosts + 2 (where h = host bits = 32 − prefix)",
+        "2^prefix − 2 ≥ Hosts",
+        "prefix = 32 − ceil(log2(Hosts))"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-021",
+      "question": "For a VLSM subnet needing 500 hosts from 192.168.0.0/16, which prefix is used?",
+      "options": [
+        "/24",
+        "/23",
+        "/22",
+        "/25"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-022",
+      "question": "In Dijkstra's algorithm, the update rule is:",
+      "options": [
+        "D(v) = max(D(v), D(u) + c(u,v))",
+        "D(v) = D(u) + c(u,v)",
+        "D(v) = min(D(v), D(u) + c(u,v))",
+        "D(v) = D(v) − c(u,v)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-023",
+      "question": "Running Dijkstra from node A with links A-B=6 and A-C=3. Which node is confirmed first?",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "Both B and C simultaneously"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-024",
+      "question": "Using Dijkstra with A-C=3, C-D=3, D-F=4, C-E=4, E-F=3. What is the shortest cost from A to F?",
+      "options": [
+        "9",
+        "10",
+        "11",
+        "7"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-025",
+      "question": "A router's forwarding table entry stores:",
+      "options": [
+        "The full shortest path to each destination",
+        "Only the next hop interface for each destination",
+        "All possible paths ranked by cost",
+        "The complete network topology"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-026",
+      "question": "When link C-D fails (from the A-C=3, C-D=3, D-F=4, C-E=4, E-F=3 graph), what is the new shortest path from A to F?",
+      "options": [
+        "A → C → D → F (cost 10)",
+        "A → C → E → F (cost 10)",
+        "A → E → F (cost 7)",
+        "No path exists"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-027",
+      "question": "A 5 MB file is sent with an IP payload size of 1000 bytes. How many IP packets are required? (1 MB = 1,000,000 bytes)",
+      "options": [
+        "4096",
+        "5000",
+        "5120",
+        "4000"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-028",
+      "question": "Each IP packet carries 1000-byte payload plus a 20-byte IP header. What is the total bytes transmitted at the IP layer for 5000 packets?",
+      "options": [
+        "5,000,000",
+        "5,100,000",
+        "5,090,000",
+        "5,200,000"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-029",
+      "question": "The formula for IP overhead percentage is:",
+      "options": [
+        "(Overhead Bytes / Original File Size) × 100",
+        "((Total Bytes − Original File Size) / Total Bytes) × 100",
+        "(Total Bytes / Original File Size) × 100",
+        "(Header Bytes / Total Bytes) × 100"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-030",
+      "question": "Stop-and-Wait throughput formula is:",
+      "options": [
+        "Frame Size / RTT",
+        "Frame Size / (Transmission Time + RTT)",
+        "Bandwidth × RTT",
+        "Frame Size × Bandwidth"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-031",
+      "question": "Link bandwidth = 2 Mbps, RTT = 40 ms, frame = 1 KB (1024 bytes). Approximate Stop-and-Wait throughput?",
+      "options": [
+        "2 Mbps",
+        "≈ 185 Kbps",
+        "≈ 500 Kbps",
+        "≈ 40 Kbps"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-032",
+      "question": "In a sliding window protocol with window size W=6, how many frames can be in flight (unacknowledged) at once?",
+      "options": [
+        "3",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-033",
+      "question": "If a protocol uses a 4-bit sequence number field, how many distinct sequence numbers exist?",
+      "options": [
+        "8",
+        "15",
+        "16",
+        "32"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-034",
+      "question": "The minimum window size to fully utilize a link is:",
+      "options": [
+        "W_min = RTT / T_tx",
+        "W_min = ceil((T_tx + RTT) / T_tx)",
+        "W_min = T_tx + RTT",
+        "W_min = Bandwidth × RTT"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-035",
+      "question": "Frame transmission time is 5 ms and RTT is 30 ms. Minimum window size to fully utilize the link?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-036",
+      "question": "Frame size = 1000 bytes, link speed = 5 Mbps. Transmission time?",
+      "options": [
+        "0.8 ms",
+        "1.6 ms",
+        "2.0 ms",
+        "5.0 ms"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-037",
+      "question": "In Go-Back-N, frames 1–4 are sent (window=4) and frame 2 is lost. Which frames must be retransmitted?",
+      "options": [
+        "Only frame 2",
+        "Frames 2 and 3",
+        "Frames 2, 3, and 4",
+        "Frames 1, 2, 3, and 4"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-038",
+      "question": "The maximum window size in Go-Back-N with n-bit sequence numbers is:",
+      "options": [
+        "2^n",
+        "2^n − 1",
+        "2^(n−1)",
+        "2^n − 2"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-039",
+      "question": "If Go-Back-N window size is 7, what is the minimum bits needed for sequence numbers?",
+      "options": [
+        "2 bits",
+        "3 bits",
+        "4 bits",
+        "7 bits"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-040",
+      "question": "The maximum window size in Selective Repeat with n-bit sequence numbers is:",
+      "options": [
+        "2^n − 1",
+        "2^(n−1)",
+        "2^n",
+        "2^n / 2 − 1"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-041",
+      "question": "With 3-bit sequence numbers in Selective Repeat, what is the maximum window size?",
+      "options": [
+        "7",
+        "8",
+        "4",
+        "3"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-042",
+      "question": "Pure ALOHA throughput is maximized at what value of G?",
+      "options": [
+        "G = 1",
+        "G = 0.5",
+        "G = 2",
+        "G = 0.25"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-043",
+      "question": "The Pure ALOHA throughput formula is:",
+      "options": [
+        "S = G × e^(−G)",
+        "S = G × e^(−2G)",
+        "S = e^(−G)",
+        "S = G / e^G"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-044",
+      "question": "In Pure ALOHA, if S ≈ 0.152, what is G?",
+      "options": [
+        "0.5",
+        "1.0",
+        "0.25",
+        "2.0"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-045",
+      "question": "Slotted ALOHA reduces the vulnerability window compared to Pure ALOHA by:",
+      "options": [
+        "Eliminating backoff",
+        "Halving it (transmit only at slot boundaries)",
+        "Doubling frame transmission time",
+        "Requiring RTS/CTS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-046",
+      "question": "In Slotted ALOHA at G=1, what is the idle fraction?",
+      "options": [
+        "1/2 ≈ 0.500",
+        "1/e ≈ 0.368",
+        "1/e² ≈ 0.135",
+        "0.270"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-047",
+      "question": "In Slotted ALOHA with G=2, what is the probability of exactly one successful transmission (P(1))?",
+      "options": [
+        "0.135",
+        "0.368",
+        "0.270",
+        "0.500"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-048",
+      "question": "CSMA/CD channel efficiency formula is:",
+      "options": [
+        "η = 1 / (1 + 2BLe/cF)",
+        "η = cF / (cF + 2BLe)",
+        "Both A and B are equivalent",
+        "η = T_tx / (T_tx + 2 × PropDelay)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-049",
+      "question": "The minimum frame size for CSMA/CD collision detection is:",
+      "options": [
+        "F_min = PropDelay × Bandwidth",
+        "F_min = 2 × PropDelay × Bandwidth",
+        "F_min = RTT / Bandwidth",
+        "F_min = MTU − 20"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-050",
+      "question": "Propagation delay = 20 μs, link rate = 10 Mbps. Minimum frame size for CSMA/CD?",
+      "options": [
+        "200 bits",
+        "400 bits",
+        "800 bits",
+        "1000 bits"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-051",
+      "question": "Distance Vector routing uses which algorithm to compute shortest paths?",
+      "options": [
+        "Dijkstra's link-state algorithm",
+        "Bellman-Ford equation",
+        "Floyd-Warshall algorithm",
+        "Prim's algorithm"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-052",
+      "question": "D-to-C=2, C-to-B=3, direct D-to-B=11. Using Bellman-Ford, shortest D to B?",
+      "options": [
+        "11",
+        "5",
+        "6",
+        "3"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-053",
+      "question": "TCP throughput (window-limited, no loss) is:",
+      "options": [
+        "Throughput = cwnd × MSS / RTT (in appropriate units)",
+        "Throughput = Bandwidth − RTT",
+        "Throughput = cwnd / RTT",
+        "Throughput = MSS × Bandwidth"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "id": "ccnfr-054",
+      "question": "TCP connection: cwnd = 64 KB, RTT = 80 ms. Max throughput?",
+      "options": [
+        "3.28 Mbps",
+        "6.55 Mbps",
+        "8 Mbps",
+        "13.1 Mbps"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-055",
+      "question": "In TCP Slow Start, how does cwnd grow each RTT?",
+      "options": [
+        "Linearly: +1 MSS per RTT",
+        "Exponentially: doubles each RTT",
+        "Logarithmically",
+        "Constant: stays at initial value"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-056",
+      "question": "Starting with cwnd = 1 MSS and ssthresh = 32 MSS, how many RTTs does Slow Start take to reach ssthresh?",
+      "options": [
+        "4 RTTs",
+        "5 RTTs",
+        "6 RTTs",
+        "32 RTTs"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-057",
+      "question": "After a triple duplicate ACK at cwnd = 32 MSS (TCP Reno), what are the new cwnd and ssthresh?",
+      "options": [
+        "cwnd = 1, ssthresh = 32",
+        "cwnd = 16, ssthresh = 16",
+        "cwnd = 32, ssthresh = 16",
+        "cwnd = 1, ssthresh = 16"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-058",
+      "question": "After a timeout at cwnd = 24 MSS (TCP Reno), what are the new cwnd and ssthresh?",
+      "options": [
+        "cwnd = 12, ssthresh = 12",
+        "cwnd = 1, ssthresh = 12",
+        "cwnd = 1, ssthresh = 24",
+        "cwnd = 12, ssthresh = 24"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-059",
+      "question": "In TCP Congestion Avoidance, cwnd grows by how much per RTT?",
+      "options": [
+        "Doubles each RTT",
+        "+1 MSS per RTT",
+        "+ssthresh MSS per RTT",
+        "Halves each RTT"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-060",
+      "question": "Sender in congestion avoidance with cwnd = 20 MSS. What is cwnd after 5 RTTs?",
+      "options": [
+        "40 MSS",
+        "25 MSS",
+        "32 MSS",
+        "20 MSS"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-061",
+      "question": "The Bandwidth-Delay Product (BDP) is:",
+      "options": [
+        "BDP = Bandwidth / RTT",
+        "BDP = Bandwidth × RTT",
+        "BDP = Frame Size × RTT",
+        "BDP = Bandwidth × Propagation Delay only"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-062",
+      "question": "Bandwidth = 100 Mbps, RTT = 50 ms. What window size is needed to fill the pipe?",
+      "options": [
+        "312,500 bytes",
+        "625,000 bytes",
+        "1,250,000 bytes",
+        "50,000 bytes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-063",
+      "question": "IP fragmentation offset is measured in units of:",
+      "options": [
+        "Bytes",
+        "Bits",
+        "8-byte blocks",
+        "Words (4-byte blocks)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-064",
+      "question": "Packet = 1500 bytes (20-byte header), MTU = 620. What is the fragment offset of the third fragment?",
+      "options": [
+        "75",
+        "100",
+        "150",
+        "200"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-065",
+      "question": "A 4000-byte IP packet (20-byte header) is sent over a network with MTU = 1020. How many fragments are created?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-066",
+      "question": "Why must fragment payloads (except the last) be divisible by 8?",
+      "options": [
+        "Because IP headers are always 8 bytes",
+        "Because the fragment offset field counts 8-byte blocks",
+        "Because Ethernet frames align to 8 bytes",
+        "Because TCP segments are padded to 8 bytes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-067",
+      "question": "MTU = 1000 bytes, IP header = 20 bytes. Max payload per fragment (except last)?",
+      "options": [
+        "980 bytes",
+        "976 bytes",
+        "960 bytes",
+        "992 bytes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-068",
+      "question": "Three LAN segments (20 computers each) are connected by Layer-1 repeaters. How large is the single collision domain?",
+      "options": [
+        "20 computers",
+        "40 computers",
+        "60 computers",
+        "3 collision domains of 20 each"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-069",
+      "question": "Three LAN segments (20 computers each) are connected by Layer-2 bridges. How many computers are in each collision domain?",
+      "options": [
+        "60 computers (one merged domain)",
+        "20 computers (each segment is its own domain)",
+        "10 computers",
+        "40 computers"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-070",
+      "question": "A full-duplex switch has 8 ports. How many simultaneous independent communications can occur?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-071",
+      "question": "The Network Allocation Vector (NAV) in 802.11 is:",
+      "options": [
+        "A physical carrier sense signal",
+        "An internal virtual carrier sense countdown timer updated from Duration fields in overheard frames",
+        "The backoff counter",
+        "The number of frames in the transmit queue"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-072",
+      "question": "NAV = 300 μs. After waiting 100 μs, how much longer must a node defer?",
+      "options": [
+        "300 μs",
+        "100 μs",
+        "200 μs",
+        "400 μs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-073",
+      "question": "EIFS (Extended Inter-Frame Space) is used when:",
+      "options": [
+        "A node wins the backoff race",
+        "A node receives a corrupted frame and cannot determine when the channel will be free",
+        "An ACK is not received after SIFS",
+        "The contention window reaches its maximum"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-074",
+      "question": "EIFS = 300 μs, DIFS = 50 μs. Additional delay penalty of EIFS over DIFS?",
+      "options": [
+        "300 μs",
+        "350 μs",
+        "250 μs",
+        "150 μs"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "ccnfr-075",
+      "question": "In 802.11 Binary Exponential Backoff, after a collision the CW grows as:",
+      "options": [
+        "CW_new = CW_old + 16",
+        "CW_new = (2 × CW_old) + 1",
+        "CW_new = CW_old × 2",
+        "CW_new = CW_old + CW_old"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-076",
+      "question": "Initial CW = 15. What is CW after 3 consecutive collisions?",
+      "options": [
+        "63",
+        "127",
+        "255",
+        "31"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-077",
+      "question": "Sliding window utilization formula is:",
+      "options": [
+        "U = RTT / (W × T_trans)",
+        "U = W × T_trans / RTT (capped at 1.0)",
+        "U = W / (RTT + T_trans)",
+        "U = T_trans / (W × RTT)"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-078",
+      "question": "W=10 frames, frame=1000 bytes, bandwidth=5 Mbps, RTT=40 ms. Sliding window utilization?",
+      "options": [
+        "20%",
+        "40%",
+        "80%",
+        "100%"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-079",
+      "question": "The TCP Mathis Equation estimates throughput under loss as approximately:",
+      "options": [
+        "Rate ≈ MSS / (RTT × sqrt(p))",
+        "Rate ≈ (MSS / RTT) × sqrt(1.5/p)",
+        "Rate ≈ cwnd × MSS / RTT",
+        "Rate ≈ MSS × p / RTT"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "ccnfr-080",
+      "question": "TCP connection: cwnd=20 MSS, MSS=1460 bytes, RTT=50 ms. Throughput?",
+      "options": [
+        "2.34 Mbps",
+        "4.67 Mbps",
+        "9.34 Mbps",
+        "1.17 Mbps"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}
