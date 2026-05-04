@@ -9,6 +9,7 @@ interface Props {
   totalInBlock: number
   deckName: string
   selectedAnswer: number | null
+  awaitingCorrect: boolean
   onAnswer: (index: number) => void
 }
 
@@ -22,6 +23,7 @@ function getOptionClass(i: number, selected: number | null, correct: number): st
 export default function Quiz({
   question,
   selectedAnswer,
+  awaitingCorrect,
   onAnswer,
 }: Props) {
 
@@ -56,13 +58,16 @@ export default function Quiz({
               key={i}
               className={getOptionClass(i, shuffledSelected, shuffledCorrect)}
               onClick={() => onAnswer(origIdx)}
-              disabled={selectedAnswer !== null}
+              disabled={selectedAnswer !== null && !(awaitingCorrect && origIdx === question.correctAnswer)}
             >
               <span className="option-label">{LABELS[i]}</span>
               <span className="option-text">{question.options[origIdx]}</span>
             </button>
           ))}
         </div>
+        {awaitingCorrect && (
+          <p className="correct-hint">Click the correct answer to continue</p>
+        )}
       </div>
     </div>
   )

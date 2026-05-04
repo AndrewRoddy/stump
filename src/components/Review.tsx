@@ -10,8 +10,8 @@ interface Props {
 export default function Review({ results, remainingInQueue, blockNumber, onContinue }: Props) {
   const correctCount = results.filter(r => r.correct).length
   const wrongCount = results.length - correctCount
-  const addedBack = wrongCount * 2
-  const totalRemaining = remainingInQueue + addedBack
+  const totalRemaining = remainingInQueue + wrongCount * 2
+  const sorted = [...results].sort((a, b) => (a.correct ? 1 : 0) - (b.correct ? 1 : 0))
 
   return (
     <div className="screen">
@@ -23,8 +23,12 @@ export default function Review({ results, remainingInQueue, blockNumber, onConti
           <span className="score-total">{results.length}</span>
         </div>
 
+        <button className="btn-primary" onClick={onContinue}>
+          {totalRemaining > 0 ? 'Continue' : 'Finish'}
+        </button>
+
         <div className="results-list">
-          {results.map((r, i) => (
+          {sorted.map((r, i) => (
             <div key={i} className={`result-item ${r.correct ? 'result-correct' : 'result-wrong'}`}>
               <span className="result-icon">{r.correct ? '✓' : '✗'}</span>
               <div className="result-details">
@@ -39,22 +43,6 @@ export default function Review({ results, remainingInQueue, blockNumber, onConti
             </div>
           ))}
         </div>
-
-        {wrongCount > 0 && (
-          <p className="requeue-info">
-            {wrongCount} wrong — added back twice ({addedBack} questions to review)
-          </p>
-        )}
-
-        {totalRemaining > 0 ? (
-          <p className="remaining-info">{totalRemaining} questions remaining</p>
-        ) : (
-          <p className="remaining-info all-done">All questions mastered!</p>
-        )}
-
-        <button className="btn-primary" onClick={onContinue}>
-          {totalRemaining > 0 ? 'Continue' : 'Finish'}
-        </button>
       </div>
     </div>
   )

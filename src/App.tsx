@@ -36,6 +36,7 @@ export default function App() {
   const [session, setSession] = useState<QuizSession | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
+  const [awaitingCorrect, setAwaitingCorrect] = useState(false)
 
   function startQuiz(deck: Deck) {
     const shuffled = [...deck.questions].sort(() => Math.random() - 0.5)
@@ -50,29 +51,49 @@ export default function App() {
     })
     setCurrentIndex(0)
     setSelectedAnswer(null)
+    setAwaitingCorrect(false)
     setPhase('quizzing')
   }
 
   function handleAnswer(answerIndex: number) {
-    if (selectedAnswer !== null || !session) return
-    setSelectedAnswer(answerIndex)
+    if (!session) return
 
     const question = session.currentBlock[currentIndex]
-    const correct = answerIndex === question.correctAnswer
-    const newResult: BlockResult = { question, selected: answerIndex, correct }
     const isLastQuestion = currentIndex + 1 >= session.currentBlock.length
 
-    setTimeout(() => {
+    if (awaitingCorrect) {
+      if (answerIndex !== question.correctAnswer) return
+      setAwaitingCorrect(false)
+      setSelectedAnswer(null)
       if (isLastQuestion) {
-        setSession(prev => prev ? { ...prev, blockResults: [...prev.blockResults, newResult] } : prev)
         setPhase('reviewing')
-        setSelectedAnswer(null)
       } else {
-        setSession(prev => prev ? { ...prev, blockResults: [...prev.blockResults, newResult] } : prev)
         setCurrentIndex(i => i + 1)
-        setSelectedAnswer(null)
       }
-    }, 1200)
+      return
+    }
+
+    if (selectedAnswer !== null) return
+    setSelectedAnswer(answerIndex)
+
+    const correct = answerIndex === question.correctAnswer
+    const newResult: BlockResult = { question, selected: answerIndex, correct }
+
+    if (!correct) {
+      setSession(prev => prev ? { ...prev, blockResults: [...prev.blockResults, newResult] } : prev)
+      setAwaitingCorrect(true)
+    } else {
+      setTimeout(() => {
+        setSession(prev => prev ? { ...prev, blockResults: [...prev.blockResults, newResult] } : prev)
+        if (isLastQuestion) {
+          setPhase('reviewing')
+          setSelectedAnswer(null)
+        } else {
+          setCurrentIndex(i => i + 1)
+          setSelectedAnswer(null)
+        }
+      }, 1200)
+    }
   }
 
   function handleContinue() {
@@ -120,6 +141,7 @@ export default function App() {
         totalInBlock={session.currentBlock.length}
         deckName={session.deckName}
         selectedAnswer={selectedAnswer}
+        awaitingCorrect={awaitingCorrect}
         onAnswer={handleAnswer}
       />
     )
