@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import type { Deck, Question } from './types'
 import DeckSelect from './components/DeckSelect'
 import Quiz from './components/Quiz'
@@ -23,12 +23,53 @@ export interface BlockResult {
 }
 
 interface QuizSession {
+  deckId: string
   deckName: string
   queue: Question[]
   currentBlock: Question[]
   blockResults: BlockResult[]
   totalQuestions: number
   blockNumber: number
+  masteredIds: string[]
+}
+
+interface SavedState {
+  session: QuizSession
+  currentIndex: number
+  phase: 'quizzing' | 'reviewing'
+}
+
+function sessionKey(deckId: string) { return `stump_session_${deckId}` }
+function completeKey(deckId: string) { return `stump_complete_${deckId}` }
+
+function loadSaved(deckId: string): SavedState | null {
+  try {
+    const raw = localStorage.getItem(sessionKey(deckId))
+    if (!raw) return null
+    const saved = JSON.parse(raw) as SavedState
+    saved.session.masteredIds ??= []
+    return saved
+  } catch { return null }
+}
+
+function clearSaved(deckId: string) { localStorage.removeItem(sessionKey(deckId)) }
+function isDeckComplete(deckId: string) { return localStorage.getItem(completeKey(deckId)) !== null }
+function markDeckComplete(deckId: string) { localStorage.setItem(completeKey(deckId), '1') }
+function clearDeckComplete(deckId: string) { localStorage.removeItem(completeKey(deckId)) }
+
+function freshSession(deck: Deck, deckId: string): QuizSession {
+  const shuffled = [...deck.questions].sort(() => Math.random() - 0.5)
+  const block = shuffled.splice(0, 10)
+  return {
+    deckId,
+    deckName: deck.name,
+    queue: shuffled,
+    currentBlock: block,
+    blockResults: [],
+    totalQuestions: deck.questions.length,
+    blockNumber: 1,
+    masteredIds: [],
+  }
 }
 
 export default function App() {
@@ -37,18 +78,42 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [awaitingCorrect, setAwaitingCorrect] = useState(false)
+  const [pendingRestart, setPendingRestart] = useState<{ deck: Deck; id: string } | null>(null)
 
-  function startQuiz(deck: Deck) {
-    const shuffled = [...deck.questions].sort(() => Math.random() - 0.5)
-    const block = shuffled.splice(0, 10)
-    setSession({
-      deckName: deck.name,
-      queue: shuffled,
-      currentBlock: block,
-      blockResults: [],
-      totalQuestions: deck.questions.length,
-      blockNumber: 1,
-    })
+  useEffect(() => {
+    if (!session || (phase !== 'quizzing' && phase !== 'reviewing')) return
+    const saved: SavedState = { session, currentIndex, phase }
+    localStorage.setItem(sessionKey(session.deckId), JSON.stringify(saved))
+  }, [session, currentIndex, phase])
+
+  function startQuiz(deck: Deck, deckId: string) {
+    if (isDeckComplete(deckId)) {
+      setPendingRestart({ deck, id: deckId })
+      return
+    }
+    const saved = loadSaved(deckId)
+    if (saved) {
+      setSession(saved.session)
+      setCurrentIndex(saved.currentIndex)
+      setSelectedAnswer(null)
+      setAwaitingCorrect(false)
+      setPhase(saved.phase)
+      return
+    }
+    setSession(freshSession(deck, deckId))
+    setCurrentIndex(0)
+    setSelectedAnswer(null)
+    setAwaitingCorrect(false)
+    setPhase('quizzing')
+  }
+
+  function confirmRestart() {
+    if (!pendingRestart) return
+    const { deck, id } = pendingRestart
+    clearDeckComplete(id)
+    clearSaved(id)
+    setPendingRestart(null)
+    setSession(freshSession(deck, id))
     setCurrentIndex(0)
     setSelectedAnswer(null)
     setAwaitingCorrect(false)
@@ -65,11 +130,8 @@ export default function App() {
       if (answerIndex !== question.correctAnswer) return
       setAwaitingCorrect(false)
       setSelectedAnswer(null)
-      if (isLastQuestion) {
-        setPhase('reviewing')
-      } else {
-        setCurrentIndex(i => i + 1)
-      }
+      if (isLastQuestion) setPhase('reviewing')
+      else setCurrentIndex(i => i + 1)
       return
     }
 
@@ -84,14 +146,15 @@ export default function App() {
       setAwaitingCorrect(true)
     } else {
       setTimeout(() => {
-        setSession(prev => prev ? { ...prev, blockResults: [...prev.blockResults, newResult] } : prev)
-        if (isLastQuestion) {
-          setPhase('reviewing')
-          setSelectedAnswer(null)
-        } else {
-          setCurrentIndex(i => i + 1)
-          setSelectedAnswer(null)
-        }
+        setSession(prev => {
+          if (!prev) return prev
+          const existing = prev.masteredIds ?? []
+          const masteredIds = existing.includes(question.id) ? existing : [...existing, question.id]
+          return { ...prev, blockResults: [...prev.blockResults, newResult], masteredIds }
+        })
+        setSelectedAnswer(null)
+        if (isLastQuestion) setPhase('reviewing')
+        else setCurrentIndex(i => i + 1)
       }, 1200)
     }
   }
@@ -101,25 +164,19 @@ export default function App() {
 
     const newQueue = [...session.queue]
     for (const result of session.blockResults) {
-      if (!result.correct) {
-        newQueue.push(result.question, result.question)
-      }
+      if (!result.correct) newQueue.push(result.question, result.question)
     }
 
     if (newQueue.length === 0) {
+      markDeckComplete(session.deckId)
+      clearSaved(session.deckId)
       setPhase('complete')
       return
     }
 
     newQueue.sort(() => Math.random() - 0.5)
     const block = newQueue.splice(0, 10)
-    setSession({
-      ...session,
-      queue: newQueue,
-      currentBlock: block,
-      blockResults: [],
-      blockNumber: session.blockNumber + 1,
-    })
+    setSession({ ...session, queue: newQueue, currentBlock: block, blockResults: [], blockNumber: session.blockNumber + 1 })
     setCurrentIndex(0)
     setPhase('quizzing')
   }
@@ -130,7 +187,25 @@ export default function App() {
   }
 
   if (phase === 'selecting') {
-    return <DeckSelect decks={allDecks} onSelect={startQuiz} />
+    return (
+      <>
+        <DeckSelect decks={allDecks} onSelect={startQuiz} />
+        {pendingRestart && (
+          <div className="modal-overlay" onClick={() => setPendingRestart(null)}>
+            <div className="modal-card" onClick={e => e.stopPropagation()}>
+              <h3 className="modal-title">Deck Complete</h3>
+              <p className="modal-body">
+                You've already mastered <strong>{pendingRestart.deck.name}</strong>. Start over from scratch?
+              </p>
+              <div className="modal-actions">
+                <button className="btn-ghost" onClick={() => setPendingRestart(null)}>Cancel</button>
+                <button className="btn-primary" onClick={confirmRestart}>Start Over</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </>
+    )
   }
 
   if (phase === 'quizzing' && session) {

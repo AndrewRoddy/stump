@@ -1,3 +1,25 @@
+# Dependencies
 node_modules/
+
+# Build output
+dist/
+
+# TypeScript
+tsconfig.tsbuildinfo
+
+# Data (local only)
 data/*
 !data/.gitkeep
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
