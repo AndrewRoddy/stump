@@ -42,15 +42,6 @@ export default function Quiz({
   return (
     <div className="screen">
       <div className="card quiz-card">
-        {/*
-        <div className="quiz-header">
-          <span className="deck-label">{deckName}</span>
-          <span className="progress-label">{questionNumber} / {totalInBlock}</span>
-        </div>
-        <div className="progress-bar">
-          <div className="progress-fill" style={{ width: `${progressPct}%` }} />
-        </div>
-        */}
         <p className="question-text">{question.question}</p>
         <div className="options">
           {shuffledIndices.map((origIdx, i) => (

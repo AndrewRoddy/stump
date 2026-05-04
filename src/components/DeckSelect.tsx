@@ -35,15 +35,40 @@ function getDeckProgress(id: string): DeckProgress {
 }
 
 function cardProgressStyle(p: DeckProgress): CSSProperties {
-  if (p.status === 'none') return {}
+  if (p.status !== 'in-progress') return {}
   return { '--deck-progress': `${p.pct}%` } as CSSProperties
 }
 
 function folderProgressStyle(p: DeckProgress): CSSProperties {
-  if (p.status === 'none') return {}
+  if (p.status !== 'in-progress') return {}
   const fill = `rgba(255,146,47,0.22) ${p.pct}%`
   const base = `rgba(255,146,47,0.07) ${p.pct}%`
   return { background: `linear-gradient(to right, ${fill}, ${base})` }
+}
+
+type BadgeTier = 'bronze' | 'silver' | 'gold' | 'diamond'
+
+const BADGE_SHAPE: Record<BadgeTier, string> = {
+  bronze:  '●',
+  silver:  '■',
+  gold:    '★',
+  diamond: '◆',
+}
+
+const BADGE_INFO: Record<BadgeTier, { label: string; req: string; description: string }> = {
+  bronze:  { label: 'Bronze',  req: '1 completion',   description: 'Awarded for completing a deck for the first time.' },
+  silver:  { label: 'Silver',  req: '2 completions',  description: 'Awarded for completing a deck twice.' },
+  gold:    { label: 'Gold',    req: '10 completions', description: 'Awarded for completing a deck 10 times.' },
+  diamond: { label: 'Diamond', req: '100 completions', description: 'Awarded for completing a deck 100 times. Legendary.' },
+}
+
+function getDeckBadgeTier(id: string): BadgeTier | null {
+  const count = parseInt(localStorage.getItem(`stump_badges_${id}`) ?? '0', 10)
+  if (count >= 100) return 'diamond'
+  if (count >= 10)  return 'gold'
+  if (count >= 2)   return 'silver'
+  if (count >= 1)   return 'bronze'
+  return null
 }
 
 function clearAllProgress() {
@@ -55,6 +80,7 @@ function clearAllProgress() {
 export default function DeckSelect({ decks, onSelect }: Props) {
   const [showConfirm, setShowConfirm] = useState(false)
   const [resetCount, setResetCount] = useState(0)
+  const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number } | null>(null)
 
   function handleResetAll() {
     clearAllProgress()
@@ -109,6 +135,8 @@ export default function DeckSelect({ decks, onSelect }: Props) {
                     )}
                     {entries.map(({ id, deck }) => {
                       const p = getDeckProgress(id)
+                      const tier = getDeckBadgeTier(id)
+                      const count = tier ? parseInt(localStorage.getItem(`stump_badges_${id}`) ?? '0', 10) : 0
                       return (
                         <button
                           key={id}
@@ -116,7 +144,18 @@ export default function DeckSelect({ decks, onSelect }: Props) {
                           style={cardProgressStyle(p)}
                           onClick={() => onSelect(deck, id)}
                         >
-                          <span className="deck-name">{deck.name}</span>
+                          <span className="deck-name-row">
+                            {tier && (
+                              <span
+                                className={`deck-badge-icon deck-badge-icon-${tier}`}
+                                onClick={e => { e.stopPropagation(); setBadgePopup({ tier, count }) }}
+                                title={BADGE_INFO[tier].label}
+                              >
+                                {BADGE_SHAPE[tier]}
+                              </span>
+                            )}
+                            <span className="deck-name">{deck.name}</span>
+                          </span>
                           <span className="deck-meta">
                             {deck.questions.length} questions
                             {deck.description ? ` · ${deck.description}` : ''}
@@ -136,6 +175,30 @@ export default function DeckSelect({ decks, onSelect }: Props) {
           </div>
         </div>
       </div>
+
+      {badgePopup && (
+        <div className="modal-overlay" onClick={() => setBadgePopup(null)}>
+          <div className="modal-card" onClick={e => e.stopPropagation()}>
+            <div className="badge-popup-header">
+              <h3 className="modal-title">Badges</h3>
+              <span className="badge-popup-count">{badgePopup.count} completion{badgePopup.count !== 1 ? 's' : ''}</span>
+            </div>
+            <div className="badge-tier-list">
+              {(Object.keys(BADGE_INFO) as BadgeTier[]).map(tier => (
+                <div key={tier} className={`badge-tier-row${tier === badgePopup.tier ? ' badge-tier-earned' : ''}`}>
+                  <span className={`badge-tier-shape deck-badge-icon-${tier}`}>{BADGE_SHAPE[tier]}</span>
+                  <div className="badge-tier-text">
+                    <span className="badge-tier-label">{BADGE_INFO[tier].label}</span>
+                    <span className="badge-tier-req">{BADGE_INFO[tier].req}</span>
+                  </div>
+                  {tier === badgePopup.tier && <span className="badge-tier-earned-tag">Earned</span>}
+                </div>
+              ))}
+            </div>
+            <button className="btn-ghost" onClick={() => setBadgePopup(null)}>Got it</button>
+          </div>
+        </div>
+      )}
 
       {showConfirm && (
         <div className="modal-overlay" onClick={() => setShowConfirm(false)}>

@@ -195,9 +195,99 @@ body {
   background: rgba(255, 146, 47, 0.06);
 }
 
-.deck-name {
+.deck-name-row {
   position: relative;
   z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.deck-badge-icon {
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 3px;
+  transition: opacity 0.1s;
+}
+
+.deck-badge-icon:hover { opacity: 0.7; }
+
+.deck-badge-icon-bronze  { color: #CD7F32; }
+.deck-badge-icon-silver  { color: #C0C0C0; }
+.deck-badge-icon-gold    { color: #FFD700; }
+.deck-badge-icon-diamond { color: #A8EDFF; filter: drop-shadow(0 0 3px rgba(168,237,255,0.7)); }
+
+.badge-popup-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.badge-popup-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.badge-tier-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.badge-tier-row {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.badge-tier-earned {
+  background: rgba(255, 146, 47, 0.06);
+  border-color: rgba(255, 146, 47, 0.2);
+}
+
+.badge-tier-shape {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.badge-tier-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.badge-tier-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.badge-tier-req {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.badge-tier-earned-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.deck-name {
   font-weight: 600;
   font-size: 1rem;
 }
@@ -465,6 +555,44 @@ body {
   font-weight: 600;
 }
 
+/* ── Badges / Medals ── */
+
+
+@keyframes medal-drop {
+  0%   { transform: translateY(-24px) scale(0.75); opacity: 0; }
+  60%  { transform: translateY(5px) scale(1.06); opacity: 1; }
+  80%  { transform: translateY(-3px) scale(0.97); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+.medal-wrap {
+  margin-bottom: 0.1rem;
+}
+
+.medal-wrap svg {
+  animation: medal-drop 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+}
+
+.badge-earned-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-top: -0.1rem;
+}
+
+.badge-bronze  { color: #CD7F32; }
+.badge-silver  { color: #C0C0C0; }
+.badge-gold    { color: #FFD700; }
+.badge-diamond { color: #A8EDFF; text-shadow: 0 0 8px rgba(168, 237, 255, 0.6); }
+
+.badge-next-hint {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: -0.25rem;
+}
+
 /* ── Complete ── */
 
 .complete-card {
@@ -476,23 +604,6 @@ body {
   padding: 2.5rem 2rem;
 }
 
-.complete-check {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--success-bg);
-  border: 2px solid var(--success-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--success);
-  margin-bottom: 0.25rem;
-}
-
-.complete-check svg {
-  width: 32px;
-  height: 32px;
-}
 
 .complete-title {
   font-family: 'Bebas Neue', sans-serif;

@@ -41,6 +41,7 @@ interface SavedState {
 
 function sessionKey(deckId: string) { return `stump_session_${deckId}` }
 function completeKey(deckId: string) { return `stump_complete_${deckId}` }
+function badgeKey(deckId: string) { return `stump_badges_${deckId}` }
 
 function loadSaved(deckId: string): SavedState | null {
   try {
@@ -54,7 +55,11 @@ function loadSaved(deckId: string): SavedState | null {
 
 function clearSaved(deckId: string) { localStorage.removeItem(sessionKey(deckId)) }
 function isDeckComplete(deckId: string) { return localStorage.getItem(completeKey(deckId)) !== null }
-function markDeckComplete(deckId: string) { localStorage.setItem(completeKey(deckId), '1') }
+function getBadgeCount(deckId: string) { return parseInt(localStorage.getItem(badgeKey(deckId)) ?? '0', 10) }
+function markDeckComplete(deckId: string) {
+  localStorage.setItem(completeKey(deckId), '1')
+  localStorage.setItem(badgeKey(deckId), String(getBadgeCount(deckId) + 1))
+}
 function clearDeckComplete(deckId: string) { localStorage.removeItem(completeKey(deckId)) }
 
 function freshSession(deck: Deck, deckId: string): QuizSession {
@@ -190,20 +195,31 @@ export default function App() {
     return (
       <>
         <DeckSelect decks={allDecks} onSelect={startQuiz} />
-        {pendingRestart && (
-          <div className="modal-overlay" onClick={() => setPendingRestart(null)}>
-            <div className="modal-card" onClick={e => e.stopPropagation()}>
-              <h3 className="modal-title">Deck Complete</h3>
-              <p className="modal-body">
-                You've already mastered <strong>{pendingRestart.deck.name}</strong>. Start over from scratch?
-              </p>
-              <div className="modal-actions">
-                <button className="btn-ghost" onClick={() => setPendingRestart(null)}>Cancel</button>
-                <button className="btn-primary" onClick={confirmRestart}>Start Over</button>
+        {pendingRestart && (() => {
+          const count = getBadgeCount(pendingRestart.id)
+          const tierLabel = count >= 100 ? 'Diamond' : count >= 10 ? 'Gold' : count >= 2 ? 'Silver' : 'Bronze'
+          const nextHint = count >= 100
+            ? 'You\'ve reached the max tier — keep going!'
+            : count >= 10
+            ? `Play again ${100 - count} more time${100 - count === 1 ? '' : 's'} for Diamond!`
+            : count >= 2
+            ? `Play again ${10 - count} more time${10 - count === 1 ? '' : 's'} for Gold!`
+            : 'Play again 1 more time for Silver!'
+          return (
+            <div className="modal-overlay" onClick={() => setPendingRestart(null)}>
+              <div className="modal-card" onClick={e => e.stopPropagation()}>
+                <h3 className="modal-title">Deck Complete</h3>
+                <p className="modal-body">
+                  You've mastered <strong>{pendingRestart.deck.name}</strong> and earned a {tierLabel} badge. {nextHint}
+                </p>
+                <div className="modal-actions">
+                  <button className="btn-ghost" onClick={() => setPendingRestart(null)}>Cancel</button>
+                  <button className="btn-primary" onClick={confirmRestart}>Play Again</button>
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )
+        })()}
       </>
     )
   }
@@ -239,6 +255,7 @@ export default function App() {
         deckName={session.deckName}
         totalQuestions={session.totalQuestions}
         blockNumber={session.blockNumber}
+        badgeCount={getBadgeCount(session.deckId)}
         onRestart={handleRestart}
       />
     )
