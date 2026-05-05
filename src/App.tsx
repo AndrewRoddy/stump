@@ -121,10 +121,6 @@ export default function App() {
     }
   }, [])
 
-  function handleSignIn() {
-    window.location.href = '/api/auth/patreon/login'
-  }
-
   function handleSignOut() {
     setPatreonUser(null)
     clearStoredUser()
