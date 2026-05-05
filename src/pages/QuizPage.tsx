@@ -21,13 +21,13 @@ export default function QuizPage({ allDecks }: { allDecks: DeckEntry[] }) {
 
   useEffect(() => {
     const entry = allDecks.find(d => d.id === deckId)
-    const folderEntries = !entry ? allDecks.filter(d => d.folder === deckId) : []
+    const folderEntries = !entry ? allDecks.filter(d => d.id.startsWith(deckId + '/')) : []
 
     if (!entry && folderEntries.length === 0) { navigate('/', { replace: true }); return }
 
     const deck = entry
       ? entry.deck
-      : { name: deckId, questions: folderEntries.flatMap(e => e.deck.questions) }
+      : { name: deckId.split('/').slice(-1)[0] ?? deckId, questions: folderEntries.flatMap(e => e.deck.questions) }
 
     if (isDeckComplete(deckId)) { navigate(`/complete/${deckId}`, { replace: true }); return }
 

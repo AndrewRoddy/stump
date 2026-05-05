@@ -36,6 +36,5 @@ export interface SavedState {
 
 export interface DeckEntry {
   id: string
-  folder: string
   deck: Deck
 }

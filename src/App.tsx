@@ -31,10 +31,8 @@ function clearStoredUser() {
 const deckModules = import.meta.glob<Deck>('../decks/**/*.json', { eager: true, import: 'default' })
 
 const allDecks: DeckEntry[] = Object.entries(deckModules).map(([path, deck]) => {
-  const relative = path.replace('../decks/', '').replace('.json', '')
-  const slashIndex = relative.lastIndexOf('/')
-  const folder = slashIndex !== -1 ? relative.slice(0, slashIndex) : ''
-  return { id: relative, folder, deck }
+  const id = path.replace('../decks/', '').replace('.json', '')
+  return { id, deck }
 })
 
 function SelectingPage() {

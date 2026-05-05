@@ -239,6 +239,13 @@ body {
   border-color: var(--primary);
 }
 
+.folder-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-left: 1.25rem;
+}
+
 .folder-label-left {
   display: flex;
   align-items: center;
