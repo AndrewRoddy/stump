@@ -485,9 +485,11 @@ body {
   width: 100%;
 }
 
-.option:hover:not(:disabled) {
-  border-color: var(--primary);
-  background: rgba(255, 146, 47, 0.06);
+@media (hover: hover) {
+  .option:hover:not(:disabled) {
+    border-color: var(--primary);
+    background: rgba(255, 146, 47, 0.06);
+  }
 }
 
 .option:disabled {
