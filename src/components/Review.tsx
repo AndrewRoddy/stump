@@ -1,4 +1,4 @@
-import type { BlockResult } from '../App'
+import type { BlockResult } from '../types'
 
 interface Props {
   results: BlockResult[]
