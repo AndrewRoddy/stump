@@ -243,7 +243,6 @@ export default function App() {
           decks={allDecks}
           onSelect={startQuiz}
           patreonUser={patreonUser}
-          onSignIn={handleSignIn}
           onSignOut={handleSignOut}
         />
         {pendingRestart && (() => {

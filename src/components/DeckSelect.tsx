@@ -13,7 +13,6 @@ interface Props {
   decks: DeckEntry[]
   onSelect: (deck: Deck, id: string) => void
   patreonUser: PatreonUser | null
-  onSignIn: () => void
   onSignOut: () => void
 }
 
@@ -81,7 +80,7 @@ function clearAllProgress() {
     .forEach(k => localStorage.removeItem(k))
 }
 
-export default function DeckSelect({ decks, onSelect, patreonUser, onSignIn, onSignOut }: Props) {
+export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: Props) {
   const [showConfirm, setShowConfirm] = useState(false)
   const [resetCount, setResetCount] = useState(0)
   const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number } | null>(null)
