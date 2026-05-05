@@ -133,21 +133,36 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
                 const folderProgress = getDeckProgress(folder)
                 return (
                   <div key={folder || '__root__'} className="folder-group">
-                    {folder && (
-                      <button
-                        className="folder-label"
-                        style={folderProgressStyle(folderProgress)}
-                        onClick={() => onSelect(mergedDeck, folder)}
-                      >
-                        {folder}
-                        <span className="folder-label-right">
-                          {mergedDeck.questions.length} questions
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <polyline points="9 18 15 12 9 6" />
-                          </svg>
-                        </span>
-                      </button>
-                    )}
+                    {folder && (() => {
+                      const folderTier = getDeckBadgeTier(folder)
+                      const folderBadgeCount = folderTier ? parseInt(localStorage.getItem(`stump_badges_${folder}`) ?? '0', 10) : 0
+                      return (
+                        <button
+                          className="folder-label"
+                          style={folderProgressStyle(folderProgress)}
+                          onClick={() => onSelect(mergedDeck, folder)}
+                        >
+                          <span className="folder-label-left">
+                            {folderTier && (
+                              <span
+                                className={`deck-badge-icon deck-badge-icon-${folderTier}`}
+                                onClick={e => { e.stopPropagation(); setBadgePopup({ tier: folderTier, count: folderBadgeCount }) }}
+                                title={BADGE_INFO[folderTier].label}
+                              >
+                                {BADGE_SHAPE[folderTier]}
+                              </span>
+                            )}
+                            {folder}
+                          </span>
+                          <span className="folder-label-right">
+                            {mergedDeck.questions.length} questions
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                          </span>
+                        </button>
+                      )
+                    })()}
                     {entries.map(({ id, deck }) => {
                       const p = getDeckProgress(id)
                       const tier = getDeckBadgeTier(id)

@@ -221,6 +221,12 @@ body {
   border-color: var(--primary);
 }
 
+.folder-label-left {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .folder-label-right {
   display: flex;
   align-items: center;
