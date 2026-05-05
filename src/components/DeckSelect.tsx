@@ -43,26 +43,64 @@ function folderProgressStyle(p: DeckProgress): CSSProperties {
   return { background: `linear-gradient(to right, ${fill}, ${base})` }
 }
 
-type BadgeTier = 'bronze' | 'silver' | 'gold' | 'diamond'
+type BadgeTier = 'bronze' | 'silver' | 'gold' | 'diamond' | 'brain'
 
-const BADGE_SHAPE: Record<BadgeTier, string> = {
-  bronze:  '●',
-  silver:  '■',
-  gold:    '★',
-  diamond: '◆',
+const BADGE_ICON_COLORS: Record<BadgeTier, {
+  outer: string; body: string; shine: string; ribbon: string;
+  glowRgb: string; glowPx: number; glowAlpha: number;
+}> = {
+  bronze:  { outer: '#7B3A0A', body: '#CD7F32', shine: '#E8A050', ribbon: '#6B2A00', glowRgb: '205,127,50',  glowPx: 2, glowAlpha: 0.25 },
+  silver:  { outer: '#555555', body: '#C0C0C0', shine: '#E8E8E8', ribbon: '#3A3A3A', glowRgb: '192,192,192', glowPx: 3, glowAlpha: 0.35 },
+  gold:    { outer: '#9A7000', body: '#FFD700', shine: '#FFE84D', ribbon: '#7A5000', glowRgb: '255,215,0',   glowPx: 4, glowAlpha: 0.55 },
+  diamond: { outer: '#1060A0', body: '#A8EDFF', shine: '#FFFFFF', ribbon: '#0050A0', glowRgb: '168,237,255', glowPx: 5, glowAlpha: 0.70 },
+  brain:   { outer: '#5500A0', body: '#CC44FF', shine: '#EE88FF', ribbon: '#4400AA', glowRgb: '204,68,255',  glowPx: 7, glowAlpha: 0.85 },
+}
+
+function BadgeIcon({ tier, size = 20 }: { tier: BadgeTier; size?: number }) {
+  const c = BADGE_ICON_COLORS[tier]
+  const h = Math.round(size * 1.125)
+  const scaledGlow = Math.max(1, Math.round(c.glowPx * size / 16))
+  const glowFilter = `drop-shadow(0 0 ${scaledGlow}px rgba(${c.glowRgb},${c.glowAlpha}))`
+  return (
+    <svg
+      width={size} height={h} viewBox="0 0 16 18" fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ filter: glowFilter, flexShrink: 0, display: 'block' }}
+    >
+      <polygon points="8,1 14.2,4.5 14.2,13.5 8,17 1.8,13.5 1.8,4.5" fill={c.outer} />
+      <polygon points="8,2.5 12.8,5.2 12.8,12.8 8,15.5 3.2,12.8 3.2,5.2" fill={c.body} />
+      <polygon points="8,2.5 12.8,5.2 12.8,9 8,9 3.2,9 3.2,5.2" fill="white" opacity="0.22" />
+      <polygon points="8,4.2 11.3,6.1 11.3,11.9 8,13.8 4.7,11.9 4.7,6.1" fill="none" stroke={c.shine} strokeWidth="0.7" opacity="0.5" />
+      {tier === 'bronze'  && <circle cx="8" cy="9" r="2.3" fill="white" opacity="0.9" />}
+      {tier === 'silver'  && <rect x="5.7" y="6.7" width="4.6" height="4.6" rx="0.4" fill="white" opacity="0.9" />}
+      {tier === 'gold'    && <text x="8" y="9" textAnchor="middle" dominantBaseline="central" fontSize="9" fontFamily="serif" fontWeight="bold" fill="white" opacity="0.9">★</text>}
+      {tier === 'diamond' && <>
+        <line x1="8" y1="5.5" x2="8" y2="12.5" stroke="white" strokeWidth="0.5" opacity="0.3" />
+        <line x1="4.5" y1="9" x2="11.5" y2="9" stroke="white" strokeWidth="0.5" opacity="0.3" />
+        <text x="8" y="9" textAnchor="middle" dominantBaseline="central" fontSize="8" fontFamily="serif" fill="white" opacity="0.9">◆</text>
+      </>}
+      {tier === 'brain' && <>
+        <line x1="5" y1="6.5" x2="11" y2="11.5" stroke="white" strokeWidth="0.5" opacity="0.25" />
+        <line x1="11" y1="6.5" x2="5" y2="11.5" stroke="white" strokeWidth="0.5" opacity="0.25" />
+        <text x="8" y="9" textAnchor="middle" dominantBaseline="central" fontSize="8.5" fontFamily="serif" fontWeight="bold" fill="white" opacity="0.95">Ψ</text>
+      </>}
+    </svg>
+  )
 }
 
 const BADGE_INFO: Record<BadgeTier, { label: string; req: string; description: string }> = {
-  bronze:  { label: 'Bronze',  req: '1 completion',   description: 'Awarded for completing a deck for the first time.' },
-  silver:  { label: 'Silver',  req: '2 completions',  description: 'Awarded for completing a deck twice.' },
-  gold:    { label: 'Gold',    req: '10 completions', description: 'Awarded for completing a deck 10 times.' },
-  diamond: { label: 'Diamond', req: '100 completions', description: 'Awarded for completing a deck 100 times. Legendary.' },
+  bronze:  { label: 'Bronze',  req: '1 completion',    description: 'Awarded for completing a deck for the first time.' },
+  silver:  { label: 'Silver',  req: '2 completions',   description: 'Awarded for completing a deck twice.' },
+  gold:    { label: 'Gold',    req: '5 completions',   description: 'Awarded for completing a deck 5 times.' },
+  diamond: { label: 'Diamond', req: '50 completions',  description: 'Awarded for completing a deck 50 times.' },
+  brain:   { label: 'Brain',   req: '100 completions', description: 'Awarded for completing a deck 100 times. Legendary.' },
 }
 
 function getDeckBadgeTier(id: string): BadgeTier | null {
   const count = parseInt(localStorage.getItem(`stump_badges_${id}`) ?? '0', 10)
-  if (count >= 100) return 'diamond'
-  if (count >= 10)  return 'gold'
+  if (count >= 100) return 'brain'
+  if (count >= 50)  return 'diamond'
+  if (count >= 5)   return 'gold'
   if (count >= 2)   return 'silver'
   if (count >= 1)   return 'bronze'
   return null
@@ -109,11 +147,11 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
         <span className="deck-name-row">
           {tier && (
             <span
-              className={`deck-badge-icon deck-badge-icon-${tier}`}
+              className="deck-badge-icon"
               onClick={e => { e.stopPropagation(); setBadgePopup({ tier, count }) }}
               title={BADGE_INFO[tier].label}
             >
-              {BADGE_SHAPE[tier]}
+              <BadgeIcon tier={tier} size={16} />
             </span>
           )}
           <span className="deck-name">{deck.name}</span>
@@ -178,11 +216,11 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
                 <span className="folder-label-left">
                   {subTier && (
                     <span
-                      className={`deck-badge-icon deck-badge-icon-${subTier}`}
+                      className="deck-badge-icon"
                       onClick={e => { e.stopPropagation(); setBadgePopup({ tier: subTier, count: subBadgeCount }) }}
                       title={BADGE_INFO[subTier].label}
                     >
-                      {BADGE_SHAPE[subTier]}
+                      <BadgeIcon tier={subTier} size={16} />
                     </span>
                   )}
                   {sub}
@@ -252,7 +290,7 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
             <div className="badge-tier-list">
               {(Object.keys(BADGE_INFO) as BadgeTier[]).map(tier => (
                 <div key={tier} className={`badge-tier-row${tier === badgePopup.tier ? ' badge-tier-earned' : ''}`}>
-                  <span className={`badge-tier-shape deck-badge-icon-${tier}`}>{BADGE_SHAPE[tier]}</span>
+                  <BadgeIcon tier={tier} size={30} />
                   <div className="badge-tier-text">
                     <span className="badge-tier-label">{BADGE_INFO[tier].label}</span>
                     <span className="badge-tier-req">{BADGE_INFO[tier].req}</span>

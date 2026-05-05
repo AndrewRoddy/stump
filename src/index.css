@@ -320,21 +320,14 @@ body {
 }
 
 .deck-badge-icon {
-  font-size: 0.7rem;
   flex-shrink: 0;
-  line-height: 1;
   cursor: pointer;
-  padding: 2px;
-  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
   transition: opacity 0.1s;
 }
 
 .deck-badge-icon:hover { opacity: 0.7; }
-
-.deck-badge-icon-bronze  { color: #CD7F32; }
-.deck-badge-icon-silver  { color: #C0C0C0; }
-.deck-badge-icon-gold    { color: #FFD700; }
-.deck-badge-icon-diamond { color: #A8EDFF; filter: drop-shadow(0 0 3px rgba(168,237,255,0.7)); }
 
 .badge-popup-header {
   display: flex;
@@ -370,11 +363,9 @@ body {
 }
 
 .badge-tier-shape {
-  font-size: 1.1rem;
   flex-shrink: 0;
-  width: 1.5rem;
-  text-align: center;
-  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .badge-tier-text {
@@ -702,6 +693,7 @@ body {
 .badge-silver  { color: #C0C0C0; }
 .badge-gold    { color: #FFD700; }
 .badge-diamond { color: #A8EDFF; text-shadow: 0 0 8px rgba(168, 237, 255, 0.6); }
+.badge-brain   { color: #CC44FF; text-shadow: 0 0 8px rgba(204, 68, 255, 0.6); }
 
 .badge-next-hint {
   font-size: 0.8rem;
