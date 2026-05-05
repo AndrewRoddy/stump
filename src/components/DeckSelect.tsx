@@ -84,6 +84,16 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
   const [showConfirm, setShowConfirm] = useState(false)
   const [resetCount, setResetCount] = useState(0)
   const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number } | null>(null)
+  const [collapsedFolders, setCollapsedFolders] = useState<Set<string>>(new Set())
+
+  function toggleCollapse(folder: string) {
+    setCollapsedFolders(prev => {
+      const next = new Set(prev)
+      if (next.has(folder)) next.delete(folder)
+      else next.add(folder)
+      return next
+    })
+  }
 
   function handleResetAll() {
     clearAllProgress()
@@ -136,34 +146,50 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
                     {folder && (() => {
                       const folderTier = getDeckBadgeTier(folder)
                       const folderBadgeCount = folderTier ? parseInt(localStorage.getItem(`stump_badges_${folder}`) ?? '0', 10) : 0
+                      const isCollapsed = collapsedFolders.has(folder)
                       return (
-                        <button
-                          className="folder-label"
-                          style={folderProgressStyle(folderProgress)}
-                          onClick={() => onSelect(mergedDeck, folder)}
-                        >
-                          <span className="folder-label-left">
-                            {folderTier && (
-                              <span
-                                className={`deck-badge-icon deck-badge-icon-${folderTier}`}
-                                onClick={e => { e.stopPropagation(); setBadgePopup({ tier: folderTier, count: folderBadgeCount }) }}
-                                title={BADGE_INFO[folderTier].label}
-                              >
-                                {BADGE_SHAPE[folderTier]}
-                              </span>
-                            )}
-                            {folder}
-                          </span>
-                          <span className="folder-label-right">
-                            {mergedDeck.questions.length} questions
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="9 18 15 12 9 6" />
+                        <>
+                          <span
+                            className="folder-collapse-btn"
+                            onClick={() => toggleCollapse(folder)}
+                            title={isCollapsed ? 'Expand' : 'Collapse'}
+                          >
+                            <svg
+                              width="14" height="14" viewBox="0 0 24 24" fill="none"
+                              stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                              style={{ transform: isCollapsed ? 'rotate(-90deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}
+                            >
+                              <polyline points="6 9 12 15 18 9" />
                             </svg>
                           </span>
-                        </button>
+                          <button
+                            className="folder-label"
+                            style={folderProgressStyle(folderProgress)}
+                            onClick={() => onSelect(mergedDeck, folder)}
+                          >
+                            <span className="folder-label-left">
+                              {folderTier && (
+                                <span
+                                  className={`deck-badge-icon deck-badge-icon-${folderTier}`}
+                                  onClick={e => { e.stopPropagation(); setBadgePopup({ tier: folderTier, count: folderBadgeCount }) }}
+                                  title={BADGE_INFO[folderTier].label}
+                                >
+                                  {BADGE_SHAPE[folderTier]}
+                                </span>
+                              )}
+                              {folder}
+                            </span>
+                            <span className="folder-label-right">
+                              {mergedDeck.questions.length} questions
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                              </svg>
+                            </span>
+                          </button>
+                        </>
                       )
                     })()}
-                    {entries.map(({ id, deck }) => {
+                    {!collapsedFolders.has(folder) && entries.map(({ id, deck }) => {
                       const p = getDeckProgress(id)
                       const tier = getDeckBadgeTier(id)
                       const count = tier ? parseInt(localStorage.getItem(`stump_badges_${id}`) ?? '0', 10) : 0
