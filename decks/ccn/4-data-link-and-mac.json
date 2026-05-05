@@ -55,8 +55,8 @@
     {
       "question": "A simplex protocol assumes:",
       "options": [
-        "Full-duplex communication with error recovery",
-        "Half-duplex communication with arbitration",
+        "Full-duplex communication with flow control",
+        "Half-duplex communication with collision avoidance",
         "One-way data flow only",
         "Bidirectional flow with acknowledgments"
       ],
@@ -78,7 +78,7 @@
         "1",
         "2",
         "Depends on window size",
-        "Unlimited"
+        "Up to the sequence number space"
       ],
       "correctAnswer": 0
     },
@@ -117,8 +117,8 @@
       "options": [
         "Error detection capability",
         "Throughput on high-delay links",
-        "Processing delay at routers",
-        "Security of the connection"
+        "Fairness among competing senders",
+        "Reliability of error recovery"
       ],
       "correctAnswer": 1
     },
@@ -158,7 +158,7 @@
         "Error correction",
         "Framing",
         "Flow control",
-        "Addressing"
+        "Medium access control"
       ],
       "correctAnswer": 2
     },
@@ -175,20 +175,20 @@
     {
       "question": "Why are CRCs particularly good at detecting burst errors?",
       "options": [
-        "They add extra parity bits for each byte",
+        "They append a parity bit after every fixed-length block",
         "They use polynomial division which captures multi-bit patterns",
-        "They compare the entire frame to a checksum table",
-        "They retransmit any frame with a detected error"
+        "They hash the entire frame and compare digests at the receiver",
+        "They use interleaving to spread burst errors across multiple codewords"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Why is stop-and-wait inefficient on long-delay links?",
       "options": [
-        "It cannot detect errors on noisy channels",
+        "It uses larger sequence numbers, increasing header overhead",
         "The sender wastes time idle during propagation waiting for ACK",
-        "It requires more sequence numbers than available",
-        "ACKs take up too much bandwidth"
+        "It forces the receiver to buffer many out-of-order frames",
+        "Error recovery requires the entire window to be retransmitted"
       ],
       "correctAnswer": 1
     },
@@ -198,7 +198,7 @@
         "1/e (~36.8%)",
         "1/(2e) (~18.4%)",
         "50%",
-        "1/2"
+        "1/4"
       ],
       "correctAnswer": 1
     },
@@ -218,37 +218,37 @@
         "1/(2e)",
         "1/e (~36.8%)",
         "50%",
-        "1/2"
+        "1/4"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Why is Slotted ALOHA more efficient than Pure ALOHA?",
       "options": [
-        "It uses collision detection to abort transmissions early",
-        "It assigns dedicated time slots to each station",
+        "It uses carrier sensing to check the channel before each slot",
+        "It reserves dedicated slots for high-priority stations",
         "Time is divided into slots, reducing the collision window to T instead of 2T",
-        "It uses carrier sensing before transmitting"
+        "It retransmits collided frames immediately in the next slot"
       ],
       "correctAnswer": 2
     },
     {
       "question": "In CSMA/CD, what happens when a collision is detected?",
       "options": [
-        "The station continues transmitting and marks the frame as corrupted",
+        "The station buffers the frame and retransmits after a fixed delay",
         "All stations stop transmitting for a fixed timeout period",
         "Transmission is aborted and a jam signal is sent to notify all stations",
-        "The packet is forwarded to an alternate path"
+        "The frame is flagged as corrupt and forwarded to the network layer for recovery"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Binary Exponential Backoff in CSMA/CD is used to:",
       "options": [
-        "Increase transmission power after a collision",
-        "Prioritize traffic based on frame size",
+        "Increase the jam signal duration after each successive collision",
+        "Prioritize retransmission for the station that transmitted first",
         "Reduce the probability of repeated collisions by randomizing retry intervals",
-        "Ensure fair access by giving priority to the longest-waiting station"
+        "Limit the maximum number of retransmission attempts to 2^n"
       ],
       "correctAnswer": 2
     },
@@ -265,10 +265,10 @@
     {
       "question": "Why is CSMA/CD not used in wireless LANs (IEEE 802.11)?",
       "options": [
-        "Wireless LANs use token-based access instead",
-        "Wireless has too much bandwidth for collision detection to matter",
+        "Wireless LANs operate at lower speeds where collision detection overhead is too costly",
+        "The 802.11 standard mandates TDMA-based channel access for licensed spectrum",
         "Collision detection is difficult in the wireless medium due to the hidden terminal problem and the inability to simultaneously transmit and listen",
-        "Wireless MAC is standardized by a different committee"
+        "Wireless receivers cannot decode a jam signal while the channel is noisy"
       ],
       "correctAnswer": 2
     },
@@ -285,8 +285,8 @@
     {
       "question": "In CSMA/CD, a station first performs carrier sensing, transmits only if the channel is idle, and detects collisions using:",
       "options": [
-        "Forward error correction codes",
-        "A separate collision-detection signal from the switch",
+        "A collision counter maintained by the switch and reported via a control frame",
+        "Comparing the transmitted frame with an expected ACK from the receiver",
         "Simultaneous listening while transmitting",
         "CRC mismatch at the receiver"
       ],
@@ -315,20 +315,20 @@
     {
       "question": "In IEEE 802.11 DCF, after the channel remains idle for DIFS, a station performs a random backoff and waits before transmitting. Successful reception is confirmed using:",
       "options": [
-        "CRC verification only",
-        "A NACK if error is detected",
+        "A CRC check; no explicit acknowledgment is sent unless requested",
+        "A NACK sent by the receiver if the frame fails the integrity check",
         "An ACK from the receiver",
-        "A clear-to-send signal"
+        "A renewed RTS/CTS handshake after the data frame is delivered"
       ],
       "correctAnswer": 2
     },
     {
       "question": "The Hamming distance between two binary strings is defined as:",
       "options": [
-        "The number of bits in the longer string",
-        "The XOR of the two strings",
+        "The length of the shortest path between codewords in the coding space",
+        "The bitwise XOR value of the two strings expressed as an integer",
         "The number of bit positions in which the two strings differ",
-        "The total number of 1-bits in both strings combined"
+        "The number of redundancy bits required to distinguish the two strings"
       ],
       "correctAnswer": 2
     },
@@ -357,8 +357,8 @@
       "options": [
         "Data Interframe Space",
         "Distributed Coordination Function IFS",
-        "Default Idle Frame Spacing",
-        "Distributed IFS"
+        "Deferred Inter-Frame Slot",
+        "DCF Idle Frame Separator"
       ],
       "correctAnswer": 1
     },
@@ -375,20 +375,20 @@
     {
       "question": "What is the primary goal of flow control in a communication protocol?",
       "options": [
-        "Prevent routing loops in the network",
-        "Ensure packets arrive in order",
+        "Prevent congestion collapse in the network core",
+        "Ensure frames are delivered in the correct sequence",
         "Prevent the sender from transmitting faster than the receiver can process",
-        "Reduce the size of each packet to minimize transmission delay"
+        "Minimize end-to-end delay by regulating frame sizes"
       ],
       "correctAnswer": 2
     },
     {
       "question": "In Selective Repeat, what does the receiver do with frames that arrive out of order after a missing frame?",
       "options": [
-        "Discards them and sends NAK for each",
-        "Forwards them to the application immediately",
+        "Discards them and waits for the sender to retransmit the entire window",
+        "Delivers them to the application layer immediately and sends cumulative ACKs",
         "Buffers them until the missing frame arrives and is retransmitted",
-        "Acknowledges them individually but discards after a timeout"
+        "Sends a NAK for each out-of-order frame and discards duplicates"
       ],
       "correctAnswer": 2
     },

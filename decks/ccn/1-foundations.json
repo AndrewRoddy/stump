@@ -5,10 +5,10 @@
     {
       "question": "A company connects employee PCs to a central database server so multiple departments can access shared records. Which network use case best matches this?",
       "options": [
-        "Home entertainment application",
+        "Home application: broadband access for personal devices",
         "Business application: resource sharing / client-server access",
-        "Mobile user roaming scenario",
-        "Social networking application"
+        "Mobile user application: remote VPN access to company resources",
+        "Social networking application: peer-to-peer content sharing"
       ],
       "correctAnswer": 1
     },
@@ -35,40 +35,40 @@
     {
       "question": "An 'internetwork' is best described as:",
       "options": [
-        "A single large LAN spanning multiple buildings",
-        "A wireless network using 802.11 standards",
+        "A single enterprise LAN using VLANs to segment departments",
+        "A wireless mesh network linking access points across a campus",
         "A collection of interconnected networks that appear as one network to hosts",
-        "The Internet backbone operated by ISPs"
+        "A high-speed fiber backbone linking geographically distant data centers"
       ],
       "correctAnswer": 2
     },
     {
       "question": "In networking terminology, a service defines what a layer offers to the layer above, while a protocol defines:",
       "options": [
-        "The physical medium used for transmission",
+        "The physical medium and signaling standard used for transmission",
         "How peer entities implement that service",
-        "The number of bits in each frame",
-        "The addressing scheme used across networks"
+        "The maximum frame size supported at the data link layer",
+        "The hierarchical addressing scheme used to identify hosts"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Which challenge is most characteristic of 'mobile users' compared with fixed home/business users?",
       "options": [
-        "Higher bandwidth requirements",
-        "Need for server-side redundancy",
+        "Significantly higher sustained bandwidth requirements",
+        "Greater need for quality-of-service guarantees on the link",
         "Maintaining connectivity while changing point of attachment",
-        "Susceptibility to broadcast storms"
+        "Higher susceptibility to collisions in shared media environments"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which description best matches a typical LAN?",
       "options": [
-        "A metropolitan network connecting cities over fiber rings",
-        "A satellite-based network with global coverage",
+        "A metro-area fiber ring connecting multiple enterprise campuses",
+        "A long-haul network connecting branch offices across countries",
         "A building/campus network with high speed and low delay",
-        "A wide-area network operated by a telecommunications carrier"
+        "A carrier-operated packet-switched network spanning a region"
       ],
       "correctAnswer": 2
     },
@@ -76,19 +76,19 @@
       "question": "Which pairing correctly matches the Internet standards body with its typical output?",
       "options": [
         "ISO → RFCs",
-        "IEEE → Internet drafts",
+        "IEEE → Internet drafts submitted to the IETF",
         "IETF → RFCs",
-        "ANSI → IEEE 802 standards"
+        "ITU-T → IEEE 802 LAN/MAN standards"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which statement best distinguishes a connection-oriented service from a connectionless service?",
       "options": [
-        "Connection-oriented services use UDP; connectionless use TCP",
-        "Connection-oriented services have no setup phase; connectionless do",
+        "Connection-oriented services use UDP for lower overhead; connectionless services use TCP",
+        "Connection-oriented services forward each packet independently; connectionless services use a fixed path",
         "Connection-oriented services involve setup/state to support orderly delivery; connectionless sends independent messages without prior setup",
-        "Connection-oriented services are always faster due to pre-negotiated paths"
+        "Connection-oriented services guarantee lower latency because the path is negotiated in advance"
       ],
       "correctAnswer": 2
     },
@@ -105,10 +105,10 @@
     {
       "question": "What is the primary purpose of a protocol hierarchy (layered architecture)?",
       "options": [
-        "To increase the number of headers added to packets",
+        "To ensure each packet carries a header from every layer for traceability",
         "To reduce complexity by dividing networking functions into well-defined layers",
-        "To ensure all vendors use identical hardware",
-        "To eliminate the need for error correction"
+        "To guarantee that all network vendors implement identical hardware interfaces",
+        "To push error detection and correction entirely to the physical layer"
       ],
       "correctAnswer": 1
     },
@@ -145,50 +145,50 @@
     {
       "question": "In a layered network architecture, which statement best captures the role of a protocol?",
       "options": [
-        "It defines the physical medium connecting two nodes",
-        "It lists the services a layer offers upward",
+        "It defines the electrical and mechanical properties of the transmission medium",
+        "It describes the set of services a layer advertises to the layer above it",
         "It specifies rules for communication between peer entities at the same layer",
-        "It maps domain names to IP addresses"
+        "It translates between symbolic hostnames and numeric network addresses"
       ],
       "correctAnswer": 2
     },
     {
       "question": "What was the primary motivation behind the OSI reference model?",
       "options": [
-        "To replace TCP/IP with a more efficient architecture",
+        "To provide a streamlined alternative to TCP/IP with fewer protocol layers",
         "Enable vendor-independent standardization so diverse systems could interoperate",
-        "To reduce the number of protocol layers needed",
-        "To create a routing protocol for the Internet"
+        "To consolidate session and presentation functions into a single unified layer",
+        "To define a common routing algorithm for inter-domain traffic on the Internet"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Which criticism applies specifically to the TCP/IP reference model?",
       "options": [
-        "It has too many layers for practical implementation",
-        "It was designed before any protocols existed",
+        "Its seven-layer design makes practical implementation overly complex",
+        "The protocols were defined before the model, making it a poor general template",
         "Poor distinction between services, interfaces, and protocols",
-        "It does not support connection-oriented services"
+        "It lacks support for the connection-oriented services required by telephony"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which difference most strongly contributed to TCP/IP's success over OSI?",
       "options": [
-        "Superior theoretical design",
-        "Greater number of layers",
+        "A more rigorous theoretical separation of services, interfaces, and protocols",
+        "A more compact layer structure that reduced header overhead",
         "Availability of working implementations",
-        "Backing by ISO and ITU standards bodies"
+        "Formal endorsement and funding from ISO and ITU member governments"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which feature most clearly distinguishes a connection-oriented service from a connectionless one?",
       "options": [
-        "Higher bandwidth allocation",
-        "Use of encryption",
+        "Guaranteed higher bandwidth reserved along the entire path",
+        "Mandatory use of symmetric encryption for the session",
         "Explicit setup and teardown phases",
-        "Reliance on broadcast addressing"
+        "Use of broadcast addressing to reach all potential receivers"
       ],
       "correctAnswer": 2
     },
@@ -205,7 +205,7 @@
     {
       "question": "Why does the TCP/IP model have fewer layers than the OSI model?",
       "options": [
-        "TCP/IP was designed for low-bandwidth links only",
+        "TCP/IP was originally designed for resource-constrained, low-bandwidth links",
         "OSI includes separate session and presentation layers that TCP/IP omits",
         "It combines functions based on practical deployment needs",
         "Both B and C are correct"
@@ -215,10 +215,10 @@
     {
       "question": "Service primitives are important in layered architectures because:",
       "options": [
-        "They define the physical characteristics of the transmission medium",
+        "They standardize the electrical signaling characteristics of the physical medium",
         "They specify how layers interact at boundaries without exposing internal implementation",
-        "They determine the maximum data rate of each layer",
-        "They provide encryption for inter-layer communication"
+        "They define the maximum throughput achievable at each protocol layer",
+        "They establish shared cryptographic keys between communicating layers"
       ],
       "correctAnswer": 1
     }

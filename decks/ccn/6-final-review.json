@@ -8,8 +8,8 @@
       "options": [
         "T_wait = SIFS + (Backoff Slots × Slot Time)",
         "T_wait = DIFS + (Backoff Slots × Slot Time)",
-        "T_wait = DIFS + SIFS + Slot Time",
-        "T_wait = Backoff Slots × DIFS"
+        "T_wait = DIFS + (Backoff Slots × SIFS)",
+        "T_wait = DIFS + Slot Time"
       ],
       "correctAnswer": 1
     },
@@ -30,8 +30,8 @@
       "options": [
         "The exposed node problem",
         "The hidden node problem",
-        "The near/far problem",
-        "IP fragmentation"
+        "The near/far power imbalance problem",
+        "The deafness problem in directional antennas"
       ],
       "correctAnswer": 1
     },
@@ -40,9 +40,9 @@
       "question": "In the 802.11 RTS/CTS sequence, what is the correct frame order?",
       "options": [
         "RTS → SIFS → CTS → SIFS → DATA → SIFS → ACK",
-        "CTS → DIFS → RTS → SIFS → DATA → SIFS → ACK",
+        "RTS → DIFS → CTS → DIFS → DATA → SIFS → ACK",
         "RTS → DIFS → CTS → SIFS → DATA → ACK",
-        "RTS → CTS → DATA → ACK (no inter-frame spacing)"
+        "RTS → SIFS → CTS → DIFS → DATA → SIFS → ACK"
       ],
       "correctAnswer": 0
     },
@@ -63,8 +63,8 @@
       "options": [
         "T_tx = Frame Size / Data Rate",
         "T_tx = (Frame Size / Data Rate) + T_PHY",
-        "T_tx = Frame Size + T_PHY",
-        "T_tx = (Frame Size × 8) + T_PHY"
+        "T_tx = (Frame Size + T_PHY) / Data Rate",
+        "T_tx = Frame Size / (Data Rate + T_PHY)"
       ],
       "correctAnswer": 1
     },
@@ -85,7 +85,7 @@
       "options": [
         "T_total = DIFS + T_DATA + SIFS + T_ACK",
         "T_total = DIFS + Backoff + T_DATA + SIFS + T_ACK",
-        "T_total = Backoff + T_DATA + T_ACK",
+        "T_total = DIFS + Backoff + T_DATA + T_ACK",
         "T_total = DIFS + Backoff + T_DATA + DIFS + T_ACK"
       ],
       "correctAnswer": 1
@@ -94,10 +94,10 @@
       "id": "ccnfr-009",
       "question": "Effective throughput (802.11 DCF) is calculated as:",
       "options": [
-        "Data Rate / T_total",
+        "Data Rate × (T_DATA / T_total)",
         "Payload Bits / T_total",
-        "Frame Bits / T_DATA",
-        "Payload Bytes / T_ACK"
+        "Frame Bits / T_total",
+        "Payload Bits / T_DATA"
       ],
       "correctAnswer": 1
     },
@@ -108,7 +108,7 @@
         "T_DATA / T_total",
         "T_payload_only / T_total",
         "Payload Bits / Frame Bits",
-        "T_total / T_DATA"
+        "T_DATA / (T_DATA + T_ACK)"
       ],
       "correctAnswer": 1
     },
@@ -116,10 +116,10 @@
       "id": "ccnfr-011",
       "question": "The block size formula for subnetting is:",
       "options": [
-        "Block Size = Subnet Mask Octet − 256",
+        "Block Size = 256 − (32 − prefix)",
         "Block Size = 256 − Subnet Mask Octet",
-        "Block Size = 2^(32 − prefix)",
-        "Block Size = Subnet Mask Octet / 2"
+        "Block Size = 2^prefix",
+        "Block Size = prefix − 256"
       ],
       "correctAnswer": 1
     },
@@ -140,7 +140,7 @@
       "options": [
         "32",
         "30",
-        "28",
+        "16",
         "62"
       ],
       "correctAnswer": 1
@@ -149,9 +149,9 @@
       "id": "ccnfr-014",
       "question": "The broadcast address of a subnet is found by:",
       "options": [
-        "Network Address + Block Size",
+        "Network Address + Block Size − 2",
         "Next Subnet Boundary − 1",
-        "Network Address + 255",
+        "Network Address OR (NOT Subnet Mask) − 1",
         "Network Address + (2^host_bits)"
       ],
       "correctAnswer": 1
@@ -174,7 +174,7 @@
         "255.255.248.0",
         "255.255.252.0",
         "255.255.254.0",
-        "255.255.240.0"
+        "255.255.250.0"
       ],
       "correctAnswer": 1
     },
@@ -183,7 +183,7 @@
       "question": "To divide 128.96.34.0/24 into two equal subnets, what mask is used?",
       "options": [
         "255.255.255.192",
-        "255.255.255.0",
+        "255.255.255.64",
         "255.255.255.128",
         "255.255.254.0"
       ],
@@ -207,7 +207,7 @@
         "128",
         "126",
         "124",
-        "130"
+        "254"
       ],
       "correctAnswer": 1
     },
@@ -215,10 +215,10 @@
       "id": "ccnfr-020",
       "question": "In VLSM, the formula for choosing the right prefix is:",
       "options": [
-        "2^prefix ≥ Hosts + 2",
+        "2^(32 − prefix) ≥ Hosts",
         "2^h ≥ Hosts + 2 (where h = host bits = 32 − prefix)",
         "2^prefix − 2 ≥ Hosts",
-        "prefix = 32 − ceil(log2(Hosts))"
+        "prefix = ceil(log2(Hosts + 2))"
       ],
       "correctAnswer": 1
     },
@@ -238,9 +238,9 @@
       "question": "In Dijkstra's algorithm, the update rule is:",
       "options": [
         "D(v) = max(D(v), D(u) + c(u,v))",
-        "D(v) = D(u) + c(u,v)",
+        "D(v) = D(u) + c(u,v) if v is unvisited",
         "D(v) = min(D(v), D(u) + c(u,v))",
-        "D(v) = D(v) − c(u,v)"
+        "D(v) = D(u) × c(u,v)"
       ],
       "correctAnswer": 2
     },
@@ -273,7 +273,7 @@
         "The full shortest path to each destination",
         "Only the next hop interface for each destination",
         "All possible paths ranked by cost",
-        "The complete network topology"
+        "The destination's MAC address and port mapping"
       ],
       "correctAnswer": 1
     },
@@ -283,7 +283,7 @@
       "options": [
         "A → C → D → F (cost 10)",
         "A → C → E → F (cost 10)",
-        "A → E → F (cost 7)",
+        "A → C → E → F (cost 7)",
         "No path exists"
       ],
       "correctAnswer": 1
@@ -295,7 +295,7 @@
         "4096",
         "5000",
         "5120",
-        "4000"
+        "4882"
       ],
       "correctAnswer": 1
     },
@@ -305,7 +305,7 @@
       "options": [
         "5,000,000",
         "5,100,000",
-        "5,090,000",
+        "5,020,000",
         "5,200,000"
       ],
       "correctAnswer": 1
@@ -316,8 +316,8 @@
       "options": [
         "(Overhead Bytes / Original File Size) × 100",
         "((Total Bytes − Original File Size) / Total Bytes) × 100",
-        "(Total Bytes / Original File Size) × 100",
-        "(Header Bytes / Total Bytes) × 100"
+        "((Total Bytes − Original File Size) / Original File Size) × 100",
+        "(Header Bytes / Payload Bytes) × 100"
       ],
       "correctAnswer": 1
     },
@@ -327,8 +327,8 @@
       "options": [
         "Frame Size / RTT",
         "Frame Size / (Transmission Time + RTT)",
-        "Bandwidth × RTT",
-        "Frame Size × Bandwidth"
+        "Frame Size × Bandwidth / RTT",
+        "Bandwidth / (1 + 2 × PropDelay / T_tx)"
       ],
       "correctAnswer": 1
     },
@@ -339,7 +339,7 @@
         "2 Mbps",
         "≈ 185 Kbps",
         "≈ 500 Kbps",
-        "≈ 40 Kbps"
+        "≈ 1 Mbps"
       ],
       "correctAnswer": 1
     },
@@ -369,10 +369,10 @@
       "id": "ccnfr-034",
       "question": "The minimum window size to fully utilize a link is:",
       "options": [
-        "W_min = RTT / T_tx",
+        "W_min = (T_tx + RTT) / T_tx",
         "W_min = ceil((T_tx + RTT) / T_tx)",
-        "W_min = T_tx + RTT",
-        "W_min = Bandwidth × RTT"
+        "W_min = ceil(RTT / T_tx)",
+        "W_min = Bandwidth × RTT / Frame Size"
       ],
       "correctAnswer": 1
     },
@@ -438,7 +438,7 @@
         "2^n − 1",
         "2^(n−1)",
         "2^n",
-        "2^n / 2 − 1"
+        "2^(n−1) − 1"
       ],
       "correctAnswer": 1
     },
@@ -459,8 +459,8 @@
       "options": [
         "G = 1",
         "G = 0.5",
-        "G = 2",
-        "G = 0.25"
+        "G = 1/e ≈ 0.368",
+        "G = 2"
       ],
       "correctAnswer": 1
     },
@@ -470,8 +470,8 @@
       "options": [
         "S = G × e^(−G)",
         "S = G × e^(−2G)",
-        "S = e^(−G)",
-        "S = G / e^G"
+        "S = G² × e^(−G)",
+        "S = (1 − e^(−G)) × e^(−G)"
       ],
       "correctAnswer": 1
     },
@@ -490,10 +490,10 @@
       "id": "ccnfr-045",
       "question": "Slotted ALOHA reduces the vulnerability window compared to Pure ALOHA by:",
       "options": [
-        "Eliminating backoff",
+        "Requiring CSMA before each transmission",
         "Halving it (transmit only at slot boundaries)",
-        "Doubling frame transmission time",
-        "Requiring RTS/CTS"
+        "Extending each slot to cover the full propagation delay",
+        "Using a binary exponential backoff after collisions"
       ],
       "correctAnswer": 1
     },
@@ -501,10 +501,10 @@
       "id": "ccnfr-046",
       "question": "In Slotted ALOHA at G=1, what is the idle fraction?",
       "options": [
-        "1/2 ≈ 0.500",
+        "1 − 1/e ≈ 0.632",
         "1/e ≈ 0.368",
         "1/e² ≈ 0.135",
-        "0.270"
+        "G × e^(−G) ≈ 0.368"
       ],
       "correctAnswer": 1
     },
@@ -536,8 +536,8 @@
       "options": [
         "F_min = PropDelay × Bandwidth",
         "F_min = 2 × PropDelay × Bandwidth",
-        "F_min = RTT / Bandwidth",
-        "F_min = MTU − 20"
+        "F_min = T_tx × Bandwidth",
+        "F_min = Bandwidth / (2 × PropDelay)"
       ],
       "correctAnswer": 1
     },
@@ -559,7 +559,7 @@
         "Dijkstra's link-state algorithm",
         "Bellman-Ford equation",
         "Floyd-Warshall algorithm",
-        "Prim's algorithm"
+        "A* heuristic search"
       ],
       "correctAnswer": 1
     },
@@ -579,9 +579,9 @@
       "question": "TCP throughput (window-limited, no loss) is:",
       "options": [
         "Throughput = cwnd × MSS / RTT (in appropriate units)",
-        "Throughput = Bandwidth − RTT",
+        "Throughput = (cwnd × MSS) / (RTT + T_tx)",
         "Throughput = cwnd / RTT",
-        "Throughput = MSS × Bandwidth"
+        "Throughput = MSS / RTT"
       ],
       "correctAnswer": 0
     },
@@ -602,8 +602,8 @@
       "options": [
         "Linearly: +1 MSS per RTT",
         "Exponentially: doubles each RTT",
-        "Logarithmically",
-        "Constant: stays at initial value"
+        "Additively: +MSS/cwnd per ACK",
+        "Proportionally: grows by ssthresh each RTT"
       ],
       "correctAnswer": 1
     },
@@ -646,8 +646,8 @@
       "options": [
         "Doubles each RTT",
         "+1 MSS per RTT",
-        "+ssthresh MSS per RTT",
-        "Halves each RTT"
+        "+MSS²/cwnd per RTT",
+        "+ssthresh/cwnd per ACK received"
       ],
       "correctAnswer": 1
     },
@@ -668,8 +668,8 @@
       "options": [
         "BDP = Bandwidth / RTT",
         "BDP = Bandwidth × RTT",
-        "BDP = Frame Size × RTT",
-        "BDP = Bandwidth × Propagation Delay only"
+        "BDP = Bandwidth × Propagation Delay (one-way)",
+        "BDP = Throughput × T_tx"
       ],
       "correctAnswer": 1
     },
@@ -680,7 +680,7 @@
         "312,500 bytes",
         "625,000 bytes",
         "1,250,000 bytes",
-        "50,000 bytes"
+        "62,500 bytes"
       ],
       "correctAnswer": 1
     },
@@ -721,10 +721,10 @@
       "id": "ccnfr-066",
       "question": "Why must fragment payloads (except the last) be divisible by 8?",
       "options": [
-        "Because IP headers are always 8 bytes",
+        "Because the IP header checksum is computed over 8-byte words",
         "Because the fragment offset field counts 8-byte blocks",
-        "Because Ethernet frames align to 8 bytes",
-        "Because TCP segments are padded to 8 bytes"
+        "Because Ethernet frames require 8-byte payload alignment",
+        "Because the MF flag occupies 3 bits, allowing only multiples of 8"
       ],
       "correctAnswer": 1
     },
@@ -756,8 +756,8 @@
       "options": [
         "60 computers (one merged domain)",
         "20 computers (each segment is its own domain)",
-        "10 computers",
-        "40 computers"
+        "30 computers (bridge merges two at a time)",
+        "40 computers (two segments merge per bridge port)"
       ],
       "correctAnswer": 1
     },
@@ -776,10 +776,10 @@
       "id": "ccnfr-071",
       "question": "The Network Allocation Vector (NAV) in 802.11 is:",
       "options": [
-        "A physical carrier sense signal",
+        "A physical carrier-sense signal from the radio hardware",
         "An internal virtual carrier sense countdown timer updated from Duration fields in overheard frames",
-        "The backoff counter",
-        "The number of frames in the transmit queue"
+        "The contention window backoff counter used before each transmission",
+        "A field in the beacon frame indicating available bandwidth"
       ],
       "correctAnswer": 1
     },
@@ -798,10 +798,10 @@
       "id": "ccnfr-073",
       "question": "EIFS (Extended Inter-Frame Space) is used when:",
       "options": [
-        "A node wins the backoff race",
+        "A node wins the backoff race and is about to transmit",
         "A node receives a corrupted frame and cannot determine when the channel will be free",
-        "An ACK is not received after SIFS",
-        "The contention window reaches its maximum"
+        "A node's NAV timer expires and it re-enters contention",
+        "The contention window reaches its maximum value"
       ],
       "correctAnswer": 1
     },
@@ -820,10 +820,10 @@
       "id": "ccnfr-075",
       "question": "In 802.11 Binary Exponential Backoff, after a collision the CW grows as:",
       "options": [
-        "CW_new = CW_old + 16",
+        "CW_new = CW_old + CW_min",
         "CW_new = (2 × CW_old) + 1",
         "CW_new = CW_old × 2",
-        "CW_new = CW_old + CW_old"
+        "CW_new = CW_old + CW_max / 2"
       ],
       "correctAnswer": 1
     },
@@ -842,10 +842,10 @@
       "id": "ccnfr-077",
       "question": "Sliding window utilization formula is:",
       "options": [
-        "U = RTT / (W × T_trans)",
+        "U = T_trans / (T_trans + RTT)",
         "U = W × T_trans / RTT (capped at 1.0)",
-        "U = W / (RTT + T_trans)",
-        "U = T_trans / (W × RTT)"
+        "U = W / (1 + 2 × PropDelay / T_trans)",
+        "U = T_trans × W / (T_trans + RTT)"
       ],
       "correctAnswer": 1
     },
@@ -867,7 +867,7 @@
         "Rate ≈ MSS / (RTT × sqrt(p))",
         "Rate ≈ (MSS / RTT) × sqrt(1.5/p)",
         "Rate ≈ cwnd × MSS / RTT",
-        "Rate ≈ MSS × p / RTT"
+        "Rate ≈ MSS × sqrt(3/2) / (RTT × p)"
       ],
       "correctAnswer": 1
     },

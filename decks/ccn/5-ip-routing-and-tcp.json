@@ -15,8 +15,8 @@
     {
       "question": "How many usable host addresses are available in a /27 subnet?",
       "options": [
-        "14",
-        "16",
+        "28",
+        "32",
         "30",
         "62"
       ],
@@ -45,10 +45,10 @@
     {
       "question": "Which statement about ARP cache entries is TRUE?",
       "options": [
-        "They are statically configured and never expire",
+        "They are populated by DHCP and refreshed at lease renewal",
         "They are dynamically learned and timed out after a period",
-        "They are broadcast to all hosts on the network periodically",
-        "They are stored on the DNS server"
+        "They are distributed across the subnet via gratuitous ARP broadcasts",
+        "They are maintained by the default gateway on behalf of all hosts"
       ],
       "correctAnswer": 1
     },
@@ -56,7 +56,7 @@
       "question": "When a host sends an ARP request, which devices process it?",
       "options": [
         "Only the router on the subnet",
-        "Only the destination host",
+        "Only the destination host and the default gateway",
         "All devices on the local broadcast domain",
         "Only devices matching the target IP"
       ],
@@ -76,9 +76,9 @@
       "question": "A host wants to reach 8.8.8.8, which is outside its subnet. Which MAC address will ARP resolve?",
       "options": [
         "The MAC of 8.8.8.8 directly",
-        "The MAC of the DNS server",
+        "The MAC of the local DNS resolver",
         "The MAC of the default gateway",
-        "ARP is not used for off-subnet destinations"
+        "The MAC of the nearest ISP border router"
       ],
       "correctAnswer": 2
     },
@@ -125,30 +125,30 @@
     {
       "question": "A router receives a packet larger than the MTU with the DF (Don't Fragment) bit set to 1. What happens?",
       "options": [
-        "The router fragments the packet normally",
-        "The router drops the packet silently",
+        "The router fragments the packet normally since the DF bit is advisory only",
+        "The router drops the packet and logs the event locally without notifying the source",
         "The router drops the packet and sends an ICMP Type 3 Code 4 message to the source",
-        "The router sends the packet on a higher-MTU alternative path"
+        "The router buffers the packet and requests the source to reduce its MTU via TCP"
       ],
       "correctAnswer": 2
     },
     {
       "question": "An ICMP error message includes which of the following?",
       "options": [
-        "The complete original packet",
-        "Only the original IP header",
+        "The complete original packet up to the first 576 bytes",
+        "Only the original IP header without any payload",
         "The original IP header plus the first 8 bytes of the original payload",
-        "Only the destination IP address of the failed packet"
+        "The original IP header plus the full transport-layer segment"
       ],
       "correctAnswer": 2
     },
     {
       "question": "When TTL becomes 0 at a router, what occurs?",
       "options": [
-        "The packet is forwarded with TTL reset to 64",
-        "The router requests a retransmission from the source",
+        "The packet is forwarded to the next hop with TTL reset to its original value",
+        "The router sends a request to the source to retransmit with a higher TTL",
         "The packet is dropped and an ICMP Time Exceeded message is sent to the source",
-        "The packet is held until TTL is refreshed"
+        "The packet is queued until a route with fewer hops becomes available"
       ],
       "correctAnswer": 2
     },
@@ -175,10 +175,10 @@
     {
       "question": "What does a DHCP relay agent do?",
       "options": [
-        "Assigns IP addresses locally without a server",
-        "Caches DHCP responses to speed up future requests",
+        "Acts as a backup DHCP server and assigns addresses when the primary is unreachable",
+        "Caches recently issued DHCP leases to reduce server load on the local segment",
         "Forwards client DHCP broadcasts as unicast to a DHCP server on another subnet",
-        "Converts DHCP requests into DNS queries"
+        "Translates DHCP lease information into DNS A records for the local zone"
       ],
       "correctAnswer": 2
     },
@@ -195,50 +195,50 @@
     {
       "question": "In a link-state routing system, a link between two routers fails. What is the correct system behavior?",
       "options": [
-        "Only the directly connected routers update their tables",
-        "Routing loops form until manual intervention",
+        "Only the directly connected routers update their tables; others continue using stale routes",
+        "The network enters a count-to-infinity condition until hop limits are reached",
         "A new link-state update is flooded to all routers, which then recompute paths",
-        "BGP sends a withdrawal to all peers"
+        "The failure is detected by BGP, which redistributes updated routes into the IGP"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A router receives a link-state packet from a neighbor. To which neighbors should it forward this packet?",
       "options": [
-        "To all neighbors including the sender",
-        "To no neighbors; link-state packets are not forwarded",
+        "To all neighbors including the sender, to ensure full coverage",
+        "To no neighbors; each router independently generates its own link-state packets",
         "To all neighbors except the one it came from",
-        "Only to neighbors with lower routing costs"
+        "Only to neighbors whose link costs are lower than the packet's advertised metric"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A router receives two identical link-state packets from the same source with the same sequence number. What should it do?",
       "options": [
-        "Process both to ensure consistency",
-        "Forward both to all neighbors",
+        "Process both to ensure the topology database remains consistent",
+        "Forward both copies to all neighbors to maximize reliability",
         "Keep one and discard the duplicate",
-        "Request a newer update from the source"
+        "Send a retransmission request asking for a more recent update"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Why do link-state routing protocols avoid long-term routing loops?",
       "options": [
-        "They use split horizon to prevent loops",
+        "They apply split horizon on all interfaces to suppress reverse routes",
         "All routers compute consistent shortest-path trees from the same topology database",
-        "They periodically reset all routing tables",
-        "Sequence numbers prevent any packet from being forwarded twice"
+        "They reset all routing tables after each convergence cycle",
+        "Sequence numbers guarantee that no two routers choose different next hops"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Why does hierarchical routing reduce routing table size?",
       "options": [
-        "It uses compression on routing table entries",
+        "It applies prefix aggregation to compress multiple host routes into a single entry",
         "It groups destinations into regions, requiring only regional-level entries for remote destinations",
-        "It eliminates the need for default routes",
-        "It replaces dynamic routing with static routes"
+        "It replaces per-destination routes with a single default route to a central hub",
+        "It caches recently used routes and discards infrequently accessed entries"
       ],
       "correctAnswer": 1
     },
@@ -298,7 +298,7 @@
         "Checksums",
         "Retransmissions",
         "Forward error correction",
-        "ARQ codes"
+        "Selective repeat ARQ at the IP layer"
       ],
       "correctAnswer": 1
     },
@@ -325,10 +325,10 @@
     {
       "question": "During TCP congestion avoidance, cwnd increases:",
       "options": [
-        "Exponentially each RTT",
+        "Exponentially, doubling once per RTT",
         "Linearly (by 1 MSS per RTT)",
-        "By halving each RTT",
-        "Randomly based on network load"
+        "By the square root of the current cwnd each RTT",
+        "In proportion to the available receiver buffer space"
       ],
       "correctAnswer": 1
     },
@@ -338,47 +338,47 @@
         "1 MSS",
         "The current cwnd value",
         "Half of the current cwnd",
-        "The original starting cwnd"
+        "The initial ssthresh value from connection setup"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Why is fast recovery preferable to timeout-based recovery in TCP?",
       "options": [
-        "Fast recovery uses forward error correction to fix errors",
+        "Fast recovery uses selective acknowledgments to repair gaps without retransmitting",
         "Fast recovery avoids resetting cwnd to 1 MSS, maintaining higher throughput",
-        "Fast recovery eliminates the need for retransmissions",
-        "Fast recovery only applies to UDP flows"
+        "Fast recovery skips the retransmission and relies on the receiver to reconstruct the segment",
+        "Fast recovery signals the router to prioritize the retransmitted packet in the queue"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Why is TCP window scaling necessary in high-speed networks?",
       "options": [
-        "IPv6 requires a larger window field",
+        "IPv6 requires a larger window field to accommodate extended addressing overhead",
         "The default 16-bit window size is too small for the bandwidth-delay product of high-speed links",
-        "Window scaling enables TLS encryption of TCP options",
-        "It allows TCP to operate over UDP tunnels"
+        "Window scaling synchronizes sender and receiver clocks to reduce RTT measurement error",
+        "It enables the OS to allocate separate socket buffers for each TCP flow"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Two TCP flows share a link with RTTs of 20 ms and 200 ms. Which flow receives more bandwidth under standard TCP Reno?",
       "options": [
-        "The flow with RTT = 200 ms",
-        "Both flows receive equal bandwidth",
+        "The flow with RTT = 200 ms, because it probes the network less aggressively",
+        "Both flows receive equal bandwidth because TCP is designed to be fair",
         "The flow with RTT = 20 ms",
-        "The flow that started first"
+        "The flow that has been active longer, since it has a higher ssthresh"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A TCP flow over a 10 Gbps link with RTT = 100 ms achieves only 200 Mbps. What is the primary limitation?",
       "options": [
-        "Receiver-side buffer overflow",
+        "Receiver-side buffer overflow causing frequent window-zero advertisements",
         "Insufficient congestion window size",
-        "Physical layer noise",
-        "DNS resolution delays"
+        "TCP checksum overhead saturating the CPU on the sender",
+        "ACK compression collapsing the feedback loop and delaying cwnd growth"
       ],
       "correctAnswer": 1
     },
@@ -386,19 +386,19 @@
       "question": "TCP exits slow start when:",
       "options": [
         "A triple duplicate ACK is received",
-        "RTT increases by 10%",
+        "RTT increases by more than a configurable threshold",
         "cwnd reaches ssthresh",
-        "The receiver window reaches maximum"
+        "The receiver window reaches its advertised maximum"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A receiver advertises a zero window and later frees buffer space, but the connection remains stalled. What is the most likely cause?",
       "options": [
-        "The sender's cwnd has been reset to 1 MSS",
-        "The server has closed the connection",
+        "The sender's congestion window was reset to 1 MSS during the stall period",
+        "The receiver's TCP stack closed the connection after the zero-window timeout",
         "The window update packet was lost and the persist timer failed",
-        "A routing loop has formed"
+        "A routing change caused asymmetric paths, preventing ACKs from reaching the sender"
       ],
       "correctAnswer": 2
     },
@@ -415,10 +415,10 @@
     {
       "question": "Which of the following most accurately describes the difference between distance vector and link-state routing?",
       "options": [
-        "Distance vector uses Dijkstra; link-state uses Bellman-Ford",
-        "Distance vector routers know the full topology; link-state routers only know neighbors",
+        "Distance vector uses Dijkstra's algorithm; link-state uses the Bellman-Ford equation",
+        "Distance vector routers share their full topology database; link-state routers share only neighbor costs",
         "Distance vector can suffer from count-to-infinity; link-state avoids this with complete topology knowledge",
-        "Link-state scales better to small networks; distance vector to large ones"
+        "Link-state is better suited to small stub networks; distance vector scales to large transit networks"
       ],
       "correctAnswer": 2
     },
@@ -445,30 +445,30 @@
     {
       "question": "During DHCP lease renewal (at the T1 timer), the client sends its renewal request to:",
       "options": [
-        "The broadcast address",
+        "The subnet broadcast address so any available DHCP server can respond",
         "The original DHCP server via unicast",
-        "All DHCP servers via multicast",
-        "The default gateway"
+        "All DHCP servers via the 224.0.0.1 multicast group",
+        "The default gateway, which proxies the request to the DHCP server"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Why is subnetting used in IP networking?",
       "options": [
-        "To increase the total number of available IP addresses",
-        "To enable longer transmission distances",
+        "To increase the total number of available IP addresses beyond the class-based limit",
+        "To extend the physical reach of a network segment beyond standard cable lengths",
         "To organize networks and reduce broadcast domain size",
-        "To eliminate the need for routing between departments"
+        "To remove the need for inter-VLAN routing within a campus network"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Traceroute works because:",
       "options": [
-        "It reads the routing table of each intermediate router",
+        "It queries the SNMP MIB of each intermediate router for its interface addresses",
         "Routers send ICMP Time Exceeded messages when TTL expires in transit",
-        "It uses a special UDP port that routers intercept",
-        "Each router appends its address to the packet"
+        "Each router recognizes the traceroute probe port and sends its address in the reply",
+        "The source sets the record-route IP option, causing routers to insert their addresses"
       ],
       "correctAnswer": 1
     }

@@ -28,7 +28,7 @@
         "8 MB/s",
         "10 MB/s",
         "80 MB/s",
-        "64 MB/s"
+        "40 MB/s"
       ],
       "correctAnswer": 1
     },
@@ -98,7 +98,7 @@
         "~8.7 hours",
         "~53 minutes",
         "~5.3 minutes",
-        "~30 seconds"
+        "~26 seconds"
       ],
       "correctAnswer": 1
     },
@@ -168,17 +168,17 @@
         "Total end-to-end delay",
         "Packet loss rate",
         "Variation in packet delay",
-        "Bandwidth fluctuation"
+        "Instantaneous bandwidth fluctuation"
       ],
       "correctAnswer": 2
     },
     {
       "question": "What is the most common cause of jitter in packet networks?",
       "options": [
-        "Transmission delay",
+        "Varying transmission link speeds",
         "Variable queuing delay",
-        "Propagation delay",
-        "Processing delay"
+        "Differences in propagation path length",
+        "Non-uniform processing delay at each hop"
       ],
       "correctAnswer": 1
     },
@@ -198,7 +198,7 @@
         "Increasing link bandwidth",
         "Forward error correction",
         "Playback buffer",
-        "Packet interleaving"
+        "Priority queuing"
       ],
       "correctAnswer": 2
     },
@@ -277,7 +277,7 @@
       "options": [
         "1 nJ/bit",
         "2 nJ/bit",
-        "5 nJ/bit",
+        "4 nJ/bit",
         "10 nJ/bit"
       ],
       "correctAnswer": 1

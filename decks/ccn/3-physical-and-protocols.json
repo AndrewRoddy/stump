@@ -6,7 +6,7 @@
       "question": "Which mechanism improves scalability and resilience by routing traffic to the nearest service instance?",
       "options": [
         "Multicast",
-        "Broadcast",
+        "Load balancing",
         "Anycast",
         "Unicast"
       ],
@@ -15,9 +15,9 @@
     {
       "question": "Which messaging protocol was designed for IoT environments with constrained devices and unreliable links?",
       "options": [
-        "HTTP",
+        "CoAP",
         "WebSocket",
-        "SMTP",
+        "AMQP",
         "MQTT"
       ],
       "correctAnswer": 3
@@ -28,7 +28,7 @@
         "HTTP/2",
         "WebSocket",
         "QUIC",
-        "SIP"
+        "Server-Sent Events"
       ],
       "correctAnswer": 1
     },
@@ -38,7 +38,7 @@
         "SNMP",
         "NFS",
         "RPC",
-        "LDAP"
+        "REST"
       ],
       "correctAnswer": 2
     },
@@ -47,7 +47,7 @@
       "options": [
         "DNS",
         "DHCP",
-        "ICMP",
+        "RARP",
         "ARP"
       ],
       "correctAnswer": 3
@@ -56,9 +56,9 @@
       "question": "Which protocol enables remote file access with local-like semantics, exposing consistency challenges?",
       "options": [
         "FTP",
-        "SCP",
+        "SFTP",
         "NFS",
-        "SFTP"
+        "WebDAV"
       ],
       "correctAnswer": 2
     },
@@ -68,7 +68,7 @@
         "LDAP",
         "SNMP",
         "ICMP",
-        "BGP"
+        "NetFlow"
       ],
       "correctAnswer": 1
     },
@@ -78,17 +78,17 @@
         "ARP",
         "DHCP",
         "DNS",
-        "NTP"
+        "mDNS"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which protocol exposes the clearest example of early Internet trust assumptions by transmitting credentials in plaintext?",
       "options": [
-        "SSH",
-        "HTTPS",
+        "FTP",
+        "rlogin",
         "TELNET",
-        "SFTP"
+        "POP3"
       ],
       "correctAnswer": 2
     },
@@ -98,7 +98,7 @@
         "POP3",
         "SMTP",
         "IMAP",
-        "FTP"
+        "MAPI"
       ],
       "correctAnswer": 2
     },
@@ -108,7 +108,7 @@
         "RADIUS",
         "LDAP",
         "Kerberos",
-        "SNMP"
+        "SAML"
       ],
       "correctAnswer": 1
     },
@@ -118,7 +118,7 @@
         "TLS",
         "IPsec",
         "QKD",
-        "AES"
+        "OTP"
       ],
       "correctAnswer": 2
     },
@@ -128,7 +128,7 @@
         "RTP",
         "H.323",
         "SIP",
-        "WebRTC"
+        "MGCP"
       ],
       "correctAnswer": 2
     },
@@ -137,7 +137,7 @@
       "options": [
         "FTP",
         "SMTP",
-        "TELNET",
+        "IMAP",
         "HTTP"
       ],
       "correctAnswer": 3
@@ -148,17 +148,17 @@
         "UDP",
         "IP",
         "TCP",
-        "BGP"
+        "SCTP"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Which protocol's store-and-forward design allows messages to survive temporary network outages?",
       "options": [
-        "HTTP",
+        "IMAP",
         "SMTP",
         "FTP",
-        "IMAP"
+        "HTTP"
       ],
       "correctAnswer": 1
     },
@@ -176,9 +176,9 @@
       "question": "Which technology deliberately breaks strict OSI layering to enable fast, predictable forwarding in ISP backbones?",
       "options": [
         "VLAN",
-        "NAT",
+        "SDN",
         "MPLS",
-        "SDN"
+        "Traffic shaping"
       ],
       "correctAnswer": 2
     },
@@ -187,7 +187,7 @@
       "options": [
         "TCP",
         "SCTP",
-        "QUIC",
+        "RTP",
         "UDP"
       ],
       "correctAnswer": 3
@@ -196,138 +196,138 @@
       "question": "Which transport protocol reduces head-of-line blocking and supports connection migration for mobile users?",
       "options": [
         "TCP",
-        "UDP",
+        "SCTP",
         "QUIC",
-        "SCTP"
+        "UDP"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A cable modem primarily allows:",
       "options": [
-        "Analog telephone calls over coaxial cable",
+        "Dedicated fiber-to-the-home broadband access",
         "Packet-switched data over cable TV networks",
-        "Fiber-optic data transmission to the home",
-        "Wireless connectivity via cable infrastructure"
+        "Symmetric DSL service over coaxial cable",
+        "Wi-Fi distribution across a home network"
       ],
       "correctAnswer": 1
     },
     {
       "question": "A geostationary satellite appears stationary relative to Earth because it:",
       "options": [
-        "Is very far away and moves very slowly",
-        "Uses active propulsion to stay fixed",
+        "Orbits fast enough that its motion averages out over a day",
+        "Uses active propulsion to counteract orbital drift",
         "Has the same rotational period as Earth",
-        "Orbits at an altitude where gravity is negligible"
+        "Is positioned at the Lagrange point where gravitational forces balance"
       ],
       "correctAnswer": 2
     },
     {
       "question": "A key idea in cellular wireless systems is:",
       "options": [
-        "Using a single large antenna to cover all users",
+        "Using directional antennas to serve all users from a central tower",
         "Dividing coverage into cells, each served by a base station",
-        "Assigning all users the same frequency simultaneously",
-        "Relying exclusively on satellite backhaul"
+        "Assigning each user a unique spread-spectrum code to share spectrum",
+        "Dynamically reallocating spectrum from satellite downlinks"
       ],
       "correctAnswer": 1
     },
     {
       "question": "A modem is used in the PSTN primarily to:",
       "options": [
-        "Amplify digital signals on copper wire",
-        "Route packets between different networks",
+        "Regenerate and amplify digital pulses over long copper runs",
+        "Perform circuit switching between subscriber lines",
         "Convert digital data to analog signals for transmission on voice-grade lines",
-        "Encrypt data for secure transmission"
+        "Multiplex multiple phone calls onto a single trunk line"
       ],
       "correctAnswer": 2
     },
     {
       "question": "ADSL technology allows:",
       "options": [
-        "Symmetric upload and download speeds",
-        "Higher upstream than downstream bandwidth",
+        "Symmetric upload and download speeds over fiber",
+        "Higher upstream than downstream bandwidth to support servers",
         "Higher downstream than upstream bandwidth",
-        "Full-duplex voice and data simultaneously on separate frequencies"
+        "Simultaneous voice and data by bonding multiple copper pairs"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Baseband transmission means that:",
       "options": [
-        "The signal is modulated to a carrier frequency",
-        "Multiple signals share the bandwidth using different frequencies",
+        "The signal is upconverted to a radio-frequency carrier before transmission",
+        "Multiple channels are interleaved using frequency-division techniques",
         "The entire channel bandwidth is used by one signal",
-        "Transmission only occurs in one direction"
+        "Transmission is restricted to low-frequency signals below 300 Hz"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Compared to geostationary satellites, low-earth-orbit (LEO) satellites have:",
       "options": [
-        "Higher propagation delay",
-        "Larger coverage area per satellite",
+        "Higher propagation delay due to more frequent handoffs",
+        "Larger coverage area per satellite, reducing constellation size",
         "Lower latency",
-        "Simpler ground station requirements"
+        "Simpler orbital mechanics requiring fewer ground stations"
       ],
       "correctAnswer": 2
     },
     {
       "question": "First-generation (1G) mobile systems were primarily:",
       "options": [
-        "Digital voice systems",
+        "Digital voice systems using circuit switching",
         "Analog voice systems",
-        "Packet data systems",
-        "Combined voice and data systems"
+        "Packet-switched data systems for mobile internet",
+        "Hybrid systems combining analog voice and digital paging"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Fourier analysis shows that any periodic signal can be represented as:",
       "options": [
-        "A single sine wave at the fundamental frequency",
+        "A single sine wave scaled to match the signal's amplitude",
         "A sum of sine and cosine waves at harmonically related frequencies",
-        "A series of square waves",
-        "A random combination of frequencies"
+        "A series of rectangular pulses of varying width",
+        "A polynomial approximation of increasing order"
       ],
       "correctAnswer": 1
     },
     {
       "question": "Frequency Division Multiplexing (FDM) works by:",
       "options": [
-        "Compressing multiple signals into one",
-        "Taking turns in fixed time slots",
+        "Interleaving data from multiple users bit-by-bit into a single stream",
+        "Taking turns in fixed time slots assigned to each user",
         "Assigning different frequencies to different signals",
-        "Encoding signals using spread-spectrum techniques"
+        "Spreading each signal across the full bandwidth using orthogonal codes"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Infrared communication is best suited for:",
       "options": [
-        "Long-distance outdoor links",
-        "Satellite communication",
+        "Long-distance point-to-point links between buildings",
+        "Penetrating walls to extend wireless coverage indoors",
         "Short-range indoor links",
-        "Underwater communication"
+        "High-altitude communication with aircraft"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Shannon's theorem relates channel capacity to:",
       "options": [
-        "Packet size and routing distance",
+        "Symbol rate and the number of encoding levels",
         "Bandwidth and signal-to-noise ratio",
-        "Transmission power and antenna height",
-        "Modulation scheme and coding rate"
+        "Transmission power and carrier frequency",
+        "Error-correction overhead and block length"
       ],
       "correctAnswer": 1
     },
     {
       "question": "The bandwidth of a signal is defined as:",
       "options": [
-        "The maximum amplitude of the signal",
-        "The peak transmission power",
-        "The number of symbols per second",
+        "The maximum amplitude of the signal waveform",
+        "The data rate achievable over the channel in bits per second",
+        "The number of symbols transmitted per second",
         "The difference between the highest and lowest frequencies in the signal"
       ],
       "correctAnswer": 3
@@ -335,30 +335,30 @@
     {
       "question": "The local loop refers to the connection between:",
       "options": [
-        "Two ISPs at a peering point",
-        "A router and its nearest switch",
+        "A backbone router and the regional ISP it peers with",
+        "A DSLAM and the central office aggregation switch",
         "A subscriber and the telephone exchange",
-        "Two cellular towers"
+        "Two base stations handing off a mobile user"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Time Division Multiplexing (TDM) allows multiple users to share a channel by:",
       "options": [
-        "Assigning each user a different frequency band",
-        "Compressing user data before transmission",
+        "Assigning each user a separate frequency sub-band",
+        "Prioritizing users based on their current traffic demand",
         "Taking turns in time slots",
-        "Using spread-spectrum encoding"
+        "Encoding each user's signal with a unique spreading code"
       ],
       "correctAnswer": 2
     },
     {
       "question": "Twisted-pair cables reduce electromagnetic interference primarily by:",
       "options": [
-        "Using a metallic shield around the pairs",
-        "Increasing the wire gauge",
+        "Surrounding each pair with a grounded metallic foil shield",
+        "Using a thicker conductor to lower resistance and noise susceptibility",
         "Twisting the wires together so interference cancels",
-        "Coating the wires with ferrite material"
+        "Applying a dielectric coating that absorbs high-frequency interference"
       ],
       "correctAnswer": 2
     },
@@ -368,7 +368,7 @@
         "Coaxial cable",
         "Twisted-pair copper",
         "Optical fiber",
-        "Power-line cable"
+        "Shielded balanced line"
       ],
       "correctAnswer": 2
     },
@@ -377,7 +377,7 @@
       "options": [
         "Coaxial cable",
         "Shielded twisted pair",
-        "Unshielded twisted pair",
+        "Plenum-rated Cat6 cable",
         "Optical fiber"
       ],
       "correctAnswer": 3
@@ -385,10 +385,10 @@
     {
       "question": "One disadvantage of geostationary satellite communication is:",
       "options": [
-        "Narrow coverage area",
+        "Very small coverage footprint, requiring many satellites for global service",
         "High propagation delay (~270 ms one-way)",
-        "Inability to serve mobile users",
-        "Limited available frequencies"
+        "Inability to support broadcast or multicast transmissions",
+        "Frequent signal loss due to atmospheric absorption at low elevation angles"
       ],
       "correctAnswer": 1
     }
