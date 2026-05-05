@@ -486,7 +486,7 @@ body {
 }
 
 @media (hover: hover) {
-  .option:hover:not(:disabled) {
+  html:not(.using-touch) .option:hover:not(:disabled) {
     border-color: var(--primary);
     background: rgba(255, 146, 47, 0.06);
   }
