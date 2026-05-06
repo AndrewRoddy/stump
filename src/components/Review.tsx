@@ -39,6 +39,9 @@ export default function Review({ results, remainingInQueue, blockNumber, onConti
                     <span className="answer-correct"> · Correct: {r.question.options[r.question.correctAnswer]}</span>
                   </p>
                 )}
+                {r.question.explanation && (
+                  <p className="result-explanation">{r.question.explanation}</p>
+                )}
               </div>
             </div>
           ))}
