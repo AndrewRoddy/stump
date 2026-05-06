@@ -49,6 +49,13 @@ export function clearDeckComplete(deckId: string) {
   localStorage.removeItem(completeInfoKey(deckId))
 }
 
+export function clearDeckAllProgress(deckId: string) {
+  localStorage.removeItem(sessionKey(deckId))
+  localStorage.removeItem(completeKey(deckId))
+  localStorage.removeItem(completeInfoKey(deckId))
+  localStorage.removeItem(badgeKey(deckId))
+}
+
 export function freshSession(deck: Deck, deckId: string): QuizSession {
   const shuffled = [...deck.questions].sort(() => Math.random() - 0.5)
   const block = shuffled.splice(0, 10)

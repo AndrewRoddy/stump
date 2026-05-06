@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { CSSProperties } from 'react'
 import type { Deck, DeckEntry } from '../types'
 import type { PatreonUser } from '../App'
+import { clearDeckAllProgress } from '../storage'
 
 interface Props {
   decks: DeckEntry[]
@@ -115,7 +116,8 @@ function clearAllProgress() {
 export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: Props) {
   const [showConfirm, setShowConfirm] = useState(false)
   const [resetCount, setResetCount] = useState(0)
-  const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number } | null>(null)
+  const [badgePopup, setBadgePopup] = useState<{ tier: BadgeTier; count: number; id: string } | null>(null)
+  const [deckResetConfirm, setDeckResetConfirm] = useState(false)
   const [collapsedFolders, setCollapsedFolders] = useState<Set<string>>(new Set())
 
   function toggleCollapse(path: string) {
@@ -148,7 +150,7 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
           {tier && (
             <span
               className="deck-badge-icon"
-              onClick={e => { e.stopPropagation(); setBadgePopup({ tier, count }) }}
+              onClick={e => { e.stopPropagation(); setBadgePopup({ tier, count, id }) }}
               title={BADGE_INFO[tier].label}
             >
               <BadgeIcon tier={tier} size={16} />
@@ -217,7 +219,7 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
                   {subTier && (
                     <span
                       className="deck-badge-icon"
-                      onClick={e => { e.stopPropagation(); setBadgePopup({ tier: subTier, count: subBadgeCount }) }}
+                      onClick={e => { e.stopPropagation(); setBadgePopup({ tier: subTier, count: subBadgeCount, id: subPath }) }}
                       title={BADGE_INFO[subTier].label}
                     >
                       <BadgeIcon tier={subTier} size={16} />
@@ -281,25 +283,48 @@ export default function DeckSelect({ decks, onSelect, patreonUser, onSignOut }: 
       </div>
 
       {badgePopup && (
-        <div className="modal-overlay" onClick={() => setBadgePopup(null)}>
+        <div className="modal-overlay" onClick={() => { setBadgePopup(null); setDeckResetConfirm(false) }}>
           <div className="modal-card" onClick={e => e.stopPropagation()}>
-            <div className="badge-popup-header">
-              <h3 className="modal-title">Badges</h3>
-              <span className="badge-popup-count">{badgePopup.count} completion{badgePopup.count !== 1 ? 's' : ''}</span>
-            </div>
-            <div className="badge-tier-list">
-              {(Object.keys(BADGE_INFO) as BadgeTier[]).map(tier => (
-                <div key={tier} className={`badge-tier-row${tier === badgePopup.tier ? ' badge-tier-earned' : ''}`}>
-                  <BadgeIcon tier={tier} size={30} />
-                  <div className="badge-tier-text">
-                    <span className="badge-tier-label">{BADGE_INFO[tier].label}</span>
-                    <span className="badge-tier-req">{BADGE_INFO[tier].req}</span>
-                  </div>
-                  {tier === badgePopup.tier && <span className="badge-tier-earned-tag">Earned</span>}
+            {deckResetConfirm ? (
+              <>
+                <h3 className="modal-title">Reset This Deck?</h3>
+                <p className="modal-body">
+                  This will clear all progress and badges for this deck. This cannot be undone.
+                </p>
+                <div className="modal-actions">
+                  <button className="btn-ghost" onClick={() => setDeckResetConfirm(false)}>Cancel</button>
+                  <button className="btn-danger" onClick={() => {
+                    clearDeckAllProgress(badgePopup.id)
+                    setBadgePopup(null)
+                    setDeckResetConfirm(false)
+                    setResetCount(n => n + 1)
+                  }}>Reset</button>
                 </div>
-              ))}
-            </div>
-            <button className="btn-ghost" onClick={() => setBadgePopup(null)}>Got it</button>
+              </>
+            ) : (
+              <>
+                <div className="badge-popup-header">
+                  <h3 className="modal-title">Badges</h3>
+                  <span className="badge-popup-count">{badgePopup.count} completion{badgePopup.count !== 1 ? 's' : ''}</span>
+                </div>
+                <div className="badge-tier-list">
+                  {(Object.keys(BADGE_INFO) as BadgeTier[]).map(tier => (
+                    <div key={tier} className={`badge-tier-row${tier === badgePopup.tier ? ' badge-tier-earned' : ''}`}>
+                      <BadgeIcon tier={tier} size={30} />
+                      <div className="badge-tier-text">
+                        <span className="badge-tier-label">{BADGE_INFO[tier].label}</span>
+                        <span className="badge-tier-req">{BADGE_INFO[tier].req}</span>
+                      </div>
+                      {tier === badgePopup.tier && <span className="badge-tier-earned-tag">Earned</span>}
+                    </div>
+                  ))}
+                </div>
+                <div className="modal-actions">
+                  <button className="btn-danger" onClick={() => setDeckResetConfirm(true)}>Reset Progress</button>
+                  <button className="btn-ghost" onClick={() => setBadgePopup(null)}>Got it</button>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}
