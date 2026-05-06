@@ -1,0 +1,126 @@
+{
+  "name": "Linear Algebra True/False",
+  "description": "True or false questions compiled from all Linear Algebra quizzes and midterms",
+  "questions": [
+    {
+      "id": "la-tf-1",
+      "question": "You can never have more free variables than basic variables in a system of equations.",
+      "options": [
+        "True, because pivot columns always outnumber free columns in any consistent system",
+        "True, because free variables are always bounded by the number of equations in the system",
+        "False, because a system like x1 + x2 + x3 = 1 has one basic variable and two free variables, showing free variables can outnumber basic ones",
+        "False, because any overdetermined system automatically produces more free variables than basic ones"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is false. For example, x1 + x2 + x3 = 1 has one pivot (one basic variable, x1) and two free variables (x2 and x3), so free variables can easily outnumber basic ones."
+    },
+    {
+      "id": "la-tf-2",
+      "question": "Any system of equations has a solution.",
+      "options": [
+        "True, because every matrix can be reduced to RREF, which always produces at least one valid solution",
+        "True, because the zero vector is always a valid solution to any linear system",
+        "False, because systems with more equations than unknowns are always unsolvable regardless of coefficients",
+        "False, because a row in RREF of the form 0 = 1 indicates an inconsistency, so no solution exists"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This is false. An inconsistent system has no solution. A row that reduces to [0 0 ... 0 | c] with c not equal to 0 in RREF signals a contradiction, meaning the system has no solution."
+    },
+    {
+      "id": "la-tf-3",
+      "question": "An example of a linear combination of v1 and v2 is 3v1.",
+      "options": [
+        "True, because 3v1 equals 3v1 + 0v2, and zero is a permitted weight in a linear combination",
+        "True, because any scalar multiple of a single vector automatically spans the same subspace as both vectors together",
+        "False, because a linear combination of two vectors must include both vectors with nonzero coefficients",
+        "False, because 3v1 is a scalar multiple, which is a distinct operation from a linear combination"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is true. A linear combination allows any real weights, including zero. Writing 3v1 + 0v2 is a perfectly valid linear combination of v1 and v2."
+    },
+    {
+      "id": "la-tf-4",
+      "question": "In some cases, a matrix may be reduced to more than one matrix in reduced row echelon form (RREF) using different sequences of row operations.",
+      "options": [
+        "True, because row operations are not unique, so different sequences can lead to different final matrices",
+        "True, because swapping rows before pivoting can produce a different RREF with the same row space",
+        "False, because non-square matrices have no unique RREF and always yield multiple valid reduced forms",
+        "False, because the RREF of any matrix is unique regardless of which sequence of row operations is applied"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This is false. The RREF of a matrix is always unique. Different sequences of row operations may take different paths, but they all produce the same final RREF."
+    },
+    {
+      "id": "la-tf-5",
+      "question": "A vector b is a linear combination of the columns of a matrix A if and only if the equation Ax=b has exactly one solution.",
+      "options": [
+        "True, because if b is in the column space of A, the system Ax=b always has exactly one solution",
+        "True, because a consistent system always has a unique solution when b can be written as a column combination",
+        "False, because b is in the column space of A if and only if Ax=b has at least one solution, which need not be unique",
+        "False, because Ax=b must always have infinitely many solutions whenever b is a linear combination of the columns of A"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is false. A vector b is a linear combination of the columns of A if and only if Ax=b is consistent, meaning it has at least one solution. The system may have a unique solution or infinitely many solutions."
+    },
+    {
+      "id": "la-tf-6",
+      "question": "A matrix is invertible if and only if det(A) is not equal to 0.",
+      "options": [
+        "True, because a nonzero determinant confirms the columns are linearly independent and the transformation is bijective",
+        "True, because the determinant equals the trace, and any matrix with a nonzero trace must be invertible",
+        "False, because a matrix can be invertible even when its determinant is zero, as long as all rows are nonzero",
+        "False, because determinants are only defined for 2x2 matrices and the invertibility criterion cannot be generalized"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is true. A square matrix is invertible if and only if its determinant is nonzero. A zero determinant means the columns are linearly dependent and the transformation collapses space, so no inverse can exist."
+    },
+    {
+      "id": "la-tf-7",
+      "question": "If Ax=0 has a nontrivial solution, then A must have at least one pivot column.",
+      "options": [
+        "True, because a nontrivial solution to Ax=0 requires at least one constrained variable, which implies a pivot column must exist",
+        "True, because any matrix with a consistent homogeneous system must have leading entries, which are pivot positions",
+        "False, because the zero matrix has no pivot columns yet Ax=0 holds for every nonzero vector x, providing nontrivial solutions",
+        "False, because nontrivial solutions to Ax=0 only arise when A has more unknowns than equations, preventing any pivots from forming"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This is false. The zero matrix is a counterexample: it has no pivot columns, yet Ax=0 for every vector x, so any nonzero x is a nontrivial solution."
+    },
+    {
+      "id": "la-tf-8",
+      "question": "In a linear combination c1x1 + c2x2 + ... + cnxn, the weights c1, ..., cn can all be zero.",
+      "options": [
+        "True, because setting all weights to zero produces the zero vector, which is a valid output of a linear combination",
+        "True, because a linear combination requires all weights to sum to zero, making all-zero weights the standard form",
+        "False, because at least one weight must be nonzero for the expression to qualify as a linear combination",
+        "False, because all-zero weights would imply the vectors are linearly dependent, making the combination undefined"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This is true. The definition of a linear combination places no restriction on the weights. Setting all weights to zero is valid and produces the zero vector."
+    },
+    {
+      "id": "la-tf-9",
+      "question": "It is possible for 5 vectors in R^4 to be linearly independent.",
+      "options": [
+        "True, because linear independence depends on the directions of the vectors, not the dimension of the space they live in",
+        "True, because if each of the 5 vectors has a distinct largest entry, they are guaranteed to be linearly independent",
+        "False, because a 4x5 matrix is overdetermined and therefore always produces a dependent set of column vectors",
+        "False, because in R^4 at most 4 vectors can be linearly independent, so any set of 5 must be linearly dependent"
+      ],
+      "correctAnswer": 3,
+      "explanation": "This is false. In R^n, any set of more than n vectors is automatically linearly dependent. Since we are in R^4, a set of 5 vectors must be linearly dependent."
+    },
+    {
+      "id": "la-tf-10",
+      "question": "A basic variable is one corresponding to a pivot column in the coefficient matrix.",
+      "options": [
+        "True, because every variable in a linear system is basic unless the augmented matrix has an inconsistent row",
+        "True, because basic variables are identified by pivot positions, which mark the leading nonzero entries in each row after row reduction",
+        "False, because basic variables correspond to free columns in the coefficient matrix, while pivot columns contain bound variables",
+        "False, because pivot columns only appear in invertible square matrices, so basic variables cannot be defined in general"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This is true. During row reduction, pivot columns identify the basic variables. Every variable corresponding to a pivot position is a basic variable; all remaining variables are free."
+    }
+  ]
+}

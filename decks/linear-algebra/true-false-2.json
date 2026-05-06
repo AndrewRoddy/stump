@@ -1,0 +1,438 @@
+{
+  "name": "Linear Algebra True/False: Concepts",
+  "description": "Conceptual true/false questions covering all exam topics: systems, subspaces, transformations, rank/nullity, eigenvalues, orthogonality, and more",
+  "questions": [
+    {
+      "id": "la-tf2-1",
+      "question": "If the equation Ax=b has a unique solution for some vector b, then it has a unique solution for every b in R^n.",
+      "options": [
+        "True, because if Ax=b has a unique solution for any b, then Ax=0 has only the trivial solution, meaning A is invertible and Ax=b has a unique solution for all b",
+        "True, because uniqueness for one specific b implies the columns of A are proportional, guaranteeing uniqueness for all other vectors as well",
+        "False, because uniqueness for one b depends on that particular b, and other vectors may lead to inconsistent or underdetermined systems",
+        "False, because Ax=b can only have a unique solution for all b when A is a symmetric matrix"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. If Ax=b has a unique solution for some b, then the homogeneous system Ax=0 has only the trivial solution (no free variables). This means A has full rank and is invertible, so Ax=b has a unique solution for every b in R^n."
+    },
+    {
+      "id": "la-tf2-2",
+      "question": "If A is a 3x5 matrix and the system Ax=b is consistent, then the solution set must contain infinitely many solutions.",
+      "options": [
+        "True, because all rectangular matrices produce infinitely many solutions regardless of consistency",
+        "True, because a 3x5 matrix has at most 3 pivots and at least 2 free variables, so any consistent system has a free variable and therefore infinitely many solutions",
+        "False, because even a 3x5 matrix can yield a unique solution if b is chosen to match a specific column",
+        "False, because the number of solutions depends only on the specific values in A, not its dimensions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. A 3x5 matrix has 5 columns but at most 3 pivot columns, so there are at least 2 free variables. Whenever the system is consistent, the free variables generate infinitely many solutions."
+    },
+    {
+      "id": "la-tf2-3",
+      "question": "The columns of every 5x3 matrix are linearly dependent.",
+      "options": [
+        "True, because a matrix with more rows than columns always has linearly dependent columns due to dimensional excess",
+        "True, because columns of any non-square matrix cannot be independent since they live in a larger space than there are columns",
+        "False, because columns are dependent only when the matrix has more columns than rows, not more rows than columns",
+        "False, because a 5x3 matrix can have 3 pivot columns, meaning its 3 columns can be linearly independent"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. A 5x3 matrix has 3 columns, each in R^5. Those 3 columns can be linearly independent if the matrix has 3 pivot columns. Having more rows than columns does not force dependence."
+    },
+    {
+      "id": "la-tf2-4",
+      "question": "The null space of an m x n matrix A is a subspace of R^m.",
+      "options": [
+        "True, because solutions to Ax=0 are outputs of A, which land in R^m",
+        "True, because the null space is defined through the rows of A, each of which has m entries",
+        "False, because the null space of A consists of vectors x satisfying Ax=0 where x is in R^n, so Null(A) is a subspace of R^n",
+        "False, because the null space is the zero subspace and is therefore not contained in any specific R^m"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. The null space is Null(A) = {x in R^n : Ax = 0}. The vectors in question are inputs x, which come from R^n, not outputs in R^m. Null(A) is a subspace of R^n."
+    },
+    {
+      "id": "la-tf2-5",
+      "question": "The column space of an m x n matrix A is a subspace of R^n.",
+      "options": [
+        "True, because the n columns of A each span a direction in R^n, placing the column space inside R^n",
+        "True, because A maps R^n to itself, so its column space must also be a subset of R^n",
+        "False, because the column space is only defined for square matrices where m equals n",
+        "False, because each column of A has m entries, so the column space is a subspace of R^m"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. The columns of an m x n matrix each have m components, so they are vectors in R^m. The column space Col(A) is therefore a subspace of R^m, not R^n."
+    },
+    {
+      "id": "la-tf2-6",
+      "question": "If the columns of a matrix A are linearly independent, then the equation Ax=b has at most one solution for any vector b.",
+      "options": [
+        "True, because linearly independent columns mean Ax=0 has only the trivial solution, which implies Ax=b can have at most one solution for any b",
+        "True, because linearly independent columns force A to be a square invertible matrix, guaranteeing a unique solution for every b",
+        "False, because linear independence of columns only restricts the homogeneous case and has no effect on nonhomogeneous systems",
+        "False, because Ax=b could still have two solutions if b happens to lie exactly on the boundary of the column space"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. If the columns are linearly independent, Ax=0 has only the trivial solution, meaning there are no free variables. If Ax=b and Ax=c are both solutions then A(b-c)=0, so b=c. Therefore Ax=b has at most one solution."
+    },
+    {
+      "id": "la-tf2-7",
+      "question": "A set of vectors {v1, v2, ..., vk} is linearly independent if and only if none of the vectors is the zero vector.",
+      "options": [
+        "True, because any set containing the zero vector is automatically dependent, and if no vector is zero then independence holds",
+        "True, because nonzero vectors by definition cannot satisfy the dependence equation c1v1 + ... + ckvk = 0 with nonzero coefficients",
+        "False, because nonzero vectors can still be linearly dependent; for example, (1,0) and (2,0) are both nonzero yet one is a scalar multiple of the other",
+        "False, because linear independence requires every pair of vectors to be orthogonal, not merely nonzero"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. Being nonzero is necessary but not sufficient for linear independence. For example, v1=(1,0) and v2=(2,0) are both nonzero, but v2=2v1, so the set {v1,v2} is linearly dependent."
+    },
+    {
+      "id": "la-tf2-8",
+      "question": "If an n x n matrix has n distinct eigenvalues, then it is diagonalizable.",
+      "options": [
+        "True, because n distinct eigenvalues force the matrix to be symmetric, and all symmetric matrices are diagonalizable",
+        "True, because distinct eigenvalues each produce a linearly independent eigenvector, giving the n independent eigenvectors needed to form P in A = PDP^{-1}",
+        "False, because diagonalization also requires the eigenvectors to be mutually orthogonal, which distinct eigenvalues do not guarantee",
+        "False, because diagonalizability requires each eigenvalue to have algebraic multiplicity greater than 1, which n distinct eigenvalues cannot provide"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. Eigenvectors from distinct eigenvalues are always linearly independent. With n distinct eigenvalues you get n linearly independent eigenvectors, which is exactly the condition for diagonalizability."
+    },
+    {
+      "id": "la-tf2-9",
+      "question": "If lambda is an eigenvalue of A, then the eigenspace for lambda is equal to the null space of the matrix (A - lambda*I).",
+      "options": [
+        "True, because the eigenspace for lambda consists of all vectors v satisfying Av = lambda*v, equivalently (A - lambda*I)v = 0, which is exactly Null(A - lambda*I)",
+        "True, because subtracting lambda from the diagonal of A shifts all eigenvalues to zero, making every eigenvector land in the standard null space",
+        "False, because the eigenspace for lambda is the column space of (A - lambda*I), not its null space",
+        "False, because eigenspaces are defined through the characteristic polynomial and have no direct connection to null spaces"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Av = lambda*v rearranges to (A - lambda*I)v = 0, so the eigenspace is exactly the solution set of this homogeneous system, which is Null(A - lambda*I)."
+    },
+    {
+      "id": "la-tf2-10",
+      "question": "A square matrix is diagonalizable if and only if it has n distinct eigenvalues.",
+      "options": [
+        "True, because n distinct eigenvalues are the only configuration that provides the n independent eigenvectors required for diagonalization",
+        "True, because the characteristic polynomial of an n x n matrix has at most n roots, and diagonalization requires all of them to be distinct",
+        "False, because diagonalizability requires only that the matrix be symmetric, regardless of whether eigenvalues are distinct",
+        "False, because a matrix can be diagonalizable even with repeated eigenvalues; the identity matrix has only one eigenvalue but is already diagonal"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. The correct condition is that for every eigenvalue, the geometric multiplicity equals the algebraic multiplicity. The identity matrix I has only one eigenvalue (lambda=1 with algebraic multiplicity n) yet is perfectly diagonalizable."
+    },
+    {
+      "id": "la-tf2-11",
+      "question": "The rank of a matrix equals the number of nonzero rows in its row echelon form.",
+      "options": [
+        "True, because each nonzero row in REF contains exactly one pivot, so the count of nonzero rows equals the number of pivots, which is the rank",
+        "True, because rank is also equal to the number of zero rows in RREF subtracted from the total row count",
+        "False, because rank is defined as the number of free variables, not the number of nonzero rows",
+        "False, because the number of nonzero rows in REF can vary depending on which row operations are chosen, so it cannot uniquely define rank"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Every nonzero row in REF contains a leading entry (pivot), and each pivot is in a different column. The number of pivots is the rank, and pivots and nonzero rows are in one-to-one correspondence."
+    },
+    {
+      "id": "la-tf2-12",
+      "question": "The rank-nullity theorem states that rank(A) + nullity(A) = m, where A is an m x n matrix.",
+      "options": [
+        "True, because the m rows of A each contribute to either the rank or the nullity, so their sum must equal m",
+        "True, because rank measures how many rows are nonzero and nullity measures the rest, and together they account for all m rows",
+        "False, because the rank-nullity theorem only applies to square matrices where m equals n",
+        "False, because the rank-nullity theorem states rank(A) + nullity(A) = n, where n is the number of columns of A"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. The rank-nullity theorem relates to the number of columns: rank(A) + nullity(A) = n. Rank is the number of pivot columns and nullity is the number of free columns, and every column is one or the other."
+    },
+    {
+      "id": "la-tf2-13",
+      "question": "If A is an invertible n x n matrix, then the null space of A contains only the zero vector.",
+      "options": [
+        "True, because invertible matrices have determinant zero, forcing all solutions to Ax=0 to collapse to the trivial one",
+        "True, because A invertible means A has n pivots and no free variables, so the only solution to Ax=0 is x=0",
+        "False, because even invertible matrices retain free variables that contribute nonzero vectors to the null space",
+        "False, because the null space of any n x n matrix always contains at least one nonzero vector"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. A is invertible means A has full rank n and no free variables. The only solution to Ax=0 is x = A^{-1}*0 = 0, so Null(A) = {0}."
+    },
+    {
+      "id": "la-tf2-14",
+      "question": "Row operations on a matrix do not change its column space.",
+      "options": [
+        "True, because row operations are reversible and must therefore preserve every subspace associated with the matrix",
+        "True, because row operations represent left-multiplication by invertible matrices, which preserves the span of the columns",
+        "False, because row operations change the actual entries of each column vector, so the span of the columns can change",
+        "False, because column spaces are preserved only by column operations, not row operations, which affect rows only"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. Row operations change the column vectors themselves. For example, the matrix [[1,2],[2,4]] has column space spanned by (1,2), but after row reducing to [[1,2],[0,0]] the column space is spanned by (1,0) instead. The row space and null space are preserved by row operations, but not the column space."
+    },
+    {
+      "id": "la-tf2-15",
+      "question": "If two matrices have the same RREF, then they have the same null space.",
+      "options": [
+        "True, because the null space is exactly the solution set of Ax=0, row reduction preserves that solution set, so two matrices sharing the same RREF have the same null space",
+        "True, because two matrices with the same RREF must be equal to each other, so their null spaces trivially agree",
+        "False, because two different matrices can share the same RREF only when they have different null spaces",
+        "False, because the null space depends on the original matrix entries, not on the reduced form"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Row reduction preserves the solution set of a homogeneous system. Since both matrices row-reduce to the same RREF, they define the same set of solutions to Ax=0 and therefore have identical null spaces."
+    },
+    {
+      "id": "la-tf2-16",
+      "question": "A linear transformation T: R^n -> R^m is one-to-one if and only if T(x) = 0 has only the trivial solution.",
+      "options": [
+        "True, because any function between vector spaces is automatically one-to-one when the codomain R^m is larger than the domain R^n",
+        "True, because T is one-to-one exactly when distinct inputs produce distinct outputs, which is equivalent to the kernel of T being {0}, meaning T(x)=0 implies x=0",
+        "False, because being one-to-one requires T to be onto as well, and T(x)=0 having only the trivial solution says nothing about surjectivity",
+        "False, because T(x)=0 having only the trivial solution means T is the zero map, which is never one-to-one"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. T is one-to-one iff T(u) = T(v) implies u = v, which is equivalent to T(u - v) = 0 implying u = v, i.e., Ker(T) = {0}. This is exactly the condition that T(x)=0 has only the trivial solution."
+    },
+    {
+      "id": "la-tf2-17",
+      "question": "A linear transformation T: R^n -> R^m represented by matrix A is onto if and only if the columns of A span R^m.",
+      "options": [
+        "True, because T is onto means every vector in R^m is achieved by some input, which is precisely the condition that every b in R^m can be written as Ax, i.e., the columns span R^m",
+        "True, because being onto requires n to equal m, and when A is square its columns automatically span R^m",
+        "False, because being onto only requires A to have at least m rows; the columns do not need to span R^m specifically",
+        "False, because columns spanning R^m only guarantees the system is consistent, not that every output in R^m is reachable"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. T is onto iff every b in R^m has at least one x with T(x) = Ax = b, which holds precisely when the column space of A equals R^m, i.e., the columns of A span R^m."
+    },
+    {
+      "id": "la-tf2-18",
+      "question": "If A and B are both n x n invertible matrices, then AB is also invertible.",
+      "options": [
+        "True, because (AB)^{-1} = B^{-1}A^{-1}, so an explicit inverse of AB can always be constructed when A and B are individually invertible",
+        "True, because the product of any two square matrices of the same size is always invertible",
+        "False, because the product AB could fail to be square if the sizes change during multiplication",
+        "False, because even if A and B are individually invertible, their product may have a zero determinant if their column patterns cancel"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. When A and B are both invertible, (AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = AIA^{-1} = I, so B^{-1}A^{-1} is the inverse of AB."
+    },
+    {
+      "id": "la-tf2-19",
+      "question": "A subset W of R^n is a subspace if and only if it contains the zero vector, is closed under vector addition, and is closed under scalar multiplication.",
+      "options": [
+        "True, because any set satisfying all three conditions must span all of R^n, making it a valid subspace",
+        "True, because these three conditions are exactly the definition of a subspace: every linear combination of vectors in W must stay in W, and the three conditions capture this precisely",
+        "False, because a subspace only needs closure under linear combinations; containing the zero vector is redundant since it follows from scalar multiplication",
+        "False, because subspaces require a fourth condition: the set must have finite cardinality to be well-defined"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. These three conditions are the standard definition of a subspace. A subset W is a subspace iff it contains 0 and is closed under both vector addition and scalar multiplication."
+    },
+    {
+      "id": "la-tf2-20",
+      "question": "If v1 and v2 are orthogonal nonzero vectors, then {v1, v2} is linearly independent.",
+      "options": [
+        "True, because if c1v1 + c2v2 = 0, taking the dot product with v1 gives c1*||v1||^2 = 0, so c1 = 0 since v1 is nonzero, and similarly c2 = 0",
+        "True, because orthogonal vectors always lie in perpendicular subspaces, which guarantees they span the full ambient space",
+        "False, because orthogonality is a geometric property with no bearing on linear independence",
+        "False, because two vectors can be orthogonal while one is a nonzero scalar multiple of the other"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Suppose c1v1 + c2v2 = 0. Dot both sides with v1: c1(v1 dot v1) + c2(v1 dot v2) = c1||v1||^2 = 0. Since v1 is nonzero, c1 = 0. The same argument with v2 gives c2 = 0, proving independence."
+    },
+    {
+      "id": "la-tf2-21",
+      "question": "An orthonormal set of vectors is always linearly independent.",
+      "options": [
+        "True, because an orthonormal set is in particular an orthogonal set of nonzero vectors, and any set of nonzero mutually orthogonal vectors is linearly independent",
+        "True, because unit-length vectors by definition point in directions that cannot be combined to reach the zero vector",
+        "False, because orthonormality only ensures dot products are 0 or 1 and says nothing about whether a nontrivial linear combination can equal zero",
+        "False, because an orthonormal set can include opposite-sign unit vectors whose combination is zero, creating dependence"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Orthonormal vectors are all nonzero (norm 1) and mutually orthogonal. The same dot-product argument used for orthogonal nonzero vectors shows all coefficients in any dependence relation must be zero."
+    },
+    {
+      "id": "la-tf2-22",
+      "question": "The least squares solution to Ax = b always exists and is always unique.",
+      "options": [
+        "True, because the function ||Ax - b||^2 is strictly convex, so it always has a unique global minimum",
+        "True, because the normal equations A^TAx = A^Tb always have exactly one solution for any matrix A and any vector b",
+        "False, because while a least squares solution always exists, it is unique only when the columns of A are linearly independent; otherwise there are infinitely many solutions",
+        "False, because the least squares solution does not always exist; when b is orthogonal to the column space no minimizing vector can be found"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. A least squares solution always exists (the normal equations are always consistent), but uniqueness requires the columns of A to be linearly independent so that A^TA is invertible. If columns are dependent, A^TA is singular and there are infinitely many least squares solutions."
+    },
+    {
+      "id": "la-tf2-23",
+      "question": "In the diagonalization A = PDP^{-1}, the diagonal entries of D are the eigenvalues of A.",
+      "options": [
+        "True, because the columns of P are the eigenvectors of A and the diagonal entries of D are the corresponding eigenvalues, by the definition of diagonalization",
+        "True, because the diagonal entries of D are always either 0 or 1, representing which standard basis vectors are eigenvectors of A",
+        "False, because the diagonal entries of D are the singular values of A, which only equal the eigenvalues when A is symmetric",
+        "False, because the diagonal entries of D equal the trace of A divided by n, not the individual eigenvalues"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. In A = PDP^{-1}, the columns of P are eigenvectors and D is diagonal with the corresponding eigenvalues on the diagonal. This is the definition of diagonalization."
+    },
+    {
+      "id": "la-tf2-24",
+      "question": "If the columns of an n x n matrix A are linearly independent, then A is invertible.",
+      "options": [
+        "True, because independent columns force A to be symmetric, and all symmetric square matrices are invertible",
+        "True, because for a square matrix, n linearly independent columns means A has full rank n, which is equivalent to A being invertible",
+        "False, because linear independence of columns only ensures Ax=0 has the trivial solution; the matrix could still fail to be invertible for other reasons",
+        "False, because an n x n matrix can have independent columns but still be singular if its rows are linearly dependent"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. For a square n x n matrix, having n linearly independent columns is equivalent to having rank n, which is equivalent to being invertible. All of these conditions are equivalent for square matrices."
+    },
+    {
+      "id": "la-tf2-25",
+      "question": "Row operations on a matrix do not change its null space.",
+      "options": [
+        "True, because row operations preserve the solution set of any linear system Ax=0, so the null space remains identical throughout row reduction",
+        "True, because row operations only affect the column space of a matrix, leaving all other associated subspaces unchanged",
+        "False, because adding a multiple of one row to another introduces new constraints that can shrink the null space",
+        "False, because row operations change the matrix itself, and since the null space is computed from the matrix, it must change as well"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. Each elementary row operation corresponds to multiplying on the left by an invertible matrix E. Since E is invertible, EAx = 0 iff Ax = 0, so the solution set of the homogeneous system, i.e., the null space, is unchanged."
+    },
+    {
+      "id": "la-tf2-26",
+      "question": "A matrix A is its own inverse if and only if A^2 = I.",
+      "options": [
+        "True, because A being its own inverse means A^{-1} = A, so A*A = A*A^{-1} = I, giving A^2 = I",
+        "True, because squaring a matrix always produces the identity matrix whenever the matrix is invertible",
+        "False, because A^2 = I is the condition for A to be a projection matrix, not a self-inverse matrix",
+        "False, because A^2 = I means A is nilpotent, which is the opposite of being invertible"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. A is its own inverse iff A^{-1} = A. Substituting into AA^{-1} = I gives A*A = I, i.e., A^2 = I. Conversely, if A^2 = I then A*A = I, so A^{-1} = A."
+    },
+    {
+      "id": "la-tf2-27",
+      "question": "If lambda = 0 is an eigenvalue of A, then A is not invertible.",
+      "options": [
+        "True, because if 0 is an eigenvalue then Av = 0 for some nonzero v, which means Ax=0 has a nontrivial solution, so A cannot be invertible",
+        "True, because eigenvalues are the diagonal entries of the matrix, so having 0 as an eigenvalue means A has a zero on the diagonal, making it singular",
+        "False, because eigenvalues measure the stretching factor of A, and a zero eigenvalue just collapses one direction without affecting overall invertibility",
+        "False, because A can still be invertible with a zero eigenvalue as long as the corresponding eigenvector is not in the column space of A"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. If 0 is an eigenvalue, there exists a nonzero vector v with Av = 0*v = 0. This means Ax=0 has the nontrivial solution x=v, so A has a zero determinant and is not invertible."
+    },
+    {
+      "id": "la-tf2-28",
+      "question": "In an LU factorization of A (without row swaps), L is a lower triangular matrix with 1s on the diagonal and U is the row echelon form of A.",
+      "options": [
+        "True, because LU factorization always exists for every square matrix and these exact forms of L and U are guaranteed in every case",
+        "True, because in the standard LU factorization, L records the row elimination multipliers with 1s on its diagonal, and U is the upper triangular result after forward elimination",
+        "False, because L must be upper triangular and U must be lower triangular in the LU factorization",
+        "False, because U in the LU factorization is the RREF of A, not just the REF"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. In the LU factorization (when no row swaps are needed), L is a unit lower triangular matrix whose off-diagonal entries are the multipliers used during elimination, and U is the resulting upper triangular matrix, which is a row echelon form of A."
+    },
+    {
+      "id": "la-tf2-29",
+      "question": "The geometric multiplicity of an eigenvalue can exceed its algebraic multiplicity.",
+      "options": [
+        "True, because when an eigenspace is large, its dimension can grow beyond what the characteristic polynomial degree suggests",
+        "True, because repeated eigenvalues always force a larger eigenspace than the multiplicity count from the characteristic polynomial",
+        "False, because geometric and algebraic multiplicities are always equal by the spectral theorem, so neither can exceed the other",
+        "False, because the geometric multiplicity of an eigenvalue is always less than or equal to its algebraic multiplicity"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. The geometric multiplicity is always at most equal to the algebraic multiplicity. It can be strictly less (which is why a matrix with repeated eigenvalues may fail to be diagonalizable), but it can never exceed the algebraic multiplicity."
+    },
+    {
+      "id": "la-tf2-30",
+      "question": "An n x n matrix A is diagonalizable if and only if for every eigenvalue, its geometric multiplicity equals its algebraic multiplicity.",
+      "options": [
+        "True, because this condition ensures each eigenspace contributes exactly enough independent eigenvectors to fill the full set of n independent eigenvectors required to form P in A = PDP^{-1}",
+        "True, because equal multiplicities force all eigenvalues to be distinct, and n distinct eigenvalues always guarantee diagonalizability",
+        "False, because diagonalizability also requires the matrix to have all real eigenvalues, not just matching multiplicities",
+        "False, because geometric and algebraic multiplicities are always equal for every matrix, so this condition is trivially satisfied and cannot determine diagonalizability"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. A is diagonalizable iff it has n linearly independent eigenvectors. This holds iff each eigenspace (geometric multiplicity) is large enough to match the number of times the eigenvalue appears as a root of the characteristic polynomial (algebraic multiplicity)."
+    },
+    {
+      "id": "la-tf2-31",
+      "question": "If A is an invertible matrix, then A^T is also invertible.",
+      "options": [
+        "True, because transposing a matrix preserves its determinant, so the nonzero determinant needed for invertibility is maintained",
+        "True, because (A^T)^{-1} = (A^{-1})^T, so A^T has an explicit inverse whenever A is invertible",
+        "False, because transposing swaps rows and columns, which can destroy the pivot structure needed for invertibility",
+        "False, because the inverse of a transpose is only defined when the matrix is symmetric, and invertible matrices are not always symmetric"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. Since det(A^T) = det(A) is nonzero, A^T is invertible. Explicitly, (A^T)^{-1} = (A^{-1})^T, which can be verified: A^T*(A^{-1})^T = (A^{-1}*A)^T = I^T = I."
+    },
+    {
+      "id": "la-tf2-32",
+      "question": "For an m x n matrix A, the column space Col(A) and the null space Null(A) together span all of R^n.",
+      "options": [
+        "True, because the rank-nullity theorem states rank(A) + nullity(A) = n, so Col(A) and Null(A) must together account for all n dimensions of R^n",
+        "True, because every vector in R^n can be decomposed into one part lying in Col(A) and one part lying in Null(A)",
+        "False, because Col(A) is a subspace of R^m while Null(A) is a subspace of R^n; they live in different spaces and cannot together span R^n",
+        "False, because only the null space spans R^n on its own; the column space is orthogonal to it and contributes nothing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. Col(A) consists of vectors in R^m (outputs) and Null(A) consists of vectors in R^n (inputs). They cannot be combined to span R^n because they live in different ambient spaces. The correct pairing is: Row(A) and Null(A) are orthogonal complements in R^n."
+    },
+    {
+      "id": "la-tf2-33",
+      "question": "If A is a 4x3 matrix with rank 3, then the equation Ax=b has a solution for every b in R^4.",
+      "options": [
+        "True, because rank 3 means A has 3 linearly independent columns, which is enough to span all of R^4",
+        "True, because a matrix with full column rank can always solve Ax=b for any vector b in the target space",
+        "False, because A has 4 rows but only 3 pivot columns, so Col(A) is 3-dimensional and does not fill R^4; some vectors b have no solution",
+        "False, because Ax=b can only have a solution for every b in R^4 when A is a square 4x4 invertible matrix"
+      ],
+      "correctAnswer": 2,
+      "explanation": "False. For Ax=b to be solvable for every b in R^4, the columns of A must span R^4. But A is 4x3, so Col(A) has dimension at most 3, which is a proper subspace of R^4. There will always be vectors b outside Col(A)."
+    },
+    {
+      "id": "la-tf2-34",
+      "question": "All vectors in an orthonormal basis have Euclidean length equal to 1.",
+      "options": [
+        "True, because orthonormality requires each vector to be a unit vector with norm 1 in addition to being mutually orthogonal with every other vector in the set",
+        "True, because the Gram-Schmidt process always automatically scales every vector to unit length, so any basis produced by it is orthonormal",
+        "False, because orthonormal only means the vectors are mutually orthogonal; having unit length is a separate optional constraint",
+        "False, because the lengths of vectors in an orthonormal basis must sum to 1, but individually they can be any positive value"
+      ],
+      "correctAnswer": 0,
+      "explanation": "True. An orthonormal set satisfies two conditions: (1) all vectors have norm 1, and (2) any two distinct vectors are orthogonal. Both conditions together define orthonormality."
+    },
+    {
+      "id": "la-tf2-35",
+      "question": "For matrices A and B where the product AB is defined, (AB)^T = A^T * B^T.",
+      "options": [
+        "True, because the transpose distributes over matrix multiplication the same way it distributes over addition",
+        "True, because transposing each factor individually always preserves the product structure of the original multiplication",
+        "False, because the transpose of a product is only defined when both A and B are square matrices",
+        "False, because the correct identity is (AB)^T = B^T * A^T; the order of the factors must be reversed when transposing a product"
+      ],
+      "correctAnswer": 3,
+      "explanation": "False. The correct rule is (AB)^T = B^T * A^T. The factors are reversed, just as with inverses: (AB)^{-1} = B^{-1}A^{-1}. Forgetting to reverse the order is a common mistake."
+    },
+    {
+      "id": "la-tf2-36",
+      "question": "A homogeneous system of linear equations always has at least one solution.",
+      "options": [
+        "True, because homogeneous systems are always consistent since every row of A has at least one nonzero entry",
+        "True, because x = 0 always satisfies Ax = 0, so the trivial solution is always available regardless of the matrix A",
+        "False, because a homogeneous system with more equations than unknowns is overdetermined and may have no solution",
+        "False, because a homogeneous system only has solutions when A has fewer rows than columns"
+      ],
+      "correctAnswer": 1,
+      "explanation": "True. For any matrix A, substituting x=0 gives A*0 = 0, so the zero vector is always a solution. This is called the trivial solution, and it guarantees that every homogeneous system is consistent."
+    }
+  ]
+}
