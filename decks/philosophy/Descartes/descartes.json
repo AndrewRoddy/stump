@@ -6,181 +6,211 @@
       "id": "d1",
       "question": "Who said 'You can never step into the same river twice'?",
       "options": ["Democritus", "Protagoras", "Heraclitus", "Socrates"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Heraclitus is the pre-Socratic philosopher associated with the idea of constant flux — the river keeps changing, so it is never truly the same river, and neither are you."
     },
     {
       "id": "d2",
       "question": "Who said 'Man is the measure of all things'?",
       "options": ["Aristotle", "Protagoras", "Socrates", "Plato"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Protagoras was the Sophist who argued that truth and morality are relative to each individual person, captured in his famous claim that 'man is the measure of all things.'"
     },
     {
       "id": "d3",
       "question": "Who said 'Nothing exists except atoms and the void'?",
       "options": ["Heraclitus", "Aristotle", "Socrates", "Democritus"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Democritus was the ancient atomist who held that all of reality is made up of indivisible atoms moving through empty space — a materialist view that anticipates Descartes' notion of Extension."
     },
     {
       "id": "d4",
       "question": "Who said 'The unexamined life is not worth living'?",
       "options": ["Plato", "Socrates", "Aristotle", "Protagoras"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Socrates famously defended the philosophical life at his trial, arguing that a life spent without self-reflection and the pursuit of wisdom is not genuinely worth living."
     },
     {
       "id": "d5",
       "question": "Who said 'There is nothing in the mind that was not first in the senses'?",
       "options": ["Plato", "Descartes", "Aristotle", "Heraclitus"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Aristotle was the empiricist who argued that all knowledge originates in sensory experience — the direct opposite of Descartes' Rationalist view that reason, not the senses, is the foundation of knowledge."
     },
     {
       "id": "d6",
       "question": "The Latin phrase 'Cogito ergo sum' translates to which of the following?",
       "options": ["I exist, therefore I think", "I think, therefore I am", "I doubt, therefore I know", "God exists, therefore I am"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "'Cogito ergo sum' means 'I think, therefore I am' — Descartes' insight that the very act of thinking proves one's existence, making it the one truth that survives radical doubt."
     },
     {
       "id": "d7",
       "question": "St. Augustine incorporated which philosopher's ideas into Christianity?",
       "options": ["Aristotle", "Descartes", "Plato", "Aquinas"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "St. Augustine fused Plato's philosophy — especially the primacy of the immaterial and the theory of Forms — with Christian doctrine, while St. Thomas Aquinas later did the same with Aristotle to create Scholasticism."
     },
     {
       "id": "d8",
       "question": "St. Thomas Aquinas incorporated which philosopher's ideas into Christianity, creating Scholasticism?",
       "options": ["Plato", "Socrates", "Descartes", "Aristotle"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Scholasticism is the intellectual tradition Descartes was raised in — the fusion of Aristotle's philosophy with Roman Catholic Church doctrine, accomplished by St. Thomas Aquinas."
     },
     {
       "id": "d9",
       "question": "What makes Cartesian Doubt different from ordinary Skepticism?",
       "options": ["Cartesian Doubt aims to show that permanent uncertainty is the only honest philosophical position", "Cartesian Doubt is used as a method to find an unshakeable foundation for knowledge", "Cartesian Doubt rejects reason as inherently unreliable, preferring faith as its guide to truth", "Cartesian Doubt borrows its method directly from ancient Greek Skeptics like Pyrrho of Elis"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Unlike the Skeptics who doubted for doubt's own sake, Descartes used doubt as a tool — a method to strip away everything uncertain until he could find one solid foundation on which to rebuild knowledge."
     },
     {
       "id": "d10",
       "question": "In his Meditations, Descartes concluded that all of the following could be doubted EXCEPT:",
       "options": ["The existence of the physical world", "Mathematical truths like 2 + 2 = 4", "The existence of his own thinking mind", "The reliability of his senses"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Even an evil demon could deceive you about the physical world and mathematics, but it cannot make you doubt that you are the very thing being deceived — the existence of your thinking mind (the Cogito) is immune to radical doubt."
     },
     {
       "id": "d11",
       "question": "What was Stage 1 of Descartes' philosophical method in the Meditations?",
       "options": ["Establish God's existence as the necessary starting point for all subsequent philosophical reasoning", "Apply radical doubt to reject anything that can be questioned", "Prove the external world exists by identifying exactly where sensory deception breaks down", "Define the mind as a distinct and separate substance from the body and all matter"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Stage 1 is Cartesian Doubt: if something can be doubted, throw it out — this applies to the senses, the physical world, and even mathematics, leaving Descartes temporarily with nothing."
     },
     {
       "id": "d12",
       "question": "What was Stage 2 of Descartes' philosophical method?",
       "options": ["Use careful sensory observation to establish the existence and reliability of the physical world", "Prove God exists through the Trademark Argument as an anchor for the reliability of reason", "Establish the Cogito as the one unshakeable foundation of knowledge", "Define Extension precisely to distinguish what counts as material versus immaterial substance"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Stage 2 is establishing consciousness: because the one thing you cannot doubt is that you are thinking, the Cogito ('I think, therefore I am') becomes the unshakeable foundation on which everything else is built."
     },
     {
       "id": "d13",
       "question": "Stage 3 of Descartes' method required him to:",
       "options": ["Prove the reliability of mathematical reasoning", "Establish that God exists and is good rather than a deceiver", "Return to the senses as a source of knowledge", "Demonstrate that the mind and body are distinct substances"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Stage 3 is establishing God: Descartes needed to prove that a perfect, good God exists and therefore would not permit us to be systematically deceived, which is what unlocks the trustworthiness of reason and innate ideas."
     },
     {
       "id": "d14",
       "question": "What is 'Extension' according to Descartes?",
       "options": ["The mind's capacity to expand its awareness beyond its immediate sensory impressions", "The immaterial soul that animates the body and gives it life and movement", "The material, three-dimensional, divisible physical world", "The region of the brain through which mind and body exchange information and influence each other"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Extension is Descartes' term for physical substance — everything that occupies three-dimensional space, is divisible, and operates according to the mechanical laws of nature, as opposed to the indivisible, immaterial mind."
     },
     {
       "id": "d15",
       "question": "All of the following are characteristics of the human mind according to Descartes EXCEPT:",
       "options": ["It is indivisible", "It is immaterial", "It possesses Extension", "It is capable of free will"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Extension — occupying three-dimensional space — is the defining property of the body, not the mind; the mind is immaterial, indivisible, and capable of free will, which is precisely what sets up the Problem of Interaction."
     },
     {
       "id": "d16",
       "question": "The Wax Argument was used by Descartes to demonstrate which of the following?",
       "options": ["The senses are the most reliable source of knowledge about the world around us", "The intellect, not the senses, grasps the true nature of physical objects", "Primary and secondary qualities are equally real and equally objective properties of objects", "God ensures that our sensory perceptions accurately correspond to the reality they represent"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "When wax melts, every sensory quality — its smell, hardness, shape, and sound — changes completely, yet the intellect still knows it is the same piece of wax; this shows that it is reason, not the senses, that grasps the true nature of physical objects."
     },
     {
       "id": "d17",
       "question": "Which of the following are 'primary qualities' of objects according to Descartes?",
       "options": ["Color, taste, and temperature", "Sound, smell, and texture", "Size, shape, motion, and number", "Beauty, harmony, and proportion"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Primary qualities like size, shape, motion, and number are objective properties that belong to the object itself and can be grasped mathematically by the intellect; secondary qualities like color and smell are subjective responses produced in the mind."
     },
     {
       "id": "d18",
       "question": "What is the Trademark Argument?",
       "options": ["The argument that only a perfect rational being could have arranged the precise mathematical order of reality", "The argument that our innate idea of a perfect God must have been implanted in us by God himself", "Descartes' demonstration that the thinking substance is inherently more certain than any extended substance", "The claim that natural human language and grammar bear implicit traces of a divine creator's mind"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Trademark Argument holds that we could never have invented the idea of a perfectly infinite God on our own — because imperfect beings cannot produce an idea of perfection — so God must have stamped that idea into our minds like a maker's trademark."
     },
     {
       "id": "d19",
       "question": "The 'Cartesian Circle' refers to which problem in Descartes' philosophy?",
       "options": ["The observation that Descartes' method of doubt always returns to the Cogito without reaching new ground", "The circular problem that God validates our innate ideas, but we need those same ideas to prove God exists", "The difficulty of proving the external world without already presupposing God's existence and goodness", "The tension of accepting clear and distinct ideas as reliable while still subjecting everything to radical doubt"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Cartesian Circle is a circular argument: Descartes uses innate ideas to prove God exists, but he also needs God's goodness to guarantee that innate ideas are trustworthy — each premise depends on the other to be true."
     },
     {
       "id": "d20",
       "question": "The Problem of Interaction asks which of the following?",
       "options": ["How can a mechanical body have any conscious experience at all?", "How can an immaterial mind causally interact with a material body?", "Why do humans interact differently with animals than with machines?", "How can science and religious faith be reconciled in the same system?"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "If the mind is a completely immaterial, non-spatial substance and the body is a purely material, mechanical thing, it is deeply puzzling how they can causally affect each other — this is the Problem of Interaction that haunts Cartesian dualism."
     },
     {
       "id": "d21",
       "question": "Where did Descartes believe the mind and body interact?",
       "options": ["The frontal lobe of the brain", "The heart", "The pineal gland", "The nervous system distributed throughout the entire body"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Descartes proposed the pineal gland as the seat of the soul — the single, centrally located structure where the immaterial mind and the mechanical body make contact and exchange influence."
     },
     {
       "id": "d22",
       "question": "Descartes' philosophy unintentionally created all of the following movements EXCEPT:",
       "options": ["Modern Skepticism", "Philosophical Idealism", "Scientific Materialism", "Scholasticism"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Scholasticism was the intellectual tradition Descartes was reacting against, not something he created; later thinkers took his method of doubt and his dualism in directions he never intended, producing Skepticism, Idealism, and Materialism."
     },
     {
       "id": "d23",
       "question": "Knowledge that is 'a priori' is best described as:",
       "options": ["Knowledge acquired through careful sensory experience and repeated observation of the world", "Knowledge that must be confirmed through controlled empirical testing before it can be trusted", "Knowledge that is independent of experience and grasped through reason alone", "Knowledge that can only be validated through direct sensory contact with physical evidence"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A priori knowledge is known through reason independently of any sensory experience — Descartes' Rationalism rests on the idea that the most reliable knowledge, like mathematics and the Cogito, is a priori rather than derived from the senses."
     },
     {
       "id": "d24",
       "question": "Descartes is considered a Rationalist because he believed:",
       "options": ["Knowledge comes primarily from sensory experience", "Religious faith is the highest form of knowledge", "Reason, not the senses, is the foundation of reliable knowledge", "Scientific experiment is the only true path to knowledge"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Descartes is the founding figure of modern Rationalism because he argued that the senses are inherently unreliable and that reason alone — through clear and distinct ideas — provides the secure foundation for genuine knowledge."
     },
     {
       "id": "d25",
       "question": "According to Descartes, animals are best described as:",
       "options": ["Beings with souls but no free will, driven entirely by instinct and divine programming", "Pure machines or automatons with no consciousness", "Creatures capable of sophisticated behavior through a combination of instinct and rudimentary reason", "Lower expressions of the same mind-body dualism that applies to human beings"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Because Descartes defined the mind as the immaterial, rational soul, and believed animals lack reason and a soul, he concluded that animals are purely mechanical automatons — biological machines that behave through physical processes alone."
     },
     {
       "id": "d26",
       "question": "Descartes was aware that his proof of God and innate ideas committed which logical fallacy?",
       "options": ["Ad hominem reasoning", "False dilemma", "Circular reasoning, also called Begging the Question", "Straw man fallacy"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Descartes was aware that the Cartesian Circle made his argument guilty of circular reasoning — he needed God to validate innate ideas, and innate ideas to prove God, so each claim presupposed the other."
     },
     {
       "id": "d27",
       "question": "Why was the Catholic Church threatened by Descartes' Cogito?",
       "options": ["It implied the physical universe could operate through natural laws without God's continuous intervention", "It grounded individual existence in personal reason rather than in God or Church authority", "It suggested that human beings could achieve self-knowledge without Scripture or Church guidance", "It provided a rational starting point that could be used to question even Catholic teachings on God"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Church's power rested on its authority over both souls and truth; the Cogito threatened this by making the individual's own thinking — rather than God or Scripture — the primary source and proof of existence, undermining the Church's role as the necessary mediator of truth."
     },
     {
       "id": "d28",
       "question": "Why did Descartes believe his Mind/Body dualism was beneficial for both religion and science?",
       "options": ["It offered a rational demonstration that God is the direct creator of both mental and physical substances", "It kept the mind and soul under Church authority while leaving the physical world open to scientific study", "It showed that religious faith and natural science both ultimately rest on the same rational foundations", "It resolved the tension between Descartes' radical doubt and Catholic teaching about God and the soul"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes saw his dualism as a compromise: the Church retained authority over the immaterial mind and soul, while scientists were free to investigate the physical world of Extension using mechanics and mathematics — each domain respected the other."
     },
     {
       "id": "d29",
       "question": "Descartes believed that the human mind was:",
       "options": ["Fully subject to the same mechanical laws that govern all other matter in the physical universe", "Ultimately reducible to and explainable by the complex physical processes occurring in the brain", "Free from the laws of mechanics that govern the material world", "A persistent illusion gradually constructed by the ongoing activity of the body's nervous system"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Descartes held that all matter — including the human body — operates according to deterministic mechanical laws, but the human mind, as an immaterial thinking substance, is exempt from those laws and possesses genuine free will."
     },
     {
       "id": "d30",
       "question": "Descartes believed the soul gave life and animation to the body.",
       "options": ["True, the soul is what makes the body alive and capable of deliberate movement and sensation", "False, the body runs as a self-contained mechanical system that needs no soul to animate it", "True, but only in the sense that the soul occupies the pineal gland, which directs and controls the body", "False, but only because the soul is purely passive and plays no active role in initiating physical motion"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes rejected the Aristotelian view that the soul animates the body; for him, the body is a self-operating biological machine kept alive by heat in the heart, and the soul is a thinking substance that interacts with it rather than giving it life."
     }
   ]
 }

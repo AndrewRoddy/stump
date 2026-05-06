@@ -6,91 +6,106 @@
       "id": "q4p1",
       "question": "Which figure is credited with fusing Aristotle's philosophy with Roman Catholic Church doctrine to create Scholasticism?",
       "options": ["St. Augustine", "St. Thomas Aquinas", "Emperor Constantine", "Pope Gregory I"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "St. Thomas Aquinas is the thinker who synthesized Aristotle's natural philosophy with Catholic theology to produce Scholasticism — the intellectual tradition Descartes was raised in and ultimately rebelled against."
     },
     {
       "id": "q4p2",
       "question": "What distinguishes Cartesian Doubt from ordinary Skepticism?",
       "options": ["Cartesian Doubt leads to permanent uncertainty about the possibility of any knowledge", "Cartesian Doubt is motivated by the desire to find an unshakeable foundation for knowledge", "Cartesian Doubt was borrowed directly from the ancient Greek Skeptics associated with Pyrrho and Sextus", "Cartesian Doubt is a passive attitude of intellectual humility rather than an active philosophical method"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes doubted strategically and temporarily — his goal was never permanent uncertainty but rather to clear away everything shaky until he found the one truth that could not be doubted, providing a secure foundation for all knowledge."
     },
     {
       "id": "q4p3",
       "question": "Descartes' radical doubt leads him to conclude that all of the following can be doubted EXCEPT:",
       "options": ["The reliability of his senses", "Mathematical truths like 2 + 2 = 4", "The fact that he exists as a thinking thing", "The existence of the external physical world around him"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "An evil demon could deceive you about your senses, the external world, and even mathematics, but it cannot deceive you about the fact that you are being deceived — the Cogito establishes that the thinking self is the one truth immune to radical doubt."
     },
     {
       "id": "q4p4",
       "question": "On which of the following points did Descartes actually agree with Aristotle?",
       "options": ["That all things in the universe are oriented toward a final purpose or Telos that explains their nature", "That the soul gives life and animation to the body, making it capable of movement and growth", "That the physical world is a legitimate subject of scientific investigation", "That universal forms are real things that exist immanently within particular physical objects in the world"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "While Descartes rejected Aristotle's Telos, his theory of the soul, and his approach to knowledge, he agreed that the external physical world is a real and proper subject for scientific study — he just thought it should be investigated through mathematics and mechanics rather than through Aristotelian categories."
     },
     {
       "id": "q4p5",
       "question": "The Wax Argument demonstrates all of the following EXCEPT:",
       "options": ["Sensory experience of the wax changes completely as it melts", "The mind grasps the identity of the wax through rational inspection rather than the senses", "Our senses alone cannot identify the wax as the same object in both its solid and liquid form", "The senses reliably pick out the primary qualities of the wax in both its states"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "The entire point of the Wax Argument is that the senses fail — every sensory quality of the wax (smell, texture, shape, sound) changes when it melts, so it is the intellect alone that grasps the wax's true, enduring nature as an extended thing."
     },
     {
       "id": "q4p6",
       "question": "The Cogito ('I think, therefore I am') establishes all of the following EXCEPT:",
       "options": ["That Descartes exists as a thinking thing", "That the act of thinking is the one thing that cannot be doubted", "That a direct proof of God's existence has been achieved through self-reflection", "That existence requires the ongoing act of thinking to be confirmed"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Cogito only establishes the existence of the thinking self; proving God's existence comes later and requires a separate argument — the Trademark Argument — so God's existence is not something the Cogito itself delivers."
     },
     {
       "id": "q4p7",
       "question": "Which of the following is NOT a characteristic of Extended things (the physical world) according to Descartes?",
       "options": ["They are three-dimensional and measurable in space", "They are divisible into smaller and smaller parts", "They are composed of an indivisible, immaterial substance", "They follow the deterministic mechanical laws of nature"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Extended things are by definition divisible, spatial, and material — it is the mind that is indivisible and immaterial; claiming that matter is made of an indivisible immaterial substance confuses the two substances Descartes carefully distinguished."
     },
     {
       "id": "q4p8",
       "question": "Descartes' philosophy unintentionally gave rise to all of the following movements EXCEPT:",
       "options": ["Modern Skepticism", "Philosophical Idealism", "Scientific Materialism", "Medieval Scholasticism"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Scholasticism is what Descartes was rebelling against, not a movement he created; later thinkers took his method of doubt and his dualism in unintended directions, producing Modern Skepticism, Idealism, and Scientific Materialism."
     },
     {
       "id": "q4p9",
       "question": "All of the following accurately describe the Problem of Interaction EXCEPT:",
       "options": ["The mind is immaterial and the body is material, making direct causation difficult to explain", "Descartes proposed the pineal gland as the site where mind-body interaction occurs", "The Problem arises because two completely different types of substance must somehow communicate", "The soul and body do not interact at all because they are entirely separate and never communicate"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Descartes did believe the soul and body interact — he just struggled to explain how, proposing the pineal gland as the meeting point; the Problem of Interaction is about the difficulty of explaining that interaction, not a denial that it occurs."
     },
     {
       "id": "q4p10",
       "question": "According to Descartes, the human mind possesses all of the following EXCEPT:",
       "options": ["The capacity for free will", "The quality of being indivisible", "Extension, meaning it occupies three-dimensional physical space", "The ability to engage in rational thought and self-reflection"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Extension — occupying measurable space — belongs exclusively to the body and the physical world; the mind is defined precisely by its lack of Extension, being indivisible, immaterial, and free from the laws of mechanics."
     },
     {
       "id": "q4p11",
       "question": "The intellectual environment Descartes grew up in, fusing Aristotle's philosophy with Roman Catholic Church teachings, was called:",
       "options": ["Platonism", "Stoicism", "Empiricism", "Scholasticism"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Scholasticism was the dominant intellectual tradition of the Medieval and early modern world, forged by St. Thomas Aquinas when he integrated Aristotle's natural philosophy into Catholic theology — it is the tradition Descartes was educated in and ultimately broke from."
     },
     {
       "id": "q4p12",
       "question": "Why is Descartes considered the unintentional father of Modern Skepticism?",
       "options": ["Descartes himself acknowledged in later writings that certain knowledge might be permanently out of reach", "Later philosophers adopted his doubt method but rejected his proofs of God and the external world", "Descartes' immediate followers intentionally misread the Meditations to support a position of total uncertainty", "Descartes eventually published a retraction conceding that the Cogito could not withstand radical doubt"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes intended doubt as a temporary method leading to certainty, but subsequent philosophers embraced the Cogito while dismissing his proofs of God and the external world as circular — leaving only the doubting self and nothing else to stand on."
     },
     {
       "id": "q4p13",
       "question": "Which statement best captures Descartes' view on the relationship between the human mind and the laws of mechanics?",
       "options": ["Both the human mind and all physical matter are equally and completely subject to the laws of mechanics", "The mind is exempt from mechanical laws, while all matter in the universe is fully subject to them", "Mechanical laws regulate the interaction between mind and body but do not reach into the soul's inner life", "In Descartes' system, neither mind nor body is fully reducible to the laws of mechanical causation"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes believed that all matter — from planets to the human body — operates deterministically according to the laws of mechanics, but the immaterial human mind stands entirely outside those laws and possesses genuine freedom."
     },
     {
       "id": "q4p14",
       "question": "The 'Cartesian Circle' describes which fatal flaw in Descartes' argument?",
       "options": ["The Cogito is circular because 'I think, therefore I am' already presupposes a stable existing self", "His proof of God requires trusting innate ideas, but those ideas only become trustworthy if God already exists", "His proof of the external world unknowingly circles back and succeeds only in re-establishing the mind's existence", "He relies on Scholastic categories and assumptions in order to reach conclusions that directly undermine Scholasticism"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Cartesian Circle is the charge that Descartes' argument is viciously circular: he uses the innate idea of God to prove God's existence, but the reliability of innate ideas itself depends on God already being established as a non-deceiver."
     },
     {
       "id": "q4p15",
       "question": "According to Descartes, what role does the soul play in the body's physical vitality and movement?",
       "options": ["The soul animates the body like a pilot who steers and directs a ship from inside", "The soul plays no role in animating the body, which functions as a self-operating mechanical machine", "The soul controls the body through the flow of animal spirits in the nervous system and blood", "The soul and body are so unified in humans that they cannot be meaningfully distinguished at all"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Descartes broke decisively with the Aristotelian view that the soul gives life to the body; in his system, the body is a self-contained biological machine that operates by mechanical processes, and the soul is a thinking substance that interacts with it rather than animating it."
     }
   ]
 }

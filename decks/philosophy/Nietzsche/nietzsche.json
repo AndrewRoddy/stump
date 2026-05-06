@@ -6,181 +6,211 @@
       "id": "n1",
       "question": "At which university did Nietzsche study philology?",
       "options": ["The University of Berlin", "The University of Bonn", "The University of Vienna", "The University of Leipzig"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The University of Bonn is correct — Nietzsche began his academic career studying philology (the study of language and literary texts) there before later moving to Leipzig, where he encountered Schopenhauer's philosophy."
     },
     {
       "id": "n2",
       "question": "Who was primarily responsible for falsely associating Nietzsche's work with Nazism after his death?",
       "options": ["His publisher at the time of his mental collapse", "The German government under Kaiser Wilhelm II", "His sister Elizabeth Forster-Nietzsche", "His former mentor Richard Wagner"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "His sister Elizabeth Forster-Nietzsche is responsible — after Nietzsche's mental collapse, she took control of his unpublished writings and selectively edited and manipulated them to align with German nationalist and antisemitic ideology, causes Nietzsche himself had explicitly opposed."
     },
     {
       "id": "n3",
       "question": "Nietzsche's concept of 'Mirror Writing' means:",
       "options": ["Nietzsche deliberately inserted contradictions throughout his texts to disorient the casual reader", "Your interpretation of Nietzsche reveals more about your own values and biases than about his intent", "Nietzsche adopted the perspective of his opponents to expose their assumptions from within their own framework", "Nietzsche concealed his true arguments behind layers of metaphor accessible only to sympathetic readers"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Mirror Writing means that because Nietzsche's texts are deliberately provocative and resist systematic reading, whatever meaning a reader extracts tends to reflect their own pre-existing values and biases — as the course puts it, 'how you interpret Nietzsche says more about you than it does about Nietzsche.'"
     },
     {
       "id": "n4",
       "question": "In which book did Nietzsche first write the phrase 'God is Dead'?",
       "options": ["Thus Spoke Zarathustra", "Beyond Good and Evil", "The Gay Science", "The Birth of Tragedy"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Gay Science is correct — Nietzsche's famous proclamation 'God is Dead' first appeared in this work, most memorably in the Parable of the Madman, where a madman runs through the marketplace announcing the death of God to an uncomprehending crowd."
     },
     {
       "id": "n5",
       "question": "What did Nietzsche mean when he declared 'God is Dead'?",
       "options": ["He believed that God had literally ceased to exist as a supernatural being", "The moral certainty and cultural authority of the Christian world had permanently collapsed", "He was making a sociological prediction about the steady decline of church attendance across Europe", "Modern science had definitively disproven the core factual claims of religion, rendering it obsolete"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche's 'God is Dead' is a cultural diagnosis, not a theological claim — the Enlightenment, scientific revolution, and Darwinian evolution had destroyed the Four Pillars (Telos, Divine Origin, Good and Evil, Christendom) that gave the Medieval Christian world its shared moral certainty, leaving modern people without a roadmap for meaning."
     },
     {
       "id": "n6",
       "question": "Which of the following was NOT one of the Four Pillars of the Medieval Christian World?",
       "options": ["Telos", "Divine Origin", "Moral Reasoning", "Christendom"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Moral Reasoning is not one of the Four Pillars — the actual four are Telos (a cosmic purpose built into existence), Divine Origin (humans as sacred creations separate from animals), Good and Evil (supernatural forces shaping daily life), and Christendom (a shared Christian community working toward a common future)."
     },
     {
       "id": "n7",
       "question": "Which Pillar of the Christian Medieval World was overturned primarily by Darwin's theory of evolution?",
       "options": ["Telos", "Christendom", "Good and Evil", "Divine Origin"],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Darwin's theory of evolution struck down Divine Origin — the pillar holding that humans are sacred creations of God, fundamentally set apart from animals. By showing that humans evolved from other animals, Darwin removed the basis for believing humanity occupied a uniquely sacred place in creation."
     },
     {
       "id": "n8",
       "question": "Nietzsche called the period following the death of God the:",
       "options": ["Age of Nihilism", "Age of Anxiety", "Age of Reason", "Age of Enlightenment"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche called this period the Age of Anxiety — because without the shared moral framework that Christianity had provided, people are left uncertain about what to believe and what to do, and that uncertainty breeds deep anxiety about how to find meaning and value in the world."
     },
     {
       "id": "n9",
       "question": "According to Nietzsche, all of the following are bad responses to the Death of God EXCEPT:",
       "options": ["Collapsing into nihilism and accepting that life has no meaning or purpose at all", "Retreating into fundamentalism and clinging to pre-modern certainties as though they were still solid", "Embracing one's instincts and creating new personal values", "Replacing God with secular moral reasoning as a new universal foundation for ethics"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Embracing one's instincts and creating new personal values is the only good response — nihilism gives up on meaning entirely, fundamentalism dishonestly pretends the old certainties still hold, and replacing God with secular moral reasoning just substitutes a new Slave Morality for the old one, which Nietzsche rejects."
     },
     {
       "id": "n10",
       "question": "In Nietzsche's allegory, 'Lions' represent:",
       "options": ["Those who follow the moral law unquestioningly because it provides comfort and belonging", "Those who gain social power by weaponizing guilt and manufacturing collective resentment", "Individuals who live by instinct and create their own values", "Philosophers who use rational argument to build objective and universal systems of moral rules"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Lions represent the higher-types who live according to their own instincts and type-facts, creating their own values rather than adopting the herd's Slave Morality — they are the masters, the noble individuals who do not apologize for their natural strength or need external validation."
     },
     {
       "id": "n11",
       "question": "Which philosophers does Nietzsche hold most responsible for creating Slave Morality?",
       "options": ["Aristotle and Plato", "Socrates and Plato", "Descartes and Kant", "Plato and St. Augustine"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche blames Socrates and Plato — Socrates began the inversion by elevating reason above instinct (partly driven, Nietzsche argues, by his own ugliness and resentment), and Plato systematized this into a philosophy that placed an abstract World of Being above the natural world of becoming, laying the groundwork for Christian Slave Morality."
     },
     {
       "id": "n12",
       "question": "Why does Nietzsche believe Socrates' physical ugliness was philosophically significant?",
       "options": ["It disqualified him from the Greek aristocratic ideal, which required both physical and moral beauty", "Being mistreated for his ugliness pushed Socrates to elevate reason over instinct, seeding Slave Morality", "For Nietzsche, it proved that true philosophical depth has no necessary connection to physical appearance", "Socrates deliberately used his unconventional appearance to build credibility with ordinary Athenian citizens"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "In ancient Greek culture, outward ugliness was associated with inner ugliness, so Socrates was mistreated by those in power because of his appearance — out of resentment, Nietzsche argues, Socrates invented a morality where reason trumped instinct and physical excellence, effectively beginning the tradition of Slave Morality by condemning the very traits he lacked."
     },
     {
       "id": "n13",
       "question": "Which moral concept did Nietzsche believe Christianity invented?",
       "options": ["Virtue", "Duty", "Evil", "Justice"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Nietzsche argues that Christianity invented the concept of Evil — by labeling instinctual, passionate, and self-assertive behavior as sinful and worthy of Hell, the Slave Morality gave the weak a weapon to condemn and control the natural strength of the Lions, reframing their own weakness as moral virtue."
     },
     {
       "id": "n14",
       "question": "According to Nietzsche, Socrates' formula for happiness was:",
       "options": ["Instinct = Passion = Happiness", "Power = Excellence = Greatness", "Reason = Virtue = Happiness", "Acceptance = Calm = Contentment"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Socrates' formula is Reason = Virtue = Happiness — the idea that by using rational contemplation to govern your passions and instincts, you become virtuous, and virtue produces happiness. Nietzsche sees this as a catastrophic inversion that subordinates natural drives to abstract reason."
     },
     {
       "id": "n15",
       "question": "What are the Three False Doctrines of Christian Morality according to Nietzsche?",
       "options": ["Telos, Divine Origin, and Good and Evil", "Nihilism, Fundamentalism, and Moral Reasoning", "Free Will, the Stable Self, and the Similarity Doctrine", "The Cogito, Innate Ideas, and the Trademark Argument"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Three False Doctrines are Free Will (the Causa Sui argument that our actions are self-caused, making us morally responsible), the Stable Self (the fiction of a fixed identity as the doer behind every deed), and the Similarity Doctrine (the assumption that all humans share the same nature and therefore the same moral obligations)."
     },
     {
       "id": "n16",
       "question": "'Causa Sui' refers to which idea that Nietzsche criticized?",
       "options": ["The idea that God is the uncaused cause of all existence", "The claim that our actions are self-caused, making us fully morally responsible for them", "The belief that cause and effect is an illusion created by grammar", "The argument that instincts are caused by society rather than biology"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Causa Sui — literally 'self-caused' — is the Christian argument that because our actions originate in our own will, we are fully morally responsible for them, which gives the church the power to assign guilt and punishment. Nietzsche rejects this because his Theory of Action shows our conscious will is itself caused by unconscious type-facts, not by a free self."
     },
     {
       "id": "n17",
       "question": "Nietzsche's Theory of Action describes the correct order of causation as:",
       "options": ["Conscious deliberation produces desire, and that desire then causes the body to act accordingly", "Physical action arises first and spontaneously; desire and thought are rationalizations that follow afterward", "Type-facts generate conscious thought and desire, which then express themselves in action", "Social conditioning shapes our type-facts, which determine our thoughts and ultimately our actions"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "In Nietzsche's Theory of Action, the causal chain runs from Primary Forces (innate type-facts) to conscious thought and desire, and finally to action — type-facts are the biological and psychological core you are born with, and they drive everything upward; consciousness is an effect, not the original cause."
     },
     {
       "id": "n18",
       "question": "Epiphenomenalism, as Nietzsche applied it, argues that:",
       "options": ["Physical actions are caused by conscious willpower directing the body", "Consciousness is a byproduct of unconscious biological processes and does not cause action", "Emotional states and felt desires are the primary causal drivers of all human behavior and choice", "Mind and body are two aspects of a single substance and cannot be meaningfully distinguished from each other"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Epiphenomenalism holds that consciousness — including our felt sense of will, desire, and reason — is a byproduct (an epiphenomenon) of deeper unconscious biological processes, not a cause; just as hunger (unconscious) causes eating, and the conscious thought 'I want food' is merely the surface effect of that underlying drive."
     },
     {
       "id": "n19",
       "question": "The H2O analogy in Nietzsche's argument illustrates which concept?",
       "options": ["The way language creates false impressions of stable, fixed objects in the world", "The way individual type-facts combine and interact to produce broader cultural and social norms", "How consciousness emerges from biological processes without being the primary cause of action", "The relationship between Christian morality and the gradual development of Slave Morality"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The H2O analogy illustrates how consciousness emerges from underlying biological processes — just as the wetness of water is a real property that emerges from hydrogen and oxygen without being the 'cause' of the water itself, consciousness emerges from type-facts without being the primary driver of action."
     },
     {
       "id": "n20",
       "question": "'Primary Forces' in Nietzsche's model of the self refer to:",
       "options": ["External social norms and moral laws imposed by society", "The innate biological and physiological type-facts we are born with", "Conscious desires and preferences that guide our daily decisions", "Rational principles that override and suppress instinct"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Primary Forces are the internal, biologically and psychologically given type-facts you are born with — they represent the core of who you are and how you will act, and you do not choose them. Secondary Forces (like societal norms or morality) are external and can either enhance or hinder who you become, but they do not replace your primary nature."
     },
     {
       "id": "n21",
       "question": "According to Nietzsche, guilt arises when:",
       "options": ["We act against the dictates of reason and thereby violate a moral law that applies to all people", "External norms imposed by society conflict with our internal type-facts and natural instincts", "We fail to act in accordance with the moral teachings instilled in us by our Christian cultural heritage", "Our conscious rational desires successfully suppress and override the unconscious biological drives below them"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Guilt is produced when an external Secondary Force — such as society's moral norms or religious upbringing — demands that you suppress or change who you naturally are (your type-facts); Nietzsche's goal is to free the higher-types from this guilt by revealing that morality originates from resentment, not from any objective truth about human nature."
     },
     {
       "id": "n22",
       "question": "'Amor Fati' is best described as:",
       "options": ["The love of wisdom and philosophical self-examination as the highest pursuit available to human beings", "The aspiration to transcend personal suffering by surrendering the will to something greater than oneself", "The wholehearted embrace of one's fate, including its pain and struggle, exactly as it is", "The Nietzschean ideal of using rational discipline to master and redirect one's instinctual passions"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Amor Fati — 'love of fate' — is Nietzsche's call to embrace every aspect of your life exactly as it is, including the pain and struggle, without wishing any of it were different; rather than resenting hardship, the Lion accepts and even loves their fate as the expression of who they authentically are."
     },
     {
       "id": "n23",
       "question": "The 'Last Man' represents Nietzsche's greatest fear, which is:",
       "options": ["A world in which unrestrained instinct and violence have overwhelmed all civilizing structures", "A comfortable, indifferent society that embraces consumerism in place of meaning or greatness", "The emergence of a single dominant authoritarian figure who uses power to crush all individual difference", "The worldwide triumph of Slave Morality through the complete institutional victory of Christianity"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Last Man is Nietzsche's worst-case scenario for humanity after the death of God — a society that responds to the loss of meaning not with courageous self-creation, but by retreating into consumerism, comfort, and indifference, becoming a herd of passive, mediocre individuals who have abandoned the pursuit of greatness entirely."
     },
     {
       "id": "n24",
       "question": "In the story of Goethe and Beethoven, which figure does Nietzsche admire and why?",
       "options": ["Beethoven, whose music represents the raw triumph of creative passion breaking through all formal constraint", "Goethe, who embodied true greatness through naturalness and a total absence of grievance or arrogance", "Both equally, since Goethe represents instinct while Beethoven represents will, together forming the Ubermensch", "Neither, since both ultimately sought public recognition and thereby compromised their authentic greatness"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche admires Goethe because he exemplifies 'greatness without grievance' — his excellence was natural, effortless, and free from bitterness or arrogance, embodying Amor Fati. Beethoven, by contrast, made a visible show of his suffering, which for Nietzsche smacks of the Slave Morality's need for recognition and resentment."
     },
     {
       "id": "n25",
       "question": "Why does Nietzsche describe himself as the 'Anti-Christ'?",
       "options": ["He sought to dismantle all religious faith and replace its cultural authority with a rigorous scientific worldview", "He aimed to de-moralize language by returning concepts from the fixed World of Being to the fluid world of Becoming", "He denied the historical existence of Jesus and argued that Christianity was a purely political fabrication", "He held that raw human instinct is more authentically sacred and life-affirming than any religious doctrine"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche calls himself the Anti-Christ because his revaluation of all values aims to de-moralize our language and concepts — stripping away the fixed, universal moral meanings that Christian culture embedded in words like 'Evil' and 'God,' and returning them from Plato's static World of Being down to the fluid, particular world of Becoming."
     },
     {
       "id": "n26",
       "question": "Which statement correctly describes the relationship between Lions and Lambs?",
       "options": ["Lambs can elevate themselves to become Lions through discipline and hard work", "Lions and Lambs are born that way and neither can ever change their nature", "Lions can be reduced to Lambs through external moral pressure, but Lambs cannot elevate themselves to Lions", "Both Lions and Lambs can change their nature depending on their social environment"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Because Lions and Lambs are defined by their innate type-facts, a Lamb — who lacks the biological and psychological nature of a Lion — cannot become one through effort or discipline. However, a Lion can be beaten down into Lamb-like behavior through relentless external moral pressure and guilt, though their underlying nature remains."
     },
     {
       "id": "n27",
       "question": "What concept does Nietzsche call the 'emptiest and thinnest' of all human ideas?",
       "options": ["Reason", "Form", "God", "The Stable Self"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Nietzsche calls 'God' the emptiest and thinnest concept because it functions as a universal placeholder — a catch-all abstraction projected onto the world to give it meaning — but when examined closely, it has no real content of its own, being nothing more than a mirror for whatever the culture needs it to justify."
     },
     {
       "id": "n28",
       "question": "Nietzsche's goal in 'revaluing all values' was primarily to:",
       "options": ["Develop a new universal ethics grounded in rational principles of human dignity to replace Christian morality", "Recover pre-Socratic values centered on instinct, excellence, and passion as the path to the Ubermensch", "Construct a political order in which the most powerful and capable individuals hold legitimate authority", "Demonstrate that all moral systems are equally groundless and reflect nothing but competing bids for social power"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Nietzsche's revaluation of all values aims to recover the Master Morality of the pre-Socratic ancient Greeks — the noble, instinct-driven values that celebrated excellence and passion — and to overthrow the Slave Morality that Socrates, Plato, and Christianity installed in their place, freeing higher-types to live according to their own type-facts."
     },
     {
       "id": "n29",
       "question": "All of the following are true about Nietzsche's writing style EXCEPT:",
       "options": ["He used aphorisms and metaphors rather than systematic logical arguments", "He employed Mirror Writing that reflects the reader's own values back at them", "He aimed to establish a certain mathematical foundation for all philosophical knowledge", "He wrote in a deliberately provocative style designed to challenge the reader's assumptions"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Nietzsche explicitly did not seek a mathematical or certain foundation — that ambition belongs to Descartes, not Nietzsche. Nietzsche wrote in aphorisms and metaphors, embraced flux and becoming over fixed systems, and used Mirror Writing precisely to avoid the kind of systematic certainty he associated with Slave Morality's contemptible desire for security."
     },
     {
       "id": "n30",
       "question": "On which specific point did Nietzsche actually agree with Descartes?",
       "options": ["That pure reason, rather than sensory experience, forms the foundation of all reliable knowledge", "That humans possess free will and are morally responsible for their choices", "That animals are automatons lacking genuine consciousness", "That the existence of God can be established by pointing to the innate ideas present in the mind"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Nietzsche agreed with Descartes that animals are automatons — machines driven entirely by biological mechanisms without conscious deliberation. Crucially, however, Nietzsche extends this view to humans as well through Epiphenomenalism and the Theory of Action, meaning that human consciousness is likewise an effect of underlying biological drives, not a free rational cause."
     }
   ]
 }

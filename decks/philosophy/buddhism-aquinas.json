@@ -6,151 +6,176 @@
       "id": "ba1",
       "question": "Who was Siddhartha Gautama?",
       "options": ["A Hindu god worshipped throughout ancient India", "An enlightened teacher who founded Buddhism and was not a deity", "A king of India who used religion to unite his kingdom", "A Greek philosopher who traveled to India to study Eastern thought"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Siddhartha Gautama was a historical human being — born a prince around 563 BCE — who achieved enlightenment and became the Buddha (meaning 'the awakened one'), founding Buddhism as a set of teachings rather than positioning himself as a god to be worshipped."
     },
     {
       "id": "ba2",
       "question": "Approximately when did Siddhartha Gautama live?",
       "options": ["~1000-900 BCE", "~563-483 BCE", "~200-100 BCE", "~100-200 CE"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Siddhartha Gautama lived approximately 563–483 BCE, placing him in the same broad era as some of the early Greek philosophers, long before Christianity or Islam arose, and centuries before the medieval period that gave us Augustine and Aquinas."
     },
     {
       "id": "ba3",
       "question": "Siddhartha's father, King Suddhodana, was:",
       "options": ["A Buddhist monk who founded the first monastery in India", "A merchant trader who raised Siddhartha in modest conditions", "A military leader who was king of one of the 16 kingdoms of India", "A Hindu priest who trained Siddhartha in Vedic rituals from birth"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "King Suddhodana was a military-political ruler, one of the kings of the 16 kingdoms of ancient India — this royal background is essential context, because it explains the extreme luxury Siddhartha was raised in, the very extreme he would later abandon in his search for the Middle Way."
     },
     {
       "id": "ba4",
       "question": "What was the First Encounter that began Siddhartha's spiritual journey outside the palace?",
       "options": ["A sick man", "An ascetic seeker", "An old man", "A corpse"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The First Encounter was an old man, which shocked Siddhartha because his father had deliberately shielded him from all suffering — seeing someone ravaged by age forced Siddhartha to confront for the first time that decay and loss are universal realities no palace walls can keep out."
     },
     {
       "id": "ba5",
       "question": "What was the Second Encounter on Siddhartha's journey?",
       "options": ["An old man showing that aging is universal", "A sick man showing that illness affects everyone", "A corpse showing the reality of death", "An ascetic seeker showing a path of renunciation"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Second Encounter was a sick man, reinforcing the lesson from the first encounter: that illness, like aging, is not confined to the poor or unlucky but is part of the fundamental nature of existence — a key step in Siddhartha's growing awareness of Dukkha, the pervasiveness of suffering."
     },
     {
       "id": "ba6",
       "question": "What was the Fourth Encounter, and why was it significant?",
       "options": ["A corpse, which showed Siddhartha that death was inevitable and impossible to escape", "An ascetic seeker, which showed Siddhartha that a life of spiritual discipline offered a possible path out of suffering", "A sick man, which showed Siddhartha that illness affects everyone regardless of wealth or status", "A wandering brahmin priest, who offered Siddhartha ritualistic techniques for transcending physical suffering"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Fourth Encounter — an ascetic seeker — was pivotal because, unlike the first three encounters which only revealed the problem of suffering, this one pointed toward a solution: a person who had voluntarily renounced worldly life in pursuit of spiritual liberation, inspiring Siddhartha to leave the palace and seek his own path."
     },
     {
       "id": "ba7",
       "question": "The Middle Way refers to which concept in Buddhism?",
       "options": ["A compromise between Hinduism and Buddhism that Siddhartha proposed", "A political philosophy about avoiding extremes in governance", "The balanced path between extreme self-denial and extreme pleasure-seeking", "The Buddhist rejection of both atheism and theism regarding God"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Middle Way is Siddhartha's discovery that neither the extreme luxury of his palace upbringing nor the extreme asceticism he practiced with other monks for years led to enlightenment — only the balanced path between indulgence and deprivation creates the clarity of mind needed to reach Nirvana."
     },
     {
       "id": "ba8",
       "question": "The musical string analogy illustrates the Middle Way by teaching that:",
       "options": ["The mind must be tuned like an instrument to silence all desire permanently", "A string too tight will break, a string too loose makes no sound, but tuned right it creates harmony", "Suffering is like a broken string that can never fully be repaired", "All beings are interconnected like strings vibrating together in one instrument"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The string analogy captures the Middle Way perfectly: a string wound too tight snaps (extreme asceticism destroys the body and clouds the mind), while a string too loose produces nothing (extreme pleasure-seeking leaves one spiritually inert) — only a string tuned to the right tension produces music, just as balance produces awakening."
     },
     {
       "id": "ba9",
       "question": "The First Noble Truth states:",
       "options": ["The path to liberation requires strict adherence to the Eight Fold Path in all aspects of one's life", "There is suffering (Dukkha) in all existence due to impermanence and unfulfilled craving", "Suffering can be completely eliminated through meditation practice alone without other disciplines", "All desires are equally harmful and must be fully extinguished before any peace is possible"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The First Noble Truth is the honest diagnosis: Dukkha — suffering, dissatisfaction, and impermanence — is woven into the fabric of all existence, not as a punishment but as a fundamental characteristic of a world where nothing lasts and craving is never fully satisfied."
     },
     {
       "id": "ba10",
       "question": "The Second Noble Truth identifies the cause of suffering as:",
       "options": ["Our failure to cultivate enough mindfulness and meditative discipline to quiet the wandering mind", "Our constant craving for sensual pleasure, permanence, and escape from pain", "The cycle of rebirth that traps beings in endless repetition of experiences beyond their control", "The social inequality created by the caste system in Indian society"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Second Noble Truth identifies craving — tanha — as the root cause of Dukkha: we suffer because we desperately cling to pleasure, resist impermanence, and seek to escape pain, and this very clinging is what keeps suffering alive, which is why the Three Poisons (greed, hatred, and delusion) are so central to Buddhist thought."
     },
     {
       "id": "ba11",
       "question": "The Fourth Noble Truth describes:",
       "options": ["That suffering has a cause that can be clearly identified through introspection", "That Nirvana is the ultimate goal that all Buddhist practice points toward", "The Eight Fold Path as the prescribed method for achieving the cessation of suffering", "That impermanence is the fundamental nature of all existence in the universe"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Fourth Noble Truth is the prescription: having diagnosed the disease (Dukkha) and identified its cause (craving), the Buddha now offers the cure — the Eight Fold Path, a practical guide covering right understanding, intention, speech, action, livelihood, effort, mindfulness, and concentration."
     },
     {
       "id": "ba12",
       "question": "What is Nirvana?",
       "options": ["A blissful heavenly realm where virtuous beings are rewarded after death with eternal peace", "A permanent state of perfect bliss in which all desires are finally and fully satisfied without effort", "The complete cessation of suffering achieved by eliminating ignorance and craving", "The moment of physical death when individual consciousness is dissolved into the cosmic absolute"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Nirvana is not a place or a state of gratified desire — it is literally the 'blowing out' of the fires of greed, hatred, and delusion; when ignorance and craving are extinguished, suffering ceases entirely, and that liberation from the cycle of Dukkha is what Buddhists call Nirvana."
     },
     {
       "id": "ba13",
       "question": "What is the Dharma?",
       "options": ["The cosmic moral order that governs how beings are reborn across successive lifetimes", "The sacred mountain where the Buddha first achieved enlightenment", "The fundamental teachings of the Buddha on how to live and reach Nirvana", "The monastic community of Buddhist monks and nuns"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Dharma refers to the Buddha's core teachings — the Four Noble Truths, the Middle Way, the Eight Fold Path, and the nature of reality — essentially the road map he offered after his enlightenment under the Bodhi Tree so that others could find their own way out of suffering."
     },
     {
       "id": "ba14",
       "question": "Where did Siddhartha achieve enlightenment and become the Buddha?",
       "options": ["In a cave in the Himalayan mountains during a 40-day fast", "Under the Bodhi Tree (fig tree) in Bodh Gaya, India", "At the banks of the Ganges River after a ritual cleansing bath", "In the city of Kapilavastu, the place of his birth and childhood"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Siddhartha achieved enlightenment under the Bodhi Tree — a fig tree in Bodh Gaya, India — where he sat in deep meditation and, after resisting the temptations of Mara (the tempter who represents ego and desire), finally broke through to full awakening and became the Buddha."
     },
     {
       "id": "ba15",
       "question": "Who is Mara in Buddhist tradition, and what does he represent?",
       "options": ["The god of death who tested the Buddha with unanswerable riddles", "The tempter god who represents our own ego, desires, and fear of change", "The first disciple of the Buddha who spread his teachings across India", "A Hindu deity that Siddhartha had to symbolically defeat to claim enlightenment"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Mara is the tempter who appeared beneath the Bodhi Tree to prevent Siddhartha's enlightenment — but rather than a purely external being, Mara represents our own inner obstacles: ego, craving, fear, and the desperate attachment to the way things are, which is exactly what enlightenment requires us to overcome."
     },
     {
       "id": "ba16",
       "question": "The Three Poisons that cause suffering according to Buddhism are:",
       "options": ["Pride, Envy, and Sloth", "Violence, Ignorance, and Power", "Greed, Hatred, and Delusion", "Desire, Pleasure, and Comfort"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Three Poisons — greed (wanting more than we need), hatred (aversion to what we dislike), and delusion (a fundamental misunderstanding of the nature of reality) — are the root mental states that feed craving and therefore perpetuate Dukkha; eliminating them is the core work of Buddhist practice."
     },
     {
       "id": "ba17",
       "question": "The opposites of the Three Poisons are:",
       "options": ["Patience, Silence, and Obedience", "Poverty, Peace, and Prayer", "Generosity, Compassion, and Wisdom", "Humility, Forgiveness, and Faith"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Buddhism teaches that each poison has a direct antidote: generosity counteracts greed, compassion counteracts hatred, and wisdom (clear seeing of reality as it is) counteracts delusion — these three virtues are what grow in the practitioner as the poisons are progressively released through practice."
     },
     {
       "id": "ba18",
       "question": "How does Buddhism differ from Hinduism regarding the caste system?",
       "options": ["Buddhism maintains the caste system but allows individuals to move between castes through good deeds", "Buddhism fully rejects the caste system, holding that anyone can achieve enlightenment regardless of birth", "Buddhism replaced the Hindu caste system with a new hierarchy based on level of spiritual achievement", "Buddhism and Hinduism share the same view that caste is a natural and necessary social structure"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "One of Buddhism's most radical departures from Hinduism was its total rejection of the caste system — the Buddha taught that enlightenment is not the birthright of brahmin priests or the noble-born, but is available to any human being regardless of social class, which made Buddhism deeply revolutionary in its social context."
     },
     {
       "id": "ba19",
       "question": "How does Buddhism differ from Hinduism regarding priests or spiritual leaders?",
       "options": ["Buddhism requires certified priests to perform all valid spiritual rituals and ceremonies", "Buddhism has a more elaborate priestly hierarchy than Hinduism, with strict ranks of ordination", "Buddhism requires no priesthood; each individual pursues their own enlightenment directly", "Buddhism replaced Hindu priests with Buddhist monks who perform the same ritual functions"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Buddhism dismantles the Hindu priestly class by insisting that each person is responsible for their own path to enlightenment — no intermediary priest is needed to access liberation, which is consistent with the Buddha's last words: 'strive on, untiringly,' placing the work squarely on the individual."
     },
     {
       "id": "ba20",
       "question": "St. Augustine (354-430 CE) is significant in the history of Western philosophy because he:",
       "options": ["Incorporated Aristotle's logical methods and metaphysics into Christianity, establishing Scholasticism", "Became the first philosopher to argue rigorously that God's existence could be demonstrated through pure reason", "Merged Plato's philosophy with Catholic dogma and became the most influential early Church Father", "Personally translated the entirety of Aristotle's major philosophical works from Greek into Latin"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Augustine's lasting achievement was fusing Plato's philosophy — especially Plato's eternal Forms and the supremacy of the immaterial over the material — with Catholic doctrine, giving Christianity its first rigorous philosophical foundation and making him arguably the most influential Church Father of all time."
     },
     {
       "id": "ba21",
       "question": "What is Scholasticism?",
       "options": ["The ancient Greek educational tradition of teaching philosophy through structured public dialogue and debate", "The medieval Islamic philosophical movement that preserved and retransmitted Greek texts to the West", "The synthesis of Aristotle's philosophy with Roman Catholic doctrine, systematized by Aquinas", "The Reformation-era movement that drew on Aristotelian logic to challenge the doctrinal authority of the Church"],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Scholasticism (approximately 1320–1600 CE) is the intellectual movement, centered on Aquinas, that replaced Augustine's Platonic Christianity with an Aristotelian one — it held that reason and faith can coexist, organized Church doctrine into logical frameworks, and asserted that the universe has a rational, knowable order reflecting God's design (Telos)."
     },
     {
       "id": "ba22",
       "question": "St. Thomas Aquinas was first excommunicated by the Church, then later canonized as a Saint. What does this suggest?",
       "options": ["The Church ultimately embraced Aristotelian ideas after an initial period of resistance and suspicion", "The Church was consistently opposed to Aristotelian philosophy throughout the entire medieval period", "Aquinas was punished only for political reasons and not because of his philosophical views", "The Church banned Aristotle permanently but honored Aquinas for distancing himself from it"],
-      "correctAnswer": 0
+      "correctAnswer": 0,
+      "explanation": "The Church banned Aristotle's works and excommunicated Aquinas in 1270 and 1277 because fusing Aristotle with Christian doctrine was seen as dangerous — yet by 1323 the Church reversed course entirely, canonizing Aquinas as a Saint, which shows that Aristotelian Scholasticism eventually won out as the dominant framework of Catholic intellectual life."
     },
     {
       "id": "ba23",
       "question": "Buddha's Last Words were: 'All things change... strive on, untiringly.' This best reflects which core Buddhist teaching?",
       "options": ["The indispensability of communal ritual and worship as the central means of achieving enlightenment", "The impermanence of all things and the need for personal effort toward one's own awakening", "The absolute authority of the Buddha as a divine teacher whose words must be faithfully followed", "The futility of worldly effort and the necessity of complete withdrawal from active life"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The Buddha's final words encapsulate two of Buddhism's most central teachings at once: that impermanence (Anicca) is the fundamental nature of all existence, and that liberation is not given by a god or a priest but must be earned through each individual's own sustained, personal effort on the path."
     },
     {
       "id": "ba24",
       "question": "According to the Buddhist teaching on compassion, it can only truly arise from:",
       "options": ["Following the Buddha's teachings on non-violence with strict and consistent discipline", "Understanding your own suffering and recognizing that same suffering in others", "Completely detaching from all personal desires and emotional responses to the world", "Performing acts of charity and dedicated service to the wider community around you"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "In Buddhist thought, genuine compassion is not a rule you follow but an insight you arrive at: when you honestly face your own Dukkha and recognize that every other being is caught in the same web of craving and suffering, compassion arises naturally — it cannot be forced from the outside but flows from the inside out."
     },
     {
       "id": "ba25",
       "question": "Which of the following correctly describes how grace works differently in Buddhism vs. Christianity?",
       "options": ["In both Christianity and Buddhism, grace is a supernatural gift bestowed by a divine being on believers", "In Christianity, grace is given by God; in Buddhism, grace can be sparked by an ordinary human encounter", "In Buddhism, grace is earned through ritual performance; in Christianity it is freely given by God alone", "Grace does not exist in Buddhism at all; enlightenment is achieved purely through individual willpower"],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "In Christianity, grace is a supernatural gift flowing from a divine God to the believer; in Buddhism, the transformative 'grace' that sets someone on the path to liberation can be sparked by a simple human encounter — as with the Four Encounters that awakened Siddhartha — because Buddhism locates the source of awakening in lived human experience rather than divine intervention."
     }
   ]
 }
