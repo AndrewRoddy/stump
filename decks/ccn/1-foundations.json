@@ -10,27 +10,20 @@
         "Mobile user application: remote VPN access to company resources",
         "Social networking application: peer-to-peer content sharing"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Business networks are built around resource sharing — printers, databases, and files — accessed via client-server relationships. Multiple departments sharing a central database is the textbook definition of a business network use case."
     },
     {
       "question": "A household uses the Internet primarily for video streaming and online gaming. In the book's framing, this is best classified as:",
-      "options": [
-        "Business application",
-        "Mobile user application",
-        "Home application",
-        "Social application"
-      ],
-      "correctAnswer": 2
+      "options": ["Business application", "Mobile user application", "Home application", "Social application"],
+      "correctAnswer": 2,
+      "explanation": "Home applications involve consumer entertainment and leisure activities such as streaming video, gaming, and browsing. These contrast with business applications focused on productivity and resource sharing."
     },
     {
       "question": "A smartwatch synchronizes with a phone over a few meters using very low power. This best fits which network type?",
-      "options": [
-        "LAN",
-        "WAN",
-        "MAN",
-        "PAN"
-      ],
-      "correctAnswer": 3
+      "options": ["LAN", "WAN", "MAN", "PAN"],
+      "correctAnswer": 3,
+      "explanation": "A Personal Area Network (PAN) covers a very small range (typically within a few meters of a person) and connects personal devices like phones, watches, and earbuds. Bluetooth is the most common PAN technology."
     },
     {
       "question": "An 'internetwork' is best described as:",
@@ -40,7 +33,8 @@
         "A collection of interconnected networks that appear as one network to hosts",
         "A high-speed fiber backbone linking geographically distant data centers"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "An internetwork (internet) is formed by connecting multiple individual networks so they function as a unified whole. The global Internet is the largest example, but any collection of interconnected networks qualifies."
     },
     {
       "question": "In networking terminology, a service defines what a layer offers to the layer above, while a protocol defines:",
@@ -50,7 +44,8 @@
         "The maximum frame size supported at the data link layer",
         "The hierarchical addressing scheme used to identify hosts"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "A protocol specifies the rules that peer entities at the same layer follow to communicate with each other, thereby implementing the service offered upward. Services describe the what; protocols describe the how between peers."
     },
     {
       "question": "Which challenge is most characteristic of 'mobile users' compared with fixed home/business users?",
@@ -60,7 +55,8 @@
         "Maintaining connectivity while changing point of attachment",
         "Higher susceptibility to collisions in shared media environments"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Mobile users move between network access points, requiring handoff mechanisms to maintain continuous connectivity. This is fundamentally different from fixed users whose network attachment point never changes."
     },
     {
       "question": "Which description best matches a typical LAN?",
@@ -70,7 +66,8 @@
         "A building/campus network with high speed and low delay",
         "A carrier-operated packet-switched network spanning a region"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A Local Area Network (LAN) spans a single building or campus, offering high bandwidth and very low latency since all nodes are geographically close. Ethernet and Wi-Fi are the dominant LAN technologies."
     },
     {
       "question": "Which pairing correctly matches the Internet standards body with its typical output?",
@@ -80,7 +77,8 @@
         "IETF → RFCs",
         "ITU-T → IEEE 802 LAN/MAN standards"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The Internet Engineering Task Force (IETF) publishes standards as Requests for Comments (RFCs). RFCs define Internet protocols like TCP, IP, HTTP, and DNS."
     },
     {
       "question": "Which statement best distinguishes a connection-oriented service from a connectionless service?",
@@ -90,17 +88,14 @@
         "Connection-oriented services involve setup/state to support orderly delivery; connectionless sends independent messages without prior setup",
         "Connection-oriented services guarantee lower latency because the path is negotiated in advance"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Connection-oriented services (like TCP) require a setup phase to establish shared state, enabling ordered, reliable delivery. Connectionless services (like UDP) treat each message independently with no prior negotiation."
     },
     {
       "question": "In the OSI reference model, how many layers are there?",
-      "options": [
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "correctAnswer": 3
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 3,
+      "explanation": "The OSI model has 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. Each layer provides services to the one above it using the services of the one below."
     },
     {
       "question": "What is the primary purpose of a protocol hierarchy (layered architecture)?",
@@ -110,37 +105,26 @@
         "To guarantee that all network vendors implement identical hardware interfaces",
         "To push error detection and correction entirely to the physical layer"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Layered architecture decomposes the complex problem of network communication into manageable, independent sub-problems. Each layer has a well-defined interface to adjacent layers, enabling independent design and implementation."
     },
     {
       "question": "Which organization is most directly associated with Internet standards such as RFCs?",
-      "options": [
-        "ISO",
-        "IEEE",
-        "ITU",
-        "IETF"
-      ],
-      "correctAnswer": 3
+      "options": ["ISO", "IEEE", "ITU", "IETF"],
+      "correctAnswer": 3,
+      "explanation": "The IETF (Internet Engineering Task Force) is the body responsible for developing and maintaining Internet standards published as RFCs. ISO handles broader international standards, while IEEE focuses on hardware and LAN standards."
     },
     {
       "question": "In the TCP/IP reference model, which layer is responsible for moving packets across multiple networks (routing) as a best-effort service?",
-      "options": [
-        "Transport layer",
-        "Application layer",
-        "Internet layer",
-        "Link layer"
-      ],
-      "correctAnswer": 2
+      "options": ["Transport layer", "Application layer", "Internet layer", "Link layer"],
+      "correctAnswer": 2,
+      "explanation": "The Internet layer (IP layer) in TCP/IP handles routing packets from source to destination across multiple networks. It provides best-effort, connectionless delivery with no guarantee of ordering or reliability."
     },
     {
       "question": "Which network type is standardized under the IEEE 802.11 family?",
-      "options": [
-        "Ethernet LANs",
-        "Wireless LANs (WLANs)",
-        "Metropolitan area networks",
-        "Cellular mobile networks"
-      ],
-      "correctAnswer": 1
+      "options": ["Ethernet LANs", "Wireless LANs (WLANs)", "Metropolitan area networks", "Cellular mobile networks"],
+      "correctAnswer": 1,
+      "explanation": "IEEE 802.11 defines the standards for wireless local area networks (Wi-Fi). Different 802.11 variants (a/b/g/n/ac/ax) specify different frequency bands, modulation schemes, and maximum data rates."
     },
     {
       "question": "In a layered network architecture, which statement best captures the role of a protocol?",
@@ -150,7 +134,8 @@
         "It specifies rules for communication between peer entities at the same layer",
         "It translates between symbolic hostnames and numeric network addresses"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A protocol governs how peer entities at the same layer on different machines communicate with each other. This is distinct from the service interface, which governs communication between adjacent layers on the same machine."
     },
     {
       "question": "What was the primary motivation behind the OSI reference model?",
@@ -160,7 +145,8 @@
         "To consolidate session and presentation functions into a single unified layer",
         "To define a common routing algorithm for inter-domain traffic on the Internet"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "OSI was designed by ISO to create a vendor-neutral framework so that products from different manufacturers could communicate. It aimed to avoid proprietary lock-in by defining open, standard interfaces between layers."
     },
     {
       "question": "Which criticism applies specifically to the TCP/IP reference model?",
@@ -170,7 +156,8 @@
         "Poor distinction between services, interfaces, and protocols",
         "It lacks support for the connection-oriented services required by telephony"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A key criticism of TCP/IP is that it conflates services, interfaces, and protocols, making the model less useful as a general template. OSI, by contrast, explicitly distinguishes these three concepts."
     },
     {
       "question": "Which difference most strongly contributed to TCP/IP's success over OSI?",
@@ -180,7 +167,8 @@
         "Availability of working implementations",
         "Formal endorsement and funding from ISO and ITU member governments"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "TCP/IP won because working, freely available implementations existed (notably in BSD Unix) that people could use immediately. OSI, despite better theoretical design, suffered from complex implementations that arrived too late."
     },
     {
       "question": "Which feature most clearly distinguishes a connection-oriented service from a connectionless one?",
@@ -190,17 +178,14 @@
         "Explicit setup and teardown phases",
         "Use of broadcast addressing to reach all potential receivers"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Connection-oriented services require three phases: connection setup, data transfer, and connection teardown. This setup phase establishes state at both endpoints to support reliable, ordered delivery."
     },
     {
       "question": "According to Tanenbaum, which issue appears across multiple layers of the protocol stack?",
-      "options": [
-        "Routing",
-        "Multiplexing",
-        "Encapsulation",
-        "Error control"
-      ],
-      "correctAnswer": 3
+      "options": ["Routing", "Multiplexing", "Encapsulation", "Error control"],
+      "correctAnswer": 3,
+      "explanation": "Error control is a cross-cutting concern that appears at the data link layer (frame-level), transport layer (end-to-end), and sometimes other layers. Each layer addresses error control independently for its own context."
     },
     {
       "question": "Why does the TCP/IP model have fewer layers than the OSI model?",
@@ -210,7 +195,8 @@
         "It combines functions based on practical deployment needs",
         "Both B and C are correct"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "TCP/IP collapses the OSI session and presentation layers into the application layer because most applications handle these concerns themselves. The model was shaped by practical Internet deployment rather than theoretical completeness."
     },
     {
       "question": "Service primitives are important in layered architectures because:",
@@ -220,7 +206,8 @@
         "They define the maximum throughput achievable at each protocol layer",
         "They establish shared cryptographic keys between communicating layers"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Service primitives (REQUEST, INDICATION, RESPONSE, CONFIRM) define the abstract interface between adjacent layers. By hiding internal implementation details, they allow each layer to evolve independently."
     }
   ]
 }

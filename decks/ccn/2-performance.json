@@ -4,23 +4,15 @@
   "questions": [
     {
       "question": "A household runs 3 simultaneous streams, each needing 8 Mbps. Adding 25% extra headroom for overhead and bursts, what minimum Internet rate should you target?",
-      "options": [
-        "24 Mbps",
-        "27 Mbps",
-        "30 Mbps",
-        "36 Mbps"
-      ],
-      "correctAnswer": 2
+      "options": ["24 Mbps", "27 Mbps", "30 Mbps", "36 Mbps"],
+      "correctAnswer": 2,
+      "explanation": "Three streams × 8 Mbps = 24 Mbps base. Adding 25% overhead: 24 × 1.25 = 30 Mbps. Always add headroom above the raw requirement to account for protocol overhead and traffic bursts."
     },
     {
       "question": "A lab has 92 wired PCs. You use 24-port switches, but must reserve 2 ports per switch for uplinks/expansion. How many switches are required?",
-      "options": [
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "correctAnswer": 1
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 1,
+      "explanation": "Each switch has 24 − 2 = 22 usable host ports. 92 ÷ 22 = 4.18, which rounds up to 5 switches. Always ceiling-divide when computing equipment counts since partial switches must be whole units."
     },
     {
       "question": "A link rate is 80 Mbps. Ignoring overhead, approximately how many megabytes per second (MB/s) is this?",
@@ -30,67 +22,44 @@
         "80 MB/s",
         "40 MB/s"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "1 byte = 8 bits, so 80 Mbps ÷ 8 = 10 MB/s. This bit-to-byte conversion is fundamental: network speeds are quoted in bits per second while file sizes are in bytes."
     },
     {
       "question": "A protocol stack has 5 layers. Processing at each layer adds 0.6 ms per packet in one direction. Ignoring transmission time, what is the one-way processing delay per packet?",
-      "options": [
-        "0.6 ms",
-        "1.2 ms",
-        "2.4 ms",
-        "3.0 ms"
-      ],
-      "correctAnswer": 3
+      "options": ["0.6 ms", "1.2 ms", "2.4 ms", "3.0 ms"],
+      "correctAnswer": 3,
+      "explanation": "Each of the 5 layers contributes 0.6 ms of processing delay: 5 × 0.6 = 3.0 ms total. Processing delay accumulates at each layer as headers are added/removed and the packet is examined."
     },
     {
       "question": "A sales team has 80 employees. Each downloads 30 records/day and each record is 5 KB. How much data is downloaded per day (ignore protocol overhead)?",
-      "options": [
-        "6 MB",
-        "10 MB",
-        "12 MB",
-        "15 MB"
-      ],
-      "correctAnswer": 2
+      "options": ["6 MB", "10 MB", "12 MB", "15 MB"],
+      "correctAnswer": 2,
+      "explanation": "80 employees × 30 records × 5 KB = 12,000 KB = 12 MB per day. This type of capacity planning calculation determines how much bandwidth and storage a business application requires."
     },
     {
       "question": "A Wi-Fi LAN has a raw rate of 54 Mbps. One-third of capacity is lost to overhead/contention, and the remaining capacity is shared equally by 9 active users. About how much throughput does each user get?",
-      "options": [
-        "2 Mbps",
-        "4 Mbps",
-        "6 Mbps",
-        "9 Mbps"
-      ],
-      "correctAnswer": 1
+      "options": ["2 Mbps", "4 Mbps", "6 Mbps", "9 Mbps"],
+      "correctAnswer": 1,
+      "explanation": "54 Mbps × (2/3) = 36 Mbps effective capacity after overhead. Divided among 9 users: 36 ÷ 9 = 4 Mbps per user. Wireless overhead from CSMA/CA, headers, and contention typically consumes one-third or more of raw capacity."
     },
     {
       "question": "An application sends 1000 bytes of data. Encapsulation adds 20 bytes (transport) + 20 bytes (network) + 18 bytes (link). What is the total size on the wire?",
-      "options": [
-        "1038 bytes",
-        "1048 bytes",
-        "1058 bytes",
-        "1068 bytes"
-      ],
-      "correctAnswer": 2
+      "options": ["1038 bytes", "1048 bytes", "1058 bytes", "1068 bytes"],
+      "correctAnswer": 2,
+      "explanation": "1000 + 20 + 20 + 18 = 1058 bytes. Each layer adds its own header (and sometimes trailer) during encapsulation, increasing the total size transmitted on the physical medium."
     },
     {
       "question": "In SI units, what does the prefix 'k' (kilo) represent?",
-      "options": [
-        "10^2",
-        "10^3",
-        "10^6",
-        "10^9"
-      ],
-      "correctAnswer": 1
+      "options": ["10^2", "10^3", "10^6", "10^9"],
+      "correctAnswer": 1,
+      "explanation": "In SI (metric) units, kilo (k) means 10³ = 1,000. Note the difference from binary kibibyte (KiB = 2¹⁰ = 1,024); in networking, SI prefixes are used for data rates (kbps, Mbps, Gbps)."
     },
     {
       "question": "A link has a bandwidth of 80 Mbps and is utilized at 75% during a transfer. What is the achieved throughput?",
-      "options": [
-        "40 Mbps",
-        "56 Mbps",
-        "60 Mbps",
-        "75 Mbps"
-      ],
-      "correctAnswer": 2
+      "options": ["40 Mbps", "56 Mbps", "60 Mbps", "75 Mbps"],
+      "correctAnswer": 2,
+      "explanation": "Throughput = Bandwidth × Utilization = 80 × 0.75 = 60 Mbps. Utilization captures the fraction of link capacity actually carrying useful data; overhead, idle time, and collisions reduce utilization below 100%."
     },
     {
       "question": "A network service has 99.99% availability. Approximately how much downtime does this allow per year?",
@@ -100,67 +69,44 @@
         "~5.3 minutes",
         "~26 seconds"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "99.99% availability means 0.01% downtime. In a year (≈525,600 minutes): 0.0001 × 525,600 ≈ 52.6 minutes. The 'four nines' standard is a common SLA target for enterprise services."
     },
     {
       "question": "A packet experiences: Processing 3 ms, Queuing 7 ms, Transmission 4 ms, Propagation 16 ms. What is the total end-to-end delay?",
-      "options": [
-        "23 ms",
-        "26 ms",
-        "30 ms",
-        "34 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["23 ms", "26 ms", "30 ms", "34 ms"],
+      "correctAnswer": 2,
+      "explanation": "Total delay = 3 + 7 + 4 + 16 = 30 ms. The four components of packet delay are processing (inspection), queuing (waiting in buffer), transmission (putting bits on wire), and propagation (travel time across medium)."
     },
     {
       "question": "A router can process 2,000 packets/s. Traffic arrives at 1,600 packets/s. What is the utilization (rho)?",
-      "options": [
-        "0.6",
-        "0.7",
-        "0.8",
-        "0.9"
-      ],
-      "correctAnswer": 2
+      "options": ["0.6", "0.7", "0.8", "0.9"],
+      "correctAnswer": 2,
+      "explanation": "Utilization ρ = arrival rate / service rate = 1,600 / 2,000 = 0.8. As ρ approaches 1.0, queuing delays grow dramatically — this is a key insight from queuing theory applied to network design."
     },
     {
       "question": "A signal travels 3,000 km over optical fiber where propagation speed is 2 x 10^8 m/s. What is the propagation delay?",
-      "options": [
-        "5 ms",
-        "10 ms",
-        "15 ms",
-        "30 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["5 ms", "10 ms", "15 ms", "30 ms"],
+      "correctAnswer": 2,
+      "explanation": "Propagation delay = distance / speed = 3,000,000 m / (2 × 10⁸ m/s) = 0.015 s = 15 ms. Propagation delay depends only on distance and medium; it is independent of link bandwidth or packet size."
     },
     {
       "question": "Four packets experience one-way delays of 30 ms, 35 ms, 50 ms, and 45 ms. What is the maximum jitter (max minus min delay)?",
-      "options": [
-        "5 ms",
-        "10 ms",
-        "15 ms",
-        "20 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["5 ms", "10 ms", "15 ms", "20 ms"],
+      "correctAnswer": 2,
+      "explanation": "Jitter = max delay − min delay = 50 − 30 = 20 ms. Jitter measures variation in packet arrival times; high jitter disrupts real-time applications like voice and video that expect regular packet arrival."
     },
     {
       "question": "How long does it take to transmit a 12 MB file over a 24 Mbps link, ignoring propagation and queuing delays?",
-      "options": [
-        "0.5 s",
-        "2 s",
-        "4 s",
-        "8 s"
-      ],
-      "correctAnswer": 2
+      "options": ["0.5 s", "2 s", "4 s", "8 s"],
+      "correctAnswer": 2,
+      "explanation": "12 MB = 12 × 8 = 96 Mb. Transmission time = 96 Mb / 24 Mbps = 4 seconds. Transmission delay is the time to push all bits of a packet/file onto the link, determined by size and link rate."
     },
     {
       "question": "Which utilization level is most likely to cause exploding queuing delay?",
-      "options": [
-        "50%",
-        "75%",
-        "90%",
-        "98%"
-      ],
-      "correctAnswer": 3
+      "options": ["50%", "75%", "90%", "98%"],
+      "correctAnswer": 3,
+      "explanation": "At very high utilizations (near 100%), queuing delay grows toward infinity per queuing theory. At 98% utilization, even small traffic bursts cause queues to build up faster than they can drain."
     },
     {
       "question": "What does jitter refer to in the context of network performance?",
@@ -170,7 +116,8 @@
         "Variation in packet delay",
         "Instantaneous bandwidth fluctuation"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Jitter is the variance or inconsistency in packet delivery delay. Even if average delay is acceptable, high jitter means some packets arrive much later than others, which breaks real-time audio and video synchronization."
     },
     {
       "question": "What is the most common cause of jitter in packet networks?",
@@ -180,17 +127,14 @@
         "Differences in propagation path length",
         "Non-uniform processing delay at each hop"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Queuing delay is highly variable because it depends on traffic load at a given instant, which fluctuates as other flows compete for the same queue. Propagation and transmission delays are deterministic and do not cause jitter."
     },
     {
       "question": "Which type of application is most sensitive to jitter?",
-      "options": [
-        "Email",
-        "File transfer",
-        "Web browsing",
-        "Real-time voice/video"
-      ],
-      "correctAnswer": 3
+      "options": ["Email", "File transfer", "Web browsing", "Real-time voice/video"],
+      "correctAnswer": 3,
+      "explanation": "Real-time voice and video streams must deliver data at a constant rate to reconstruct audio/video smoothly. Jitter disrupts this timing, causing garbled audio or choppy video. Elastic applications like email and file transfer are jitter-insensitive."
     },
     {
       "question": "Which technique is commonly used to reduce the effect of jitter at the receiver?",
@@ -200,77 +144,50 @@
         "Playback buffer",
         "Priority queuing"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A playback buffer (jitter buffer) absorbs variation by holding incoming packets briefly before playing them out at a smooth, constant rate. It trades a small increase in latency for consistent playback."
     },
     {
       "question": "When a link operates near capacity, which component of delay grows fastest?",
-      "options": [
-        "Propagation delay",
-        "Transmission delay",
-        "Processing delay",
-        "Queuing delay"
-      ],
-      "correctAnswer": 3
+      "options": ["Propagation delay", "Transmission delay", "Processing delay", "Queuing delay"],
+      "correctAnswer": 3,
+      "explanation": "Queuing delay is the only delay component that is load-dependent; it grows non-linearly (approaching infinity as utilization → 100%). The other three components are fixed for a given link and packet size."
     },
     {
       "question": "A 1,200-byte packet is sent over a 16 Mbps link. Ignoring all other delays, what is the transmission delay?",
-      "options": [
-        "0.3 ms",
-        "0.6 ms",
-        "1.2 ms",
-        "2.4 ms"
-      ],
-      "correctAnswer": 1
+      "options": ["0.3 ms", "0.6 ms", "1.2 ms", "2.4 ms"],
+      "correctAnswer": 1,
+      "explanation": "1,200 bytes × 8 = 9,600 bits. Transmission delay = 9,600 / (16 × 10⁶) = 0.0006 s = 0.6 ms. Transmission delay is proportional to packet size and inversely proportional to link bandwidth."
     },
     {
       "question": "A 50 Mbps link carries 20 Mbps of traffic. What is the link utilization?",
-      "options": [
-        "20%",
-        "30%",
-        "40%",
-        "50%"
-      ],
-      "correctAnswer": 2
+      "options": ["20%", "30%", "40%", "50%"],
+      "correctAnswer": 2,
+      "explanation": "Utilization = actual traffic / capacity = 20 / 50 = 0.4 = 40%. Low utilization means the link is lightly loaded with minimal queuing delay, while high utilization risks congestion."
     },
     {
       "question": "A 100 Mbps link with 20% protocol overhead. What is the effective net throughput?",
-      "options": [
-        "70 Mbps",
-        "75 Mbps",
-        "80 Mbps",
-        "85 Mbps"
-      ],
-      "correctAnswer": 2
+      "options": ["70 Mbps", "75 Mbps", "80 Mbps", "85 Mbps"],
+      "correctAnswer": 2,
+      "explanation": "Net throughput = 100 × (1 − 0.20) = 80 Mbps. Protocol overhead (headers, ACKs, retransmissions) consumes a fraction of raw bandwidth, reducing the effective data rate available for application payload."
     },
     {
       "question": "3 routers each add 0.9 ms of processing delay. 4 links each add 0.6 ms of transmission delay. What is the total delay?",
-      "options": [
-        "4.2 ms",
-        "5.1 ms",
-        "6.0 ms",
-        "6.9 ms"
-      ],
-      "correctAnswer": 1
+      "options": ["4.2 ms", "5.1 ms", "6.0 ms", "6.9 ms"],
+      "correctAnswer": 1,
+      "explanation": "Processing: 3 × 0.9 = 2.7 ms. Transmission: 4 × 0.6 = 2.4 ms. Total = 2.7 + 2.4 = 5.1 ms. Multi-hop paths accumulate per-hop delays; routers add processing delay while links add transmission delay."
     },
     {
       "question": "A 40 Mbps Ethernet link is productive 60% of the time. What is the effective throughput?",
-      "options": [
-        "16 Mbps",
-        "20 Mbps",
-        "24 Mbps",
-        "32 Mbps"
-      ],
-      "correctAnswer": 2
+      "options": ["16 Mbps", "20 Mbps", "24 Mbps", "32 Mbps"],
+      "correctAnswer": 2,
+      "explanation": "Effective throughput = 40 × 0.60 = 24 Mbps. Only 60% of link time carries actual payload; the rest is consumed by idle periods, headers, and protocol overhead."
     },
     {
       "question": "A signal travels 400 km over fiber at 2 x 10^8 m/s. What is the propagation delay?",
-      "options": [
-        "1.0 ms",
-        "1.5 ms",
-        "2.0 ms",
-        "4.0 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["1.0 ms", "1.5 ms", "2.0 ms", "4.0 ms"],
+      "correctAnswer": 2,
+      "explanation": "400 km = 400,000 m. Propagation delay = 400,000 / (2 × 10⁸) = 0.002 s = 2.0 ms. Light travels at roughly 2/3 the speed of light in fiber, giving approximately 5 μs per km of propagation delay."
     },
     {
       "question": "A 50 Mbps link consumes 100 W. What is the energy per bit transmitted?",
@@ -280,47 +197,32 @@
         "4 nJ/bit",
         "10 nJ/bit"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Energy per bit = power / bit rate = 100 W / (50 × 10⁶ bits/s) = 2 × 10⁻⁹ J/bit = 2 nJ/bit. Energy efficiency is an increasingly important metric for network equipment design."
     },
     {
       "question": "A buffer holds 10 packets; 15 packets arrive simultaneously. How many packets are dropped?",
-      "options": [
-        "0",
-        "3",
-        "5",
-        "10"
-      ],
-      "correctAnswer": 2
+      "options": ["0", "3", "5", "10"],
+      "correctAnswer": 2,
+      "explanation": "The buffer can hold 10 packets; 5 packets exceed capacity and are dropped (tail-drop). Buffer overflow and packet loss occur when arrival rate temporarily exceeds service rate and available buffer space."
     },
     {
       "question": "A 300 km fiber link at 2 x 10^8 m/s has a propagation delay of:",
-      "options": [
-        "0.75 ms",
-        "1.0 ms",
-        "1.5 ms",
-        "3.0 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["0.75 ms", "1.0 ms", "1.5 ms", "3.0 ms"],
+      "correctAnswer": 2,
+      "explanation": "300,000 m / (2 × 10⁸ m/s) = 0.0015 s = 1.5 ms. This is a standard propagation delay calculation: convert km to m, divide by propagation speed."
     },
     {
       "question": "A home network supports 3 simultaneous video streams each requiring 10 Mbps. Adding 25% overhead headroom, what minimum Internet speed should be selected?",
-      "options": [
-        "30 Mbps",
-        "35 Mbps",
-        "37.5 Mbps",
-        "40 Mbps"
-      ],
-      "correctAnswer": 2
+      "options": ["30 Mbps", "35 Mbps", "37.5 Mbps", "40 Mbps"],
+      "correctAnswer": 2,
+      "explanation": "Base requirement: 3 × 10 = 30 Mbps. With 25% headroom: 30 × 1.25 = 37.5 Mbps. Internet plans should always exceed the raw application requirement to handle protocol overhead and bursts."
     },
     {
       "question": "A packet traverses 4 routers each adding 0.8 ms, and 5 links each adding 0.5 ms transmission delay. Propagation is negligible. What is the total delay?",
-      "options": [
-        "4.7 ms",
-        "5.2 ms",
-        "5.7 ms",
-        "6.5 ms"
-      ],
-      "correctAnswer": 2
+      "options": ["4.7 ms", "5.2 ms", "5.7 ms", "6.5 ms"],
+      "correctAnswer": 2,
+      "explanation": "Processing: 4 × 0.8 = 3.2 ms. Transmission: 5 × 0.5 = 2.5 ms. Total = 5.7 ms. On a multi-hop path, both per-router processing and per-link transmission delays accumulate."
     }
   ]
 }

@@ -10,7 +10,8 @@
         "Anycast",
         "Unicast"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Anycast assigns the same IP address to multiple servers; routers direct each client to the topologically nearest instance. This is used by DNS root servers and CDNs to reduce latency and spread load."
     },
     {
       "question": "Which messaging protocol was designed for IoT environments with constrained devices and unreliable links?",
@@ -20,7 +21,8 @@
         "AMQP",
         "MQTT"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "MQTT (Message Queuing Telemetry Transport) is a lightweight publish-subscribe protocol designed for low-bandwidth, high-latency, or unreliable networks typical of IoT sensor deployments. It uses a broker to decouple publishers and subscribers."
     },
     {
       "question": "Which protocol allows persistent, full-duplex communication inside web applications without repeated HTTP requests?",
@@ -30,7 +32,8 @@
         "QUIC",
         "Server-Sent Events"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "WebSocket upgrades an HTTP connection to a persistent, bidirectional channel, allowing the server to push data to the client without repeated polling. This is essential for real-time web apps like chat and live dashboards."
     },
     {
       "question": "Which protocol attempts to make remote execution appear local, often hiding latency and failure?",
@@ -40,7 +43,8 @@
         "RPC",
         "REST"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "RPC (Remote Procedure Call) lets a program call a function on a remote machine as if it were local, abstracting away the network. This transparency can be problematic since network failures and latency are fundamentally different from local execution."
     },
     {
       "question": "Which protocol bridges the gap between logical IP addresses and physical MAC addresses?",
@@ -50,7 +54,8 @@
         "RARP",
         "ARP"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "ARP (Address Resolution Protocol) resolves an IPv4 address to the MAC address of a device on the same local network segment. A host broadcasts an ARP request; the device with the matching IP responds with its MAC address."
     },
     {
       "question": "Which protocol enables remote file access with local-like semantics, exposing consistency challenges?",
@@ -60,7 +65,8 @@
         "NFS",
         "WebDAV"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "NFS (Network File System) makes remote files appear as if they're in the local filesystem, but cache consistency and failure handling become complex when the network is involved. FTP and SCP copy files explicitly rather than mounting them."
     },
     {
       "question": "Which protocol exists primarily to provide visibility and operational control over network devices?",
@@ -70,7 +76,8 @@
         "ICMP",
         "NetFlow"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "SNMP (Simple Network Management Protocol) allows network management software to query and configure routers, switches, and other devices. It uses a manager-agent model with a MIB (Management Information Base) to organize device variables."
     },
     {
       "question": "Which protocol exists primarily to translate human-readable names into routable network identifiers?",
@@ -80,7 +87,8 @@
         "DNS",
         "mDNS"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "DNS (Domain Name System) maps hostnames like www.example.com to IP addresses. It is a hierarchical, distributed database queried by every Internet application that uses domain names."
     },
     {
       "question": "Which protocol exposes the clearest example of early Internet trust assumptions by transmitting credentials in plaintext?",
@@ -90,7 +98,8 @@
         "TELNET",
         "POP3"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "TELNET transmits all data, including usernames and passwords, in unencrypted plaintext — reflecting early Internet assumptions that users were trusted researchers. SSH replaced TELNET precisely to fix this security flaw."
     },
     {
       "question": "Which protocol is best suited for synchronizing email across multiple devices while keeping messages on the server?",
@@ -100,7 +109,8 @@
         "IMAP",
         "MAPI"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "IMAP keeps messages on the server and synchronizes state (read, flags, folders) across all client devices. POP3 downloads and typically deletes messages from the server, making multi-device access difficult."
     },
     {
       "question": "Which protocol is most responsible for enabling centralized identity and authorization management in enterprises?",
@@ -110,7 +120,8 @@
         "Kerberos",
         "SAML"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "LDAP (Lightweight Directory Access Protocol) provides a standard way to access and manage directory information like usernames, passwords, and organizational data. Active Directory uses LDAP as its query protocol for centralized identity management."
     },
     {
       "question": "Which protocol provides security based on physical laws, not computational hardness?",
@@ -120,7 +131,8 @@
         "QKD",
         "OTP"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Quantum Key Distribution (QKD) uses quantum mechanical properties (like photon polarization) to establish encryption keys. Any eavesdropping disturbs the quantum states and is detectable, providing information-theoretic security rather than computational security."
     },
     {
       "question": "Which protocol separates call/session control from media transport, commonly used in Internet telephony?",
@@ -130,7 +142,8 @@
         "SIP",
         "MGCP"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "SIP (Session Initiation Protocol) handles signaling — setting up, modifying, and tearing down multimedia sessions — while actual media flows via RTP. This separation allows flexible routing and feature negotiation independent of the media stream."
     },
     {
       "question": "Which protocol was explicitly designed to support stateless communication at Internet scale, shifting session responsibility to higher layers?",
@@ -140,7 +153,8 @@
         "IMAP",
         "HTTP"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "HTTP is intentionally stateless: each request-response pair is independent, and the server retains no memory of prior interactions. This statelessness enables massive scalability; applications that need state use cookies or tokens."
     },
     {
       "question": "Which protocol's main contribution is preventing congestion collapse on the Internet?",
@@ -150,7 +164,8 @@
         "TCP",
         "SCTP"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "TCP's congestion control algorithms (slow start, congestion avoidance, fast retransmit/recovery) prevent the network from being overwhelmed. Without TCP congestion control, competing flows would cause congestion collapse where throughput drops to near zero."
     },
     {
       "question": "Which protocol's store-and-forward design allows messages to survive temporary network outages?",
@@ -160,17 +175,14 @@
         "FTP",
         "HTTP"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "SMTP uses a store-and-forward model where mail servers queue messages and retry delivery if the destination is temporarily unreachable. This allows email to survive intermittent connectivity, unlike real-time protocols that fail immediately."
     },
     {
       "question": "Which routing protocol enables the Internet to function without central control, using policy rather than shortest paths?",
-      "options": [
-        "OSPF",
-        "RIP",
-        "IS-IS",
-        "BGP"
-      ],
-      "correctAnswer": 3
+      "options": ["OSPF", "RIP", "IS-IS", "BGP"],
+      "correctAnswer": 3,
+      "explanation": "BGP (Border Gateway Protocol) is the inter-domain routing protocol of the Internet, allowing autonomous systems (ISPs, enterprises) to advertise routes with policy-based filtering. Unlike OSPF or RIP, BGP optimizes for policy compliance, not just shortest paths."
     },
     {
       "question": "Which technology deliberately breaks strict OSI layering to enable fast, predictable forwarding in ISP backbones?",
@@ -180,7 +192,8 @@
         "MPLS",
         "Traffic shaping"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "MPLS (Multiprotocol Label Switching) forwards packets based on short fixed-length labels rather than IP addresses, enabling fast hardware switching. It operates between Layer 2 and Layer 3, deliberately violating strict OSI layering for performance and traffic engineering."
     },
     {
       "question": "Which transport protocol prioritizes timeliness over reliability, making it suitable for live media?",
@@ -190,7 +203,8 @@
         "RTP",
         "UDP"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "UDP sends datagrams with no delivery guarantees, retransmission, or ordering. For live voice and video, a slightly late packet is worthless — it's better to play out slightly degraded audio than to stall waiting for a retransmission."
     },
     {
       "question": "Which transport protocol reduces head-of-line blocking and supports connection migration for mobile users?",
@@ -200,7 +214,8 @@
         "QUIC",
         "UDP"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "QUIC (developed by Google, now IETF standard) multiplexes streams so that a lost packet only blocks its own stream, not others. It also uses connection IDs instead of IP/port tuples, enabling seamless handoff when a mobile device changes networks."
     },
     {
       "question": "A cable modem primarily allows:",
@@ -210,7 +225,8 @@
         "Symmetric DSL service over coaxial cable",
         "Wi-Fi distribution across a home network"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Cable modems use the DOCSIS standard to carry internet data over the same coaxial cable that delivers cable television. The shared cable infrastructure means bandwidth is shared among neighborhood users."
     },
     {
       "question": "A geostationary satellite appears stationary relative to Earth because it:",
@@ -220,7 +236,8 @@
         "Has the same rotational period as Earth",
         "Is positioned at the Lagrange point where gravitational forces balance"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "A geostationary orbit is at approximately 35,786 km altitude where orbital period exactly equals Earth's 24-hour rotation. The satellite orbits in the same direction as Earth's rotation, appearing fixed from the ground."
     },
     {
       "question": "A key idea in cellular wireless systems is:",
@@ -230,7 +247,8 @@
         "Assigning each user a unique spread-spectrum code to share spectrum",
         "Dynamically reallocating spectrum from satellite downlinks"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Cellular systems divide coverage into small geographic cells, each served by a low-power base station. Frequencies can be reused in non-adjacent cells, dramatically increasing total system capacity compared to a single high-power transmitter."
     },
     {
       "question": "A modem is used in the PSTN primarily to:",
@@ -240,7 +258,8 @@
         "Convert digital data to analog signals for transmission on voice-grade lines",
         "Multiplex multiple phone calls onto a single trunk line"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The PSTN (Public Switched Telephone Network) was designed for analog voice signals. A modem (modulator-demodulator) converts digital computer data into analog tones for transmission and back at the receiving end."
     },
     {
       "question": "ADSL technology allows:",
@@ -250,7 +269,8 @@
         "Higher downstream than upstream bandwidth",
         "Simultaneous voice and data by bonding multiple copper pairs"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "ADSL (Asymmetric DSL) provides much higher downstream bandwidth than upstream, reflecting typical residential usage patterns where users download far more than they upload. It achieves this by allocating more frequency channels to downstream."
     },
     {
       "question": "Baseband transmission means that:",
@@ -260,7 +280,8 @@
         "The entire channel bandwidth is used by one signal",
         "Transmission is restricted to low-frequency signals below 300 Hz"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Baseband transmission uses the full channel bandwidth for a single signal without modulating it onto a carrier frequency. Ethernet uses baseband transmission, while cable TV uses broadband (multiple channels on different carrier frequencies)."
     },
     {
       "question": "Compared to geostationary satellites, low-earth-orbit (LEO) satellites have:",
@@ -270,7 +291,8 @@
         "Lower latency",
         "Simpler orbital mechanics requiring fewer ground stations"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "LEO satellites orbit at 500–2,000 km altitude, producing propagation delays of just 5–20 ms compared to GEO's ~270 ms. The tradeoff is that LEO satellites cover smaller areas and move across the sky, requiring many more satellites and handoffs."
     },
     {
       "question": "First-generation (1G) mobile systems were primarily:",
@@ -280,7 +302,8 @@
         "Packet-switched data systems for mobile internet",
         "Hybrid systems combining analog voice and digital paging"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "1G systems (e.g., AMPS in the US) used analog FM radio for voice calls. Digital modulation wasn't introduced until 2G (GSM, CDMA), which also enabled SMS. Packet data came with 2.5G (GPRS) and 3G."
     },
     {
       "question": "Fourier analysis shows that any periodic signal can be represented as:",
@@ -290,7 +313,8 @@
         "A series of rectangular pulses of varying width",
         "A polynomial approximation of increasing order"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Fourier's theorem states that any periodic signal can be decomposed into a sum of sinusoids at the fundamental frequency and its harmonics. This is crucial for understanding how limiting a channel's bandwidth distorts signals."
     },
     {
       "question": "Frequency Division Multiplexing (FDM) works by:",
@@ -300,7 +324,8 @@
         "Assigning different frequencies to different signals",
         "Spreading each signal across the full bandwidth using orthogonal codes"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "FDM divides the available spectrum into non-overlapping frequency bands, assigning each user a dedicated band. Cable TV and traditional telephone trunks use FDM; signals from different sources coexist simultaneously without interfering."
     },
     {
       "question": "Infrared communication is best suited for:",
@@ -310,7 +335,8 @@
         "Short-range indoor links",
         "High-altitude communication with aircraft"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Infrared signals are blocked by walls and attenuate quickly, limiting them to short-range line-of-sight communication within a room. TV remotes and early IrDA connections are classic examples; Wi-Fi and Bluetooth have largely replaced IrDA."
     },
     {
       "question": "Shannon's theorem relates channel capacity to:",
@@ -320,7 +346,8 @@
         "Transmission power and carrier frequency",
         "Error-correction overhead and block length"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "Shannon's Channel Capacity theorem: C = B log₂(1 + S/N), where B is bandwidth in Hz and S/N is the signal-to-noise ratio. This sets an absolute theoretical maximum on data rate regardless of the modulation scheme used."
     },
     {
       "question": "The bandwidth of a signal is defined as:",
@@ -330,7 +357,8 @@
         "The number of symbols transmitted per second",
         "The difference between the highest and lowest frequencies in the signal"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Signal bandwidth is the frequency range occupied by the signal, measured in Hz. A wider bandwidth allows more information to be carried (per Shannon's theorem), but requires more spectrum allocation."
     },
     {
       "question": "The local loop refers to the connection between:",
@@ -340,7 +368,8 @@
         "A subscriber and the telephone exchange",
         "Two base stations handing off a mobile user"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "The local loop (last mile) is the copper wire connection between a home or business and the nearest telephone central office. DSL technologies operate over the local loop, which was originally designed only for voice."
     },
     {
       "question": "Time Division Multiplexing (TDM) allows multiple users to share a channel by:",
@@ -350,7 +379,8 @@
         "Taking turns in time slots",
         "Encoding each user's signal with a unique spreading code"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "TDM divides time into fixed slots and assigns each user a repeating slot in a round-robin fashion. Unlike FDM, all users share the full bandwidth but only transmit during their allocated time slice."
     },
     {
       "question": "Twisted-pair cables reduce electromagnetic interference primarily by:",
@@ -360,7 +390,8 @@
         "Twisting the wires together so interference cancels",
         "Applying a dielectric coating that absorbs high-frequency interference"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Twisting the wire pair means interference affects both wires equally, and the induced currents cancel out at the receiver. This is called common-mode rejection; it works without any shielding and is why telephone and Ethernet cable uses twisted pairs."
     },
     {
       "question": "Which guided medium is most commonly used for long-distance, high-bandwidth communication?",
@@ -370,7 +401,8 @@
         "Optical fiber",
         "Shielded balanced line"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 2,
+      "explanation": "Optical fiber carries light pulses and offers virtually no electromagnetic interference, very low attenuation, and bandwidth in the terabit-per-second range. It is the dominant medium for long-haul and undersea links."
     },
     {
       "question": "Which guided medium offers the highest resistance to electromagnetic interference?",
@@ -380,7 +412,8 @@
         "Plenum-rated Cat6 cable",
         "Optical fiber"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 3,
+      "explanation": "Optical fiber transmits light, not electrical signals, so it is completely immune to electromagnetic interference and cannot be tapped by electromagnetic means. This also makes it ideal for electrically noisy environments."
     },
     {
       "question": "One disadvantage of geostationary satellite communication is:",
@@ -390,7 +423,8 @@
         "Inability to support broadcast or multicast transmissions",
         "Frequent signal loss due to atmospheric absorption at low elevation angles"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 1,
+      "explanation": "The 35,786 km altitude of geostationary orbit means a one-way propagation delay of about 270 ms, giving a round-trip time of over 500 ms. This latency makes real-time applications like voice calls noticeable and TCP performance poor."
     }
   ]
 }
