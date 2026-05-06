@@ -1,0 +1,306 @@
+{
+  "name": "Philosophy Final Review",
+  "description": "50 gap-filling questions covering concepts from the handouts not tested in the existing decks — targeted at 100% on the Philosophy Final",
+  "questions": [
+    {
+      "id": "fr1",
+      "question": "Why is Galileo's trial by the Inquisition in 1633 philosophically significant as context for Descartes?",
+      "options": ["It showed Descartes that science and religion could never be reconciled in the same civilization", "It demonstrated that challenging Church authority through empirical discovery carried real personal danger, motivating Descartes to find a safer philosophical method", "It proved that sensory observation was fundamentally unreliable and required rational correction", "It caused Descartes to abandon his scientific work entirely and focus exclusively on theology"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr2",
+      "question": "Descartes identified five distinct grounds for radical doubt. Which of the following is NOT one of them?",
+      "options": ["The possibility that he is dreaming and all experience is illusory", "The possibility of an evil demon making even mathematics seem false", "The possibility that language itself distorts all possible knowledge", "The possibility that his senses routinely deceive him about the world"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr3",
+      "question": "Why did Descartes include mathematics among the things that can be doubted?",
+      "options": ["Because mathematical truths depend on sensory measurement and therefore inherit all the unreliability of the senses", "Because an evil demon could be making 2+2 seem like 4 when it actually equals something else", "Because mathematical axioms were invented by human beings and could contain cultural biases", "Because Descartes believed mathematical reasoning was inferior to the intuitions of pure faith"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr4",
+      "question": "Aristotle's view that the mind begins as a 'blank slate' (Tabula Rasa) is directly opposed to Descartes' view that:",
+      "options": ["The mind is identical to the brain and therefore shaped by physical experience alone", "Some ideas — including the idea of God — are innate and present in the mind independently of all experience", "All genuine knowledge must ultimately be traceable back to clear and distinct sensory impressions", "Mathematical knowledge is the only true a priori knowledge the mind possesses from birth"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr5",
+      "question": "Knowledge that is 'a posteriori' differs from a priori knowledge in that it:",
+      "options": ["Is grasped by reason alone without any reference to the external world", "Is derived from and dependent on sensory experience", "Is logically necessary and cannot be false under any circumstances", "Is guaranteed to be true because it is innate and placed in us by God"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr6",
+      "question": "Descartes proposed a new 'third foundational axiom' to replace the two that came before. What are the three axioms in order?",
+      "options": ["Look inward (Church), look outward (Aristotle), look upward (Descartes)", "Look upward (Church), look inward (Aristotle), look outward (Descartes)", "Look outward (Aristotle), look upward (Church), look inward (Descartes)", "Look outward (Descartes), look upward (Aristotle), look inward (Church)"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr7",
+      "question": "Solipsism is the philosophical position that:",
+      "options": ["The self is an illusion constructed by the brain's sensory processing systems", "Only one's own mind can be known to exist with certainty; the external world may be unreal", "God alone truly exists, and all finite minds are expressions of the divine substance", "Scientific reasoning cannot establish the existence of anything beyond the observable world"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr8",
+      "question": "The phrase 'Ghost in the Machine' was coined to criticize Descartes' dualism. What does it highlight?",
+      "options": ["The absurdity of thinking a non-physical mind could inhabit and move a physical body", "The danger that materialist science would eventually reduce the soul to mere brain chemistry", "The impossibility of proving that other people have minds rather than being unconscious automata", "The circular reasoning involved in using innate ideas to prove God while relying on God to validate innate ideas"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "fr9",
+      "question": "Mind/Body Dualism had two major unintended cultural legacies. Which pair correctly identifies both?",
+      "options": ["It legitimized science and it legitimized the Church's authority over education", "It grounded the concept of Free Will in a non-mechanical soul, and it redefined the soul as exclusively the mind (not the body's life force)", "It inspired Modern Skepticism and it inspired Philosophical Idealism", "It separated fact from value, and it separated the natural from the supernatural"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr10",
+      "question": "Descartes had two main objections to Scholasticism. Which answer correctly states both?",
+      "options": ["Scholasticism relied on faith rather than reason, and it rejected the possibility of empirical science", "Scholasticism described nature in qualitative terms rather than quantitative ones, and it assumed the universe was purposive (driven by Telos)", "Scholasticism merged Greek and Christian thought illegitimately, and it denied the immortality of the soul", "Scholasticism was too mathematical in its approach, and it ignored the lived experience of individual believers"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr11",
+      "question": "The Problem of the External World asks which of the following?",
+      "options": ["How can science make reliable predictions about a world that may be fundamentally chaotic?", "How can we be certain that a physical world independent of our minds actually exists?", "How can the immaterial mind gain reliable knowledge about the material body it inhabits?", "How can mathematical truths discovered by pure reason apply to physical reality?"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr12",
+      "question": "Descartes classified ideas into three types. Which answer correctly identifies all three?",
+      "options": ["Clear ideas, distinct ideas, and confused ideas", "Sensory ideas, imaginative ideas, and rational ideas", "Ideas of external objects, ideas of imagination, and innate ideas", "A priori ideas, a posteriori ideas, and mixed ideas"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr13",
+      "question": "How did Descartes' view of innate ideas differ from Plato's view of Forms?",
+      "options": ["Descartes thought innate ideas were implanted by God, while Plato thought they were remembered from a pre-birth encounter with a separate realm of Forms", "Plato thought innate ideas were products of divine creation, while Descartes thought they were inherited from cultural tradition", "Descartes thought innate ideas were derived from sensory experience, while Plato thought they existed independently of experience", "Both held identical views on innate ideas but disagreed about whether they could be accessed through reason"],
+      "correctAnswer": 0
+    },
+    {
+      "id": "fr14",
+      "question": "The historical practice of cat-burnings in medieval Europe is philosophically relevant because it illustrates:",
+      "options": ["The Church's belief that animals possessed souls and therefore required ritual purification", "How Descartes' view of animals as pure automatons contributed to a culture of indifference to animal suffering, which only reversed through Darwin", "The way pre-modern superstition prevented the development of any systematic natural science", "How Aristotelian teleology was used to justify acts of ritual violence in the name of moral order"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr15",
+      "question": "Which of the following correctly describes what Descartes believed about the soul's role in the body?",
+      "options": ["The soul animates the body like a pilot in a ship, steering it from within the pineal gland", "The soul is identical to the heart, which pumps life-giving warmth throughout the body", "The soul plays no role in animating the body; the body is a self-operating mechanical machine", "The soul is distributed throughout the nervous system and directly causes all voluntary movement"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr16",
+      "question": "How was Nietzsche's first major work, The Birth of Tragedy (1872), received by the academic community?",
+      "options": ["It was immediately celebrated as a masterwork of classical scholarship and made Nietzsche famous across Europe", "It was poorly received and damaged his reputation as a classical scholar", "It was banned by German universities but embraced by artists and musicians", "It received a mixed reception — praised by philosophers but ignored by classicists"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr17",
+      "question": "Why did Nietzsche step down from his professorship at Basel at age 35?",
+      "options": ["He was forced to resign after publicly attacking the German government's cultural policies", "His health had deteriorated severely, and he was no longer able to fulfill his academic duties", "He chose to leave academia to devote himself full-time to writing and philosophical work", "He was dismissed after the poor reception of The Birth of Tragedy permanently discredited him"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr18",
+      "question": "The 'Turin horse incident' of January 3, 1889 refers to:",
+      "options": ["A philosophical thought experiment Nietzsche wrote about in his final notebooks before going mad", "The moment Nietzsche saw a horse being beaten, broke down weeping, and collapsed into a mental breakdown from which he never recovered", "A scene in Thus Spoke Zarathustra used to illustrate the Lion's capacity for compassion toward the weak", "A lecture Nietzsche gave in Turin that caused a public scandal and led to his forced hospitalization"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr19",
+      "question": "Which of the following best captures Nietzsche's personal relationship with Wagner's music?",
+      "options": ["He admired Wagner early in life but grew to see him as a decadent slave moralist and publicly broke with him", "He found Wagner's music intellectually stimulating but too emotionally manipulative for genuine philosophical use", "He said he could not have endured his youth without Wagner's music, but later rejected him as a Christian nationalist", "He dismissed Wagner as a propagandist from the beginning and used him as a negative example in all his major works"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr20",
+      "question": "In The Gay Science, Nietzsche wrote: 'I want to learn more and more to see as beautiful what is necessary.' This quote most directly reflects which concept?",
+      "options": ["The Ubermensch as the highest human ideal", "Amor Fati — the wholehearted embrace of one's fate exactly as it is", "The Revaluation of All Values as an ongoing cultural project", "Mirror Writing as a technique for revealing the reader's own biases"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr21",
+      "question": "According to Nietzsche, Altruism and Egalitarianism are problematic because they:",
+      "options": ["Were invented by ancient Greek philosophers who lacked any understanding of real political power", "Are products of Slave Morality that disguise resentment as virtue and suppress natural human excellence", "Require a belief in God that cannot survive philosophical scrutiny in the modern world", "Encourage individuals to abandon reason in favor of emotional impulses and social conformity"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr22",
+      "question": "Nietzsche argued that Slave Morality originated through Resentment. What does this mean?",
+      "options": ["Slaves invented moral codes to cope with their guilt after rebelling violently against their masters", "The weak, unable to defeat the strong through action, created a moral framework that condemned strength itself as evil", "Christian theologians deliberately constructed a morality of resentment to control the peasant classes of medieval Europe", "Resentment arose when rational philosophers persuaded the masses to reject aristocratic values through argument"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr23",
+      "question": "In Master/Noble morality, the primary value distinction is between:",
+      "options": ["Good and Evil — where 'Good' means obedience and 'Evil' means selfish strength", "Good and Bad — where 'Good' means excellence and strength, and 'Bad' means weakness", "Sacred and Profane — where 'Sacred' means spiritual devotion and 'Profane' means worldly passion", "Right and Wrong — where 'Right' is determined by reason and 'Wrong' by instinct"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr24",
+      "question": "According to Nietzsche, replacing God with secular Moral Reasoning as an ethical foundation is a bad response to the Death of God because:",
+      "options": ["Moral reasoning has never produced consistent results across different cultures and historical periods", "It is merely Slave Morality in disguise — keeping the same Christian values while dropping the theological justification", "Reason is inherently too weak to provide binding moral obligations without a divine lawgiver to enforce them", "It leads inevitably to Nihilism once people realize that reason alone cannot determine what is truly valuable"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr25",
+      "question": "Nietzsche's Aphorism 11 states that his formula for happiness is the opposite of Socrates'. What is Nietzsche's formula?",
+      "options": ["Acceptance = Calm = Contentment", "Power = Excellence = Greatness", "Instinct = Passion = Happiness", "Amor Fati = Freedom = Joy"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr26",
+      "question": "In Nietzsche's framework, 'Contemplative Reason' is associated with which group, and 'Practical Reason' with which?",
+      "options": ["Contemplative Reason: scientists and creators; Practical Reason: philosophers and theologians", "Contemplative Reason: philosophers, theologians, slaves, and lambs; Practical Reason: scientists, creators, masters, and lions", "Contemplative Reason: the ancient Greeks; Practical Reason: Christian moralists and Kantian ethicists", "Contemplative Reason: the Ubermensch; Practical Reason: the Last Man"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr27",
+      "question": "The distinction between Primary Forces and Secondary Forces in Nietzsche's model of the self is:",
+      "options": ["Primary Forces are the rational faculties that deliberate and choose; Secondary Forces are the biological impulses that arise without deliberation", "Primary Forces are the type-facts we are born with — internal, biological, and fixed; Secondary Forces are external societal norms that can either enhance or hinder those type-facts", "Primary Forces are the cultural values instilled in childhood; Secondary Forces are the instincts that persist beneath cultural conditioning", "Primary Forces are conscious desires; Secondary Forces are unconscious drives accessible only through dream analysis"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr28",
+      "question": "The 'Lightning Flashes' example illustrates which of Nietzsche's arguments?",
+      "options": ["That the Death of God struck Western culture as suddenly and devastatingly as lightning strikes a tree", "That there is no separate 'doer' behind the deed — the lightning IS the flash; there is no lightning that additionally decides to flash", "That human greatness, like lightning, is unpredictable and cannot be cultivated through deliberate effort", "That the Last Man fears greatness the way a timid person fears lightning — irrationally and from a safe distance"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr29",
+      "question": "The 'Leaf' example in Nietzsche's argument about the Similarity Doctrine illustrates that:",
+      "options": ["Nature is in constant flux and no two moments in time are ever truly identical", "The concept 'leaf' is an abstraction that erases the differences between individual leaves, imposing a false sameness on what is actually diverse", "Language accurately captures the essential features that all leaves share and is therefore a reliable guide to reality", "The Platonic Form of Leaf is the only truly real thing, and individual leaves are its imperfect instances"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr30",
+      "question": "Which of the following correctly lists the Four Western Assumptions that Nietzsche believed must be overturned?",
+      "options": ["God exists; free will is real; the soul is immortal; reason is divine", "Contemplation is the best path to knowledge; emotion is divorced from reason; reality is a dualism; what is unchanging is superior to what changes", "Science reveals truth; progress is inevitable; human equality is natural; morality is objective", "Aristotle was right; the Church is authoritative; Descartes was right; democracy is just"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr31",
+      "question": "What are the three main criticisms of Nietzsche that scholars and critics have raised?",
+      "options": ["He was a poor logician, an inconsistent writer, and an anti-Semite", "His thought led to Nazism, his rejection of morality is itself a moral position, and his philosophy is incoherent without God", "He is elitist, his philosophy can be used to justify cruelty, and he offers no constructive alternative to the values he rejects", "He plagiarized Schopenhauer, he misread Plato, and he failed to understand Darwin's actual theory"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr32",
+      "question": "The contrast between the 'World of Being' and the 'World of Becoming' is central to Nietzsche's critique of language. Which statement best describes this contrast?",
+      "options": ["Being is the Christian God's eternal nature; Becoming is the temporal world He created", "Plato's World of Being consists of fixed eternal Forms; Nietzsche insists reality is the World of Becoming — fluid, changing, and without fixed essences", "Being refers to biological type-facts; Becoming refers to the process by which secondary forces shape us over time", "Being is rational knowledge grasped by the intellect; Becoming is the unreliable flow of sensory experience"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr33",
+      "question": "Nietzsche calls himself the 'Anti-Christ' primarily because he aims to:",
+      "options": ["Abolish all religious institutions and replace them with a purely secular humanist culture", "De-moralize language by pulling concepts out of the fixed World of Being and returning them to the fluid World of Becoming", "Deny the historical existence of Jesus and expose Christianity as a political fabrication of the Roman Empire", "Prove that raw human instinct is more authentically sacred than any established religious doctrine"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr34",
+      "question": "In the Revaluation chart, Nietzsche argues that which Lion/Master virtue was relabeled as 'Evil' by Slave Morality?",
+      "options": ["Courage", "Pride", "Individualism", "Strength/Power"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr35",
+      "question": "In the Revaluation chart, which Lion/Master quality was condemned as sinful by Christian Slave Morality?",
+      "options": ["Competition", "Passion and Instinct", "Courage", "Action/being Active"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr36",
+      "question": "What is the central message of 'The Madman' passage (Gay Science, Section 125) in which a madman runs into a marketplace crying 'I seek God'?",
+      "options": ["Religious faith is irrational and those who hold it are mad in the eyes of the secular world", "We have killed God — meaning we have destroyed the moral framework that gave Western civilization its coherence — and have not yet grasped the enormity of what we have done", "The death of God is a cause for celebration, and those who mourn it like a madman are clinging to a dead past", "Only a madman would declare God dead, since the concept of God is necessary for any coherent moral order to exist"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr37",
+      "question": "Nietzsche described himself as a 'Causal Essentialist.' What does this mean in the context of his theory of action?",
+      "options": ["He believed that conscious free choice is the essential cause of all human action", "He believed that our type-facts — our biological and physiological nature — are the essential causal ground from which all thought and action emerge", "He believed that social and cultural forces are the essential cause of who we become as individuals", "He believed that the essential cause of historical change is the conflict between master and slave moral systems"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr38",
+      "question": "What does the name 'Rāhula' — the name Siddhartha gave his son — mean, and why is this significant?",
+      "options": ["It means 'gift of the gods,' reflecting Siddhartha's gratitude before renouncing worldly life", "It means 'fetter' or 'ball and chain,' revealing that Siddhartha already saw family life as a spiritual obstacle", "It means 'future teacher,' indicating Siddhartha's hope that his son would continue his spiritual mission", "It means 'the unburdened one,' expressing Siddhartha's wish that his son would live free of suffering"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr39",
+      "question": "Which of the following best describes the cultural context in India at the time of Siddhartha's birth?",
+      "options": ["India was a unified empire under a single emperor who enforced strict Vedic ritual practice across all regions", "India was experiencing rapid cultural growth and anxiety, with Asceticism, reincarnation, and the Hindu caste system as dominant features", "India was largely at peace, with philosophical debate confined to small circles of Brahmin priests in urban centers", "India was in decline following the collapse of the Vedic tradition, creating a spiritual vacuum that Buddhism filled"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr40",
+      "question": "The 'Vase Analogy' in Buddhist teaching conveys which idea?",
+      "options": ["The self is as fragile as a clay vase and must be protected through mindfulness and discipline", "The world is already broken — impermanence is not something that will happen but is the fundamental nature of all existence right now", "Nirvana is like an empty vase — a state of pure openness without the clutter of desire or craving", "The Four Noble Truths are like a vase: the first two identify the crack, the third identifies the repair, and the fourth is the mended vessel"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr41",
+      "question": "In the story of Siddhartha's enlightenment, when the tempter god Mara challenged his right to claim enlightenment, Siddhartha responded by:",
+      "options": ["Entering a state of deep meditative silence until Mara gave up and withdrew", "Touching the earth and calling it as his witness to his merit and his right to claim liberation", "Reciting the Four Noble Truths, which dissolved Mara's power over him", "Summoning the memory of his boyhood meditation under the rose-apple tree"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr42",
+      "question": "The Second Noble Truth identifies three distinct sub-types of craving. Which answer correctly names all three?",
+      "options": ["Craving for power, craving for pleasure, and craving for knowledge", "Craving for sensual pleasure, craving for permanence and ongoing self, and craving to escape pain by ceasing to exist", "Craving for attachment, craving for aversion, and craving for delusion", "Craving for status, craving for sensation, and craving for certainty"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr43",
+      "question": "The Third Noble Truth states:",
+      "options": ["That suffering arises because of craving and can be traced to a specific cause", "That the Eightfold Path is the prescribed method for achieving liberation from suffering", "That freedom from suffering is possible through fully understanding and releasing its cause", "That impermanence is the fundamental nature of all existence and cannot be escaped through effort"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr44",
+      "question": "The Buddhist teaching that 'meditation is a diet for the mind' conveys which idea?",
+      "options": ["Meditation should be practiced only in moderation, just as food should be eaten in controlled portions", "Just as the body is shaped by what it eats, the mind is shaped by what it dwells on — meditation trains the mind toward clarity and away from the Three Poisons", "Meditation is a necessary survival requirement for the mind, without which it will starve and malfunction", "The mind, like the body, naturally craves unhealthy inputs and must be forced toward discipline through structured practice"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr45",
+      "question": "The Buddhist image of the 'restless monkey mind' refers to:",
+      "options": ["The ego's tendency to mimic the behavior of others rather than developing genuine self-awareness", "The mind's natural tendency to jump erratically from thought to thought, making sustained meditation and present-moment awareness difficult", "The part of consciousness that, like a monkey, refuses to be tamed and must ultimately be accepted rather than controlled", "The competitive and acquisitive impulses that Buddhism identifies as the primary source of interpersonal conflict"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr46",
+      "question": "On the question of God and the afterlife, what is the official Buddhist position?",
+      "options": ["Buddhism asserts that God does not exist and that consciousness is extinguished at death", "Buddhism affirms reincarnation but is silent on the existence of God, treating both questions as spiritually irrelevant", "Buddhism remains silent on God and the afterlife, treating these questions as unanswerable distractions from the path to liberation", "Buddhism holds that God exists but is irrelevant to human suffering, which can only be addressed through personal practice"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr47",
+      "question": "Which of the following correctly describes the Buddhist teaching on the authority of the Buddha's own words?",
+      "options": ["Buddhists are required to accept all of the Buddha's teachings on faith as a precondition for entering the path", "The Buddha taught that followers must verify his teachings through their own experience and are not required to agree with him", "The Buddha claimed divine authority for his teachings, which therefore cannot be questioned without leaving the path", "Buddhist tradition holds that the Buddha's words are infallible and that disagreement represents a failure of spiritual development"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr48",
+      "question": "The Buddhist teaching on violence states:",
+      "options": ["Violence is permissible in self-defense but never as a means of advancing spiritual or political goals", "Violence is always wrong but can be forgiven through sincere repentance and dedicated practice", "Violence leads to violence — responding to harm with harm perpetuates the cycle of suffering rather than ending it", "Violence originates entirely from ignorance and disappears automatically as wisdom deepens through meditation"],
+      "correctAnswer": 2
+    },
+    {
+      "id": "fr49",
+      "question": "The girl who brought Siddhartha rice porridge just before his enlightenment illustrates what concept when compared to Christian grace?",
+      "options": ["Both Buddhism and Christianity hold that grace requires a conscious act of surrender from the recipient", "In Buddhism, a transformative encounter with grace can come from an ordinary human being, not only from a divine source as in Christianity", "The girl represents the Bodhisattva ideal of sacrificing personal liberation to help others achieve enlightenment first", "Rice porridge is used in Buddhist ritual as a symbol of the nourishment that divine compassion provides to sincere seekers"],
+      "correctAnswer": 1
+    },
+    {
+      "id": "fr50",
+      "question": "What did the dying Buddha tell his grieving monks, according to Buddhist tradition?",
+      "options": ["'The dharma will be your teacher when I am gone; let no one take my place.'", "'Do not weep — I have only passed into Nirvana, which is your destination as well.'", "'All things change. Strive on, untiringly.'", "'Grieve if you must — compassion begins with honest acknowledgment of loss.'"],
+      "correctAnswer": 2
+    }
+  ]
+}
